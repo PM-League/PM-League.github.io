@@ -1,0 +1,314 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 182px;
+}
+
+.u-section-1 .u-text-1 {
+  font-weight: 700;
+  font-size: 4.5rem;
+  width: 400px;
+  margin: 20px auto 0;
+}
+
+.u-section-1 .u-text-2 {
+  line-height: 1.8;
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-2 {
+    width: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-text-1 {
+    font-size: 1.875rem;
+    width: 340px;
+  }
+}.u-section-2 .u-sheet-1 {
+  min-height: 43px;
+}
+
+.u-section-2 .u-line-1 {
+  transform-origin: right center 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}.u-section-3 .u-sheet-1 {
+  min-height: 201px;
+}
+
+.u-section-3 .u-list-1 {
+  grid-template-rows: auto;
+  margin: 20px 0 21px;
+}
+
+.u-section-3 .u-repeater-1 {
+  grid-template-columns: calc(25% - 7.5px) calc(25% - 7.5px) calc(25% - 7.5px) calc(25% - 7.5px);
+  grid-gap: 10px 10px;
+  min-height: 160px;
+}
+
+.u-section-3 .u-container-layout-1 {
+  padding: 0 30px;
+}
+
+.u-section-3 .u-text-1 {
+  margin: 20px 0 0 auto;
+}
+
+.u-section-3 .u-text-2 {
+  margin: 20px 0 0;
+}
+
+.u-section-3 .u-container-layout-2 {
+  padding: 0 30px;
+}
+
+.u-section-3 .u-text-3 {
+  margin: 20px 0 0 auto;
+}
+
+.u-section-3 .u-text-4 {
+  margin: 20px 0 0;
+}
+
+.u-section-3 .u-container-layout-3 {
+  padding: 0 30px;
+}
+
+.u-section-3 .u-text-5 {
+  margin: 20px 0 0 auto;
+}
+
+.u-section-3 .u-text-6 {
+  margin: 20px 0 0;
+}
+
+.u-section-3 .u-container-layout-4 {
+  padding: 0 30px;
+}
+
+.u-section-3 .u-text-7 {
+  margin: 20px 0 0 auto;
+}
+
+.u-section-3 .u-text-8 {
+  margin: 20px 0 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-3 .u-list-1 {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-3 .u-repeater-1 {
+    grid-template-columns: calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px);
+    min-height: 245px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-3 .u-repeater-1 {
+    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-3 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-3 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-3 .u-container-layout-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-3 .u-container-layout-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-3 .u-repeater-1 {
+    grid-template-columns: 100%;
+  }
+}.u-section-4 .u-sheet-1 {
+  min-height: 43px;
+}
+
+.u-section-4 .u-line-1 {
+  transform-origin: right center 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}.u-section-5 .u-sheet-1 {
+  min-height: 430px;
+}
+
+.u-section-5 .u-layout-wrap-1 {
+  margin: 20px 0;
+}
+
+.u-section-5 .u-image-1 {
+  min-height: 400px;
+  background-image: url("images/pexels-photo-1319854.jpeg");
+  background-position: 50% 50%;
+}
+
+.u-section-5 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-5 .u-layout-cell-2 {
+  min-height: 400px;
+  background-image: none;
+}
+
+.u-section-5 .u-container-layout-2 {
+  padding: 30px 60px;
+}
+
+.u-section-5 .u-text-1 {
+  margin: 68px 0 0;
+}
+
+.u-section-5 .u-text-2 {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.u-section-5 .u-btn-1 {
+  background-image: none;
+}
+
+@media (max-width: 1199px) {
+  .u-section-5 .u-sheet-1 {
+    min-height: 400px;
+  }
+
+  .u-section-5 .u-layout-wrap-1 {
+    margin-right: initial;
+    margin-left: initial;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-5 .u-container-layout-2 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-5 .u-sheet-1 {
+    min-height: auto;
+  }
+
+  .u-section-5 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-5 .u-layout-cell-2 {
+    min-height: auto;
+  }
+
+  .u-section-5 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}.u-section-6 .u-sheet-1 {
+  min-height: 430px;
+}
+
+.u-section-6 .u-layout-wrap-1 {
+  margin: 20px 0;
+}
+
+.u-section-6 .u-layout-cell-1 {
+  min-height: 400px;
+}
+
+.u-section-6 .u-container-layout-1 {
+  padding: 30px 60px;
+}
+
+.u-section-6 .u-text-1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.u-section-6 .u-text-2 {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.u-section-6 .u-btn-1 {
+  background-image: none;
+}
+
+.u-section-6 .u-image-1 {
+  min-height: 400px;
+  background-image: url("images/how-ai-and-ml-change-simulation-social.webp");
+  background-position: 50% 50%;
+}
+
+.u-section-6 .u-container-layout-2 {
+  padding: 30px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-6 .u-sheet-1 {
+    min-height: 360px;
+  }
+
+  .u-section-6 .u-layout-wrap-1 {
+    margin-right: initial;
+    margin-left: initial;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-6 .u-sheet-1 {
+    min-height: 283px;
+  }
+
+  .u-section-6 .u-container-layout-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-6 .u-sheet-1 {
+    min-height: 415px;
+  }
+
+  .u-section-6 .u-layout-cell-1 {
+    min-height: auto;
+  }
+
+  .u-section-6 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-6 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-6 .u-sheet-1 {
+    min-height: 309px;
+  }
+}

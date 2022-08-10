@@ -103,7 +103,7 @@ The information should also be used to forecast the future performance of the pr
 ## EVM Process Steps
 ### General
 The earned value management process steps are shown in Figure 1.
-|![Figure 1](https://github.com/filippomariaottaviani/projectmanagement/blob/main/FigEVM-1.drawio.png)
+|![Figure 1](../images/FigEVM-1.drawio.png)
 |:--:|
 |Figure 1 — EVM process steps|
 
@@ -167,6 +167,6 @@ The ES metrics should be reliable for early and late finish projects or programm
 
 Analysis of the ES metrics should be undertaken in conjunction with an analysis of the network schedule, which remains the primary source of time-based information.
 
-|![Figure 2](https://github.com/filippomariaottaviani/projectmanagement/blob/main/FigEVM-2.drawio.png)
+|![Figure 2](../images/FigEVM-2.drawio.png)
 |:--:|
 |Figure 2 — Cost, Schedule, and Earned Schedule Variances|

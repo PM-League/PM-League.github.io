@@ -32,7 +32,7 @@ The RM process involves
 
 This process is illustrated in Figure 1.
 
-|![Figure 1](https://github.com/filippomariaottaviani/projectmanagement/blob/main/FigRisk-1.drawio.png)
+|![Figure 1](../images/FigRisk-1.drawio.png)
 |:--:|
 |Figure 1 — Process|
 

@@ -15,7 +15,7 @@ The elements of organizational governance that address PPPs should be:
 
 One possible relationship between organizational governance and the governance of PPPs is shown in Figure 1.
 
-|![Figure 1](https://github.com/filippomariaottaviani/projectmanagement/blob/main/FigPPM-1.drawio.png)
+|![Figure 1](../images/FigPPM-1.drawio.png)
 |:--:|
 |Figure 1 — Example of the context of governance of PPPs|
 
@@ -120,7 +120,7 @@ roles, responsibilities, and accountabilities needed to implement and maintain t
 The framework should be capable of being documented, communicated, and monitored. \
 The governance framework for PPPs, and their interfaces, should be reviewed regularly.
 
-|![Figure 2](https://github.com/filippomariaottaviani/projectmanagement/blob/main/FigPPM-2.drawio.png)
+|![Figure 2](../images/FigPPM-2.drawio.png)
 |:--:|
 |Figure 2 — Example of context of governance framework of PPPs|
 
@@ -235,6 +235,6 @@ The governance framework for portfolios establishes and defines the boundaries, 
 The governance framework should be documented, reviewed, updated, and archived as required and by changing circumstances. \
 Figure 3 illustrates an example of the context of a governance framework highlighting the governance of a portfolio or portfolios.
 
-|![Figure 3](https://github.com/filippomariaottaviani/projectmanagement/blob/main/FigPPM-4.drawio.png)
+|![Figure 3](../images/FigPPM-4.drawio.png)
 |:--:|
 |Figure 3 — Example of context of governance framework of PPPs|

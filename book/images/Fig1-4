@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" modified="2022-08-01T10:34:30.648Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="mF5i-vZGLrfhDsep2OA2" version="20.2.2" type="github">
+  <diagram id="Ci-9cG7cW0Wo2eMEnTPl" name="Page-1">
+    <mxGraphModel dx="1422" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-29" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fontSize=12;fillColor=default;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="160" y="140" width="470" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-24" value="" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=bottom;fontSize=12;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="171.5682888540031" y="150" width="446.8634222919938" height="369.99999999999994" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-14" value="" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=bottom;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="305.62731554160126" y="150" width="178.7453689167975" height="134.54545454545453" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-11" value="" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=bottom;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="283.28414442700154" y="329.3939393939394" width="223.4317111459969" height="190.60606060606057" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-8" value="" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=bottom;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="305.625" y="329.39" width="178.75" height="140.61" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-7" value="" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=bottom;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="327.97" y="329.39" width="134.06" height="90.61" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-2" value="Project Governance" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="330" y="160.27777777777777" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-3" value="Project Steering Committee &lt;br&gt;or Board" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="310" y="190.00202020202022" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-5" value="Project Sponsor" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="367.0710361067504" y="228.48484848484844" width="55.857927786499225" height="56.060606060606055" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startArrow=classic;startFill=1;" parent="1" source="oINMZUO6vB3mI2yCSAE7-6" target="oINMZUO6vB3mI2yCSAE7-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-6" value="Project Manager" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="367.0710361067504" y="329.3939393939394" width="55.857927786499225" height="56.060606060606055" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-9" value="PM Team" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="360" y="385.45454545454544" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-10" value="Project Team" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="350" y="429.9951515151515" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-12" value="Project Organization" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="330" y="480.00363636363636" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-15" value="Suppliers" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="490" y="277.1148484848485" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-16" value="Employees" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="404.37" y="292.11121212121213" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-17" value="Business Partners" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="490" y="247.11757575757574" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-18" value="Finance Providers" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="490" y="337.1139393939394" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-19" value="Shareholders" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="490" y="307.110303030303" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-20" value="Customers" style="text;html=1;align=right;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="300" y="292.11484848484844" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oINMZUO6vB3mI2yCSAE7-22" value="Interest Groups" style="text;html=1;align=right;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="190.00000000000006" y="322.1212121212121" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="B3zPIow0aimgV-pqjUcr-2" value="PMO" style="text;html=1;align=right;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="249.99999999999994" y="292.11757575757576" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="B3zPIow0aimgV-pqjUcr-3" value="Regulatory Bodies" style="text;html=1;align=right;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="180" y="262.11757575757576" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

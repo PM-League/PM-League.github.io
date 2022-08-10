@@ -1,0 +1,21 @@
+title: PM League Wiki
+author: Filippo Maria Ottaviani
+
+execute:
+  execute_notebooks: force
+
+latex:
+  latex_documents:
+    targetname: book.tex
+
+bibtex_bibfiles:
+  - references.bib
+
+repository:
+  url: https://github.com/PM-League/  
+  path_to_book: docs
+  branch: master
+
+html:
+  use_issues_button: true
+  use_repository_button: true

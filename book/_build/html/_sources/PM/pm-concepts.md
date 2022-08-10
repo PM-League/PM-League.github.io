@@ -10,9 +10,10 @@ Figure 1 shows how PM concepts relate to each other;
 * those _deliverables_ can be used to realize _benefits_,
 * the _benefits_ can contribute to realizing and further developing the _organizational strategy_.
 
-|![Figure 1](https://github.com/filippomariaottaviani/projectmanagement/blob/main/Fig1-1.drawio.png)
-|:--:|
-|Figure 1 — Overview of PM concepts and their relationships|
+:::{figure-md} markdown-fig
+<img src="../images/Fig1-1.drawio.png">
+Overview of PM concepts and their relationships!
+:::
 
 ## Project
 A project consists of a unique set of processes consisting of coordinated and controlled activities with start and end dates to achieve project objectives. \

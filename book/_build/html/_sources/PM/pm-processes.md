@@ -80,7 +80,7 @@ The management of a project
  
 The interdependency between process groups requires the controlling process group to interact with every other process group.
 
-|![Figure 1](https://github.com/filippomariaottaviani/projectmanagement/blob/main/Fig2-1.drawio.png)
+|![Figure 1](../images/Fig2-1.drawio.png)
 |:--:|
 |Figure 1 — Process groups interactions|
 
@@ -98,7 +98,7 @@ Figure 2 elaborates on Figure 1 to show the interactions among the process group
 Except for the controlling process group, linkages between the various process groups are through individual processes within each process group. \
 While linkage is shown in Figure 2 between the controlling process group and other process groups, it may be considered self-standing because its processes control the overall project and the individual process groups.
 
-|![Figure 2](https://github.com/filippomariaottaviani/projectmanagement/blob/main/Fig2-2.drawio.png)
+|![Figure 2](../images/Fig2-2.drawio.png)
 |:--:|
 |Figure 2 — Process group interactions showing representative inputs and outputs|
 

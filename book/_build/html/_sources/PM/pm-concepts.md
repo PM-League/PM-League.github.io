@@ -10,10 +10,9 @@ Figure 1 shows how PM concepts relate to each other;
 * those _deliverables_ can be used to realize _benefits_,
 * the _benefits_ can contribute to realizing and further developing the _organizational strategy_.
 
-:::{figure-md} markdown-fig
-<img src="../images/Fig1-1.drawio.png">
-Overview of PM concepts and their relationships!
-:::
+|![Figure 1](../images/Fig1-1.drawio.png)
+|:--:|
+|Figure 1 — Example of value creation framework|
 
 ## Project
 A project consists of a unique set of processes consisting of coordinated and controlled activities with start and end dates to achieve project objectives. \
@@ -21,7 +20,7 @@ Achievement of the project objectives requires providing deliverables conforming
 A project may be subject to multiple constraints.
 
 Although many projects may be similar, each project is unique. \
-Project differences may occur in the following:
+Project differences may occur in the following: 
 * deliverables provided;
 * stakeholders influencing;
 * resources used;
@@ -45,7 +44,7 @@ These deliverables should be regularly reviewed during the project to meet the r
 Organizations generally establish strategies based on their mission, vision, policies, and factors outside the organizational boundary. \
 Projects are often the means to accomplish strategic goals. \
 An example of a value creation framework is shown in Figure 2.
-|![Figure 2](https://github.com/filippomariaottaviani/projectmanagement/blob/main/Fig1-3.drawio.png)
+|![Figure 2](../images/Fig1-2.drawio.png)
 |:--:|
 |Figure 2 — Example of value creation framework|
 
@@ -86,9 +85,9 @@ The project team should consider the following:
 Factors outside the organizational boundary may impact the project by imposing constraints or introducing risks affecting the project. \
 Although these factors are often beyond the project manager's control, they should still be considered.
 
-|![Figure 2](https://github.com/filippomariaottaviani/projectmanagement/blob/main/Fig1-2.drawio.png)
+|![Figure 3](../images/Fig1-3.drawio.png)
 |:--:|
-|Figure 2 — Example of relationships between portfolios, programmes and projects|
+|Figure 3 — Example of relationships between portfolios, programmes and projects|
 
 ### Factors Inside the Organizational Boundary
 #### General
@@ -158,11 +157,11 @@ Project governance may involve the following:
 * the _project sponsor_, who authorizes the project, makes executive decisions, and solves problems and conflicts beyond the project manager's authority;
 * the _project steering committee_ or _board_ contributes to the project by providing senior-level guidance.
 
-|![Figure 3](https://github.com/filippomariaottaviani/projectmanagement/blob/main/Fig1-4.drawio.png)
+|![Figure 4](../images/Fig1-4.drawio.png)
 |:--:|
-|Figure 3 — Example of potential project stakeholders|
+|Figure 4 — Example of potential project stakeholders|
 
-Figure 3 includes the following additional stakeholders:
+Figure 4 includes the following additional stakeholders:
 * customers or customer representatives who contribute to the project by specifying project requirements and accepting the project deliverables;
 * suppliers, who contribute to the project by supplying resources to the project;
 * the project management office (PMO) may perform various activities, including governance, standardization, PM training, project planning, and project monitoring.
@@ -187,7 +186,7 @@ These phases should
 
 To manage the project efficiently during the entire project life cycle, a set of activities should be performed in each phase. \
 Project phases are collectively known as the **project life cycle**. \
-The project life cycle spans the period from the start of the project to its end. \
+The project life cycle spans the period from the start of the project to its end. 
 
 The phases are divided by **decision points**, varying depending on the organizational environment. 
 The decision points facilitate project governance. \

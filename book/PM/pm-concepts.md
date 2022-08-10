@@ -20,7 +20,7 @@ Achievement of the project objectives requires providing deliverables conforming
 A project may be subject to multiple constraints.
 
 Although many projects may be similar, each project is unique. \
-Project differences may occur in the following:
+Project differences may occur in the following: 
 * deliverables provided;
 * stakeholders influencing;
 * resources used;

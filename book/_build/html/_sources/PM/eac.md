@@ -3,7 +3,7 @@
 The following page describes the approaches that can be adopted to forecast a project's cost or duration at completion, which we will refer to as cEAC and sEAC, respectively.
 
 Figure 1 provides the flowchart that prescribes the suggested approach by investigating a series of aspects related to the project control.
-|![Figure 1](https://github.com/filippomariaottaviani/projectmanagement/blob/main/FigEAC-1.drawio.png)
+|![Figure 1](../images/FigEAC-1.drawio.png)
 |:--:|
 |Figure 1 — EAC approaches flowchart|
 
@@ -90,7 +90,7 @@ The Bayesian inference can be called in case such distributions are hypothesized
 Otherwise, regular Monte Carlo simulations can be performed.
 
 The Monte Carlo simulation applied to the project cost and duration evaluation is performed as follows.
-|![Figure 2](https://github.com/filippomariaottaviani/projectmanagement/blob/main/FigEAC-2.drawio.png)
+|![Figure 2](../images/FigEAC-2.drawio.png)
 |:--:|
 |Figure 2 — (Bayesian) simulation approach flowchart|
 
@@ -109,7 +109,7 @@ The only difference is in the pdf of the activities cost/duration, which is not 
 ## Activity-level Short-Term Resource Analysis
 A bottom-up approach is suggested when the forecast of the project cost/duration involves activities that are currently or will be carried out shortly, rather than projecting their outcome through analytical or statistical means. \
 
-|![Figure 3](https://github.com/filippomariaottaviani/projectmanagement/blob/main/FigEAC-3.drawio.png)
+|![Figure 3](../images/FigEAC-3.drawio.png)
 |:--:|
 |Figure 3 — Bottom-up cost/durations considerations|
 

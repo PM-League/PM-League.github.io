@@ -1,0 +1,18 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Project Management
+    chapters:
+    - file: PM/pm-concepts
+    - file: PM/pm-processes
+    - file: PM/evm
+    - file: PM/rm
+    - file: PM/eac
+    - file: PM/ppm
+    - file: PM/scrum
+  - caption: System Dynamics
+    chapters:
+    - file: SD/sd-concepts

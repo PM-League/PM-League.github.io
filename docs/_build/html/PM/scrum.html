@@ -1,0 +1,1032 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Scrum &#8212; PM League Wiki</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SD Concepts" href="../SD/sd-concepts.html" />
+    <link rel="prev" title="Project Portfolio Management" href="ppm.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">PM League Wiki</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to PM League Wiki
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Project Management
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="pm-concepts.html">
+   PM Concepts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pm-processes.html">
+   PM Processes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="evm.html">
+   Earned Value Management
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rm.html">
+   Risk Management
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="eac.html">
+   Estimates at Completion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ppm.html">
+   Project Portfolio Management
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Scrum
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  System Dynamics
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../SD/sd-concepts.html">
+   SD Concepts
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/PM-League/wiki/"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/PM-League/wiki//issues/new?title=Issue%20on%20page%20%2FPM/scrum.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/PM/scrum.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#overview-of-scrum">
+     Overview of Scrum
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scrum-vs-waterfall-pm">
+     Scrum vs. Waterfall PM
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-use-scrum">
+     Why Use Scrum?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#scalability">
+       Scalability
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#framework">
+     Framework
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#principles">
+       Principles
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#aspects">
+       Aspects
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#processes">
+       Processes
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#initiate">
+         Initiate
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#plan-and-estimate">
+         Plan and Estimate
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#implement">
+       Implement
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#review-and-retrospect">
+         Review and Retrospect
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#release">
+         Release
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Scrum</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#overview-of-scrum">
+     Overview of Scrum
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scrum-vs-waterfall-pm">
+     Scrum vs. Waterfall PM
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-use-scrum">
+     Why Use Scrum?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#scalability">
+       Scalability
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#framework">
+     Framework
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#principles">
+       Principles
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#aspects">
+       Aspects
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#processes">
+       Processes
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#initiate">
+         Initiate
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#plan-and-estimate">
+         Plan and Estimate
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#implement">
+       Implement
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#review-and-retrospect">
+         Review and Retrospect
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#release">
+         Release
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="scrum">
+<h1>Scrum<a class="headerlink" href="#scrum" title="Permalink to this headline">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h2>
+<section id="overview-of-scrum">
+<h3>Overview of Scrum<a class="headerlink" href="#overview-of-scrum" title="Permalink to this headline">#</a></h3>
+<p>A Scrum project involves a <em>collaborative effort</em> to create a new product, service, or other results defined in the Project Vision Statement.</p>
+<p>Projects are impacted by time, cost, scope, quality, resources, organizational capabilities, and other limitations that make it <em>difficult to plan</em>, execute, manage, and ultimately succeed.</p>
+<p>Scrum</p>
+<ul class="simple">
+<li><p>is an adaptive, iterative, fast, flexible, and effective framework designed to deliver significant value quickly and throughout a project, and</p></li>
+<li><p>may also be used to manage the continuous maintenance of products and services, track issues, and manage changes.</p></li>
+</ul>
+<p>A key strength of Scrum is its use of cross-functional, self-organized, and empowered teams who divide their
+work into short, concentrated work cycles called Sprints.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p><img alt="Figure 1" src="https://github.com/filippomariaottaviani/projectmanagement/blob/main/FigScrum-1.drawio.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>Figure 1 — Scrum flow for one Sprint</p></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Scrum cycle</em> begins with a <em>Stakeholder Meeting</em>, during which the <em>Project Vision</em> is created. <br />
+The <em>Product Owner</em> then develops a <em>Prioritized Product Backlog</em> which contains a prioritized list of business and project requirements in the form of <em>User Stories</em>. <br />
+Each <em>Sprint</em> begins with a <em>Sprint Planning Meeting,</em> during which high priority <em>User Stories</em> are considered for inclusion in the <em>Sprint</em>. <br />
+A <em>Sprint</em> generally lasts one to four weeks and involves the <em>Scrum Team</em> working to create potentially shippable deliverables or product increments. <br />
+During the Sprint, short, highly focused Daily Standup Meetings are conducted where team members discuss daily progress. <br />
+The <em>Product Owner</em> can</p>
+<ul class="simple">
+<li><p>assess completed deliverables during the <em>Sprint</em>, and</p></li>
+<li><p>accept the deliverables that meet the predefined Acceptance Criteria.</p></li>
+</ul>
+<p>Toward the end of the <em>Sprint</em>, a <em>Sprint Review Meeting</em> is held during which the <em>Product Owner</em> and relevant business stakeholders are provided a demonstration of the deliverables. <br />
+The <em>Sprint cycle</em> ends with a <em>Retrospect <em>Sprint</em> Meeting</em> where the team members discuss ways they can improve their work and performance as they move forward into the subsequent <em>Sprint</em>.</p>
+</section>
+<section id="scrum-vs-waterfall-pm">
+<h3>Scrum vs. Waterfall PM<a class="headerlink" href="#scrum-vs-waterfall-pm" title="Permalink to this headline">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Criterion</p></th>
+<th class="text-align:left head"><p>Scrum</p></th>
+<th class="text-align:left head"><p>Waterfall</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>Emphasis on</p></td>
+<td class="text-align:left"><p>People</p></td>
+<td class="text-align:left"><p>Processes</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Documentation</p></td>
+<td class="text-align:left"><p>Minimal - only as required</p></td>
+<td class="text-align:left"><p>Comprehensive</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Process style</p></td>
+<td class="text-align:left"><p>Iterative</p></td>
+<td class="text-align:left"><p>Linear</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Upfront planning</p></td>
+<td class="text-align:left"><p>Low</p></td>
+<td class="text-align:left"><p>High</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Prioritization of requirements</p></td>
+<td class="text-align:left"><p>Base on business value and regularly updated</p></td>
+<td class="text-align:left"><p>Fixed in the project plan</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Quality Assurance</p></td>
+<td class="text-align:left"><p>Customer centric</p></td>
+<td class="text-align:left"><p>Process centric</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Organization</p></td>
+<td class="text-align:left"><p>Self-organized</p></td>
+<td class="text-align:left"><p>Managed</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Management style</p></td>
+<td class="text-align:left"><p>Decentralized</p></td>
+<td class="text-align:left"><p>Centralized</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Change</p></td>
+<td class="text-align:left"><p>Updates to Prioritized Product Backlog</p></td>
+<td class="text-align:left"><p>Formal Change Management System</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Leadership</p></td>
+<td class="text-align:left"><p>Supporting</p></td>
+<td class="text-align:left"><p>Command and control</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Performance measurement</p></td>
+<td class="text-align:left"><p>Business value</p></td>
+<td class="text-align:left"><p>Plan conformity</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Return on Investment</p></td>
+<td class="text-align:left"><p>Early/throughout project life cycle</p></td>
+<td class="text-align:left"><p>End of project life cycle</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Customer involvement</p></td>
+<td class="text-align:left"><p>High throughout the project</p></td>
+<td class="text-align:left"><p>Varies depending on the project life cycle</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="why-use-scrum">
+<h3>Why Use Scrum?<a class="headerlink" href="#why-use-scrum" title="Permalink to this headline">#</a></h3>
+<p>Some of the key benefits of using Scrum in any project are:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Benefit</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>Adaptability</p></td>
+<td class="text-align:left"><p>Empirical process control and iterative delivery make projects adaptable and open to incorporating change</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Transparency</p></td>
+<td class="text-align:left"><p>All information radiators like a <em>Scrumboard</em> and <em>Sprint</em> Burndown Chart are shared, leading to an open work environment</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Continuous Feedback</p></td>
+<td class="text-align:left"><p>Continuous feedback is provided through the Conduct Daily Standup and Demonstrate and Validate <em>Sprint</em> processes</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Continuous Improvement</p></td>
+<td class="text-align:left"><p>The deliverables are improved progressively <em>Sprint</em> by <em>Sprint</em>, through the <em>Refine Prioritized Product Backlog</em> process</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Continuous Value Delivery</p></td>
+<td class="text-align:left"><p>Iterative processes enable the continuous delivery of value through the <em>Ship Deliverables</em> process as frequently as the customer requires</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Sustainable Pace</p></td>
+<td class="text-align:left"><p>Scrum processes are designed such that the people involved can work at a sustainable pace that they can, in theory, continue indefinitely</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Early High Value Delivery</p></td>
+<td class="text-align:left"><p>The Create Prioritized Product Backlog process ensures that the highest value requirements of the customer are satisfied first.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Efficient Development Process</p></td>
+<td class="text-align:left"><p>Time-boxing and minimizing non-essential work leads to higher efficiency levels.</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Motivation</p></td>
+<td class="text-align:left"><p>The Conduct Daily Standup and Retrospect <em>Sprint</em> processes lead to greater levels of motivation among employees</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Faster Problem Resolution</p></td>
+<td class="text-align:left"><p>Collaboration and colocation of cross-functional teams lead to faster problem-solving</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Effective Deliverables</p></td>
+<td class="text-align:left"><p>The <em>Create Prioritized Product Backlog</em> process and regular reviews after creating deliverables ensure effective deliverables to the customer</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Customer Centric</p></td>
+<td class="text-align:left"><p>Emphasis on business value and having a collaborative approach to engage business stakeholders ensures a customer-oriented framework</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>High Trust Environment</p></td>
+<td class="text-align:left"><p><em>Conduct Daily Standup</em> and <em>Retrospect Sprint</em> processes promote transparency and collaboration, leading to a high-trust work environment ensuring low friction among employees</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Collective Ownership</p></td>
+<td class="text-align:left"><p>The <em>Commit User Stories</em> process allows team members to take ownership of the project and their work, leading to better quality</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>High Velocity</p></td>
+<td class="text-align:left"><p>A collaborative framework enables highly skilled cross-functional teams to achieve their full potential and high velocity</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Innovative Environment</p></td>
+<td class="text-align:left"><p>The <em>Retrospect Sprint</em> and <em>Retrospect Release</em> processes create an environment of introspection, learning, and adaptability leading to an innovative and creative work environment</p></td>
+</tr>
+</tbody>
+</table>
+<section id="scalability">
+<h4>Scalability<a class="headerlink" href="#scalability" title="Permalink to this headline">#</a></h4>
+<p>To be effective, <em>Scrum Teams</em> should ideally have 6 to 10 members. <br />
+This practice may be the reason for the misconception that the Scrum framework can only be applied to small projects. <br />
+However, the framework can easily be scaled for effective use in large projects, programs, and portfolios. In situations where the Scrum Team size exceeds ten people, multiple Scrum Teams can be formed to work on the project.</p>
+<p>The logical approach of the guidelines and principles in this framework can be used to manage projects of any size, spanning geographies and organizations. <br />
+Large projects may have multiple Scrum Teams working in parallel, making it necessary to synchronize and facilitate the flow of information and enhance communication. <br />
+Large or complex projects are often implemented as a program or portfolio.</p>
+</section>
+</section>
+<section id="framework">
+<h3>Framework<a class="headerlink" href="#framework" title="Permalink to this headline">#</a></h3>
+<p>The Scrum framework consists of three areas:</p>
+<ul class="simple">
+<li><p>principles,</p></li>
+<li><p>aspects, and</p></li>
+<li><p>processes.</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p><img alt="Figure 2" src="https://github.com/filippomariaottaviani/projectmanagement/blob/main/FigScrum-2.drawio.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>Figure 2 — Scrum framework</p></td>
+</tr>
+</tbody>
+</table>
+<section id="principles">
+<h4>Principles<a class="headerlink" href="#principles" title="Permalink to this headline">#</a></h4>
+<p>Scrum principles are the core guidelines for applying the Scrum framework and should mandatorily be used in all
+Scrum projects. <br />
+The six Scrum principles presented are:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Principle</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>Empirical Process Control</p></td>
+<td class="text-align:left"><p>Aids learning through experimentation, especially when the problem is not well defined or when there are no clear solutions</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Self-organization</p></td>
+<td class="text-align:left"><p>Today’s workers deliver significantly greater value when self-organized, resulting in better team buy-in, shared ownership, and an innovative and creative environment that is more conducive to growth</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Collaboration</p></td>
+<td class="text-align:left"><p>Awareness, articulation, and appropriation. Project delivery is a shared value-creation process with teams working and interacting together, as well as with the customer and other business stakeholders, to deliver the greatest value</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Value-based Prioritization</p></td>
+<td class="text-align:left"><p>Focus on delivering maximum business value, from early in the project and continuing throughout</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Time-boxing</p></td>
+<td class="text-align:left"><p>Time is considered a limiting constraint in Scrum and is used to help effectively manage project planning and execution.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Iterative Development</p></td>
+<td class="text-align:left"><p>How to better manage changes and build products that satisfy customer needs</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="aspects">
+<h4>Aspects<a class="headerlink" href="#aspects" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Organization</p>
+<ul>
+<li><p>Core Roles</p>
+<ul>
+<li><p><strong>Product Owner</strong>: the person responsible for</p>
+<ul>
+<li><p>achieving maximum business value for the project,</p></li>
+<li><p>articulating customer requirements and maintaining business justification for the project.</p></li>
+</ul>
+</li>
+<li><p><strong>Scrum Master</strong>: facilitator who</p>
+<ul>
+<li><p>ensures that the Scrum Team is provided with an environment conducive to completing the project successfully,</p></li>
+<li><p>guides, facilitates, and teaches Scrum practices to everyone involved in the project;</p></li>
+<li><p>clears impediments for the team,</p></li>
+<li><p>ensures that Scrum processes are being followed.</p></li>
+</ul>
+</li>
+<li><p><strong>Scrum Team</strong>: group or team responsible for understanding the requirements specified by the Product Owner and creating the project deliverables.</p></li>
+</ul>
+</li>
+<li><p>Non-core Roles</p>
+<ul>
+<li><p><strong>Business Stakeholder(s)</strong></p></li>
+<li><p><strong>Scrum Guidance Body</strong></p></li>
+<li><p><strong>Vendors</strong></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Business Justification</p>
+<ul>
+<li><p>Proper business assessment before starting any project helps key decision makers understand the business need for a change or a new product or service, the justification for moving forward with a project, and its viability</p></li>
+<li><p>It is impossible to guarantee project success at completion, irrespective of the size or complexity of a project <span class="math notranslate nohighlight">\(\rightarrow\)</span> Considering this uncertainty of achieving success, Scrum attempts to start delivering results as early in the project as possible.</p></li>
+<li><p>This early delivery of results, and thereby value, provides an opportunity for reinvestment and proves the worth of the project to interested business stakeholders.</p></li>
+</ul>
+</li>
+<li><p>Quality</p>
+<ul>
+<li><p>Quality is the ability of the completed product or deliverables to meet the <em>Acceptance Criteria</em> and achieve the business value expected by the customer.</p></li>
+<li><p>To ensure a project meets quality requirements, Scrum adopts an approach of continuous improvement whereby
+the team learns from experience and stakeholder engagement to constantly keep the <em>Prioritized Product Backlog</em>
+updated with any changes in requirements</p>
+<ul>
+<li><p>The Prioritized Product Backlog is simply never complete until the closure or termination of the project</p></li>
+<li><p>Any changes to the requirements reflect changes in the internal and external business environment and allow the team to continually work and adapt to achieve those requirements</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Change</p>
+<ul>
+<li><p>Every project, regardless of its method or framework used, is exposed to change.</p></li>
+<li><p>It is imperative that project team members understand that the Scrum development processes are designed to embrace change.</p></li>
+<li><p>Organizations should try to maximize the benefits that arise from change and minimize any negative impacts
+through diligent change management processes by the principles of Scrum.</p></li>
+<li><p>A primary principle of Scrum is its acknowledgment that</p>
+<ul>
+<li><p>business stakeholders (e.g., customers, users, and sponsors) change their minds about what they want and need throughout a project (sometimes referred to as
+“requirements churn”), and</p></li>
+<li><p>it is difficult, if not impossible, for business stakeholders to define all requirements during project initiation.</p></li>
+</ul>
+</li>
+<li><p>Scrum projects welcome change using short, iterative Sprints that incorporate customer feedback on each Sprint’s deliverables.</p></li>
+<li><p>This enables the customer to regularly interact with the <em>Scrum Team</em> members, view deliverables as they are ready, and change requirements if needed earlier in the Sprint.</p></li>
+<li><p>Also, the portfolio or program management teams can respond to <em>Change Requests</em> about Scrum projects
+applicable at their level.</p></li>
+</ul>
+</li>
+<li><p>Risk</p>
+<ul>
+<li><p>Risk is defined as an uncertain event or set of events that can affect the objectives of a project and may
+contribute to its success or failure.</p></li>
+<li><p>Risks that are likely to positively impact the project are referred to as opportunities, whereas threats are risks that could affect the project negatively.</p></li>
+<li><p>Managing risk must be done proactively, and it is an iterative process that should begin at project initiation and continue throughout the project’s lifecycle.</p></li>
+<li><p>The process of managing risks should follow some standardized steps to ensure that risks are identified and evaluated and a proper course of action is determined and acted upon accordingly.</p></li>
+<li><p>Risks should be identified, assessed, and responded to based on two factors — the probability of each risk’s occurrence and the possible impact in the event of such occurrence.</p></li>
+<li><p>Risks with a high probability and impact value (determined by multiplying both factors) should be addressed before those with a relatively lower value.</p></li>
+<li><p>In general, once a risk is identified, it is important to understand the risk with regards to the probable causes and the potential effects if the risk occurs.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="processes">
+<h4>Processes<a class="headerlink" href="#processes" title="Permalink to this headline">#</a></h4>
+<table><thead><tr><th>Phase</th><th>Fundamental Scrum Processes</th></tr></thead><tbody><tr><td rowspan="6">Initiate</td><td>1.       Create Project Vision</td></tr><tr><td>2.      Identify Scrum Master and Business Stakeholder(s)</td></tr><tr><td>3.      Form Scrum Team</td></tr><tr><td>4.      Develop Epic(s)</td></tr><tr><td>5.      Create Prioritized Product Backlog</td></tr><tr><td>6.      Conduct Release Planning</td></tr><tr><td rowspan="6">Plan and Estimate</td><td>7.       Create User Stories</td></tr><tr><td>8.      Estimate User Stories</td></tr><tr><td>9.      Commit User Stories</td></tr><tr><td>10.   Identify Tasks</td></tr><tr><td>11.   Estimate Tasks</td></tr><tr><td>12.   Update Sprint Backlog</td></tr><tr><td rowspan="3">Implement</td><td>13.    Create Deliverables</td></tr><tr><td>14.   Conduct Daily Standup</td></tr><tr><td>15.   Refine Prioritized Product Backlog</td></tr><tr><td rowspan="2">Review and Retrospect</td><td>16.    Demonstrate and Validate Sprint</td></tr><tr><td>17.   Retrospect Sprint</td></tr><tr><td rowspan="2">Release</td><td>18.    Ship Deliverables</td></tr><tr><td>19.   Retrospect Release</td></tr></tbody></table>
+<section id="initiate">
+<h5>Initiate<a class="headerlink" href="#initiate" title="Permalink to this headline">#</a></h5>
+<p>The processes relevant to the <strong>Initiate</strong> phase are as follows:</p>
+<ol class="simple">
+<li><p><strong>Create Project Vision</strong></p>
+<ul class="simple">
+<li><p>The project business case is reviewed to create a _Project Vision Statement _that will serve as the inspiration and provide a focus for the entire project</p></li>
+<li><p>The <em>Product Owner</em> is identified</p></li>
+</ul>
+</li>
+<li><p><strong>Identify Scrum Master and Business Stakeholder(s)</strong>: The Scrum Master and business stakeholders are identified using specific selection criteria.</p></li>
+<li><p><strong>Form Scrum Team</strong>: Scrum Team members are identified</p></li>
+<li><p><strong>Develop Epic(s)</strong></p>
+<ul class="simple">
+<li><p>The _Project Vision Statement _serves as the basis for developing Epics</p></li>
+<li><p>_User Group Meetings _may be held to discuss appropriate Epics</p></li>
+</ul>
+</li>
+<li><p><strong>Create Prioritized Product Backlog</strong></p>
+<ul class="simple">
+<li><p>Epic(s) are refined, elaborated, and then prioritized to create a <em>Prioritized Product Backlog</em> for the project.</p></li>
+<li><p>The <em>Done Criteria</em> is also established</p></li>
+</ul>
+</li>
+<li><p><strong>Conduct Release Planning</strong></p>
+<ul class="simple">
+<li><p>With support from the Scrum Team, the Product Owner develops a <em>Release Planning Schedule</em>, which is essentially a phased deployment schedule that can be shared with the project’s business stakeholders.</p></li>
+<li><p>Length of <em>Sprint</em> is also determined</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="plan-and-estimate">
+<h5>Plan and Estimate<a class="headerlink" href="#plan-and-estimate" title="Permalink to this headline">#</a></h5>
+<p>The processes relevant to the Plan and Estimate phase are as follows:</p>
+<ol class="simple">
+<li><p><strong>Create User Stories</strong></p>
+<ul class="simple">
+<li><p><em>User Stories</em> and their related <em>Acceptance Criteria</em> are created by the Product Owner and incorporated into the Prioritized Product Backlog</p></li>
+<li><p><em>User Stories</em> are designed to ensure that the customer’s requirements are clearly depicted and can be fully understood by all business stakeholders</p></li>
+</ul>
+</li>
+<li><p><strong>Estimate User Stories</strong>: the Scrum Team, supported by the Scrum Master, estimates the <em>User Stories</em> and identifies the effort required to develop the functionality described in each <em>User Story</em></p></li>
+<li><p><strong>Commit User Stories</strong></p>
+<ul class="simple">
+<li><p>The Scrum Team commits to delivering Product Owner-approved User Stories for a Sprint.</p></li>
+<li><p>The results of this process are the committed</p>
+<ul>
+<li><p><em>User Stories</em>, and</p></li>
+<li><p><em>Sprint Backlog</em></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Identify Tasks</strong>—In this process, the committed User Stories are broken down into specific tasks and compiled into a Task List</p></li>
+<li><p><strong>Estimate Tasks</strong>: The Scrum Core Team estimates the effort required to accomplish each task in the <em>Task List</em></p></li>
+<li><p><strong>Update <em>Sprint</em> Backlog</strong>; The Scrum Core Team updates the <em>Sprint Backlog</em> with further details about the tasks as part of the <em>Sprint</em> Planning Meeting</p></li>
+</ol>
+</section>
+</section>
+<section id="implement">
+<h4>Implement<a class="headerlink" href="#implement" title="Permalink to this headline">#</a></h4>
+<p>The processes relevant to the Implement phase are as follows:</p>
+<ol class="simple">
+<li><p><strong>Create Deliverables</strong></p>
+<ul class="simple">
+<li><p>The Scrum Team works on the tasks in the <em>Sprint Backlog</em> to create <em>Sprint</em> Deliverables</p></li>
+<li><p>A <em>Scrumboard</em> is often used to track the work and activities</p></li>
+<li><p>Issues or problems faced by the Scrum Team should be updated in an <em>Impediment Log</em></p></li>
+</ul>
+</li>
+<li><p><strong>Conduct Daily Standup</strong>: every day, a highly focused, Time-boxed meeting, referred to as the <em>Daily Standup Meeting</em>, is conducted to update each other on their individual progress and any impediments they may be facing</p></li>
+<li><p><strong>Refine Prioritized Product Backlog</strong></p>
+<ul class="simple">
+<li><p>The <em>Prioritized Product Backlog</em> is continuously updated and maintained</p></li>
+<li><p>A <em>Prioritized Product Backlog Review Meeting</em> is held, in which any changes or updates to the backlog are discussed and incorporated into the <em>Prioritized Product Backlog</em> as appropriate.</p></li>
+</ul>
+</li>
+</ol>
+<section id="review-and-retrospect">
+<h5>Review and Retrospect<a class="headerlink" href="#review-and-retrospect" title="Permalink to this headline">#</a></h5>
+<p>The processes relevant to the Review and Retrospect phase are as follows:</p>
+<ol class="simple">
+<li><p><strong>Demonstrate and Validate Sprint</strong></p>
+<ul class="simple">
+<li><p>The Scrum Team demonstrates the <em>Sprint</em> deliverables to the Product Owner and relevant business stakeholders in a <em>Sprint</em> Review Meeting</p></li>
+<li><p>The purpose of this meeting is to secure approval and acceptance of the <em>Sprint</em> User Stories by the Product Owner</p></li>
+</ul>
+</li>
+<li><p><strong>Retrospect Sprint</strong></p>
+<ul class="simple">
+<li><p>The Scrum Master and Scrum Team meet to discuss the lessons learned throughout the <em>Sprint</em></p></li>
+<li><p>This information is documented and should be applied to future Sprints.</p></li>
+<li><p>Often, as a result of this discussion, there may be agreed-on actionable improvements or updated <em>Scrum Guidance Body</em> recommendations.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="release">
+<h5>Release<a class="headerlink" href="#release" title="Permalink to this headline">#</a></h5>
+<p>The processes relevant to the Release phase are as follows:</p>
+<ol class="simple">
+<li><p><strong>Ship Deliverables</strong></p>
+<ul class="simple">
+<li><p>All deliverables from the accepted User Stories of previously completed Sprints are delivered or transitioned to the relevant business stakeholders</p></li>
+<li><p>A formal Working Deliverables Agreement documents the successful completion of the release</p></li>
+</ul>
+</li>
+<li><p><strong>Retrospect Release</strong></p>
+<ul class="simple">
+<li><p>Business stakeholders and Scrum Core Team members assemble to reflect on the release and identify, document and internalize the lessons learned.</p></li>
+<li><p>Often, these lessons lead to the documentation of agreed actionable improvements to be implemented in future projects.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./PM"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="ppm.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Project Portfolio Management</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../SD/sd-concepts.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">SD Concepts</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Filippo Maria Ottaviani<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

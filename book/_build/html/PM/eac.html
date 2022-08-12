@@ -514,7 +514,7 @@ In the opposite case, there can be considerations about the project outcome with
 <p>From the project perspective, if no data is available or its quality is insufficient, the suggested approach is the analytical application of the EVM concepts. <br />
 Instead, if data is available, a statistical approach (e.g., regression analysis) can be adopted.</p>
 <p>From the activity perspective, if no data is available, the next decision involves the <em>level</em> of reliability one wants to achieve. <br />
-If assumptions can be made about the past performance reflecting the future one, the analytical approach by EVM can be used to quantify the cost and schedule performance indexes to date and compute the <span class="math notranslate nohighlight">\(cEAC\)</span> or <span class="math notranslate nohighlight">\(sEAC\)</span>. <br />
+If assumptions can be made about the past performance reflecting the future one, the analytical approach by EVM can be used to quantify the cost and schedule performance indexes to date and compute the cEAC or sEAC. <br />
 When such an assumption does not hold, one can make use of Bayesian probability. <br />
 When historical data is present, one must further investigate its horizon of reliability. <br />
 For near future activities, information can be inferred from sources external to the project system. <br />
@@ -525,26 +525,48 @@ For long-term activities, cost and duration distributions can be fit on the past
 <section id="analytical-approach">
 <h3>Analytical Approach<a class="headerlink" href="#analytical-approach" title="Permalink to this headline">#</a></h3>
 <p>The project-level analytical approach consists of the EVM methodology applied to the accrued project <span class="math notranslate nohighlight">\(PV\)</span>, <span class="math notranslate nohighlight">\(EV\)</span>, and <span class="math notranslate nohighlight">\(AC\)</span>.</p>
-<p>If cost and schedule overruns are considered to be recoverable, <span class="math notranslate nohighlight">\(cEAC{(t)} = BAC\)</span> and <span class="math notranslate nohighlight">\(sEAC{(t)} = PD\)</span>. <br />
-Otherwise, the physical formulation for the EAC is <br />
-$<span class="math notranslate nohighlight">\(xEAC{(t)} = \text{Actual} + xETC{(t)}\)</span><span class="math notranslate nohighlight">\( \
-where \
-\)</span><span class="math notranslate nohighlight">\(xETC{(t)} = [\text{Planned} - \text{Earned{(t)}}]/xPF{(t)}.\)</span><span class="math notranslate nohighlight">\( \
-If cost, \)</span><span class="math notranslate nohighlight">\(x = c \rightarrow xPF = cPF \rightarrow cEAC{(t)} = AC{(t)} + [BAC - EV{(t)}]/cPF{(t)}.\)</span><span class="math notranslate nohighlight">\( \
-If schedule, \)</span><span class="math notranslate nohighlight">\(x = s \rightarrow xPF = sPF \rightarrow sEAC{(t)} = t + [PD - ES{(t)}]/sPF{(t)}.\)</span><span class="math notranslate nohighlight">\( \
-\)</span>cPF{(t)}<span class="math notranslate nohighlight">\( and \)</span>sPF{(t)}$ both depend on the assumptions made, as follows.</p>
+<p>If cost and schedule overruns are considered to be recoverable,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-9a33c162-56cc-4134-a722-e1215aebea23">
+<span class="eqno">(1)<a class="headerlink" href="#equation-9a33c162-56cc-4134-a722-e1215aebea23" title="Permalink to this equation">#</a></span>\[\begin{equation}
+cEAC{(t)} = BAC
+\end{equation}\]</div>
+<p>and</p>
+<div class="amsmath math notranslate nohighlight" id="equation-33439222-cc73-4ca7-8f59-0f07c678a2fb">
+<span class="eqno">(2)<a class="headerlink" href="#equation-33439222-cc73-4ca7-8f59-0f07c678a2fb" title="Permalink to this equation">#</a></span>\[\begin{equation}
+sEAC{(t)} = PD
+\end{equation}\]</div>
+<p>Otherwise, the physical formulation for the EAC is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-24f3d9b5-2872-40fe-b6ef-de5dda8e6dd0">
+<span class="eqno">(3)<a class="headerlink" href="#equation-24f3d9b5-2872-40fe-b6ef-de5dda8e6dd0" title="Permalink to this equation">#</a></span>\[\begin{equation}
+xEAC{(t)} = \text{Actual} + xETC{(t)}
+\end{equation}\]</div>
+<p>where</p>
+<div class="amsmath math notranslate nohighlight" id="equation-6082d693-4df0-4b07-a301-40747ebc8b8e">
+<span class="eqno">(4)<a class="headerlink" href="#equation-6082d693-4df0-4b07-a301-40747ebc8b8e" title="Permalink to this equation">#</a></span>\[\begin{equation}
+xETC{(t)} = [\text{Planned} - \text{Earned{(t)}}]/xPF{(t)}
+\end{equation}\]</div>
+<p>If cost,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-73057c41-48e0-4f06-9631-ad8452ab6d97">
+<span class="eqno">(5)<a class="headerlink" href="#equation-73057c41-48e0-4f06-9631-ad8452ab6d97" title="Permalink to this equation">#</a></span>\[\begin{equation}
+x = c \rightarrow xPF = cPF \rightarrow cEAC{(t)} = AC{(t)} + [BAC - EV{(t)}]/cPF{(t)}.\end{equation}\]</div>
+<p>If schedule,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-ad2c92bd-93e3-447b-9783-3381bee13d6d">
+<span class="eqno">(6)<a class="headerlink" href="#equation-ad2c92bd-93e3-447b-9783-3381bee13d6d" title="Permalink to this equation">#</a></span>\[\begin{equation}
+x = s \rightarrow xPF = sPF \rightarrow sEAC{(t)} = t + [PD - ES{(t)}]/sPF{(t)}
+\end{equation}\]</div>
+<p><span class="math notranslate nohighlight">\(cPF{(t)}\)</span> and <span class="math notranslate nohighlight">\(sPF{(t)}\)</span> both depend on the assumptions made, as follows.</p>
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="text-align:left head"><p>Formula</p></th>
-<th class="text-align:left head"><p>Assumption</p></th>
+<tr class="row-odd"><th class="head"><p>Formula</p></th>
+<th class="head"><p>Assumption</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(xPF{(t)} = 1\)</span></p></td>
-<td class="text-align:left"><p>A one-time cost/schedule overrun cannot be recovered</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(xPF{(t)} = 1\)</span></p></td>
+<td><p>A one-time cost/schedule overrun cannot be recovered</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(xPF{(t)} = f \left( t, PV{(t)}, EV{(t)}, AC{(t)} \right)\)</span></p></td>
-<td class="text-align:left"><p>The future performance will reflect, somehow, the actual performance</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(xPF{(t)} = f \left( t, PV{(t)}, EV{(t)}, AC{(t)} \right)\)</span></p></td>
+<td><p>The future performance will reflect, somehow, the actual performance</p></td>
 </tr>
 </tbody>
 </table>
@@ -572,21 +594,30 @@ Examples include, but are not limited to:</p>
 <section id="statistical-approach">
 <h3>Statistical Approach<a class="headerlink" href="#statistical-approach" title="Permalink to this headline">#</a></h3>
 <p>The project-level statistical approach proposed is based on regression modeling. <br />
-A regression model can be represented through the following equation,
-$<span class="math notranslate nohighlight">\(y = f(X) + \varepsilon,\)</span><span class="math notranslate nohighlight">\(
-where \)</span>y<span class="math notranslate nohighlight">\( is the dependent variable, \)</span>X<span class="math notranslate nohighlight">\( is the matrix of explanatory variables, and \)</span>\varepsilon<span class="math notranslate nohighlight">\( is the random additive error. \
-Regression analysis aims to evaluate the function \)</span>\widehat{f}<span class="math notranslate nohighlight">\( that best approximates \)</span>f$.</p>
+A regression model can be represented through the following equation,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-db5ba0d0-b011-4eeb-b5f0-5aadd3d59e23">
+<span class="eqno">(7)<a class="headerlink" href="#equation-db5ba0d0-b011-4eeb-b5f0-5aadd3d59e23" title="Permalink to this equation">#</a></span>\[\begin{equation}
+y = f(X) + \varepsilon,
+\end{equation}\]</div>
+<p>where <span class="math notranslate nohighlight">\(y\)</span> is the dependent variable, <span class="math notranslate nohighlight">\(X\)</span> is the matrix of explanatory variables, and <span class="math notranslate nohighlight">\(\varepsilon\)</span> is the random additive error. <br />
+Regression analysis aims to evaluate the function <span class="math notranslate nohighlight">\(\widehat{f}\)</span> that best approximates <span class="math notranslate nohighlight">\(f\)</span>.</p>
 <section id="methods">
 <h4>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">#</a></h4>
 <p>Two alternative methods to evaluate the EACs are proposed.</p>
 <ol class="simple">
-<li><p>The dependent variable is set to the EAC,
-$<span class="math notranslate nohighlight">\(\widehat{y} = \widehat{xEAC}{(t)} \)</span><span class="math notranslate nohighlight">\(
-It is difficult for regression models to understand how different combinations of the \)</span>X<span class="math notranslate nohighlight">\( variables lead to the same value of \)</span>xEAC$, since it’s unique for each project in the dataset. \</p></li>
-<li><p>The dependent variable is set to the PF that would provide, at time <span class="math notranslate nohighlight">\(t\)</span>, the exact EAC,
-$<span class="math notranslate nohighlight">\(\widehat{y} = \widehat{xPF}{(t)} : xEAC{(t)} = \text{Actual} + [\text{Planned} - \text{Earned}]/\widehat{xPF}{(t)}\)</span><span class="math notranslate nohighlight">\(
-Setting the problem in such a way allows for evaluating a different \)</span>xPF{(t)}<span class="math notranslate nohighlight">\( for each time \)</span>t$, which is the result of a combination of the project control metrics.</p></li>
+<li><p>The dependent variable is set to the EAC,</p></li>
 </ol>
+<div class="amsmath math notranslate nohighlight" id="equation-e20d6302-9a43-4d37-ac5a-675f1cae9a43">
+<span class="eqno">(8)<a class="headerlink" href="#equation-e20d6302-9a43-4d37-ac5a-675f1cae9a43" title="Permalink to this equation">#</a></span>\[\begin{equation}
+\widehat{y} = \widehat{xEAC}{(t)}
+\end{equation}\]</div>
+<p>It is difficult for regression models to understand how different combinations of the <span class="math notranslate nohighlight">\(X\)</span> variables lead to the same value of <span class="math notranslate nohighlight">\(xEAC\)</span>, since it’s unique for each project in the dataset. <br />
+2. The dependent variable is set to the PF that would provide, at time <span class="math notranslate nohighlight">\(t\)</span>, the exact EAC,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-0a53cfc4-15e6-410b-b361-cb99eff47ac6">
+<span class="eqno">(9)<a class="headerlink" href="#equation-0a53cfc4-15e6-410b-b361-cb99eff47ac6" title="Permalink to this equation">#</a></span>\[\begin{equation}
+\widehat{y} = \widehat{xPF}{(t)} : xEAC{(t)} = \text{Actual} + [\text{Planned} - \text{Earned}]/\widehat{xPF}{(t)}
+\end{equation}\]</div>
+<p>Setting the problem in such a way allows for evaluating a different <span class="math notranslate nohighlight">\(xPF{(t)}\)</span> for each time <span class="math notranslate nohighlight">\(t\)</span>, which is the result of a combination of the project control metrics.</p>
 </section>
 </section>
 </section>
@@ -595,14 +626,30 @@ Setting the problem in such a way allows for evaluating a different \)</span>xPF
 <section id="id1">
 <h3>Analytical Approach<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 <p>The activity-level analytical approach consists of the EVM methodology applied to the accrued activity <span class="math notranslate nohighlight">\(PV\)</span>, <span class="math notranslate nohighlight">\(EV\)</span>, and <span class="math notranslate nohighlight">\(AC\)</span>. \</p>
-<p>To compute the cEAC, one must sum the individual cEACs, as follows:
-$<span class="math notranslate nohighlight">\(cEAC{(t)} = \sum_{i=1}^{I} cEAC{(t)}_i \quad \text{where} \quad cEAC{(t)}_i = AC{(t)}_i + [BAC_i - EV{(t)}_i]/cPF{(t)}_i \quad \forall i \in I;\)</span>$</p>
-<p>To compute the sEAC, one must sum the individual sEACs of the activities belonging to the different paths and evaluate the new critical path, as follows:
-$<span class="math notranslate nohighlight">\(sEAC{(t)} = \text{max}_i \begin{Bmatrix} sEAC{(t)}_i : i = 1..I\end{Bmatrix} \quad \text{where} \quad sEAC{(t)}_i = t + [PD_i - ES{(t)}_i]/sPF{(t)}_i \quad \forall i \in I.\)</span>$</p>
+<p>To compute the cEAC, one must sum the individual cEACs, as follows:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-bdd96ea1-a311-4959-9ee2-8aba5952c368">
+<span class="eqno">(10)<a class="headerlink" href="#equation-bdd96ea1-a311-4959-9ee2-8aba5952c368" title="Permalink to this equation">#</a></span>\[\begin{equation}
+cEAC{(t)} = \sum_{i=1}^{I} cEAC{(t)}_i
+\end{equation}\]</div>
+<p>where</p>
+<div class="amsmath math notranslate nohighlight" id="equation-07ef468f-ec14-4b8e-af1d-398813b68cfd">
+<span class="eqno">(11)<a class="headerlink" href="#equation-07ef468f-ec14-4b8e-af1d-398813b68cfd" title="Permalink to this equation">#</a></span>\[\begin{equation}
+cEAC{(t)}_i = AC{(t)}_i + [BAC_i - EV{(t)}_i]/cPF{(t)}_i \quad \forall i \in I
+\end{equation}\]</div>
+<p>To compute the sEAC, one must sum the individual sEACs of the activities belonging to the different paths and evaluate the new critical path, as follows:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-e01997e9-70f1-47ab-b431-10c01bd5f948">
+<span class="eqno">(12)<a class="headerlink" href="#equation-e01997e9-70f1-47ab-b431-10c01bd5f948" title="Permalink to this equation">#</a></span>\[\begin{equation}
+sEAC{(t)} = \text{max}_i \begin{Bmatrix} sEAC{(t)}_i : i = 1..I\end{Bmatrix} 
+\end{equation}\]</div>
+<p>where</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c4c23e41-b27d-432a-bcd4-d5f583351f81">
+<span class="eqno">(13)<a class="headerlink" href="#equation-c4c23e41-b27d-432a-bcd4-d5f583351f81" title="Permalink to this equation">#</a></span>\[\begin{equation}
+sEAC{(t)}_i = t + [PD_i - ES{(t)}_i]/sPF{(t)}_i \quad \forall i \in I.
+\end{equation}\]</div>
 </section>
 <section id="id2">
 <h3>Statistical Approach<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
-<p>The activity-level statistical approach is based on the assumed distributions of the activities’ cost and duration probability density functions (pdf). <br />
+<p>The activity-level statistical approach is based on the assumed distributions of the activities’ cost and duration probability density functions (PDF). <br />
 The Bayesian inference can be called in case such distributions are hypothesized a priori without historical data to be fitted to. <br />
 Otherwise, regular Monte Carlo simulations can be performed.</p>
 <p>The Monte Carlo simulation applied to the project cost and duration evaluation is performed as follows.</p>
@@ -616,23 +663,23 @@ Otherwise, regular Monte Carlo simulations can be performed.</p>
 </tr>
 </tbody>
 </table>
-<p>The cost/duration pdf for each activity must be assumed or inferred from the data. <br />
+<p>The cost/duration PDF for each activity must be assumed or inferred from the data. <br />
 An arbitrary number of simulations is then conducted. <br />
 Within each simulation, all activities’ cost/duration are randomized. <br />
 The total project cost is the sum of all the (remaining) activities costs. <br />
 Instead, the total project duration is the maximum duration among all the different paths of activities revised durations. <br />
 The simulation stopping criterion is given by the convergence of the standard deviation of the resulting project cost/duration. <br />
-Plotting the histogram of the resulting project cost/duration allows for the identification of its pdf.</p>
+Plotting the histogram of the resulting project cost/duration allows for the identification of its PDF.</p>
 </section>
 <section id="long-term-statistical-approach">
 <h3>Long-Term Statistical Approach<a class="headerlink" href="#long-term-statistical-approach" title="Permalink to this headline">#</a></h3>
 <p>The activity-level long-term statistical approach consists of the same (Bayesian) Monte Carlo simulation framework. <br />
-The only difference is in the pdf of the activities cost/duration, which is not hypothesized a priori but rather inferred from the historical data.</p>
+The only difference is in the PDF of the activities cost/duration, which is not hypothesized a priori but rather inferred from the historical data.</p>
 </section>
 </section>
 <section id="activity-level-short-term-resource-analysis">
 <h2>Activity-level Short-Term Resource Analysis<a class="headerlink" href="#activity-level-short-term-resource-analysis" title="Permalink to this headline">#</a></h2>
-<p>A bottom-up approach is suggested when the forecast of the project cost/duration involves activities that are currently or will be carried out shortly, rather than projecting their outcome through analytical or statistical means. \</p>
+<p>A bottom-up approach is suggested when the forecast of the project cost/duration involves activities that are currently or will be carried out shortly, rather than projecting their outcome through analytical or statistical means.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p><img alt="Figure 3" src="../_images/FigEAC-3.drawio.png" /></p></th>

@@ -199,4 +199,6 @@ Analysis of the ES metrics should be undertaken in conjunction with an analysis 
 
 ### Summary
 
-<table><thead><tr><th></th><th></th><th colspan="3" style="text-align:center">SPI</th></tr></thead><tbody><tr><td></td><td></td><td style="text-align:center">&gt;1</td><td style="text-align:center">=1</td><td style="text-align:center">&lt;1</td></tr><tr><td rowspan="3">CPI</td><td>&gt;1</td><td>Under budget<br>Ahead of schedule</td><td>Under budget<br>On schedule</td><td>Under budget<br>Behind schedule</td></tr><tr><td>=1</td><td>On budget<br>Ahead of schedule</td><td>On budget<br>On schedule</td><td>On budget<br>Behind schedule</td></tr><tr><td>&lt;1</td><td>Over budget<br>Ahead of schedule</td><td>Over budget<br>On schedule</td><td>Over budget<br>Behind schedule</td></tr></tbody></table>
+<table><thead><tr><th></th><th></th><th colspan="3" style="text-align:center">SPI</th></tr></thead>
+<tbody><tr><td></td><td></td><td style="text-align:center">&gt;1</td><td style="text-align:center">=1</td><td style="text-align:center">&lt;1</td></tr>
+<tr><td rowspan="3">CPI</td><td>&gt;1</td><td>Under budget<br>Ahead of schedule</td><td>Under budget<br>On schedule</td><td>Under budget<br>Behind schedule</td></tr><tr><td>=1</td><td>On budget<br>Ahead of schedule</td><td>On budget<br>On schedule</td><td>On budget<br>Behind schedule</td></tr><tr><td>&lt;1</td><td>Over budget<br>Ahead of schedule</td><td>Over budget<br>On schedule</td><td>Over budget<br>Behind schedule</td></tr></tbody></table>

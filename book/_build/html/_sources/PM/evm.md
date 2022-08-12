@@ -23,7 +23,7 @@
 |Work Package|One or more groups of related activities that are within the control account|
 
 ## Overview
-### EVM
+### Earned Value Management 
 Earned value management (EVM) 
 * is a structured method used to provide a performance measurement system for review of past and forecasted performance of a project or programme;
 * is a method of performance management.
@@ -116,7 +116,32 @@ The use of performance metrics should allow corrective and preventive actions to
 To understand performance measurement analysis, it is important to know the metrics of indicators and predictors earned value uses. 
 Table 1 summarizes the key EV cost performance indicators and predictors.
 
-<table><thead><tr><th>Acronym</th><th>Name</th><th>Formula</th></tr></thead><tbody><tr><td> $t$ </td><td>Time</td><td></td></tr><tr><td>$PD$</td><td>Planned Duration</td><td>$\sum_{t} t$</td></tr><tr><td>$WS{(t)}$</td><td>Percentage of Work Scheduled</td><td></td></tr><tr><td>$WP{(t)}$</td><td>Percentage of Work Performed</td><td></td></tr><tr><td>$AC{(t)}$</td><td>Actual Cost of Work Performed</td><td></td></tr><tr><td>$EV{(t)}$</td><td>Earned Value (or Budgeted Cost of Work Performed)</td><td>$BAC \cdot WP{(t)}$</td></tr><tr><td>$PV{(t)}$</td><td>Planned Value (or Budgeted Cost of Work Scheduled)</td><td>$BAC \cdot WS{(t)}$</td></tr><tr><td>$BAC$</td><td>Budget at Completion</td><td>$\sum_{t} PV{(t)}$</td></tr><tr><td>$CV{(t)}$</td><td>Cost Variance</td><td>$EV{(t)} - AC{(t)}$</td></tr><tr><td>$SV{(t)}$</td><td>Schedule Variance</td><td>$EV{(t)} - SV{(t)}$</td></tr><tr><td>$CPI{(t)}$</td><td>Cost Performance Index</td><td>$EV{(t)} / AC{(t)}$</td></tr><tr><td>$SPI{(t)}$</td><td>Schedule Performance Index</td><td>$EV{(t)} / PV{(t)}$</td></tr><tr><td>$EAC{(t)}$</td><td>Estimate at Completion</td><td>$EAC{(t)} = AC{(t)} + ETC{(t)}$</td></tr><tr><td>$ETC{(t)}$</td><td>Estimate to Complete</td><td>$ETC{(t)} = [BAC - EV{(t)}]/PF{(t)}$</td></tr><tr><td rowspan="2">$TCPI{(t)}$</td><td rowspan="2">To-Complete Performance Index</td><td>$TCPI{(t)} = [BAC - EV{(t)}]/[BAC - AC{(t)}]$</td></tr><tr><td>$TCPI{(t)} = [EAC{(t)} -&nbsp;&nbsp;&nbsp;EV{(t)}]/[BAC - AC{(t)}]$</td></tr><tr><td>$ES{(t)}$</td><td>Earned Schedule</td><td>$ES{(t)} = \begin{Bmatrix} t^* : PV(t^*) = EV{(t)}&nbsp;&nbsp;&nbsp;\end{Bmatrix}$</td></tr><tr><td>$SV^\text{t}{(t)}$</td><td>Earned Schedule Variance</td><td>$SV^\text{t}{(t)} = ES{(t)} - t$</td></tr><tr><td>$SPI^\text{t}{(t)}$</td><td>Earned Schedule Performance Index</td><td>$SPI^\text{t}{(t)} = ES{(t)} / t$</td></tr><tr><td>$TEAC$</td><td>Time Estimate at Completion</td><td>$TEAC{(t)} = AT + ETC^\text{t}{(t)} / PF^\text{t}{(t)}$</td></tr><tr><td>$ETC^\text{t}{(t)}$</td><td>Time Estimate to Complete</td><td>$ETC^\text{t}{(t)} = [PD - ES{(t)}]/PF^\text{t}{(t)}$</td></tr><tr><td rowspan="2">$TCPI^\text{t}{(t)}$</td><td rowspan="2">To-Complete Earned Schedule Performance Index</td><td>$TCPI^\text{t}{(t)} = [PD - ES{(t)}]/(PD - t)$</td></tr><tr><td>$TCPI^\text{t}{(t)} =&nbsp;&nbsp;&nbsp;[TEAC{(t)} - ES{(t)}]/(PD - t)$</td></tr></tbody></table>
+| Acronym | Name | Formula |
+|---|---|---|
+|  $t$  | Time |
+| $PD$ | Planned Duration | $\sum_{t} t$ |
+| $WS{(t)}$ | Percentage of Work Scheduled |
+| $WP{(t)}$ | Percentage of Work Performed |
+| $AC{(t)}$ | Actual Cost of Work Performed |
+| $EV{(t)}$ | Earned Value | $BAC \cdot WP{(t)}$ |
+| $PV{(t)}$ | Planned Value | $BAC \cdot WS{(t)}$ |
+| $BAC$ | Budget at Completion | $\sum_{t} PV{(t)}$ |
+| $CV{(t)}$ | Cost Variance | $EV{(t)} - AC{(t)}$ |
+| $SV{(t)}$ | Schedule Variance | $EV{(t)} - SV{(t)}$ |
+| $CPI{(t)}$ | Cost Performance Index | $EV{(t)} / AC{(t)}$ |
+| $SPI{(t)}$ | Schedule Performance Index | $EV{(t)} / PV{(t)}$ |
+| $EAC{(t)}$ | Estimate at Completion | $EAC{(t)} = AC{(t)} + ETC{(t)}$ |
+| $ETC{(t)}$ | Estimate to Complete | $ETC{(t)} = [BAC - EV{(t)}]/PF{(t)}$ |
+| $TCPI{(t)}$ | To-Complete Performance Index | $TCPI{(t)} = [BAC - EV{(t)}]/[BAC - AC{(t)}]$ |
+| | |$TCPI{(t)} = [EAC{(t)} - EV{(t)}]/[BAC - AC{(t)}]$ |
+| $ES{(t)}$ | Earned Schedule | $ES{(t)} = \begin{Bmatrix} t^* : PV(t^*) = EV{(t)}\end{Bmatrix}$ |
+| $SV^{t}{(t)}$ | Earned Schedule Variance | $SV^\text{t}{(t)} = ES{(t)} - t$ |
+| $SPI^\text{t}{(t)}$ | Earned Schedule Performance Index | $SPI^\text{t}{(t)} = ES{(t)} / t$ |
+| $TEAC$ | Time Estimate at Completion | $TEAC{(t)} = AT + ETC^\text{t}{(t)} / PF^\text{t}{(t)}$ |
+| $ETC^\text{t}{(t)}$ | Time Estimate to Complete | $ETC^\text{t}{(t)} = [PD - ES{(t)}]/PF^\text{t}{(t)}$ |
+| $TCPI^\text{t}{(t)}$ | To-Complete $ES$ Performance Index | $TCPI^\text{t}{(t)} = [PD - ES{(t)}]/(PD - t)$ |
+| | |$TCPI^\text{t}{(t)} = [TEAC{(t)} - ES{(t)}]/(PD - t)$ |
+
 
 ### Benefits of Performance Measurement Analysis
 Performance measurement analysis contributes to trend analysis over time; to highlight trends in cost over- or under-run; and be superimposed with contracted cost outcomes, risk confidence limits, and benefit realization data to provide a more comprehensive picture of overall project or programme cost performance.
@@ -145,13 +170,14 @@ Conversely, a positive $SV$ and $SPI$ greater than one may indicate an ahead-of-
 
 Significant SVs should be investigated to understand the causes and to implement corrective and preventive actions. \
 Analysis of the earned value schedule metrics should be undertaken in conjunction with analyzing the network schedule, which remains the primary source of time-based information. \
-The critical path impact of negative $EV$ schedule variances should be analyzed in conjunction with the network schedule. \ 
+The critical path impact of negative $EV$ schedule variances should be analyzed in conjunction with the network schedule. 
+
 The predictive utility of the $SV$ will be lost in the final third of the project. 
 
 As the project or programme gets closer to completion, the $SV$ of the project or programme moves closer to zero, otherwise known as reversion to zero.
 
 ### Earned Schedule
-Earned Schedule (ES) is an extension of EVM.
+**Earned Schedule (ES)** is an extension of EVM.
  
 ES calculates schedule metrics and indicators on the time axis rather than on the cost axis traditionally utilized by the EVM schedule metrics.
 
@@ -170,3 +196,9 @@ Analysis of the ES metrics should be undertaken in conjunction with an analysis 
 |![Figure 2](../images/FigEVM-2.drawio.png)
 |:--:|
 |Figure 2 — Cost, Schedule, and Earned Schedule Variances|
+
+### Summary
+
+<table><thead><tr><th></th><th></th><th colspan="3" style="text-align:center">SPI</th></tr></thead>
+<tbody><tr><td></td><td></td><td style="text-align:center">&gt;1</td><td style="text-align:center">=1</td><td style="text-align:center">&lt;1</td></tr>
+<tr><td rowspan="3">CPI</td><td>&gt;1</td><td>Under budget<br>Ahead of schedule</td><td>Under budget<br>On schedule</td><td>Under budget<br>Behind schedule</td></tr><tr><td>=1</td><td>On budget<br>Ahead of schedule</td><td>On budget<br>On schedule</td><td>On budget<br>Behind schedule</td></tr><tr><td>&lt;1</td><td>Over budget<br>Ahead of schedule</td><td>Over budget<br>On schedule</td><td>Over budget<br>Behind schedule</td></tr></tbody></table>

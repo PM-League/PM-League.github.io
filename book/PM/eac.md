@@ -31,12 +31,9 @@ For long-term activities, cost and duration distributions can be fit on the past
 ### Analytical Approach
 The project-level analytical approach consists of the EVM methodology applied to the accrued project $PV$, $EV$, and $AC$.
 
-If cost and schedule overruns are considered to be recoverable, $$cEAC{(t)} = BAC$$ and $$sEAC{(t)} = PD.$$ 
+If cost and schedule overruns are considered to be recoverable, $cEAC{(t)} = BAC$ and $sEAC{(t)} = PD$. 
 
-Otherwise, the physical formulation for the EAC is 
-$$xEAC{(t)} = \text{Actual} + xETC{(t)}$$
-where
-$$xETC{(t)} = [\text{Planned} - \text{Earned{(t)}}]/xPF{(t)}.$$ 
+Otherwise, the physical formulation for the EAC is $xEAC{(t)} = \text{Actual} + xETC{(t)}$ where $xETC{(t)} = [\text{Planned} - \text{Earned{(t)}}]/xPF{(t)}$.
 If cost, $$x = c \rightarrow xPF = cPF \rightarrow cEAC{(t)} = AC{(t)} + [BAC - EV{(t)}]/cPF{(t)}.$$ \
 If schedule, $$x = s \rightarrow xPF = sPF \rightarrow sEAC{(t)} = t + [PD - ES{(t)}]/sPF{(t)}.$$ \
 $cPF{(t)}$ and $sPF{(t)}$ both depend on the assumptions made, as follows.

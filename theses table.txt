@@ -1,0 +1,113 @@
+          <tbody class="u-table-alt-palette-1-light-3 u-table-body">
+            <tr style="height: 26px;">
+              <td class="u-table-cell"> Francesco Pelaracci</td>
+              <td class="u-table-cell u-table-cell-5">
+                <a class="u-btn u-button-link u-button-style u-none u-text-custom-color-1 u-btn-1"
+                  href="https://webthesis.biblio.polito.it/23031/" target="_blank">Analysis of the state of Project
+                  Portfolio Risk Management with considerations of KPI incorporation for monitoring</a>
+              </td>
+              <td class="u-align-center u-table-cell">2022</td>
+            </tr>
+            <tr style="height: 26px;">
+              <td class="u-table-cell">Leonardo Frale</td>
+              <td class="u-table-cell">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2"
+                  href="https://webthesis.biblio.polito.it/22898/" target="_blank">Risk analysis of a car-sharing
+                  project of an electric microcar through the application of PM best practices and preliminary failure
+                  analysis.</a>
+              </td>
+              <td class="u-align-center u-table-cell">2022</td>
+            </tr>
+            <tr style="height: 26px;">
+              <td class="u-table-cell">Davide Scarambone</td>
+              <td class="u-table-cell">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2"
+                  href="https://webthesis.biblio.polito.it/22907/" target="_blank">Agile project monitoring for progress
+                  tracking from the client's perspective: case studies.</a>
+              </td>
+              <td class="u-align-center u-table-cell">2022</td>
+            </tr>
+            <tr style="height: 26px;">
+              <td class="u-table-cell">Emanuele Deanesi</td>
+              <td class="u-table-cell">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2"
+                  href="https://webthesis.biblio.polito.it/22547/" target="_blank">Indicators and performance indices
+                  identification to Earned Value Management (EVM) methodology extension to increase accuracy and
+                  stability of project costs estimates at completion.</a>
+              </td>
+              <td class="u-align-center u-table-cell">2022</td>
+            </tr>
+            <tr style="height: 26px;">
+              <td class="u-table-cell">Tommaso Scarrone</td>
+              <td class="u-table-cell">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2"
+                  href="https://webthesis.biblio.polito.it/21369/" target="_blank">Review of organizational program
+                  management maturity and best practices in a large business information system deployment.</a>
+              </td>
+              <td class="u-align-center u-table-cell">2021</td>
+            </tr>
+            <tr style="height: 26px;">
+              <td class="u-table-cell">Francesco Caruso</td>
+              <td class="u-table-cell">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2"
+                  href="https://webthesis.biblio.polito.it/21357/" target="_blank">Adopting Agile Portfolio Management To Ensure Firm Success In Changing Times Sea Vision Srl Use Case.</a>
+              </td>
+              <td class="u-align-center u-table-cell">2021</td>
+            </tr>
+            <tr style="height: 26px;">
+              <td class="u-table-cell">Salvatore Pace</td>
+              <td class="u-table-cell">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2"
+                  href="https://webthesis.biblio.polito.it/18429/" target="_blank">Machine Learning for Project Management.</a>
+              </td>
+              <td class="u-align-center u-table-cell">2021</td>
+            </tr>
+            <tr style="height: 26px;">
+              <td class="u-table-cell">Davide Nobile</td>
+              <td class="u-table-cell">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2"
+                  href="https://webthesis.biblio.polito.it/18443/" target="_blank">Defining new Risk Management Indicators aimed to sustain profitability and improve predictability of an EPC Projects Portfolio : the COMAU S.p.A case.</a>
+              </td>
+              <td class="u-align-center u-table-cell">2021</td>
+            </tr>
+            <tr style="height: 26px;">
+              <td class="u-table-cell">Khaled Maher Abdalla Mohamed</td>
+              <td class="u-table-cell">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2"
+                  href="https://webthesis.biblio.polito.it/18431/" target="_blank">Applications of Artificial Intelligence in Project Management.</a>
+              </td>
+              <td class="u-align-center u-table-cell">2021</td>
+            </tr>
+            <tr style="height: 26px;">
+              <td class="u-table-cell">Giacomo Todeschini</td>
+              <td class="u-table-cell">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2"
+                  href="https://webthesis.biblio.polito.it/16499/" target="_blank">Study of a model for the integration of risk management in the EAC calculation: literature analysis and implementation guidelines.</a>
+              </td>
+              <td class="u-align-center u-table-cell">2020</td>
+            </tr>
+            <tr style="height: 26px;">
+              <td class="u-table-cell">Antonino Trapani</td>
+              <td class="u-table-cell">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2"
+                  href="https://webthesis.biblio.polito.it/16500/" target="_blank">Project risk management frameworks analysis and contingency evaluation criteria.</a>
+              </td>
+              <td class="u-align-center u-table-cell">2020</td>
+            </tr>
+            <tr style="height: 26px;">
+              <td class="u-table-cell">Mohamad Usama Kunnathur</td>
+              <td class="u-table-cell">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2"
+                  href="https://webthesis.biblio.polito.it/14702/" target="_blank">Applying Artificial Intelligence techniques in Project Management.</a>
+              </td>
+              <td class="u-align-center u-table-cell">2020</td>
+            </tr>
+            <tr style="height: 26px;">
+              <td class="u-table-cell">Niccolò Revelli</td>
+              <td class="u-table-cell">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2"
+                  href="https://webthesis.biblio.polito.it/14710/" target="_blank">Analysis of descriptors of IT projects aimed at optimizing the processes of estimation at completion based on machine learning algorithms.</a>
+              </td>
+              <td class="u-align-center u-table-cell">2020</td>
+            </tr>
+          </tbody>

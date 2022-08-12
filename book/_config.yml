@@ -35,7 +35,7 @@ bibtex_bibfiles:
 
 # HTML-specific settings
 html:
-  favicon: 'favicon.png'  
+  favicon: 'favicon.png'
   use_issues_button: true
   use_repository_button: true
 

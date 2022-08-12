@@ -526,32 +526,32 @@ For long-term activities, cost and duration distributions can be fit on the past
 <h3>Analytical Approach<a class="headerlink" href="#analytical-approach" title="Permalink to this headline">#</a></h3>
 <p>The project-level analytical approach consists of the EVM methodology applied to the accrued project <span class="math notranslate nohighlight">\(PV\)</span>, <span class="math notranslate nohighlight">\(EV\)</span>, and <span class="math notranslate nohighlight">\(AC\)</span>.</p>
 <p>If cost and schedule overruns are considered to be recoverable,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9a33c162-56cc-4134-a722-e1215aebea23">
-<span class="eqno">(1)<a class="headerlink" href="#equation-9a33c162-56cc-4134-a722-e1215aebea23" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b1b097a9-e977-4f04-be29-d0ad7bf63fe8">
+<span class="eqno">(1)<a class="headerlink" href="#equation-b1b097a9-e977-4f04-be29-d0ad7bf63fe8" title="Permalink to this equation">#</a></span>\[\begin{equation}
 cEAC{(t)} = BAC
 \end{equation}\]</div>
 <p>and</p>
-<div class="amsmath math notranslate nohighlight" id="equation-33439222-cc73-4ca7-8f59-0f07c678a2fb">
-<span class="eqno">(2)<a class="headerlink" href="#equation-33439222-cc73-4ca7-8f59-0f07c678a2fb" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-6916b543-8e50-46f1-a8bf-b77b0218e4a5">
+<span class="eqno">(2)<a class="headerlink" href="#equation-6916b543-8e50-46f1-a8bf-b77b0218e4a5" title="Permalink to this equation">#</a></span>\[\begin{equation}
 sEAC{(t)} = PD
 \end{equation}\]</div>
 <p>Otherwise, the physical formulation for the EAC is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-24f3d9b5-2872-40fe-b6ef-de5dda8e6dd0">
-<span class="eqno">(3)<a class="headerlink" href="#equation-24f3d9b5-2872-40fe-b6ef-de5dda8e6dd0" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-114f0a20-c4fb-4f56-be15-9848b6043944">
+<span class="eqno">(3)<a class="headerlink" href="#equation-114f0a20-c4fb-4f56-be15-9848b6043944" title="Permalink to this equation">#</a></span>\[\begin{equation}
 xEAC{(t)} = \text{Actual} + xETC{(t)}
 \end{equation}\]</div>
 <p>where</p>
-<div class="amsmath math notranslate nohighlight" id="equation-6082d693-4df0-4b07-a301-40747ebc8b8e">
-<span class="eqno">(4)<a class="headerlink" href="#equation-6082d693-4df0-4b07-a301-40747ebc8b8e" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-838d318c-3c0d-4fef-926a-12130f6d63ed">
+<span class="eqno">(4)<a class="headerlink" href="#equation-838d318c-3c0d-4fef-926a-12130f6d63ed" title="Permalink to this equation">#</a></span>\[\begin{equation}
 xETC{(t)} = [\text{Planned} - \text{Earned{(t)}}]/xPF{(t)}
 \end{equation}\]</div>
 <p>If cost,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-73057c41-48e0-4f06-9631-ad8452ab6d97">
-<span class="eqno">(5)<a class="headerlink" href="#equation-73057c41-48e0-4f06-9631-ad8452ab6d97" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-fb12cc56-7bcb-43c3-bafd-a5f5709df1e3">
+<span class="eqno">(5)<a class="headerlink" href="#equation-fb12cc56-7bcb-43c3-bafd-a5f5709df1e3" title="Permalink to this equation">#</a></span>\[\begin{equation}
 x = c \rightarrow xPF = cPF \rightarrow cEAC{(t)} = AC{(t)} + [BAC - EV{(t)}]/cPF{(t)}.\end{equation}\]</div>
 <p>If schedule,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ad2c92bd-93e3-447b-9783-3381bee13d6d">
-<span class="eqno">(6)<a class="headerlink" href="#equation-ad2c92bd-93e3-447b-9783-3381bee13d6d" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c0f6e22c-66ac-4a49-82b6-ea7eebeaf284">
+<span class="eqno">(6)<a class="headerlink" href="#equation-c0f6e22c-66ac-4a49-82b6-ea7eebeaf284" title="Permalink to this equation">#</a></span>\[\begin{equation}
 x = s \rightarrow xPF = sPF \rightarrow sEAC{(t)} = t + [PD - ES{(t)}]/sPF{(t)}
 \end{equation}\]</div>
 <p><span class="math notranslate nohighlight">\(cPF{(t)}\)</span> and <span class="math notranslate nohighlight">\(sPF{(t)}\)</span> both depend on the assumptions made, as follows.</p>
@@ -595,8 +595,8 @@ Examples include, but are not limited to:</p>
 <h3>Statistical Approach<a class="headerlink" href="#statistical-approach" title="Permalink to this headline">#</a></h3>
 <p>The project-level statistical approach proposed is based on regression modeling. <br />
 A regression model can be represented through the following equation,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-db5ba0d0-b011-4eeb-b5f0-5aadd3d59e23">
-<span class="eqno">(7)<a class="headerlink" href="#equation-db5ba0d0-b011-4eeb-b5f0-5aadd3d59e23" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-12fb2018-23a1-45f3-bc51-e2058e82da67">
+<span class="eqno">(7)<a class="headerlink" href="#equation-12fb2018-23a1-45f3-bc51-e2058e82da67" title="Permalink to this equation">#</a></span>\[\begin{equation}
 y = f(X) + \varepsilon,
 \end{equation}\]</div>
 <p>where <span class="math notranslate nohighlight">\(y\)</span> is the dependent variable, <span class="math notranslate nohighlight">\(X\)</span> is the matrix of explanatory variables, and <span class="math notranslate nohighlight">\(\varepsilon\)</span> is the random additive error. <br />
@@ -607,14 +607,14 @@ Regression analysis aims to evaluate the function <span class="math notranslate 
 <ol class="simple">
 <li><p>The dependent variable is set to the EAC,</p></li>
 </ol>
-<div class="amsmath math notranslate nohighlight" id="equation-e20d6302-9a43-4d37-ac5a-675f1cae9a43">
-<span class="eqno">(8)<a class="headerlink" href="#equation-e20d6302-9a43-4d37-ac5a-675f1cae9a43" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8f45918d-ddb8-4900-a70f-d5adbb651cb2">
+<span class="eqno">(8)<a class="headerlink" href="#equation-8f45918d-ddb8-4900-a70f-d5adbb651cb2" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \widehat{y} = \widehat{xEAC}{(t)}
 \end{equation}\]</div>
 <p>It is difficult for regression models to understand how different combinations of the <span class="math notranslate nohighlight">\(X\)</span> variables lead to the same value of <span class="math notranslate nohighlight">\(xEAC\)</span>, since it’s unique for each project in the dataset. <br />
 2. The dependent variable is set to the PF that would provide, at time <span class="math notranslate nohighlight">\(t\)</span>, the exact EAC,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0a53cfc4-15e6-410b-b361-cb99eff47ac6">
-<span class="eqno">(9)<a class="headerlink" href="#equation-0a53cfc4-15e6-410b-b361-cb99eff47ac6" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b30a744c-9ab2-4b4c-b58d-78738599de08">
+<span class="eqno">(9)<a class="headerlink" href="#equation-b30a744c-9ab2-4b4c-b58d-78738599de08" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \widehat{y} = \widehat{xPF}{(t)} : xEAC{(t)} = \text{Actual} + [\text{Planned} - \text{Earned}]/\widehat{xPF}{(t)}
 \end{equation}\]</div>
 <p>Setting the problem in such a way allows for evaluating a different <span class="math notranslate nohighlight">\(xPF{(t)}\)</span> for each time <span class="math notranslate nohighlight">\(t\)</span>, which is the result of a combination of the project control metrics.</p>
@@ -627,23 +627,23 @@ Regression analysis aims to evaluate the function <span class="math notranslate 
 <h3>Analytical Approach<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 <p>The activity-level analytical approach consists of the EVM methodology applied to the accrued activity <span class="math notranslate nohighlight">\(PV\)</span>, <span class="math notranslate nohighlight">\(EV\)</span>, and <span class="math notranslate nohighlight">\(AC\)</span>. \</p>
 <p>To compute the cEAC, one must sum the individual cEACs, as follows:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bdd96ea1-a311-4959-9ee2-8aba5952c368">
-<span class="eqno">(10)<a class="headerlink" href="#equation-bdd96ea1-a311-4959-9ee2-8aba5952c368" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c8dfa936-32d1-4a51-a30a-88282f5e67b3">
+<span class="eqno">(10)<a class="headerlink" href="#equation-c8dfa936-32d1-4a51-a30a-88282f5e67b3" title="Permalink to this equation">#</a></span>\[\begin{equation}
 cEAC{(t)} = \sum_{i=1}^{I} cEAC{(t)}_i
 \end{equation}\]</div>
 <p>where</p>
-<div class="amsmath math notranslate nohighlight" id="equation-07ef468f-ec14-4b8e-af1d-398813b68cfd">
-<span class="eqno">(11)<a class="headerlink" href="#equation-07ef468f-ec14-4b8e-af1d-398813b68cfd" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-98e2755b-9d22-4ae8-a00e-82b8117ce157">
+<span class="eqno">(11)<a class="headerlink" href="#equation-98e2755b-9d22-4ae8-a00e-82b8117ce157" title="Permalink to this equation">#</a></span>\[\begin{equation}
 cEAC{(t)}_i = AC{(t)}_i + [BAC_i - EV{(t)}_i]/cPF{(t)}_i \quad \forall i \in I
 \end{equation}\]</div>
 <p>To compute the sEAC, one must sum the individual sEACs of the activities belonging to the different paths and evaluate the new critical path, as follows:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e01997e9-70f1-47ab-b431-10c01bd5f948">
-<span class="eqno">(12)<a class="headerlink" href="#equation-e01997e9-70f1-47ab-b431-10c01bd5f948" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-981a0589-b0fa-47be-b1dc-4b4020c089e7">
+<span class="eqno">(12)<a class="headerlink" href="#equation-981a0589-b0fa-47be-b1dc-4b4020c089e7" title="Permalink to this equation">#</a></span>\[\begin{equation}
 sEAC{(t)} = \text{max}_i \begin{Bmatrix} sEAC{(t)}_i : i = 1..I\end{Bmatrix} 
 \end{equation}\]</div>
 <p>where</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c4c23e41-b27d-432a-bcd4-d5f583351f81">
-<span class="eqno">(13)<a class="headerlink" href="#equation-c4c23e41-b27d-432a-bcd4-d5f583351f81" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-277f1588-7e6b-45d3-955e-c504ca84d1c0">
+<span class="eqno">(13)<a class="headerlink" href="#equation-277f1588-7e6b-45d3-955e-c504ca84d1c0" title="Permalink to this equation">#</a></span>\[\begin{equation}
 sEAC{(t)}_i = t + [PD_i - ES{(t)}_i]/sPF{(t)}_i \quad \forall i \in I.
 \end{equation}\]</div>
 </section>

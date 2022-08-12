@@ -1,4 +1,5 @@
 # PM Concepts
+## Overview
 This page provides
 * the key concepts applicable to most projects, and
 * the environments in which projects are performed. 
@@ -6,7 +7,7 @@ This page provides
 Figure 1 shows how PM concepts relate to each other;
 * the _organizational strategy_ identifies _opportunities_;
 * _opportunities_ are evaluated and should be documented;
-* selected opportunities are further developed in a _business case_ or other similar document and can result in one or more projects that provide _deliverables_;
+* selected _opportunities_ are further developed in a _business case_ or other similar document and can result in one or more projects that provide _deliverables_;
 * those _deliverables_ can be used to realize _benefits_,
 * the _benefits_ can contribute to realizing and further developing the _organizational strategy_.
 
@@ -15,8 +16,9 @@ Figure 1 shows how PM concepts relate to each other;
 |Figure 1 — Example of value creation framework|
 
 ## Project
-A project consists of a unique set of processes consisting of coordinated and controlled activities with start and end dates to achieve project objectives. \
-Achievement of the project objectives requires providing deliverables conforming to specific requirements. \
+A **project** consists of a unique set of processes comprising coordinated and controlled activities with start and end dates to achieve project objectives. \
+Achievement of the project objectives requires providing deliverables conforming to specific requirements.
+
 A project may be subject to multiple constraints.
 
 Although many projects may be similar, each project is unique. \
@@ -30,10 +32,11 @@ Project differences may occur in the following:
 Every project has a definite start and end and is usually divided into phases.
 
 ## Project Management
-**Project management (PM)** is the application of methods, tools, techniques, and competencies to a project. \
-PM includes the integration of the various phases of the project life cycle.
+**Project management (PM)** 
+* is the application of methods, tools, techniques, and competencies to a project;
+* includes the integration of the various phases of the project life cycle;
+* is performed through processes.
 
-PM is performed through processes. \
 The processes selected for performing a project should be aligned in a systemic view. 
 
 Each phase of the project life cycle should have specific deliverables. \
@@ -42,32 +45,35 @@ These deliverables should be regularly reviewed during the project to meet the r
 ## Organizational Strategy and Projects
 ### Organizational Strategy
 Organizations generally establish strategies based on their mission, vision, policies, and factors outside the organizational boundary. \
-Projects are often the means to accomplish strategic goals. \
+Projects are often the means to accomplish _strategic goals_. \
 An example of a value creation framework is shown in Figure 2.
 |![Figure 2](../images/Fig1-2.drawio.png)
 |:--:|
 |Figure 2 — Example of value creation framework|
 
-Strategic goals may guide the identification and development of opportunities. \
-Opportunities selection includes consideration of various factors, such as how benefits can be realized and risks can be managed.
+_Strategic goals_ may guide the identification and development of _opportunities_. \
+_Opportunities_ selection includes consideration of various factors, such as how benefits can be realized and risks can be managed.
 
-The project aims to provide measurable benefits that contribute to realizing the selected opportunities. \
-The project objective contributes to the project goal by creating the required deliverables. 
+The project aims to provide measurable benefits that contribute to realizing the selected opportunities.
 
-Project goals are achieved when the benefits are realized. \
-Goals might not be achieved until a time after the objectives are achieved.
+The project objective contributes to the project goal by creating the required deliverables. \
+Project goals 
+* are achieved when the benefits are realized;
+* might not be achieved until a time after the objectives are achieved.
 
 ### Opportunity Evaluation and Project Initiation
 To support informed decision-making by responsible management, opportunities may be evaluated to identify feasible projects that could transform some or all of these opportunities into realized benefits. \
 These opportunities 
-* may address, for example, a new market demand, a current organizational need, or a new legal requirement, and
+* may address, for example, a new market demand, a current organizational need, or a new legal requirement; and
 * are often evaluated through a set of activities that provide formal authorization to start a new project.
 
-The organization should identify a project sponsor responsible for project goals and benefits. \
-The goals and benefits may result in a justification for the investment in the project (e.g., in the form of a business case), which may contribute to prioritizing all opportunities. \
-The purpose of the justification is usually to obtain organizational commitment and approval for investment in the selected projects.
+The organization should identify a project sponsor responsible for project _goals and benefits_. \
+The _goals and benefits_ may result in a _justification_ for the investment in the project (e.g., in the form of a business case), which may contribute to prioritizing all opportunities. \
+The purpose of the _justification_ is usually to obtain organizational commitment and approval for investment in the selected projects.
 
-The evaluation process may include multiple criteria, including financial investment appraisal techniques and qualitative criteria, such as strategic alignment, social impact, and environmental impact. \
+The evaluation process may include multiple criteria, including 
+* financial investment appraisal techniques, and 
+* qualitative criteria (e.g., strategic alignment, social impact, and environmental impact). 
 Criteria may differ from one project to another.
 
 ### Benefits Realization
@@ -76,7 +82,8 @@ The project manager should consider the benefits and their realization as they i
 
 ## Project Environment
 ### General
-The project environment may impact project performance and success. \
+The project environment may impact project performance and success.
+
 The project team should consider the following:
 * factors outside the organizational boundary, such as socio-economic, geographical, political, regulatory, technological, and ecological; 
 * factors inside the organizational boundary include strategy, technology, project management maturity, resource availability, organizational culture, and structure.
@@ -92,7 +99,10 @@ Although these factors are often beyond the project manager's control, they shou
 ### Factors Inside the Organizational Boundary
 #### General
 A project usually exists inside a larger organization encompassing other activities. \
-In such cases, relationships exist between the project and its environment, business planning, and operations. 
+In such cases, relationships exist between 
+* the project and its environment,
+* business planning, and 
+* operations. 
 
 Pre-project and post-project activities may include business case development, feasibility studies, and transition to operations. \
 Projects may be organized within programmes and project portfolios. 

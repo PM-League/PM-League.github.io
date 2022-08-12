@@ -31,11 +31,12 @@ For long-term activities, cost and duration distributions can be fit on the past
 ### Analytical Approach
 The project-level analytical approach consists of the EVM methodology applied to the accrued project $PV$, $EV$, and $AC$.
 
-If cost and schedule overruns are considered to be recoverable, $cEAC{(t)} = BAC$ and $sEAC{(t)} = PD$. \
-Otherwise, the physical formulation for the EAC is \
-$$xEAC{(t)} = \text{Actual} + xETC{(t)}$$ \
-where \
-$$xETC{(t)} = [\text{Planned} - \text{Earned{(t)}}]/xPF{(t)}.$$ \
+If cost and schedule overruns are considered to be recoverable, $$cEAC{(t)} = BAC$$ and $$sEAC{(t)} = PD.$$ 
+
+Otherwise, the physical formulation for the EAC is 
+$$xEAC{(t)} = \text{Actual} + xETC{(t)}$$
+where
+$$xETC{(t)} = [\text{Planned} - \text{Earned{(t)}}]/xPF{(t)}.$$ 
 If cost, $$x = c \rightarrow xPF = cPF \rightarrow cEAC{(t)} = AC{(t)} + [BAC - EV{(t)}]/cPF{(t)}.$$ \
 If schedule, $$x = s \rightarrow xPF = sPF \rightarrow sEAC{(t)} = t + [PD - ES{(t)}]/sPF{(t)}.$$ \
 $cPF{(t)}$ and $sPF{(t)}$ both depend on the assumptions made, as follows.
@@ -85,7 +86,7 @@ To compute the sEAC, one must sum the individual sEACs of the activities belongi
 $$sEAC{(t)} = \text{max}_i \begin{Bmatrix} sEAC{(t)}_i : i = 1..I\end{Bmatrix} \quad \text{where} \quad sEAC{(t)}_i = t + [PD_i - ES{(t)}_i]/sPF{(t)}_i \quad \forall i \in I.$$
 
 ### Statistical Approach
-The activity-level statistical approach is based on the assumed distributions of the activities' cost and duration probability density functions (pdf). \
+The activity-level statistical approach is based on the assumed distributions of the activities' cost and duration probability density functions (PDF). \
 The Bayesian inference can be called in case such distributions are hypothesized a priori without historical data to be fitted to. \
 Otherwise, regular Monte Carlo simulations can be performed.
 
@@ -94,20 +95,20 @@ The Monte Carlo simulation applied to the project cost and duration evaluation i
 |:--:|
 |Figure 2 — (Bayesian) simulation approach flowchart|
 
-The cost/duration pdf for each activity must be assumed or inferred from the data. \
+The cost/duration PDF for each activity must be assumed or inferred from the data. \
 An arbitrary number of simulations is then conducted. \
 Within each simulation, all activities' cost/duration are randomized. \
 The total project cost is the sum of all the (remaining) activities costs. \
 Instead, the total project duration is the maximum duration among all the different paths of activities revised durations. \
 The simulation stopping criterion is given by the convergence of the standard deviation of the resulting project cost/duration. \
-Plotting the histogram of the resulting project cost/duration allows for the identification of its pdf.
+Plotting the histogram of the resulting project cost/duration allows for the identification of its PDF.
 
 ### Long-Term Statistical Approach
 The activity-level long-term statistical approach consists of the same (Bayesian) Monte Carlo simulation framework. \
-The only difference is in the pdf of the activities cost/duration, which is not hypothesized a priori but rather inferred from the historical data.
+The only difference is in the PDF of the activities cost/duration, which is not hypothesized a priori but rather inferred from the historical data.
 
 ## Activity-level Short-Term Resource Analysis
-A bottom-up approach is suggested when the forecast of the project cost/duration involves activities that are currently or will be carried out shortly, rather than projecting their outcome through analytical or statistical means. \
+A bottom-up approach is suggested when the forecast of the project cost/duration involves activities that are currently or will be carried out shortly, rather than projecting their outcome through analytical or statistical means.
 
 |![Figure 3](../images/FigEAC-3.drawio.png)
 |:--:|

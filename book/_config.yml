@@ -1,5 +1,6 @@
 # Book settings
-title: <font face="Roboto"; font-weight=700; font color=253a4b>PM LEAGUE</font> <font face="Roboto"; font-weight=700; font color=507da0>WIKI</font>
+title: PM LEAGUE WIKI 
+# <font face="Roboto"; font-weight=700; font color=253a4b>PM LEAGUE</font> <font face="Roboto"; font-weight=700; font color=507da0>WIKI</font>
 author: Project Management League
 copyright: '2022'
 logo: logo.png

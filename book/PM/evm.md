@@ -98,7 +98,7 @@ The information acquired by using the earned value performance measurements shou
 * completion of the deliverables, and
 * progress towards delivery of a project or programme.
 These measurements, combined with the agreed-upon variance threshold, should be used to determine the cost and schedule variances and cost and schedule performance indices. \
-The information should also be used to forecast the future performance of the project or programme. \
+The information should also be used to forecast the future performance of the project or programme.
 
 ## EVM Process Steps
 ### General

@@ -1,7 +1,7 @@
 # Putnam Resource Allocation Model
 ## The Norden-Rayleigh Curve
 The curve is modeled by differential equation
-$$m{(t)} = \frac{dy}{dt} = 2kate^{-at^2}$$
+$$m{(t)} = \frac{dy}{dt} = 2Kate^{-at^2}$$
 where
 |||
 |-|-|
@@ -18,14 +18,14 @@ $$y(0) = 0$$
 and
 $$y(\infty) = K$$
 then
-$$\frac{d^2y}{dt^2} = 2kae^{-at^2}\left[1-2at^2\right]=0$$
+$$\frac{d^2y}{dt^2} = 2Kae^{-at^2}\left[1-2at^2\right]=0$$
 $$t_d^2 = \frac{1}{2a}$$
 where
 $t_d$ is the time at which the maximum effort rate occurs.
 
 Replacing $t_d$ in Eq.2 leads to
-$$E=y{(t)}=k\left(1-e^{\frac{t_d^2}{2t_d^2}}\right) = K\left(1-e^{-.5}\right)$$
-$$E=y(t)=.3935k$$
+$$E=y{(t)}=K\left(1-e^{\frac{t_d^2}{2t_d^2}}\right) = K\left(1-e^{-.5}\right)$$
+$$E=y(t)=.3935K$$
 $$a=\frac{1}{2t_d^2}$$
 
 Replacing $a$ with $\frac{1}{2t_d^2}$ in the N/R model, we obtain
@@ -43,7 +43,7 @@ where
 ## Difficulty Metric
 Slope of manpower distribution curve at $t=0$ has some useful properties.
 
-$$m'{(t)} = \frac{d^2y}{dt^2} = 2kae^{-at^2}\left(1-2at^2\right)$$
+$$m'{(t)} = \frac{d^2y}{dt^2} = 2Kae^{-at^2}\left(1-2at^2\right)$$
 
 For $t=0$, 
 $$m'{(0)} = 2Ka = \frac{2K}{2t_d^2} = \frac{K}{t_d^2}$$

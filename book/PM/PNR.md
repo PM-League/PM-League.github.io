@@ -1,7 +1,8 @@
 # Putnam Resource Allocation Model
 ## The Norden-Rayleigh Curve
 The curve is modeled by differential equation
-$$m{(t)} = \frac{dy}{dt} = 2Kate^{-at^2}$$
+\begin{equation}
+m{(t)} = \frac{dy}{dt} = 2Kate^{-at^2}\end{equation}
 where
 |||
 |-|-|
@@ -11,28 +12,28 @@ where
 |$t$|elapsed time|
 
 Integrating $m{(t)}$ on $[0,\infty]$, we obtain
-$$y{(t)} = K\left[1-e^{-at^2}\right]$$
+\begin{equation}y{(t)} = K\left[1-e^{-at^2}\right]\end{equation}
 
 If 
-$$y(0) = 0$$
+\begin{equation}y(0) = 0\end{equation}
 and
-$$y(\infty) = K$$
+\begin{equation}y(\infty) = K\end{equation}
 then
-$$\frac{d^2y}{dt^2} = 2Kae^{-at^2}\left[1-2at^2\right]=0$$
-$$t_d^2 = \frac{1}{2a}$$
+\begin{equation}\frac{d^2y}{dt^2} = 2Kae^{-at^2}\left[1-2at^2\right]=0\end{equation}
+\begin{equation}t_d^2 = \frac{1}{2a}\end{equation}
 where
 $t_d$ is the time at which the maximum effort rate occurs.
 
 Replacing $t_d$ in Eq.2 leads to
-$$E=y{(t)}=K\left(1-e^{\frac{t_d^2}{2t_d^2}}\right) = K\left(1-e^{-.5}\right)$$
-$$E=y(t)=.3935K$$
-$$a=\frac{1}{2t_d^2}$$
+\begin{equation}E=y{(t)}=K\left(1-e^{\frac{t_d^2}{2t_d^2}}\right) = K\left(1-e^{-.5}\right)\end{equation}
+\begin{equation}E=y(t)=.3935K\end{equation}
+\begin{equation}a=\frac{1}{2t_d^2}\end{equation}
 
 Replacing $a$ with $\frac{1}{2t_d^2}$ in the N/R model, we obtain
-$$m(t)=\frac{2K}{2t_d^2}te^{-\frac{t^2}{2t_d^2}} = \frac{K}{t_d^2}te^{-\frac{t^2}{2t_d^2}}$$
+\begin{equation}m(t)=\frac{2K}{2t_d^2}te^{-\frac{t^2}{2t_d^2}} = \frac{K}{t_d^2}te^{-\frac{t^2}{2t_d^2}}\end{equation}
 
 The peak manning is denoted by $m_0$ and is obtained
-$$m(t_d) = m_0 = \frac{K}{t_d \sqrt{e}}$$
+\begin{equation}m(t_d) = m_0 = \frac{K}{t_d \sqrt{e}}\end{equation}
 where
 |||
 |-|-|
@@ -43,11 +44,11 @@ where
 ## Difficulty Metric
 Slope of manpower distribution curve at $t=0$ has some useful properties.
 
-$$m'{(t)} = \frac{d^2y}{dt^2} = 2Kae^{-at^2}\left(1-2at^2\right)$$
+\begin{equation}m'{(t)} = \frac{d^2y}{dt^2} = 2Kae^{-at^2}\left(1-2at^2\right)\end{equation}
 
 For $t=0$, 
-$$m'{(0)} = 2Ka = \frac{2K}{2t_d^2} = \frac{K}{t_d^2}$$
+\begin{equation}m'{(0)} = 2Ka = \frac{2K}{2t_d^2} = \frac{K}{t_d^2}\end{equation}
 
 The ratio 
-$$D = \frac{K}{t_d^2}$$
+\begin{equation}D = \frac{K}{t_d^2}\end{equation}
 is called difficulty metric $D$ (person/year) 

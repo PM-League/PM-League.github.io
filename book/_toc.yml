@@ -10,7 +10,7 @@ parts:
     - file: PM/eac
     - file: PM/ppm
     - file: PM/scrum
-    - file: PM/PNR
+    - file: PM/putnam
   - caption: System Dynamics
     chapters:
     - file: SD/sd-concepts

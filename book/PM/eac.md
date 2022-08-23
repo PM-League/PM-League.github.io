@@ -31,30 +31,44 @@ For long-term activities, cost and duration distributions can be fit on the past
 ### Analytical Approach
 The project-level analytical approach consists of the EVM methodology applied to the accrued project $PV$, $EV$, and $AC$.
 
-If cost and schedule overruns are considered to be recoverable, 
-\begin{equation}
+If cost and schedule overruns are considered to be recoverable,
+
+$$
 cEAC{(t)} = BAC
-\end{equation} 
+$$
+ 
 and 
-\begin{equation}
+
+$$
 sEAC{(t)} = PD
-\end{equation}. 
+$$
+. 
 
 Otherwise, the physical formulation for the EAC is 
-\begin{equation}
+
+$$
 xEAC{(t)} = \text{Actual} + xETC{(t)}
-\end{equation}
+$$
+
 where 
-\begin{equation}
+
+$$
 xETC{(t)} = [\text{Planned} - \text{Earned{(t)}}]/xPF{(t)}
-\end{equation}.
+$$
+
+
 If cost, 
-\begin{equation}
-x = c \rightarrow xPF = cPF \rightarrow cEAC{(t)} = AC{(t)} + [BAC - EV{(t)}]/cPF{(t)}.\end{equation}
+
+$$
+x = c \rightarrow xPF = cPF \rightarrow cEAC{(t)} = AC{(t)} + [BAC - EV{(t)}]/cPF{(t)}
+$$
+
 If schedule, 
-\begin{equation}
+
+$$
 x = s \rightarrow xPF = sPF \rightarrow sEAC{(t)} = t + [PD - ES{(t)}]/sPF{(t)}
-\end{equation}.
+$$
+
 $cPF{(t)}$ and $sPF{(t)}$ both depend on the assumptions made, as follows.
 
 |Formula|Assumption|
@@ -78,23 +92,29 @@ Examples include, but are not limited to:
 ### Statistical Approach
 The project-level statistical approach proposed is based on regression modeling. \
 A regression model can be represented through the following equation,
-\begin{equation}
+
+$$
 y = f(X) + \varepsilon,
-\end{equation}
+$$
+
 where $y$ is the dependent variable, $X$ is the matrix of explanatory variables, and $\varepsilon$ is the random additive error. \
 Regression analysis aims to evaluate the function $\widehat{f}$ that best approximates $f$.
 
 #### Methods
 Two alternative methods to evaluate the EACs are proposed.
 1. The dependent variable is set to the EAC,
-\begin{equation}
+
+$$
 \widehat{y} = \widehat{xEAC}{(t)}
-\end{equation}
+$$
+
 It is difficult for regression models to understand how different combinations of the $X$ variables lead to the same value of $xEAC$, since it's unique for each project in the dataset. \
 2. The dependent variable is set to the PF that would provide, at time $t$, the exact EAC,
-\begin{equation}
+
+$$
 \widehat{y} = \widehat{xPF}{(t)} : xEAC{(t)} = \text{Actual} + [\text{Planned} - \text{Earned}]/\widehat{xPF}{(t)}
-\end{equation}
+$$
+
 Setting the problem in such a way allows for evaluating a different $xPF{(t)}$ for each time $t$, which is the result of a combination of the project control metrics.
 
 ## Activity-level 
@@ -102,22 +122,30 @@ Setting the problem in such a way allows for evaluating a different $xPF{(t)}$ f
 The activity-level analytical approach consists of the EVM methodology applied to the accrued activity $PV$, $EV$, and $AC$. \
 
 To compute the cEAC, one must sum the individual cEACs, as follows:
-\begin{equation}
+
+$$
 cEAC{(t)} = \sum_{i=1}^{I} cEAC{(t)}_i
-\end{equation}
+$$
+
 where
-\begin{equation}
+
+$$
 cEAC{(t)}_i = AC{(t)}_i + [BAC_i - EV{(t)}_i]/cPF{(t)}_i \quad \forall i \in I
-\end{equation}.
+$$
+
 
 To compute the sEAC, one must sum the individual sEACs of the activities belonging to the different paths and evaluate the new critical path, as follows:
-\begin{equation}
+
+$$
 sEAC{(t)} = \text{max}_i \begin{Bmatrix} sEAC{(t)}_i : i = 1..I\end{Bmatrix} 
-\end{equation}
+
+$$
 where
-\begin{equation}
+
+$$
 sEAC{(t)}_i = t + [PD_i - ES{(t)}_i]/sPF{(t)}_i \quad \forall i \in I.
-\end{equation}
+$$
+
 
 ### Statistical Approach
 The activity-level statistical approach is based on the assumed distributions of the activities' cost and duration probability density functions (PDF). \

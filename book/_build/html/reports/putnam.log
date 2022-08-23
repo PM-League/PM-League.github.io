@@ -1,0 +1,45 @@
+Traceback (most recent call last):
+  File "C:\Users\filip\anaconda3\lib\site-packages\jupyter_cache\executors\utils.py", line 51, in single_nb_execution
+    executenb(
+  File "C:\Users\filip\anaconda3\lib\site-packages\nbclient\client.py", line 1112, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "C:\Users\filip\anaconda3\lib\site-packages\nbclient\util.py", line 74, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "C:\Users\filip\anaconda3\lib\site-packages\nbclient\util.py", line 53, in just_run
+    return loop.run_until_complete(coro)
+  File "C:\Users\filip\anaconda3\lib\asyncio\base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "C:\Users\filip\anaconda3\lib\site-packages\nbclient\client.py", line 553, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\filip\anaconda3\lib\site-packages\nbclient\client.py", line 857, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "C:\Users\filip\anaconda3\lib\site-packages\nbclient\client.py", line 760, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+df = pd.DataFrame()
+df['t'] = np.arange(0,12+1)
+df['dK(t)'] = [0, 12.9, 13.0, 23.0, 25.0, 25.0, 32.0, 36.7, 38.6, 39.3, 39.9, 40.5, 9.0]
+df['K(t)'] = df['dK(t)'].cumsum()
+fig, ax = plt.subplots(1, 1, constrained_layout=True, figsize=(8, 3), dpi=100)
+ax.scatter(df['t'], df['K(t)'])
+ax.set_xlim(left=0)
+ax.set_ylim(0, max(df['K(t)']))
+ax.set_xtitle('$m(t)$')
+plt.show()
+------------------
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mAttributeError[0m                            Traceback (most recent call last)
+Input [1;32mIn [1][0m, in [0;36m<cell line: 12>[1;34m()[0m
+[0;32m     10[0m ax[38;5;241m.[39mset_xlim(left[38;5;241m=[39m[38;5;241m0[39m)
+[0;32m     11[0m ax[38;5;241m.[39mset_ylim([38;5;241m0[39m, [38;5;28mmax[39m(df[[38;5;124m'[39m[38;5;124mK(t)[39m[38;5;124m'[39m]))
+[1;32m---> 12[0m [43max[49m[38;5;241;43m.[39;49m[43mset_xtitle[49m([38;5;124m'[39m[38;5;124m$m(t)$[39m[38;5;124m'[39m)
+[0;32m     13[0m plt[38;5;241m.[39mshow()
+
+[1;31mAttributeError[0m: 'AxesSubplot' object has no attribute 'set_xtitle'
+AttributeError: 'AxesSubplot' object has no attribute 'set_xtitle'
+

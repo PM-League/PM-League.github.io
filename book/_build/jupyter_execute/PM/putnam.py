@@ -133,7 +133,7 @@
 # S_s = C_k K^{1/3} t_d^{4/3}
 # $$
 # 
-# A constant number of source statements ($S_s = \text{const}$) implies $K t_d^2 = \text{const}$. \
+# A constant number of source statements ($S_s = \text{const}$) implies $K t_d^4 = \text{const}$. \
 # So, $K = \text{constant}/t_d^4$, or proportionally, development effort = constat/$t_d^4$, is the effort-development tradeoff law.
 # 
 # ### Effect of Constant Productivity

@@ -119,7 +119,7 @@ Setting the problem in such a way allows for evaluating a different $xPF{(t)}$ f
 
 ## Activity-level 
 ### Analytical Approach
-The activity-level analytical approach consists of the EVM methodology applied to the accrued activity $PV$, $EV$, and $AC$. \
+The activity-level analytical approach consists of the EVM methodology applied to the accrued activity $PV$, $EV$, and $AC$.
 
 To compute the cEAC, one must sum the individual cEACs, as follows:
 

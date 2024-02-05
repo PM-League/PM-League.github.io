@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" modified="2022-08-02T10:30:17.990Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="x0K70bWP6ex7M8l0Rz-H" version="20.2.2" type="github">
+  <diagram id="T_vSztlu7ZmhTQVyTiee" name="Page-1">
+    <mxGraphModel dx="460" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="N-fscGahfruygMx9irh_-21" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="100" y="90" width="240" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="N-fscGahfruygMx9irh_-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="N-fscGahfruygMx9irh_-1" target="N-fscGahfruygMx9irh_-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N-fscGahfruygMx9irh_-1" value="Scope, Context, Criteria" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="160" y="100" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N-fscGahfruygMx9irh_-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="N-fscGahfruygMx9irh_-2" target="N-fscGahfruygMx9irh_-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N-fscGahfruygMx9irh_-2" value="Risk Assessment" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="160" y="160" width="120" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="N-fscGahfruygMx9irh_-3" value="COMMUNICATION &amp;amp; CONSULTATION" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;fontStyle=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="-41.42" y="249.72" width="341.61" height="41.25" as="geometry" />
+        </mxCell>
+        <mxCell id="N-fscGahfruygMx9irh_-4" value="MONITORING &amp;amp; REVIEW" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;fontStyle=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="140.15" y="250" width="339.69" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N-fscGahfruygMx9irh_-5" value="Risk Treatment" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="160" y="400" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N-fscGahfruygMx9irh_-6" value="RECORDING &amp;amp; REPORTING" style="rounded=0;whiteSpace=wrap;html=1;rotation=0;fontStyle=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="110" y="450" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N-fscGahfruygMx9irh_-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="N-fscGahfruygMx9irh_-9" target="N-fscGahfruygMx9irh_-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N-fscGahfruygMx9irh_-9" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Risk Identification&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="170" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N-fscGahfruygMx9irh_-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="N-fscGahfruygMx9irh_-10" target="N-fscGahfruygMx9irh_-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N-fscGahfruygMx9irh_-10" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Risk Analysis&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="170" y="260" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N-fscGahfruygMx9irh_-11" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Risk Evaluation&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="170" y="320" width="100" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

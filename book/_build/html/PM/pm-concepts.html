@@ -1,0 +1,906 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PM Concepts &#8212; PM League Wiki</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'PM/pm-concepts';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PM Processes" href="pm-processes.html" />
+    <link rel="prev" title="Welcome PM League’s Wiki" href="../intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="PM League Wiki - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="PM League Wiki - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome PM League’s Wiki
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Project Management</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pm-processes.html">PM Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evm.html">Earned Value Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rm.html">Risk Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eac.html">Estimates at Completion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ppm.html">Project Portfolio Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="putnam.html">Putnam Model</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Agile Project Management</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../APM/scrum.html">Scrum</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">System Dynamics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../SD/sd-concepts.html">SD Concepts</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPM/pm-concepts.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/PM/pm-concepts.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>PM Concepts</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-management">Project Management</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organizational-strategy-and-projects">Organizational Strategy and Projects</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#organizational-strategy">Organizational Strategy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#opportunity-evaluation-and-project-initiation">Opportunity Evaluation and Project Initiation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits-realization">Benefits Realization</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-environment">Project Environment</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general">General</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-outside-the-organizational-boundary">Factors Outside the Organizational Boundary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-inside-the-organizational-boundary">Factors Inside the Organizational Boundary</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">General</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#programme-management">Programme Management</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#project-portfolio-management">Project Portfolio Management</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-governance">Project Governance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projects-and-operations">Projects and Operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stakeholders-and-project-organization">Stakeholders and Project Organization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#competencies-of-project-personnel">Competencies of Project Personnel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-life-cycle">Project Life Cycle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-constraints">Project Constraints</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relationship-between-pm-concepts-and-processes">Relationship between PM Concepts and Processes</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="pm-concepts">
+<h1>PM Concepts<a class="headerlink" href="#pm-concepts" title="Link to this heading">#</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
+<p>This page provides</p>
+<ul class="simple">
+<li><p>the key concepts applicable to most projects, and</p></li>
+<li><p>the environments in which projects are performed.</p></li>
+</ul>
+<p>Figure 1 shows how PM concepts relate to each other;</p>
+<ul class="simple">
+<li><p>the <em>organizational strategy</em> identifies <em>opportunities</em>;</p></li>
+<li><p><em>opportunities</em> are evaluated and should be documented;</p></li>
+<li><p>selected <em>opportunities</em> are further developed in a <em>business case</em> or other similar document and can result in one or more projects that provide <em>deliverables</em>;</p></li>
+<li><p>those <em>deliverables</em> can be used to realize <em>benefits</em>,</p></li>
+<li><p>the <em>benefits</em> can contribute to realizing and further developing the <em>organizational strategy</em>.</p></li>
+</ul>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure 1" src="../_images/Fig1-1.drawio.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Figure 1 — Example of value creation framework</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="project">
+<h2>Project<a class="headerlink" href="#project" title="Link to this heading">#</a></h2>
+<p>A <strong>project</strong> consists of a unique set of processes comprising coordinated and controlled activities with start and end dates to achieve project objectives. <br />
+Achievement of the project objectives requires providing deliverables conforming to specific requirements.</p>
+<p>A project may be subject to multiple constraints.</p>
+<p>Although many projects may be similar, each project is unique. <br />
+Project differences may occur in the following:</p>
+<ul class="simple">
+<li><p>deliverables provided;</p></li>
+<li><p>stakeholders influencing;</p></li>
+<li><p>resources used;</p></li>
+<li><p>constraints;</p></li>
+<li><p>the way processes are tailored to provide the deliverables.</p></li>
+</ul>
+<p>Every project has a definite start and end and is usually divided into phases.</p>
+</section>
+<section id="project-management">
+<h2>Project Management<a class="headerlink" href="#project-management" title="Link to this heading">#</a></h2>
+<p><strong>Project management (PM)</strong></p>
+<ul class="simple">
+<li><p>is the application of methods, tools, techniques, and competencies to a project;</p></li>
+<li><p>includes the integration of the various phases of the project life cycle;</p></li>
+<li><p>is performed through processes.</p></li>
+</ul>
+<p>The processes selected for performing a project should be aligned in a systemic view.</p>
+<p>Each phase of the project life cycle should have specific deliverables. <br />
+These deliverables should be regularly reviewed during the project to meet the requirements of the sponsor, customers, and other stakeholders.</p>
+</section>
+<section id="organizational-strategy-and-projects">
+<h2>Organizational Strategy and Projects<a class="headerlink" href="#organizational-strategy-and-projects" title="Link to this heading">#</a></h2>
+<section id="organizational-strategy">
+<h3>Organizational Strategy<a class="headerlink" href="#organizational-strategy" title="Link to this heading">#</a></h3>
+<p>Organizations generally establish strategies based on their mission, vision, policies, and factors outside the organizational boundary. <br />
+Projects are often the means to accomplish <em>strategic goals</em>. <br />
+An example of a value creation framework is shown in Figure 2.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure 2" src="../_images/Fig1-2.drawio.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Figure 2 — Example of value creation framework</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Strategic goals</em> may guide the identification and development of <em>opportunities</em>. <br />
+<em>Opportunities</em> selection includes consideration of various factors, such as how benefits can be realized and risks can be managed.</p>
+<p>The project aims to provide measurable benefits that contribute to realizing the selected opportunities.</p>
+<p>The project objective contributes to the project goal by creating the required deliverables. <br />
+Project goals</p>
+<ul class="simple">
+<li><p>are achieved when the benefits are realized;</p></li>
+<li><p>might not be achieved until a time after the objectives are achieved.</p></li>
+</ul>
+</section>
+<section id="opportunity-evaluation-and-project-initiation">
+<h3>Opportunity Evaluation and Project Initiation<a class="headerlink" href="#opportunity-evaluation-and-project-initiation" title="Link to this heading">#</a></h3>
+<p>To support informed decision-making by responsible management, opportunities may be evaluated to identify feasible projects that could transform some or all of these opportunities into realized benefits. <br />
+These opportunities</p>
+<ul class="simple">
+<li><p>may address, for example, a new market demand, a current organizational need, or a new legal requirement; and</p></li>
+<li><p>are often evaluated through a set of activities that provide formal authorization to start a new project.</p></li>
+</ul>
+<p>The organization should identify a project sponsor responsible for project <em>goals and benefits</em>. <br />
+The <em>goals and benefits</em> may result in a <em>justification</em> for the investment in the project (e.g., in the form of a business case), which may contribute to prioritizing all opportunities. <br />
+The purpose of the <em>justification</em> is usually to obtain organizational commitment and approval for investment in the selected projects.</p>
+<p>The evaluation process may include multiple criteria, including</p>
+<ul class="simple">
+<li><p>financial investment appraisal techniques, and</p></li>
+<li><p>qualitative criteria (e.g., strategic alignment, social impact, and environmental impact).
+Criteria may differ from one project to another.</p></li>
+</ul>
+</section>
+<section id="benefits-realization">
+<h3>Benefits Realization<a class="headerlink" href="#benefits-realization" title="Link to this heading">#</a></h3>
+<p>Benefits realization is generally the responsibility of organizational management, which may use the deliverables of the project to realize benefits in alignment with the organizational strategy. <br />
+The project manager should consider the benefits and their realization as they influence decision-making throughout the project life cycle.</p>
+</section>
+</section>
+<section id="project-environment">
+<h2>Project Environment<a class="headerlink" href="#project-environment" title="Link to this heading">#</a></h2>
+<section id="general">
+<h3>General<a class="headerlink" href="#general" title="Link to this heading">#</a></h3>
+<p>The project environment may impact project performance and success.</p>
+<p>The project team should consider the following:</p>
+<ul class="simple">
+<li><p>factors outside the organizational boundary, such as socio-economic, geographical, political, regulatory, technological, and ecological;</p></li>
+<li><p>factors inside the organizational boundary include strategy, technology, project management maturity, resource availability, organizational culture, and structure.</p></li>
+</ul>
+</section>
+<section id="factors-outside-the-organizational-boundary">
+<h3>Factors Outside the Organizational Boundary<a class="headerlink" href="#factors-outside-the-organizational-boundary" title="Link to this heading">#</a></h3>
+<p>Factors outside the organizational boundary may impact the project by imposing constraints or introducing risks affecting the project. <br />
+Although these factors are often beyond the project manager’s control, they should still be considered.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure 3" src="../_images/Fig1-3.drawio.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Figure 3 — Example of relationships between portfolios, programmes and projects</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="factors-inside-the-organizational-boundary">
+<h3>Factors Inside the Organizational Boundary<a class="headerlink" href="#factors-inside-the-organizational-boundary" title="Link to this heading">#</a></h3>
+<section id="id1">
+<h4>General<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p>A project usually exists inside a larger organization encompassing other activities. <br />
+In such cases, relationships exist between</p>
+<ul class="simple">
+<li><p>the project and its environment,</p></li>
+<li><p>business planning, and</p></li>
+<li><p>operations.</p></li>
+</ul>
+<p>Pre-project and post-project activities may include business case development, feasibility studies, and transition to operations. <br />
+Projects may be organized within programmes and project portfolios.</p>
+</section>
+<section id="programme-management">
+<h4>Programme Management<a class="headerlink" href="#programme-management" title="Link to this heading">#</a></h4>
+<p>A <strong>programme</strong> is generally a group of related projects and other activities aligned with strategic goals.</p>
+<p>Programme management consists of centralized and coordinated activities to achieve the goals.</p>
+</section>
+<section id="project-portfolio-management">
+<h4>Project Portfolio Management<a class="headerlink" href="#project-portfolio-management" title="Link to this heading">#</a></h4>
+<p>A <strong>project portfolio</strong> is generally a collection of projects and programmes and other work grouped to facilitate the effective management of that work to meet strategic goals.</p>
+<p>Project portfolio management (PPM) is generally the centralized management of one or more project portfolios, which includes identifying, prioritizing,
+authorizing, directing, and controlling projects, programmes, and other work to achieve specific strategic goals.</p>
+<p>It may be appropriate to conduct the opportunity identification and selection, as well as the approval and management of projects, through a project portfolio management system.</p>
+</section>
+</section>
+</section>
+<section id="project-governance">
+<h2>Project Governance<a class="headerlink" href="#project-governance" title="Link to this heading">#</a></h2>
+<p><strong>Governance</strong> is the framework by which an organization is directed and controlled.</p>
+<p>Project governance includes, but is not limited to, those areas of organizational governance specifically related to project activities. <br />
+Project governance may include subjects such as the following:</p>
+<ul class="simple">
+<li><p>defining the management structure;</p></li>
+<li><p>the policies, processes, and methodologies to be used;</p></li>
+<li><p>limits of authority for decision-making;</p></li>
+<li><p>stakeholder responsibilities and accountabilities;</p></li>
+<li><p>interactions such as reporting and the escalation of issues or risks.</p></li>
+</ul>
+<p>The responsibility for maintaining the appropriate governance of a project is usually assigned either to the project sponsor or to a project steering committee.</p>
+</section>
+<section id="projects-and-operations">
+<h2>Projects and Operations<a class="headerlink" href="#projects-and-operations" title="Link to this heading">#</a></h2>
+<p>PM fits within the general framework of management.</p>
+<p>PM differs from other management disciplines by the project’s temporary and unique nature.</p>
+<p>Organizations perform work to achieve specific goals. <br />
+Generally, this work may be categorized as either</p>
+<ul class="simple">
+<li><p>operations</p>
+<ul>
+<li><p>performed by relatively stable teams through ongoing and repetitive processes,</p></li>
+<li><p>focused on sustaining the organization;</p></li>
+</ul>
+</li>
+<li><p>projects</p>
+<ul>
+<li><p>are performed by temporary teams,</p></li>
+<li><p>are non-repetitive, and</p></li>
+<li><p>provide unique deliverables.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="stakeholders-and-project-organization">
+<h2>Stakeholders and Project Organization<a class="headerlink" href="#stakeholders-and-project-organization" title="Link to this heading">#</a></h2>
+<p>The project stakeholders, including the project organization, should be described in sufficient detail for the project to be successful.</p>
+<p>The roles and responsibilities of stakeholders should be defined and communicated based on the organization and project goals.</p>
+<p>Stakeholder interfaces should be managed within the project through the PM processes.</p>
+<p>The project organization is the temporary structure that includes project roles, responsibilities and levels of authority, and boundaries that must be defined and communicated to all project stakeholders.
+The project organization</p>
+<ul class="simple">
+<li><p>may depend on project stakeholders’ legal, commercial, interdepartmental, or other arrangements.</p></li>
+<li><p>may include the following roles and responsibilities:</p>
+<ol class="arabic simple">
+<li><p>the <em>project manager</em>, who leads and manages project activities and is accountable for project completion;</p></li>
+<li><p>the <em>PM team</em>, which supports the project manager in leading and managing the project activities;</p></li>
+<li><p>the <em>project team</em>, which performs project activities.</p></li>
+</ol>
+</li>
+</ul>
+<p>Project governance may involve the following:</p>
+<ul class="simple">
+<li><p>the <em>project sponsor</em>, who authorizes the project, makes executive decisions, and solves problems and conflicts beyond the project manager’s authority;</p></li>
+<li><p>the <em>project steering committee</em> or <em>board</em> contributes to the project by providing senior-level guidance.</p></li>
+</ul>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure 4" src="../_images/Fig1-4.drawio.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Figure 4 — Example of potential project stakeholders</p></td>
+</tr>
+</tbody>
+</table>
+<p>Figure 4 includes the following additional stakeholders:</p>
+<ul class="simple">
+<li><p>customers or customer representatives who contribute to the project by specifying project requirements and accepting the project deliverables;</p></li>
+<li><p>suppliers, who contribute to the project by supplying resources to the project;</p></li>
+<li><p>the project management office (PMO) may perform various activities, including governance, standardization, PM training, project planning, and project monitoring.</p></li>
+</ul>
+</section>
+<section id="competencies-of-project-personnel">
+<h2>Competencies of Project Personnel<a class="headerlink" href="#competencies-of-project-personnel" title="Link to this heading">#</a></h2>
+<p>Project personnel should develop competencies in PM principles and processes to achieve project objectives and goals. <br />
+Each project team requires competent individuals capable of applying their knowledge and experience to provide the project deliverables.</p>
+<p>Any identified gap between the available and required competence levels represented on the project team could introduce risk and should be addressed.</p>
+<p>PM competencies can be categorized into, but are not limited to, the following:</p>
+<ul class="simple">
+<li><p>technical competencies for delivering projects in a structured way, including the project management terminology, concepts, and processes defined in this International Standard;</p></li>
+<li><p>behavioral competencies associated with personal relationships inside the defined boundaries of the project;</p></li>
+<li><p>contextual competencies related to the management of the project inside the organizational and external environment.
+Competency levels may be raised through professional development processes such as training, coaching, and mentoring inside or outside an organization.</p></li>
+</ul>
+</section>
+<section id="project-life-cycle">
+<h2>Project Life Cycle<a class="headerlink" href="#project-life-cycle" title="Link to this heading">#</a></h2>
+<p>Projects are usually organized into <strong>phases</strong> determined by governance and control needs. <br />
+These phases should</p>
+<ul class="simple">
+<li><p>follow a logical sequence, with a start and an end, and</p></li>
+<li><p>use resources to provide deliverables.</p></li>
+</ul>
+<p>To manage the project efficiently during the entire project life cycle, a set of activities should be performed in each phase. <br />
+Project phases are collectively known as the <strong>project life cycle</strong>. <br />
+The project life cycle spans the period from the start of the project to its end.</p>
+<p>The phases are divided by <strong>decision points</strong>, varying depending on the organizational environment.
+The decision points facilitate project governance. <br />
+By the end of the last phase, the project should have provided all deliverables. <br />
+To manage a project throughout its life cycle, PM processes should be used for the project as a whole or individual phase for each team or sub-project.</p>
+</section>
+<section id="project-constraints">
+<h2>Project Constraints<a class="headerlink" href="#project-constraints" title="Link to this heading">#</a></h2>
+<p>There are several types of constraints, and as constraints are often interdependent, a project manager needs to balance a particular constraint against the others.
+The project deliverables should fulfill the requirements for the project and relate to any given constraints such as</p>
+<ul class="simple">
+<li><p><em>scope</em>,</p></li>
+<li><p><em>quality</em>,</p></li>
+<li><p><em>schedule</em>,</p></li>
+<li><p><em>resources</em>, and</p></li>
+<li><p><em>cost</em>.</p></li>
+</ul>
+<p>Constraints are generally interrelated, so a change in one may affect one or more of the other constraints. <br />
+Hence, the constraints may impact the decisions made within the PM processes. <br />
+Achievement of consensus among key project stakeholders on the constraints may form a strong foundation for project success.
+Some constraints could be the following:</p>
+<ul class="simple">
+<li><p>the duration or target date for the project;</p></li>
+<li><p>the availability of the project budget;</p></li>
+<li><p>the availability of project resources, such as people, facilities, equipment, materials, infrastructure, tools, and other resources required to carry out the project activities relating to the requirements of the project;</p></li>
+<li><p>factors related to health and safety of personnel;</p></li>
+<li><p>the level of acceptable risk exposure;</p></li>
+<li><p>the potential social or ecological impact of the project;</p></li>
+<li><p>laws, rules, and other legislative requirements.</p></li>
+</ul>
+</section>
+<section id="relationship-between-pm-concepts-and-processes">
+<h2>Relationship between PM Concepts and Processes<a class="headerlink" href="#relationship-between-pm-concepts-and-processes" title="Link to this heading">#</a></h2>
+<p>PM is accomplished through processes utilizing the concepts and competencies</p>
+<p>A <strong>process</strong></p>
+<ul class="simple">
+<li><p>is a set of interrelated activities;</p></li>
+<li><p>is categorized into three major types:</p>
+<ul>
+<li><p><em>PM</em> processes</p>
+<ul>
+<li><p>specific to PM,</p></li>
+<li><p>determine how the activities selected for the project are managed;</p></li>
+</ul>
+</li>
+<li><p><em>delivery</em> processes</p>
+<ul>
+<li><p>are not unique to PM,</p></li>
+<li><p>result in the specification and provision of a particular product, service, or result,</p></li>
+<li><p>which vary depending on the particular project deliverable;</p></li>
+</ul>
+</li>
+<li><p><em>support</em> processes</p>
+<ul>
+<li><p>are not unique to PM,</p></li>
+<li><p>provide relevant and valuable support to product and PM processes in logistics, finance, accounting, and safety disciplines.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Product, support, and PM processes might overlap and interact throughout a project.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./PM"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome PM League’s Wiki</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="pm-processes.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">PM Processes</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-management">Project Management</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organizational-strategy-and-projects">Organizational Strategy and Projects</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#organizational-strategy">Organizational Strategy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#opportunity-evaluation-and-project-initiation">Opportunity Evaluation and Project Initiation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits-realization">Benefits Realization</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-environment">Project Environment</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general">General</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-outside-the-organizational-boundary">Factors Outside the Organizational Boundary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-inside-the-organizational-boundary">Factors Inside the Organizational Boundary</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">General</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#programme-management">Programme Management</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#project-portfolio-management">Project Portfolio Management</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-governance">Project Governance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projects-and-operations">Projects and Operations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stakeholders-and-project-organization">Stakeholders and Project Organization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#competencies-of-project-personnel">Competencies of Project Personnel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-life-cycle">Project Life Cycle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-constraints">Project Constraints</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relationship-between-pm-concepts-and-processes">Relationship between PM Concepts and Processes</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By FMO
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

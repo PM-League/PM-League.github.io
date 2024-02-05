@@ -1,0 +1,58 @@
+# Book settings
+title: PM LEAGUE WIKI 
+# <font face="Roboto"; font-weight=700; font color=253a4b>PM LEAGUE</font> <font face="Roboto"; font-weight=700; font color=507da0>WIKI</font>
+author: Project Management League
+copyright: '2022'
+logo: logo.png
+
+# Execution settings
+execute:
+  execute_notebooks: force
+
+# Parse and render settings
+parse:
+  myst_enable_extensions:
+    # - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
+    - tasklist
+  myst_url_schemes: [mailto, http, https]
+
+# LaTeX-specific settings
+latex:
+  latex_documents:
+    targetname: book.tex
+
+bibtex_bibfiles:
+  - references.bib
+
+# HTML-specific settings
+html:
+  favicon: 'favicon.png'
+  use_issues_button: true
+  use_repository_button: true
+
+  # extra_navbar :  
+  # extra_footer : "pmleague.org"
+  home_page_in_navbar : true
+  # announcement : "WORK IN PROGRESS"
+
+# Launch button settings
+# launch_buttons:
+#   notebook_interface        : classic  # The interface interactive links will activate ["classic", "jupyterlab"]
+#   binderhub_url             : https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)
+#   jupyterhub_url            : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
+#   thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
+#   colab_url                 : "" # The URL of Google Colab (https://colab.research.google.com)
+
+repository:
+  url: https://github.com/PM-League/PM-League.github.io/  
+  path_to_book: book
+  branch: master

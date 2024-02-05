@@ -1,0 +1,922 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Earned Value Management &#8212; PM League Wiki</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'PM/evm';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Risk Management" href="rm.html" />
+    <link rel="prev" title="PM Processes" href="pm-processes.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="PM League Wiki - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="PM League Wiki - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome PM League’s Wiki
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Project Management</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pm-concepts.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pm-processes.html">PM Processes</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Earned Value Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rm.html">Risk Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eac.html">Estimates at Completion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ppm.html">Project Portfolio Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="putnam.html">Putnam Model</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Agile Project Management</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../APM/scrum.html">Scrum</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">System Dynamics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../SD/sd-concepts.html">SD Concepts</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPM/evm.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/PM/evm.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Earned Value Management</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#terms-definitions-and-abbreviations">Terms, Definitions, and Abbreviations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Earned Value Management</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-and-benefits-of-evm">Purpose and Benefits of EVM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guidelines-for-an-evm-system">Guidelines for an EVM System</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#evm-planning">EVM Planning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-evm-measurements-and-performance-metrics">Using EVM Measurements and Performance Metrics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evm-process-steps">EVM Process Steps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general">General</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-and-schedule-performance-analysis">Cost and Schedule Performance Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">General</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-measurement-indicators-and-predictors">Performance Measurement Indicators and Predictors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits-of-performance-measurement-analysis">Benefits of Performance Measurement Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-performance-measurements">Cost Performance Measurements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schedule-performance-measurements">Schedule Performance Measurements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#earned-schedule">Earned Schedule</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="earned-value-management">
+<h1>Earned Value Management<a class="headerlink" href="#earned-value-management" title="Link to this heading">#</a></h1>
+<section id="terms-definitions-and-abbreviations">
+<h2>Terms, Definitions, and Abbreviations<a class="headerlink" href="#terms-definitions-and-abbreviations" title="Link to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Terms</p></th>
+<th class="head text-left"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Activity</p></td>
+<td class="text-left"><p>Identified piece of work that is required to be undertaken to complete a project or programme</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Actual Cost (of Work Performed)</p></td>
+<td class="text-left"><p>Cost incurred for work performed</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Budget at Completion</p></td>
+<td class="text-left"><p>Total forecasted cost for accomplishing the work related to a work package, activity, or control account</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Control Account</p></td>
+<td class="text-left"><p>Management control point where scope, budget, actual cost, and schedule of a project or programme, work package, or activity are integrated</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Earned Value (Budgeted cost of Work Performed)</p></td>
+<td class="text-left"><p>Value of completed work expressed in terms of the budget assigned to that work</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Earned Value Management</p></td>
+<td class="text-left"><p>The method that integrates project or programme scope, actual cost, budget, and schedule for assessment of progress and performance</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Estimate at Completion</p></td>
+<td class="text-left"><p>Forecasted total cost to accomplish the work on project, programme, work package, or activity</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Estimate to Complete</p></td>
+<td class="text-left"><p>Forecasted cost of the work remaining of a project, programme, work package, or activity</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Integrated Baseline Review</p></td>
+<td class="text-left"><p>Assessment to establish a common understanding of the performance measurement baseline for verification of the technical content of the project or programme</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Management Reserve</p></td>
+<td class="text-left"><p>Amount of budget external to the performance measurement baseline, withheld for management control in response to unforeseen events or activities that are a part of the scope</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Network Schedule (Diagram)</p></td>
+<td class="text-left"><p>Graphical representation indicating the logic sequencing and interdependencies of the work elements of a project or programme</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Performance Measurement</p></td>
+<td class="text-left"><p>Quantitative units of measure that are placed to track progress</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Performance Measurement Baseline</p></td>
+<td class="text-left"><p>Total time-phased scope of work and budget plan against which project or programme performance is measured, not including management reserve</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Planned Value (Budgeted Cost of Work Scheduled)</p></td>
+<td class="text-left"><p>Time-phased budget authorized for the work scheduled</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Technical Performance</p></td>
+<td class="text-left"><p>The measure of the results of functionalities or capabilities achieved for the project or programme during implementation</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Time-phased Budget</p></td>
+<td class="text-left"><p>Allocation of the cost to accomplish the work over established periods of time or phases</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Undistributed Budget</p></td>
+<td class="text-left"><p>Cost for authorized work that has not been distributed to a control account</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Work Breakdown Structure</p></td>
+<td class="text-left"><p>Decomposition of the defined scope of the project or programme into progressively lower levels consisting of elements of work</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Work Package</p></td>
+<td class="text-left"><p>One or more groups of related activities that are within the control account</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Earned Value Management<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Earned value management (EVM)</p>
+<ul class="simple">
+<li><p>is a structured method used to provide a performance measurement system for review of past and forecasted performance of a project or programme;</p></li>
+<li><p>is a method of performance management.</p></li>
+</ul>
+<p>Performance management should provide for the planning, implementing, and controlling of the performance of a project or programme in accomplishing the scope of work of the project or programme.</p>
+</section>
+<section id="purpose-and-benefits-of-evm">
+<h3>Purpose and Benefits of EVM<a class="headerlink" href="#purpose-and-benefits-of-evm" title="Link to this heading">#</a></h3>
+<p>The purpose of EVM is to control and analyze the project or programme.</p>
+<p>EVM facilitates analysis and decision-making for but is not limited to budget, schedule, human resources, and materials.</p>
+<p>The EVM system may include communication of the status from metrics established for the project or programme, improvements, corrective action development, and a common framework and vocabulary. <br />
+An EVM is a set of procedures, tools, and methods for establishing and maintaining project or programme control.</p>
+<p>The application of EVM should result in three overall benefits:</p>
+<ol class="arabic simple">
+<li><p>developing objective measurement techniques;</p></li>
+<li><p>availability of data for project or programme management decisions;</p></li>
+<li><p>providing a system to monitor the project or programme.</p></li>
+</ol>
+<p>Specific benefits may include, but are not limited to, the following:</p>
+<ul class="simple">
+<li><p>forecasting of future performance and EAC based on past performance;</p></li>
+<li><p>objective metrics for comparison of project or programme performance across an organization and between or among organizations;</p></li>
+<li><p>development of budgets and baselines;</p></li>
+<li><p>compilation of estimates;</p></li>
+<li><p>objective measurement of completion of work packages that is done consistently;</p></li>
+<li><p>comparison of work performed against actual performance and budget;</p></li>
+<li><p>highlighting inconsistencies in the measures in EV reports;</p></li>
+<li><p>consistency of the reporting and performance measurement framework by regular earned value reporting.</p></li>
+</ul>
+</section>
+<section id="guidelines-for-an-evm-system">
+<h3>Guidelines for an EVM System<a class="headerlink" href="#guidelines-for-an-evm-system" title="Link to this heading">#</a></h3>
+<p>An EVM  system should provide consistent performance metrics. <br />
+To achieve a consistent view of performance metrics, the system should integrate the baselines established for the project or programme including the scope of work defined through the work breakdown structure and performance measurement baseline. <br />
+The system should also allow for formal, controlled incorporation of changes in baselines, authorized users, and procedures.</p>
+<p>To implement an EVM system,</p>
+<ul class="simple">
+<li><p>the project or programme control metrics and processes should be documented and understood by the organization or organizations doing the work;</p></li>
+<li><p>the system should be established to allow systematic review of the data, common assessment methodologies, targeted levels of performance, and an assessment feedback process;</p></li>
+<li><p>the system may be tailored to accommodate different project or programme subject area integration, more than one organization reporting, and another tailoring as deemed necessary to control the project or programme or provide an integrated programme view.</p></li>
+</ul>
+<p>The core data contained in an earned value management system should be the earned value, actual cost, the planned value, estimate to complete, and budget at completion. <br />
+The EVM system should be able to show the planned status and the actual status of the project or programme.</p>
+<p>To implement an earned value management system, the system requires a common agreement on the assignment of “value” and “performance”, which may be tailored for projects or programmes based on organizational considerations.</p>
+<p>The review of metrics of performance should be accomplished on a regular, scheduled basis to allow for comparison and analysis of performance.</p>
+<p>An EVM system should be able to do the following:</p>
+<ol class="arabic simple">
+<li><p>determine what work is to be accomplished, by whom and when;</p></li>
+<li><p>establish resource requirements;</p></li>
+<li><p>measure work achievement and record associated costs;</p></li>
+<li><p>report deviations from the plan for which metrics have been established;</p></li>
+<li><p>forecast the completion date and cost;</p></li>
+<li><p>plan and implement corrective and preventive action plans;</p></li>
+<li><p>authorize scope changes; any approved changes to the prior approved baselines contained in the earned value management system should be controlled, traceable, and documented.</p></li>
+</ol>
+</section>
+<section id="evm-planning">
+<h3>EVM Planning<a class="headerlink" href="#evm-planning" title="Link to this heading">#</a></h3>
+<p>EVM planning should enable:</p>
+<ul class="simple">
+<li><p>establishing project or programme objectives, as well as the integrated view of the planning of the overall projects or programmes,</p></li>
+<li><p>monitoring of project or programme progress to measure deviations from the plan, and</p></li>
+<li><p>planning by the users of the performance management system for project or programme, objective assessment of progress, and use of resources.</p></li>
+</ul>
+</section>
+<section id="using-evm-measurements-and-performance-metrics">
+<h3>Using EVM Measurements and Performance Metrics<a class="headerlink" href="#using-evm-measurements-and-performance-metrics" title="Link to this heading">#</a></h3>
+<p>EV should be used to determine performance metrics to assess the status of a project or programme at a selected point in time. <br />
+These metrics should enable informed decisions about the management of the project or programme. <br />
+The metrics derived may be used to compare actual project or programme cost and schedule performance with the PMB.</p>
+<p>The PMB should establish variance thresholds for cost and schedule that, when exceeded, identify significant variances for further analysis and management attention.</p>
+<p>The information acquired by using the earned value performance measurements should be used to determine:</p>
+<ul class="simple">
+<li><p>progress of a project or programme,</p></li>
+<li><p>progress towards work accomplished,</p></li>
+<li><p>completion of the deliverables, and</p></li>
+<li><p>progress towards delivery of a project or programme.
+These measurements, combined with the agreed-upon variance threshold, should be used to determine the cost and schedule variances and cost and schedule performance indices. <br />
+The information should also be used to forecast the future performance of the project or programme.</p></li>
+</ul>
+</section>
+</section>
+<section id="evm-process-steps">
+<h2>EVM Process Steps<a class="headerlink" href="#evm-process-steps" title="Link to this heading">#</a></h2>
+<section id="general">
+<h3>General<a class="headerlink" href="#general" title="Link to this heading">#</a></h3>
+<p>The earned value management process steps are shown in Figure 1.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure 1" src="../_images/FigEVM-1.drawio.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Figure 1 — EVM process steps</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="cost-and-schedule-performance-analysis">
+<h2>Cost and Schedule Performance Analysis<a class="headerlink" href="#cost-and-schedule-performance-analysis" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3>General<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Analysis of performance metrics is an important approach to measuring and understanding the current period and overall project or programme performance.
+The use of performance metrics should allow corrective and preventive actions to be implemented, thereby improving the use of the EVM system data.</p>
+</section>
+<section id="performance-measurement-indicators-and-predictors">
+<h3>Performance Measurement Indicators and Predictors<a class="headerlink" href="#performance-measurement-indicators-and-predictors" title="Link to this heading">#</a></h3>
+<p>To understand performance measurement analysis, it is important to know the metrics of indicators and predictors earned value uses.
+Table 1 summarizes the key EV cost performance indicators and predictors.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Acronym</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Formula</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$t$</p></td>
+<td><p>Time</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>$PD$</p></td>
+<td><p>Planned Duration</p></td>
+<td><p>$\sum_{t} t$</p></td>
+</tr>
+<tr class="row-even"><td><p>$WS{(t)}$</p></td>
+<td><p>Percentage of Work Scheduled</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>$WP{(t)}$</p></td>
+<td><p>Percentage of Work Performed</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>$AC{(t)}$</p></td>
+<td><p>Actual Cost of Work Performed</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>$EV{(t)}$</p></td>
+<td><p>Earned Value</p></td>
+<td><p>$BAC \cdot WP{(t)}$</p></td>
+</tr>
+<tr class="row-even"><td><p>$PV{(t)}$</p></td>
+<td><p>Planned Value</p></td>
+<td><p>$BAC \cdot WS{(t)}$</p></td>
+</tr>
+<tr class="row-odd"><td><p>$BAC$</p></td>
+<td><p>Budget at Completion</p></td>
+<td><p>$\sum_{t} PV{(t)}$</p></td>
+</tr>
+<tr class="row-even"><td><p>$CV{(t)}$</p></td>
+<td><p>Cost Variance</p></td>
+<td><p>$EV{(t)} - AC{(t)}$</p></td>
+</tr>
+<tr class="row-odd"><td><p>$SV{(t)}$</p></td>
+<td><p>Schedule Variance</p></td>
+<td><p>$EV{(t)} - SV{(t)}$</p></td>
+</tr>
+<tr class="row-even"><td><p>$CPI{(t)}$</p></td>
+<td><p>Cost Performance Index</p></td>
+<td><p>$EV{(t)} / AC{(t)}$</p></td>
+</tr>
+<tr class="row-odd"><td><p>$SPI{(t)}$</p></td>
+<td><p>Schedule Performance Index</p></td>
+<td><p>$EV{(t)} / PV{(t)}$</p></td>
+</tr>
+<tr class="row-even"><td><p>$EAC{(t)}$</p></td>
+<td><p>Estimate at Completion</p></td>
+<td><p>$EAC{(t)} = AC{(t)} + ETC{(t)}$</p></td>
+</tr>
+<tr class="row-odd"><td><p>$ETC{(t)}$</p></td>
+<td><p>Estimate to Complete</p></td>
+<td><p>$ETC{(t)} = [BAC - EV{(t)}]/PF{(t)}$</p></td>
+</tr>
+<tr class="row-even"><td><p>$TCPI{(t)}$</p></td>
+<td><p>To-Complete Performance Index</p></td>
+<td><p>$TCPI{(t)} = [BAC - EV{(t)}]/[BAC - AC{(t)}]$</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>$TCPI{(t)} = [EAC{(t)} - EV{(t)}]/[BAC - AC{(t)}]$</p></td>
+</tr>
+<tr class="row-even"><td><p>$ES{(t)}$</p></td>
+<td><p>Earned Schedule</p></td>
+<td><p>$ES{(t)} = \begin{Bmatrix} t^* : PV(t^*) = EV{(t)}\end{Bmatrix}$</p></td>
+</tr>
+<tr class="row-odd"><td><p>$SV^{t}{(t)}$</p></td>
+<td><p>Earned Schedule Variance</p></td>
+<td><p>$SV^\text{t}{(t)} = ES{(t)} - t$</p></td>
+</tr>
+<tr class="row-even"><td><p>$SPI^\text{t}{(t)}$</p></td>
+<td><p>Earned Schedule Performance Index</p></td>
+<td><p>$SPI^\text{t}{(t)} = ES{(t)} / t$</p></td>
+</tr>
+<tr class="row-odd"><td><p>$TEAC$</p></td>
+<td><p>Time Estimate at Completion</p></td>
+<td><p>$TEAC{(t)} = AT + ETC^\text{t}{(t)} / PF^\text{t}{(t)}$</p></td>
+</tr>
+<tr class="row-even"><td><p>$ETC^\text{t}{(t)}$</p></td>
+<td><p>Time Estimate to Complete</p></td>
+<td><p>$ETC^\text{t}{(t)} = [PD - ES{(t)}]/PF^\text{t}{(t)}$</p></td>
+</tr>
+<tr class="row-odd"><td><p>$TCPI^\text{t}{(t)}$</p></td>
+<td><p>To-Complete $ES$ Performance Index</p></td>
+<td><p>$TCPI^\text{t}{(t)} = [PD - ES{(t)}]/(PD - t)$</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>$TCPI^\text{t}{(t)} = [TEAC{(t)} - ES{(t)}]/(PD - t)$</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="benefits-of-performance-measurement-analysis">
+<h3>Benefits of Performance Measurement Analysis<a class="headerlink" href="#benefits-of-performance-measurement-analysis" title="Link to this heading">#</a></h3>
+<p>Performance measurement analysis contributes to trend analysis over time; to highlight trends in cost over- or under-run; and be superimposed with contracted cost outcomes, risk confidence limits, and benefit realization data to provide a more comprehensive picture of overall project or programme cost performance.</p>
+<p>Large, early, unfavorable schedule variances, irrespective of cost performance, may be a reliable warning of a project experiencing significant performance issues that should be investigated to determine the causes and implement corrective and preventive recovery actions.</p>
+</section>
+<section id="cost-performance-measurements">
+<h3>Cost Performance Measurements<a class="headerlink" href="#cost-performance-measurements" title="Link to this heading">#</a></h3>
+<p>A negative $CV$ and $CPI$ of less than one indicates an unfavorable over-budget condition, as the $EV$ accrued is less than the costs incurred. <br />
+Conversely, a positive $CV$ and $CPI$ greater than one indicates an under-spend condition.</p>
+<p>Significant negative or positive CVs should be investigated to determine the causes and initiate discussions as to whether to implement corrective and preventive actions to prevent further deterioration and implement possible cost recovery.</p>
+<p>The $CPI$ is a ratio that provides a measure of the cost efficiency achieved by the project to date. <br />
+The $TCPI$ is a forward-looking predictor that calculates the future cost efficiency required to achieve specific cost objectives at project or programme completion. <br />
+The usual cost objectives analyzed should be the project or programme approved $BAC$ and, if different, the project or programme manager’s claimed cost estimate at completion.</p>
+<p>The $EAC$ is a predictive measure that calculates predicted completion costs based on the historical performance of the project to date. <br />
+One should produce a range of calculated completion cost outcomes using the $CPI$, $SPI$, or both indices in combination as performance factors. <br />
+These outcomes may be used to assess the likelihood of the project or programme achieving the approved BAC, and the project or programme manager’s claimed cost $EAC$.</p>
+</section>
+<section id="schedule-performance-measurements">
+<h3>Schedule Performance Measurements<a class="headerlink" href="#schedule-performance-measurements" title="Link to this heading">#</a></h3>
+<p>The traditional earned value schedule performance measurements are also cost-based measures that compare the volume of work performed to the volume of work planned.</p>
+<p>A negative $SV$ and $SPI$ of less than one indicates an unfavorable behind-schedule condition, subject to confirmatory analysis of the network schedule, as the volume of work accomplished, $EV$ accrued, is less than the volume of work planned, PV. <br />
+Conversely, a positive $SV$ and $SPI$ greater than one may indicate an ahead-of-schedule condition, subject to confirmatory analysis of the project network schedule.</p>
+<p>Significant SVs should be investigated to understand the causes and to implement corrective and preventive actions. <br />
+Analysis of the earned value schedule metrics should be undertaken in conjunction with analyzing the network schedule, which remains the primary source of time-based information. <br />
+The critical path impact of negative $EV$ schedule variances should be analyzed in conjunction with the network schedule.</p>
+<p>The predictive utility of the $SV$ will be lost in the final third of the project.</p>
+<p>As the project or programme gets closer to completion, the $SV$ of the project or programme moves closer to zero, otherwise known as reversion to zero.</p>
+</section>
+<section id="earned-schedule">
+<h3>Earned Schedule<a class="headerlink" href="#earned-schedule" title="Link to this heading">#</a></h3>
+<p><strong>Earned Schedule (ES)</strong> is an extension of EVM.</p>
+<p>ES calculates schedule metrics and indicators on the time axis rather than on the cost axis traditionally utilized by the EVM schedule metrics.</p>
+<p>The basis of ES is to identify the time increment at which the amount of $EV$ accrued should have been earned.</p>
+<p>The time increment can be any selected unit of accrual for the $EV$, such as a week, month, or any other time period. <br />
+Once this value has been determined, a series of time-based metrics can be calculated, which emulates the $EV$ cost-based counterparts.</p>
+<p>The ES metric, $SV^\text{t}$, should be calculated by reference to the actual time, that is, the time increment at the project or programme status date. <br />
+The actual time, $t$, is an unconstrained measure, in the same way as $AC$.</p>
+<p>The ES metrics should be reliable for early and late finish projects or programmes, as $SV^\text{t}$ only equals zero and $SPI^\text{t}$ only equals one at the project or programme completion if on-time completion has been achieved.</p>
+<p>Analysis of the ES metrics should be undertaken in conjunction with an analysis of the network schedule, which remains the primary source of time-based information.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure 2" src="../_images/FigEVM-2.drawio.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Figure 2 — Cost, Schedule, and Earned Schedule Variances</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="summary">
+<h3>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h3>
+<table><thead><tr><th></th><th></th><th colspan="3" style="text-align:center">SPI</th></tr></thead>
+<tbody><tr><td></td><td></td><td style="text-align:center">&gt;1</td><td style="text-align:center">=1</td><td style="text-align:center">&lt;1</td></tr>
+<tr><td rowspan="3">CPI</td><td>&gt;1</td><td>Under budget<br>Ahead of schedule</td><td>Under budget<br>On schedule</td><td>Under budget<br>Behind schedule</td></tr><tr><td>=1</td><td>On budget<br>Ahead of schedule</td><td>On budget<br>On schedule</td><td>On budget<br>Behind schedule</td></tr><tr><td>&lt;1</td><td>Over budget<br>Ahead of schedule</td><td>Over budget<br>On schedule</td><td>Over budget<br>Behind schedule</td></tr></tbody></table>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./PM"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="pm-processes.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">PM Processes</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rm.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Risk Management</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#terms-definitions-and-abbreviations">Terms, Definitions, and Abbreviations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Earned Value Management</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-and-benefits-of-evm">Purpose and Benefits of EVM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guidelines-for-an-evm-system">Guidelines for an EVM System</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#evm-planning">EVM Planning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-evm-measurements-and-performance-metrics">Using EVM Measurements and Performance Metrics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evm-process-steps">EVM Process Steps</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general">General</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-and-schedule-performance-analysis">Cost and Schedule Performance Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">General</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-measurement-indicators-and-predictors">Performance Measurement Indicators and Predictors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits-of-performance-measurement-analysis">Benefits of Performance Measurement Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cost-performance-measurements">Cost Performance Measurements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schedule-performance-measurements">Schedule Performance Measurements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#earned-schedule">Earned Schedule</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By FMO
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

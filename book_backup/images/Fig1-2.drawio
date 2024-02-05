@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" modified="2022-08-01T10:25:15.779Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="Uv3TAKkfcG8bNFFIZ_Ho" version="20.2.2" type="github">
+  <diagram id="UbpdB0D5UH-V1yb8jrfd" name="Page-1">
+    <mxGraphModel dx="1422" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-17" value="" style="rounded=0;whiteSpace=wrap;html=1;align=right;verticalAlign=top;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="130" y="70" width="470" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-10" value="Assess" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;fontStyle=1" edge="1" parent="1" source="nTIf2K5j3qATYX_lOR8N-1" target="nTIf2K5j3qATYX_lOR8N-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="100" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-1" value="Strategy, Objectives" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-11" value="Develop" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;fontStyle=1" edge="1" parent="1" source="nTIf2K5j3qATYX_lOR8N-2" target="nTIf2K5j3qATYX_lOR8N-3">
+          <mxGeometry y="-30" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-2" value="Opportunities, Threats" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-13" value="&lt;b&gt;Define&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="nTIf2K5j3qATYX_lOR8N-3" target="nTIf2K5j3qATYX_lOR8N-4">
+          <mxGeometry y="-30" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-3" value="Requirements, Business Cases" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="nTIf2K5j3qATYX_lOR8N-4" target="nTIf2K5j3qATYX_lOR8N-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-4" value="Programmes" style="rounded=0;whiteSpace=wrap;html=1;align=right;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="350" y="240" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-15" value="Accomplish" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;startArrow=none;startFill=0;fontStyle=1" edge="1" parent="1" source="nTIf2K5j3qATYX_lOR8N-5" target="nTIf2K5j3qATYX_lOR8N-6">
+          <mxGeometry x="0.3846" y="20" relative="1" as="geometry">
+            <mxPoint x="310" y="320" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-5" value="Projects" style="rounded=0;whiteSpace=wrap;html=1;align=right;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="390" y="280" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-8" value="Realize" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontStyle=1" edge="1" parent="1" source="nTIf2K5j3qATYX_lOR8N-6" target="nTIf2K5j3qATYX_lOR8N-7">
+          <mxGeometry y="30" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-6" value="Outcomes, Outputs, Deliverables" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="300" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-9" value="Contribute to" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;fontStyle=1" edge="1" parent="1" source="nTIf2K5j3qATYX_lOR8N-7" target="nTIf2K5j3qATYX_lOR8N-1">
+          <mxGeometry x="0.2" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nTIf2K5j3qATYX_lOR8N-7" value="Benefits" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

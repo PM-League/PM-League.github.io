@@ -1,0 +1,24 @@
+format: jb-book
+root: intro
+parts:
+  - caption: Project Management
+    chapters:
+    - file: PM/pm-concepts
+    - file: PM/pm-processes
+    - file: PM/evm
+    - file: PM/rm
+    - file: PM/eac
+    - file: PM/ppm
+<<<<<<< HEAD
+    - file: PM/putnam
+  - caption: Agile Project Management
+=======
+    - file: PM/scrum
+    - file: PM/putnam
+  - caption: System Dynamics
+>>>>>>> parent of d8be7a0 (Update _toc.yml)
+    chapters:
+    - file: APM/agile
+    - file: APM/scrum
+  - caption: System Dynamics
+    - file: SD/sd-concepts

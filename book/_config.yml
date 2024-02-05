@@ -42,7 +42,7 @@ html:
   # extra_navbar :  
   # extra_footer : "pmleague.org"
   home_page_in_navbar : true
-  announcement : "WORK IN PROGRESS"
+  # announcement : "WORK IN PROGRESS"
 
 # Launch button settings
 # launch_buttons:

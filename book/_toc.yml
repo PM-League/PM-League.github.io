@@ -10,9 +10,9 @@ parts:
     - file: PM/eac
     - file: PM/ppm
     - file: PM/putnam
-#   - caption: Agile Project Management
-#     - file: APM/agile
-#     - file: APM/scrum
-#   - caption: System Dynamics
-
-#     - file: SD/sd-concepts
+  - caption: Agile Project Management
+    chapters:
+    - file: APM/agile
+    - file: APM/scrum
+  - caption: System Dynamics
+    - file: SD/sd-concepts

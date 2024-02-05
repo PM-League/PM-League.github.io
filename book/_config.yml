@@ -10,8 +10,8 @@ latex:
 bibtex_bibfiles:
   - references.bib
 repository:
-  url: https://github.com/executablebooks/jupyter-book
-  path_to_book: docs
+  url: https://github.com/PM-League/PM-League.github.io
+  path_to_book: book
   branch: master
 html:
   use_issues_button: true

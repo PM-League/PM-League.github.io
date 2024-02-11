@@ -19,3 +19,6 @@ parts:
 - caption: System Dynamics
   chapters:
   - file: SD/sd-concepts
+- caption: Systems Engineering
+  chapters:
+  - file: SE/se-concepts

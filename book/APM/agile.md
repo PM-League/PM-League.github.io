@@ -115,26 +115,90 @@
 
 #### Twelve Principles
 
-> Our highest priority is to satisfy the customerthrough early and continuous deliveryof valuable software.
+> Our highest priority is to satisfy the customerthrough early and continuous deliveryof valuable software
 >
-> Welcome changing requirements, even late indevelopment. Agile processes harness change forthe customer's competitive advantage.
+> Welcome changing requirements, even late indevelopment. Agile processes harness change forthe customer's competitive advantage
 >
-> Deliver working software frequently, from acouple of weeks to a couple of months, with apreference to the shorter timescale.
+> Deliver working software frequently, from acouple of weeks to a couple of months, with apreference to the shorter timescale
 >
-> Business people and developers must worktogether daily throughout the project.
+> Business people and developers must worktogether daily throughout the project
 >
-> Build projects around motivated individuals.Give them the environment and support they need,and trust them to get the job done.
+> Build projects around motivated individuals.Give them the environment and support they need,and trust them to get the job done
 >
-> The most efficient and effective method ofconveying information to and within a developmentteam is face-to-face conversation.
+> The most efficient and effective method ofconveying information to and within a developmentteam is face-to-face conversation
 >
-> Working software is the primary measure of progress.
+> Working software is the primary measure of progress
 >
-> Agile processes promote sustainable development.The sponsors, developers, and users should be ableto maintain a constant pace indefinitely.
+> Agile processes promote sustainable development.The sponsors, developers, and users should be ableto maintain a constant pace indefinitely
 >
-> Continuous attention to technical excellenceand good design enhances agility.
+> Continuous attention to technical excellenceand good design enhances agility
 >
-> Simplicity--the art of maximizing the amountof work not done--is essential.
+> Simplicity--the art of maximizing the amountof work not done--is essential
 >
-> The best architectures, requirements, and designsemerge from self-organizing teams.
+> The best architectures, requirements, and designsemerge from self-organizing teams
 >
-> At regular intervals, the team reflects on howto become more effective, then tunes and adjustsits behavior accordingly.
+> At regular intervals, the team reflects on howto become more effective, then tunes and adjustsits behavior accordingly
+
+### Agile Methodologies
+
+* Scrum
+* Extreme Programming (XP)
+* Lean Product Development
+* Kanban
+* Feature-driven Development (FDD)
+* Dynamic Systems Development Method (DSDM)
+* Crystal
+
+#### Scrum
+
+#### Extreme Programming (XP)
+
+#### Lean Product Development
+
+#### Kanban
+
+#### Feature-driven Development (FDD)
+
+#### Dynamic Systems Development Method (DSDM)
+
+#### Crystal
+
+### Agile Leadership
+
+### Servant Leadership
+
+## Value-Driven Delivery
+
+### Assessing Value
+
+#### Financial Assessment Metrics
+
+##### Return on Investment (ROI)
+
+###### Formula
+
+$ROI = Benefits/Investment$
+
+##### Present Value (PV)
+
+$PV = FV/(1+r)^t$
+
+##### Net Present Value (NPV)
+
+###### Formula
+
+$NPV=\sum_{t=0}^{T} CF_t/(1+r)^t$
+
+###### Interpretation
+
+IF $NPV>0$ THEN accept ELSE reject
+
+##### Internal Rate of Return (IRR)
+
+###### Formula
+
+$IRR = r : NPV(r) = 0$
+
+###### Interpretation
+
+IF $IRR>r$ THEN accept ELSE reject

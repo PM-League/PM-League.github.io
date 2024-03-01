@@ -1,4 +1,4 @@
-# Agile
+# Agile Domains, Tools, and Techniques
 
 ## Domains
 
@@ -85,10 +85,10 @@
 |                                    | Definition of Done                                             |
 |                                    | Continuous Integration                                         |
 |                                    | Testing, Including Exporatory and Usability                    |
-| Risk Management                    | risk adjusted backlog                                          |
-|                                    | risk burn down graphs                                          |
-|                                    | risk-based spike                                               |
-|                                    | architectural spike                                            |
+| Risk Management                    | Risk Adjusted Backlog                                          |
+|                                    | Risk Burn Down Graphs                                          |
+|                                    | Risk-based Spike                                               |
+|                                    | Architectural Spike                                            |
 | Value-Based Prioritization        | ROI/NPV/IRR                                                    |
 |                                    | Compliance                                                     |
 |                                    | Customer Value Prioritization                                  |
@@ -98,3 +98,43 @@
 |                                    | Relative Prioritization/Ranking                                |
 |                                    | MoSCoW                                                         |
 |                                    | Kano Analysis                                                  |
+
+## Agile Principles and Mindset
+
+### The Agile Manifesto
+
+#### Four Values
+
+> **Individuals and interactions** over processes and tools
+>
+> **Working software** over comprehensive documentation
+>
+> **Customer collaboration** over contract negotiation
+>
+> **Responding** to change over following a plan
+
+#### Twelve Principles
+
+> Our highest priority is to satisfy the customerthrough early and continuous deliveryof valuable software.
+>
+> Welcome changing requirements, even late indevelopment. Agile processes harness change forthe customer's competitive advantage.
+>
+> Deliver working software frequently, from acouple of weeks to a couple of months, with apreference to the shorter timescale.
+>
+> Business people and developers must worktogether daily throughout the project.
+>
+> Build projects around motivated individuals.Give them the environment and support they need,and trust them to get the job done.
+>
+> The most efficient and effective method ofconveying information to and within a developmentteam is face-to-face conversation.
+>
+> Working software is the primary measure of progress.
+>
+> Agile processes promote sustainable development.The sponsors, developers, and users should be ableto maintain a constant pace indefinitely.
+>
+> Continuous attention to technical excellenceand good design enhances agility.
+>
+> Simplicity--the art of maximizing the amountof work not done--is essential.
+>
+> The best architectures, requirements, and designsemerge from self-organizing teams.
+>
+> At regular intervals, the team reflects on howto become more effective, then tunes and adjustsits behavior accordingly.

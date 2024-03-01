@@ -23,3 +23,7 @@ only_build_toc_files: true
 # sphinx:
 #   config:
 #     html_theme: sphinx_book_theme
+
+sphinx:
+  config:
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

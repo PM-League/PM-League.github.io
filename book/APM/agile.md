@@ -219,6 +219,135 @@ $$
 T : NPV(T)=0
 $$
 
-###### Interprettation
+###### Interpretation
 
 IF $T<PB$ THEN accept ELSE reject
+
+#### Earned Value Management
+
+##### Metrics
+
+| Symbol           | Formula                   | Name                        |
+| ---------------- | ------------------------- | --------------------------- |
+| $AT$           |                           | Actual Time                 |
+| $WS$           |                           | Work Scheduled              |
+| $WP$           |                           | Work Performed              |
+| $\mathrm{BAC}$ |                           | Budget at Completion        |
+| $\mathrm{PD}$  |                           | Planned Duration            |
+| $AC$           |                           | Actual Cost                 |
+| $PV$           | $\mathrm{BAC} \cdot WS$ | Planned Value               |
+| $EV$           | $\mathrm{BAC} \cdot WP$ | Earned Value                |
+| $CV$           | $EV-AC$                 | Cost Variance               |
+| $SV$           | $EV-PV$                 | Schedule Variance           |
+| $CPI$          | $EV/AC$                 | Cost Performance Index      |
+| $SPI$          | $EV/PV$                 | Schedule Performance Index  |
+| $cEAC$         | $\mathrm{BAC}$          | Cost Estimate at Completion |
+|                  | $\mathrm{BAC}-CV$       |                             |
+|                  | $\mathrm{BAC}/CPI$      |                             |
+| $tEAC$         | $\mathrm{PD}$           | Time Estimate at Completion |
+|                  | $\mathrm{PD}/SPI$       |                             |
+| $cETC$         | $cEAC-AC$               | Cost Estimate to Complete   |
+| $tETC$         | $tEAC-AT$               | Time Estimate to Complete   |
+| $cVAC$         | $cEAC-\mathrm{BAC}$     | Cost Variance at Completion |
+| $tVAC$         | $tEAC-\mathrm{PD}$      | Time Variance at Completion |
+
+#### Agile Project Accounting
+
+#### Key Performance Indexes
+
+#### Regulatory Compliance
+
+### Prioritizing Value
+
+#### Customer-Valued Prioritization
+
+##### Prioritization Schemes
+
+###### Simple Schemes
+
+* Priority 1, 2, 3
+* High, Medium, Low
+
+###### MoSCoW
+
+**M**ust Have
+
+**S**hould Have
+
+**C**ould Have
+
+**W**ould like to have, but not now
+
+###### Monopoly Money
+
+1. Give stakeholders money equal to the project budget
+2. Ask stakeholders to distribute funds to system features
+
+###### 100-Point Method
+
+1. Give stakeholders 100 points
+2. Ask stakeholders to distribute points to system features
+
+###### Dot Voting or Multi-Voting
+
+1. Give stakeholders $n$ dots
+2. Ask stakeholders to distribute points to options presented
+
+###### Kano Analysis
+
+* Delighters/exciters
+* Satisfiers
+* Dissatisfiers
+* Indifferent
+
+##### Relative Prioritization/Ranking
+
+#### Deliver Incrementally
+
+##### Minimum Viable Product (MVP)
+
+##### Agile Tooling
+
+##### Low-Tech, High-Touch Tools
+
+##### Task/Kanban Boards
+
+##### Work in Progress (WIP)
+
+##### WIP Limits
+
+##### Cumulative Flow Diagram (CFDs)
+
+###### Little's Law
+
+##### Bottleneck and Theory of Constraints (TOC)
+
+#### Agile Contracting
+
+##### Agile Constraints and Contracts
+
+##### DSDM Contract
+
+##### Money for Nothing and Change for Free
+
+##### Graduated Fixed-Price Contract
+
+##### Fixed-Price Work Packages
+
+##### Customized Contracts
+
+#### Verifying and Validating Value
+
+##### Frequent Verification and Validation
+
+##### Testing and Verification in Software Development
+
+###### Exploratory and Usability Testing
+
+###### Continuous Integration
+
+###### Test-Driven Development (TDD)
+
+###### Acceptance Test-Driven Development (ATDD)
+
+## Stakeholder Engagement

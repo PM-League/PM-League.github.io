@@ -14,9 +14,7 @@ kernelspec:
 ## The Norden-Rayleigh Curve
 The curve is modeled by differential equation
 
-$
-m{(t)} = \frac{dy}{dt} = 2Kate^{-at^2}
-$
+$m{(t)} = \frac{dy}{dt} = 2Kate^{-at^2}$
 
 <!-- ```{code-cell} ipython3
 :tags: ["remove-input"]

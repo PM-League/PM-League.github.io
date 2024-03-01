@@ -115,13 +115,13 @@
 
 #### Twelve Principles
 
-> Our highest priority is to satisfy the customer through early and continuous deliveryof valuable software
+> Our highest priority is to satisfy the customer through early and continuous delivery of valuable software
 >
 > Welcome changing requirements, even late indevelopment. Agile processes harness change forthe customer's competitive advantage
 >
 > Deliver working software frequently, from acouple of weeks to a couple of months, with apreference to the shorter timescale
 >
-> Business people and developers must worktogether daily throughout the project
+> Business people and developers must work together daily throughout the project
 >
 > Build projects around motivated individuals. Give them the environment and support they need,and trust them to get the job done
 >
@@ -131,9 +131,9 @@
 >
 > Agile processes promote sustainable development. The sponsors, developers, and users should be ableto maintain a constant pace indefinitely
 >
-> Continuous attention to technical excellenceand good design enhances agility
+> Continuous attention to technical excellence and good design enhances agility
 >
-> Simplicity---the art of maximizing the amountof work not done---is essential
+> Simplicity---the art of maximizing the amount of work not done---is essential
 >
 > The best architectures, requirements, and designs emerge from self-organizing teams
 >
@@ -177,79 +177,79 @@
 
 ###### Formula
 
-$
+$$
 ROI = Benefits/Investment
-$
+$$
 
 ##### Present Value (PV)
 
-$
+$$
 PV = FV_t/(1+r)^t
-$
+$$
 
 ##### Net Present Value (NPV)
 
 ###### Formula
 
-$
+$$
 NPV=\sum_{t=0}^{T} CF_t/(1+r)^t
-$
+$$
 
 ###### Interpretation
 
-IF $NPV>0$ THEN accept ELSE reject
+IF $$NPV>0$$ THEN accept ELSE reject
 
 ##### Internal Rate of Return (IRR)
 
 ###### Formula
 
-$
+$$
 IRR = r : NPV(r) = 0
-$
+$$
 
 ###### Interpretation
 
-IF $IRR>r$ THEN accept ELSE reject
+IF $$IRR>r$$ THEN accept ELSE reject
 
 ##### Payback Period
 
 ###### Formula
 
-$
+$$
 T : NPV(T)=0
-$
+$$
 
 ###### Interpretation
 
-IF $T<PB$ THEN accept ELSE reject
+IF $$T<PB$$ THEN accept ELSE reject
 
 #### Earned Value Management
 
 ##### Metrics
 
 | Symbol           | Formula                   | Name                        |
-| ---------------- | ------------------------- | --------------------------- |
-| $AT$           |                           | Actual Time                 |
-| $WS$           |                           | Work Scheduled              |
-| $WP$           |                           | Work Performed              |
-| $\mathrm{BAC}$ |                           | Budget at Completion        |
-| $\mathrm{PD}$  |                           | Planned Duration            |
-| $AC$           |                           | Actual Cost                 |
-| $PV$           | $\mathrm{BAC} \cdot WS$ | Planned Value               |
-| $EV$           | $\mathrm{BAC} \cdot WP$ | Earned Value                |
-| $CV$           | $EV-AC$                 | Cost Variance               |
-| $SV$           | $EV-PV$                 | Schedule Variance           |
-| $CPI$          | $EV/AC$                 | Cost Performance Index      |
-| $SPI$          | $EV/PV$                 | Schedule Performance Index  |
-| $cEAC$         | $\mathrm{BAC}$          | Cost Estimate at Completion |
-|                  | $\mathrm{BAC}-CV$       |                             |
-|                  | $\mathrm{BAC}/CPI$      |                             |
-| $tEAC$         | $\mathrm{PD}$           | Time Estimate at Completion |
-|                  | $\mathrm{PD}/SPI$       |                             |
-| $cETC$         | $cEAC-AC$               | Cost Estimate to Complete   |
-| $tETC$         | $tEAC-AT$               | Time Estimate to Complete   |
-| $cVAC$         | $cEAC-\mathrm{BAC}$     | Cost Variance at Completion |
-| $tVAC$         | $tEAC-\mathrm{PD}$      | Time Variance at Completion |
+| - | - | - |
+| $$AT$$           |                           | Actual Time                 |
+| $$WS$$           |                           | Work Scheduled              |
+| $$WP$$           |                           | Work Performed              |
+| $$\mathrm{BAC}$$ |                           | Budget at Completion        |
+| $$\mathrm{PD}$$  |                           | Planned Duration            |
+| $$AC$$           |                           | Actual Cost                 |
+| $$PV$$           | $$\mathrm{BAC} \cdot WS$$ | Planned Value               |
+| $$EV$$           | $$\mathrm{BAC} \cdot WP$$ | Earned Value                |
+| $$CV$$           | $$EV-AC$$                 | Cost Variance               |
+| $$SV$$           | $$EV-PV$$                 | Schedule Variance           |
+| $$CPI$$          | $$EV/AC$$                 | Cost Performance Index      |
+| $$SPI$$          | $$EV/PV$$                 | Schedule Performance Index  |
+| $$cEAC$$         | $$\mathrm{BAC}$$          | Cost Estimate at Completion |
+|                  | $$\mathrm{BAC}-CV$$       |                             |
+|                  | $$\mathrm{BAC}/CPI$$      |                             |
+| $$tEAC$$         | $$\mathrm{PD}$$           | Time Estimate at Completion |
+|                  | $$\mathrm{PD}/SPI$$       |                             |
+| $$cETC$$         | $$cEAC-AC$$               | Cost Estimate to Complete   |
+| $$tETC$$         | $$tEAC-AT$$               | Time Estimate to Complete   |
+| $$cVAC$$         | $$cEAC-\mathrm{BAC}$$     | Cost Variance at Completion |
+| $$tVAC$$         | $$tEAC-\mathrm{PD}$$      | Time Variance at Completion |
 
 #### Agile Project Accounting
 
@@ -290,7 +290,7 @@ IF $T<PB$ THEN accept ELSE reject
 
 ###### Dot Voting or Multi-Voting
 
-1. Give stakeholders $n$ dots
+1. Give stakeholders $$n$$ dots
 2. Ask stakeholders to distribute points to options presented
 
 ###### Kano Analysis

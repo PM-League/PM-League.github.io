@@ -15,6 +15,7 @@ parts:
   - file: PM/putnam
 - caption: Agile Project Management
   chapters:
+  - file: APM/agile
   - file: APM/scrum
 - caption: System Dynamics
   chapters:

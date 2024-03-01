@@ -65,6 +65,8 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'PM/evm';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -196,7 +198,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Agile Project Management</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../APM/agile.html">Agile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../APM/agile.html">Agile Domains, Tools, and Techniques</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../APM/scrum.html">Scrum</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">System Dynamics</span></p>
@@ -431,7 +433,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="earned-value-management">
+  <section class="tex2jax_ignore mathjax_ignore" id="earned-value-management">
 <h1>Earned Value Management<a class="headerlink" href="#earned-value-management" title="Link to this heading">#</a></h1>
 <section id="terms-definitions-and-abbreviations">
 <h2>Terms, Definitions, and Abbreviations<a class="headerlink" href="#terms-definitions-and-abbreviations" title="Link to this heading">#</a></h2>
@@ -625,97 +627,97 @@ Table 1 summarizes the key EV cost performance indicators and predictors.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>$t$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(t\)</span></p></td>
 <td><p>Time</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p>$PD$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(PD\)</span></p></td>
 <td><p>Planned Duration</p></td>
-<td><p>$\sum_{t} t$</p></td>
+<td><p><span class="math notranslate nohighlight">\(\sum_{t} t\)</span></p></td>
 </tr>
-<tr class="row-even"><td><p>$WS{(t)}$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(WS{(t)}\)</span></p></td>
 <td><p>Percentage of Work Scheduled</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p>$WP{(t)}$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(WP{(t)}\)</span></p></td>
 <td><p>Percentage of Work Performed</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p>$AC{(t)}$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(AC{(t)}\)</span></p></td>
 <td><p>Actual Cost of Work Performed</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p>$EV{(t)}$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(EV{(t)}\)</span></p></td>
 <td><p>Earned Value</p></td>
-<td><p>$BAC \cdot WP{(t)}$</p></td>
+<td><p><span class="math notranslate nohighlight">\(BAC \cdot WP{(t)}\)</span></p></td>
 </tr>
-<tr class="row-even"><td><p>$PV{(t)}$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(PV{(t)}\)</span></p></td>
 <td><p>Planned Value</p></td>
-<td><p>$BAC \cdot WS{(t)}$</p></td>
+<td><p><span class="math notranslate nohighlight">\(BAC \cdot WS{(t)}\)</span></p></td>
 </tr>
-<tr class="row-odd"><td><p>$BAC$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(BAC\)</span></p></td>
 <td><p>Budget at Completion</p></td>
-<td><p>$\sum_{t} PV{(t)}$</p></td>
+<td><p><span class="math notranslate nohighlight">\(\sum_{t} PV{(t)}\)</span></p></td>
 </tr>
-<tr class="row-even"><td><p>$CV{(t)}$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(CV{(t)}\)</span></p></td>
 <td><p>Cost Variance</p></td>
-<td><p>$EV{(t)} - AC{(t)}$</p></td>
+<td><p><span class="math notranslate nohighlight">\(EV{(t)} - AC{(t)}\)</span></p></td>
 </tr>
-<tr class="row-odd"><td><p>$SV{(t)}$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(SV{(t)}\)</span></p></td>
 <td><p>Schedule Variance</p></td>
-<td><p>$EV{(t)} - SV{(t)}$</p></td>
+<td><p><span class="math notranslate nohighlight">\(EV{(t)} - SV{(t)}\)</span></p></td>
 </tr>
-<tr class="row-even"><td><p>$CPI{(t)}$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(CPI{(t)}\)</span></p></td>
 <td><p>Cost Performance Index</p></td>
-<td><p>$EV{(t)} / AC{(t)}$</p></td>
+<td><p><span class="math notranslate nohighlight">\(EV{(t)} / AC{(t)}\)</span></p></td>
 </tr>
-<tr class="row-odd"><td><p>$SPI{(t)}$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(SPI{(t)}\)</span></p></td>
 <td><p>Schedule Performance Index</p></td>
-<td><p>$EV{(t)} / PV{(t)}$</p></td>
+<td><p><span class="math notranslate nohighlight">\(EV{(t)} / PV{(t)}\)</span></p></td>
 </tr>
-<tr class="row-even"><td><p>$EAC{(t)}$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(EAC{(t)}\)</span></p></td>
 <td><p>Estimate at Completion</p></td>
-<td><p>$EAC{(t)} = AC{(t)} + ETC{(t)}$</p></td>
+<td><p><span class="math notranslate nohighlight">\(EAC{(t)} = AC{(t)} + ETC{(t)}\)</span></p></td>
 </tr>
-<tr class="row-odd"><td><p>$ETC{(t)}$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(ETC{(t)}\)</span></p></td>
 <td><p>Estimate to Complete</p></td>
-<td><p>$ETC{(t)} = [BAC - EV{(t)}]/PF{(t)}$</p></td>
+<td><p><span class="math notranslate nohighlight">\(ETC{(t)} = [BAC - EV{(t)}]/PF{(t)}\)</span></p></td>
 </tr>
-<tr class="row-even"><td><p>$TCPI{(t)}$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(TCPI{(t)}\)</span></p></td>
 <td><p>To-Complete Performance Index</p></td>
-<td><p>$TCPI{(t)} = [BAC - EV{(t)}]/[BAC - AC{(t)}]$</p></td>
+<td><p><span class="math notranslate nohighlight">\(TCPI{(t)} = [BAC - EV{(t)}]/[BAC - AC{(t)}]\)</span></p></td>
 </tr>
 <tr class="row-odd"><td><p></p></td>
 <td><p></p></td>
-<td><p>$TCPI{(t)} = [EAC{(t)} - EV{(t)}]/[BAC - AC{(t)}]$</p></td>
+<td><p><span class="math notranslate nohighlight">\(TCPI{(t)} = [EAC{(t)} - EV{(t)}]/[BAC - AC{(t)}]\)</span></p></td>
 </tr>
-<tr class="row-even"><td><p>$ES{(t)}$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(ES{(t)}\)</span></p></td>
 <td><p>Earned Schedule</p></td>
-<td><p>$ES{(t)} = \begin{Bmatrix} t^* : PV(t^*) = EV{(t)}\end{Bmatrix}$</p></td>
+<td><p><span class="math notranslate nohighlight">\(ES{(t)} = \begin{Bmatrix} t^* : PV(t^*) = EV{(t)}\end{Bmatrix}\)</span></p></td>
 </tr>
-<tr class="row-odd"><td><p>$SV^{t}{(t)}$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(SV^{t}{(t)}\)</span></p></td>
 <td><p>Earned Schedule Variance</p></td>
-<td><p>$SV^\text{t}{(t)} = ES{(t)} - t$</p></td>
+<td><p><span class="math notranslate nohighlight">\(SV^\text{t}{(t)} = ES{(t)} - t\)</span></p></td>
 </tr>
-<tr class="row-even"><td><p>$SPI^\text{t}{(t)}$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(SPI^\text{t}{(t)}\)</span></p></td>
 <td><p>Earned Schedule Performance Index</p></td>
-<td><p>$SPI^\text{t}{(t)} = ES{(t)} / t$</p></td>
+<td><p><span class="math notranslate nohighlight">\(SPI^\text{t}{(t)} = ES{(t)} / t\)</span></p></td>
 </tr>
-<tr class="row-odd"><td><p>$TEAC$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(TEAC\)</span></p></td>
 <td><p>Time Estimate at Completion</p></td>
-<td><p>$TEAC{(t)} = AT + ETC^\text{t}{(t)} / PF^\text{t}{(t)}$</p></td>
+<td><p><span class="math notranslate nohighlight">\(TEAC{(t)} = AT + ETC^\text{t}{(t)} / PF^\text{t}{(t)}\)</span></p></td>
 </tr>
-<tr class="row-even"><td><p>$ETC^\text{t}{(t)}$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(ETC^\text{t}{(t)}\)</span></p></td>
 <td><p>Time Estimate to Complete</p></td>
-<td><p>$ETC^\text{t}{(t)} = [PD - ES{(t)}]/PF^\text{t}{(t)}$</p></td>
+<td><p><span class="math notranslate nohighlight">\(ETC^\text{t}{(t)} = [PD - ES{(t)}]/PF^\text{t}{(t)}\)</span></p></td>
 </tr>
-<tr class="row-odd"><td><p>$TCPI^\text{t}{(t)}$</p></td>
-<td><p>To-Complete $ES$ Performance Index</p></td>
-<td><p>$TCPI^\text{t}{(t)} = [PD - ES{(t)}]/(PD - t)$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(TCPI^\text{t}{(t)}\)</span></p></td>
+<td><p>To-Complete <span class="math notranslate nohighlight">\(ES\)</span> Performance Index</p></td>
+<td><p><span class="math notranslate nohighlight">\(TCPI^\text{t}{(t)} = [PD - ES{(t)}]/(PD - t)\)</span></p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
 <td><p></p></td>
-<td><p>$TCPI^\text{t}{(t)} = [TEAC{(t)} - ES{(t)}]/(PD - t)$</p></td>
+<td><p><span class="math notranslate nohighlight">\(TCPI^\text{t}{(t)} = [TEAC{(t)} - ES{(t)}]/(PD - t)\)</span></p></td>
 </tr>
 </tbody>
 </table>
@@ -727,37 +729,37 @@ Table 1 summarizes the key EV cost performance indicators and predictors.</p>
 </section>
 <section id="cost-performance-measurements">
 <h3>Cost Performance Measurements<a class="headerlink" href="#cost-performance-measurements" title="Link to this heading">#</a></h3>
-<p>A negative $CV$ and $CPI$ of less than one indicates an unfavorable over-budget condition, as the $EV$ accrued is less than the costs incurred. <br />
-Conversely, a positive $CV$ and $CPI$ greater than one indicates an under-spend condition.</p>
+<p>A negative <span class="math notranslate nohighlight">\(CV\)</span> and <span class="math notranslate nohighlight">\(CPI\)</span> of less than one indicates an unfavorable over-budget condition, as the <span class="math notranslate nohighlight">\(EV\)</span> accrued is less than the costs incurred. <br />
+Conversely, a positive <span class="math notranslate nohighlight">\(CV\)</span> and <span class="math notranslate nohighlight">\(CPI\)</span> greater than one indicates an under-spend condition.</p>
 <p>Significant negative or positive CVs should be investigated to determine the causes and initiate discussions as to whether to implement corrective and preventive actions to prevent further deterioration and implement possible cost recovery.</p>
-<p>The $CPI$ is a ratio that provides a measure of the cost efficiency achieved by the project to date. <br />
-The $TCPI$ is a forward-looking predictor that calculates the future cost efficiency required to achieve specific cost objectives at project or programme completion. <br />
-The usual cost objectives analyzed should be the project or programme approved $BAC$ and, if different, the project or programme manager’s claimed cost estimate at completion.</p>
-<p>The $EAC$ is a predictive measure that calculates predicted completion costs based on the historical performance of the project to date. <br />
-One should produce a range of calculated completion cost outcomes using the $CPI$, $SPI$, or both indices in combination as performance factors. <br />
-These outcomes may be used to assess the likelihood of the project or programme achieving the approved BAC, and the project or programme manager’s claimed cost $EAC$.</p>
+<p>The <span class="math notranslate nohighlight">\(CPI\)</span> is a ratio that provides a measure of the cost efficiency achieved by the project to date. <br />
+The <span class="math notranslate nohighlight">\(TCPI\)</span> is a forward-looking predictor that calculates the future cost efficiency required to achieve specific cost objectives at project or programme completion. <br />
+The usual cost objectives analyzed should be the project or programme approved <span class="math notranslate nohighlight">\(BAC\)</span> and, if different, the project or programme manager’s claimed cost estimate at completion.</p>
+<p>The <span class="math notranslate nohighlight">\(EAC\)</span> is a predictive measure that calculates predicted completion costs based on the historical performance of the project to date. <br />
+One should produce a range of calculated completion cost outcomes using the <span class="math notranslate nohighlight">\(CPI\)</span>, <span class="math notranslate nohighlight">\(SPI\)</span>, or both indices in combination as performance factors. <br />
+These outcomes may be used to assess the likelihood of the project or programme achieving the approved BAC, and the project or programme manager’s claimed cost <span class="math notranslate nohighlight">\(EAC\)</span>.</p>
 </section>
 <section id="schedule-performance-measurements">
 <h3>Schedule Performance Measurements<a class="headerlink" href="#schedule-performance-measurements" title="Link to this heading">#</a></h3>
 <p>The traditional earned value schedule performance measurements are also cost-based measures that compare the volume of work performed to the volume of work planned.</p>
-<p>A negative $SV$ and $SPI$ of less than one indicates an unfavorable behind-schedule condition, subject to confirmatory analysis of the network schedule, as the volume of work accomplished, $EV$ accrued, is less than the volume of work planned, PV. <br />
-Conversely, a positive $SV$ and $SPI$ greater than one may indicate an ahead-of-schedule condition, subject to confirmatory analysis of the project network schedule.</p>
+<p>A negative <span class="math notranslate nohighlight">\(SV\)</span> and <span class="math notranslate nohighlight">\(SPI\)</span> of less than one indicates an unfavorable behind-schedule condition, subject to confirmatory analysis of the network schedule, as the volume of work accomplished, <span class="math notranslate nohighlight">\(EV\)</span> accrued, is less than the volume of work planned, PV. <br />
+Conversely, a positive <span class="math notranslate nohighlight">\(SV\)</span> and <span class="math notranslate nohighlight">\(SPI\)</span> greater than one may indicate an ahead-of-schedule condition, subject to confirmatory analysis of the project network schedule.</p>
 <p>Significant SVs should be investigated to understand the causes and to implement corrective and preventive actions. <br />
 Analysis of the earned value schedule metrics should be undertaken in conjunction with analyzing the network schedule, which remains the primary source of time-based information. <br />
-The critical path impact of negative $EV$ schedule variances should be analyzed in conjunction with the network schedule.</p>
-<p>The predictive utility of the $SV$ will be lost in the final third of the project.</p>
-<p>As the project or programme gets closer to completion, the $SV$ of the project or programme moves closer to zero, otherwise known as reversion to zero.</p>
+The critical path impact of negative <span class="math notranslate nohighlight">\(EV\)</span> schedule variances should be analyzed in conjunction with the network schedule.</p>
+<p>The predictive utility of the <span class="math notranslate nohighlight">\(SV\)</span> will be lost in the final third of the project.</p>
+<p>As the project or programme gets closer to completion, the <span class="math notranslate nohighlight">\(SV\)</span> of the project or programme moves closer to zero, otherwise known as reversion to zero.</p>
 </section>
 <section id="earned-schedule">
 <h3>Earned Schedule<a class="headerlink" href="#earned-schedule" title="Link to this heading">#</a></h3>
 <p><strong>Earned Schedule (ES)</strong> is an extension of EVM.</p>
 <p>ES calculates schedule metrics and indicators on the time axis rather than on the cost axis traditionally utilized by the EVM schedule metrics.</p>
-<p>The basis of ES is to identify the time increment at which the amount of $EV$ accrued should have been earned.</p>
-<p>The time increment can be any selected unit of accrual for the $EV$, such as a week, month, or any other time period. <br />
-Once this value has been determined, a series of time-based metrics can be calculated, which emulates the $EV$ cost-based counterparts.</p>
-<p>The ES metric, $SV^\text{t}$, should be calculated by reference to the actual time, that is, the time increment at the project or programme status date. <br />
-The actual time, $t$, is an unconstrained measure, in the same way as $AC$.</p>
-<p>The ES metrics should be reliable for early and late finish projects or programmes, as $SV^\text{t}$ only equals zero and $SPI^\text{t}$ only equals one at the project or programme completion if on-time completion has been achieved.</p>
+<p>The basis of ES is to identify the time increment at which the amount of <span class="math notranslate nohighlight">\(EV\)</span> accrued should have been earned.</p>
+<p>The time increment can be any selected unit of accrual for the <span class="math notranslate nohighlight">\(EV\)</span>, such as a week, month, or any other time period. <br />
+Once this value has been determined, a series of time-based metrics can be calculated, which emulates the <span class="math notranslate nohighlight">\(EV\)</span> cost-based counterparts.</p>
+<p>The ES metric, <span class="math notranslate nohighlight">\(SV^\text{t}\)</span>, should be calculated by reference to the actual time, that is, the time increment at the project or programme status date. <br />
+The actual time, <span class="math notranslate nohighlight">\(t\)</span>, is an unconstrained measure, in the same way as <span class="math notranslate nohighlight">\(AC\)</span>.</p>
+<p>The ES metrics should be reliable for early and late finish projects or programmes, as <span class="math notranslate nohighlight">\(SV^\text{t}\)</span> only equals zero and <span class="math notranslate nohighlight">\(SPI^\text{t}\)</span> only equals one at the project or programme completion if on-time completion has been achieved.</p>
 <p>Analysis of the ES metrics should be undertaken in conjunction with an analysis of the network schedule, which remains the primary source of time-based information.</p>
 <table class="table">
 <thead>

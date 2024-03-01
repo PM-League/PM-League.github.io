@@ -65,6 +65,8 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'PM/eac';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -196,7 +198,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Agile Project Management</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../APM/agile.html">Agile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../APM/agile.html">Agile Domains, Tools, and Techniques</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../APM/scrum.html">Scrum</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">System Dynamics</span></p>
@@ -424,7 +426,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="estimates-at-completion">
+  <section class="tex2jax_ignore mathjax_ignore" id="estimates-at-completion">
 <h1>Estimates at Completion<a class="headerlink" href="#estimates-at-completion" title="Link to this heading">#</a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
@@ -461,33 +463,39 @@ For long-term activities, cost and duration distributions can be fit on the past
 <h2>Project-level<a class="headerlink" href="#project-level" title="Link to this heading">#</a></h2>
 <section id="analytical-approach">
 <h3>Analytical Approach<a class="headerlink" href="#analytical-approach" title="Link to this heading">#</a></h3>
-<p>The project-level analytical approach consists of the EVM methodology applied to the accrued project $PV$, $EV$, and $AC$.</p>
+<p>The project-level analytical approach consists of the EVM methodology applied to the accrued project <span class="math notranslate nohighlight">\(PV\)</span>, <span class="math notranslate nohighlight">\(EV\)</span>, and <span class="math notranslate nohighlight">\(AC\)</span>.</p>
 <p>If cost and schedule overruns are considered to be recoverable,</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 cEAC{(t)} = BAC
-$$</p>
+\]</div>
 <p>and</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 sEAC{(t)} = PD
-$$
-.</p>
+\]</div>
+<p>.</p>
 <p>Otherwise, the physical formulation for the EAC is</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 xEAC{(t)} = \text{Actual} + xETC{(t)}
-$$</p>
+\]</div>
 <p>where</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 xETC{(t)} = [\text{Planned} - \text{Earned{(t)}}]/xPF{(t)}
-$$</p>
+\]</div>
 <p>If cost,</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 x = c \rightarrow xPF = cPF \rightarrow cEAC{(t)} = AC{(t)} + [BAC - EV{(t)}]/cPF{(t)}
-$$</p>
+\]</div>
 <p>If schedule,</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 x = s \rightarrow xPF = sPF \rightarrow sEAC{(t)} = t + [PD - ES{(t)}]/sPF{(t)}
-$$</p>
-<p>$cPF{(t)}$ and $sPF{(t)}$ both depend on the assumptions made, as follows.</p>
+\]</div>
+<p><span class="math notranslate nohighlight">\(cPF{(t)}\)</span> and <span class="math notranslate nohighlight">\(sPF{(t)}\)</span> both depend on the assumptions made, as follows.</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Formula</p></th>
@@ -495,23 +503,23 @@ $$</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>$xPF{(t)} = 1$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(xPF{(t)} = 1\)</span></p></td>
 <td><p>A one-time cost/schedule overrun cannot be recovered</p></td>
 </tr>
-<tr class="row-odd"><td><p>$xPF{(t)} = f \left( t, PV{(t)}, EV{(t)}, AC{(t)} \right)$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(xPF{(t)} = f \left( t, PV{(t)}, EV{(t)}, AC{(t)} \right)\)</span></p></td>
 <td><p>The future performance will reflect, somehow, the actual performance</p></td>
 </tr>
 </tbody>
 </table>
-<p>Any combinations of the EVM variables can be used to compute the $f$.
+<p>Any combinations of the EVM variables can be used to compute the <span class="math notranslate nohighlight">\(f\)</span>.
 Examples include, but are not limited to:</p>
 <ul class="simple">
 <li><p>punctual values</p>
 <ul>
-<li><p>$CPI{(t)}$ for $cPF{(t)}$</p></li>
-<li><p>$SPI^\text{t}{(t)}$ for $sPF{(t)}$</p></li>
-<li><p>$CPI{(t)} \cdot SPI{(t)}$ for both $xPF{(t)}$</p></li>
-<li><p>$w_{CPI} \cdot CPI{(t)} + w_{SPI} \cdot SPI{(t)}$ where $w_{CPI} + w_{SPI} = 1$</p></li>
+<li><p><span class="math notranslate nohighlight">\(CPI{(t)}\)</span> for <span class="math notranslate nohighlight">\(cPF{(t)}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(SPI^\text{t}{(t)}\)</span> for <span class="math notranslate nohighlight">\(sPF{(t)}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(CPI{(t)} \cdot SPI{(t)}\)</span> for both <span class="math notranslate nohighlight">\(xPF{(t)}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(w_{CPI} \cdot CPI{(t)} + w_{SPI} \cdot SPI{(t)}\)</span> where <span class="math notranslate nohighlight">\(w_{CPI} + w_{SPI} = 1\)</span></p></li>
 <li><p>etc.</p></li>
 </ul>
 </li>
@@ -528,26 +536,29 @@ Examples include, but are not limited to:</p>
 <h3>Statistical Approach<a class="headerlink" href="#statistical-approach" title="Link to this heading">#</a></h3>
 <p>The project-level statistical approach proposed is based on regression modeling. <br />
 A regression model can be represented through the following equation,</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 y = f(X) + \varepsilon,
-$$</p>
-<p>where $y$ is the dependent variable, $X$ is the matrix of explanatory variables, and $\varepsilon$ is the random additive error. <br />
-Regression analysis aims to evaluate the function $\widehat{f}$ that best approximates $f$.</p>
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(y\)</span> is the dependent variable, <span class="math notranslate nohighlight">\(X\)</span> is the matrix of explanatory variables, and <span class="math notranslate nohighlight">\(\varepsilon\)</span> is the random additive error. <br />
+Regression analysis aims to evaluate the function <span class="math notranslate nohighlight">\(\widehat{f}\)</span> that best approximates <span class="math notranslate nohighlight">\(f\)</span>.</p>
 <section id="methods">
 <h4>Methods<a class="headerlink" href="#methods" title="Link to this heading">#</a></h4>
 <p>Two alternative methods to evaluate the EACs are proposed.</p>
 <ol class="arabic simple">
 <li><p>The dependent variable is set to the EAC,</p></li>
 </ol>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 \widehat{y} = \widehat{xEAC}{(t)}
-$$</p>
-<p>It is difficult for regression models to understand how different combinations of the $X$ variables lead to the same value of $xEAC$, since it’s unique for each project in the dataset. <br />
-2. The dependent variable is set to the PF that would provide, at time $t$, the exact EAC,</p>
-<p>$$
+\]</div>
+<p>It is difficult for regression models to understand how different combinations of the <span class="math notranslate nohighlight">\(X\)</span> variables lead to the same value of <span class="math notranslate nohighlight">\(xEAC\)</span>, since it’s unique for each project in the dataset. <br />
+2. The dependent variable is set to the PF that would provide, at time <span class="math notranslate nohighlight">\(t\)</span>, the exact EAC,</p>
+<div class="math notranslate nohighlight">
+\[
 \widehat{y} = \widehat{xPF}{(t)} : xEAC{(t)} = \text{Actual} + [\text{Planned} - \text{Earned}]/\widehat{xPF}{(t)}
-$$</p>
-<p>Setting the problem in such a way allows for evaluating a different $xPF{(t)}$ for each time $t$, which is the result of a combination of the project control metrics.</p>
+\]</div>
+<p>Setting the problem in such a way allows for evaluating a different <span class="math notranslate nohighlight">\(xPF{(t)}\)</span> for each time <span class="math notranslate nohighlight">\(t\)</span>, which is the result of a combination of the project control metrics.</p>
 </section>
 </section>
 </section>
@@ -555,23 +566,26 @@ $$</p>
 <h2>Activity-level<a class="headerlink" href="#activity-level" title="Link to this heading">#</a></h2>
 <section id="id1">
 <h3>Analytical Approach<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<p>The activity-level analytical approach consists of the EVM methodology applied to the accrued activity $PV$, $EV$, and $AC$.</p>
+<p>The activity-level analytical approach consists of the EVM methodology applied to the accrued activity <span class="math notranslate nohighlight">\(PV\)</span>, <span class="math notranslate nohighlight">\(EV\)</span>, and <span class="math notranslate nohighlight">\(AC\)</span>.</p>
 <p>To compute the cEAC, one must sum the individual cEACs, as follows:</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 cEAC{(t)} = \sum_{i=1}^{I} cEAC{(t)}_i
-$$</p>
+\]</div>
 <p>where</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
 cEAC{(t)}_i = AC{(t)}_i + [BAC_i - EV{(t)}_i]/cPF{(t)}_i \quad \forall i \in I
-$$</p>
+\]</div>
 <p>To compute the sEAC, one must sum the individual sEACs of the activities belonging to the different paths and evaluate the new critical path, as follows:</p>
-<p>$$
-sEAC{(t)} = \text{max}_i \begin{Bmatrix} sEAC{(t)}_i : i = 1..I\end{Bmatrix}</p>
-<p>$$
-where</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[
+sEAC{(t)} = \text{max}_i \begin{Bmatrix} sEAC{(t)}_i : i = 1..I\end{Bmatrix} \]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[
 sEAC{(t)}_i = t + [PD_i - ES{(t)}_i]/sPF{(t)}_i \quad \forall i \in I.
-$$</p>
+\]</div>
 </section>
 <section id="id2">
 <h3>Statistical Approach<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>

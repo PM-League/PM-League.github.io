@@ -65,6 +65,8 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'APM/agile';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -517,7 +519,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="agile-domains-tools-and-techniques">
+  <section class="tex2jax_ignore mathjax_ignore" id="agile-domains-tools-and-techniques">
 <h1>Agile Domains, Tools, and Techniques<a class="headerlink" href="#agile-domains-tools-and-techniques" title="Link to this heading">#</a></h1>
 <section id="domains">
 <h2>Domains<a class="headerlink" href="#domains" title="Link to this heading">#</a></h2>
@@ -908,54 +910,54 @@ document.write(`
 <h5>Return on Investment (ROI)<a class="headerlink" href="#return-on-investment-roi" title="Link to this heading">#</a></h5>
 <section id="formula">
 <h6>Formula<a class="headerlink" href="#formula" title="Link to this heading">#</a></h6>
-<p>$$
+<p><span class="math notranslate nohighlight">\(
 ROI = Benefits/Investment
-$$</p>
+\)</span></p>
 </section>
 </section>
 <section id="present-value-pv">
 <h5>Present Value (PV)<a class="headerlink" href="#present-value-pv" title="Link to this heading">#</a></h5>
-<p>$$
+<p><span class="math notranslate nohighlight">\(
 PV = FV_t/(1+r)^t
-$$</p>
+\)</span></p>
 </section>
 <section id="net-present-value-npv">
 <h5>Net Present Value (NPV)<a class="headerlink" href="#net-present-value-npv" title="Link to this heading">#</a></h5>
 <section id="id1">
 <h6>Formula<a class="headerlink" href="#id1" title="Link to this heading">#</a></h6>
-<p>$$
+<p><span class="math notranslate nohighlight">\(
 NPV=\sum_{t=0}^{T} CF_t/(1+r)^t
-$$</p>
+\)</span></p>
 </section>
 <section id="interpretation">
 <h6>Interpretation<a class="headerlink" href="#interpretation" title="Link to this heading">#</a></h6>
-<p>IF $$NPV&gt;0$$ THEN accept ELSE reject</p>
+<p>IF <span class="math notranslate nohighlight">\(NPV&gt;0\)</span> THEN accept ELSE reject</p>
 </section>
 </section>
 <section id="internal-rate-of-return-irr">
 <h5>Internal Rate of Return (IRR)<a class="headerlink" href="#internal-rate-of-return-irr" title="Link to this heading">#</a></h5>
 <section id="id2">
 <h6>Formula<a class="headerlink" href="#id2" title="Link to this heading">#</a></h6>
-<p>$$
+<p><span class="math notranslate nohighlight">\(
 IRR = r : NPV(r) = 0
-$$</p>
+\)</span></p>
 </section>
 <section id="id3">
 <h6>Interpretation<a class="headerlink" href="#id3" title="Link to this heading">#</a></h6>
-<p>IF $$IRR&gt;r$$ THEN accept ELSE reject</p>
+<p>IF <span class="math notranslate nohighlight">\(IRR&gt;r\)</span> THEN accept ELSE reject</p>
 </section>
 </section>
 <section id="payback-period">
 <h5>Payback Period<a class="headerlink" href="#payback-period" title="Link to this heading">#</a></h5>
 <section id="id4">
 <h6>Formula<a class="headerlink" href="#id4" title="Link to this heading">#</a></h6>
-<p>$$
+<p><span class="math notranslate nohighlight">\(
 T : NPV(T)=0
-$$</p>
+\)</span></p>
 </section>
 <section id="id5">
 <h6>Interpretation<a class="headerlink" href="#id5" title="Link to this heading">#</a></h6>
-<p>IF $$T&lt;PB$$ THEN accept ELSE reject</p>
+<p>IF <span class="math notranslate nohighlight">\(T&lt;PB\)</span> THEN accept ELSE reject</p>
 </section>
 </section>
 </section>
@@ -971,88 +973,88 @@ $$</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>$$AT$$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(AT\)</span></p></td>
 <td><p></p></td>
 <td><p>Actual Time</p></td>
 </tr>
-<tr class="row-odd"><td><p>$$WS$$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(WS\)</span></p></td>
 <td><p></p></td>
 <td><p>Work Scheduled</p></td>
 </tr>
-<tr class="row-even"><td><p>$$WP$$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(WP\)</span></p></td>
 <td><p></p></td>
 <td><p>Work Performed</p></td>
 </tr>
-<tr class="row-odd"><td><p>$$\mathrm{BAC}$$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\mathrm{BAC}\)</span></p></td>
 <td><p></p></td>
 <td><p>Budget at Completion</p></td>
 </tr>
-<tr class="row-even"><td><p>$$\mathrm{PD}$$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\mathrm{PD}\)</span></p></td>
 <td><p></p></td>
 <td><p>Planned Duration</p></td>
 </tr>
-<tr class="row-odd"><td><p>$$AC$$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(AC\)</span></p></td>
 <td><p></p></td>
 <td><p>Actual Cost</p></td>
 </tr>
-<tr class="row-even"><td><p>$$PV$$</p></td>
-<td><p>$$\mathrm{BAC} \cdot WS$$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(PV\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathrm{BAC} \cdot WS\)</span></p></td>
 <td><p>Planned Value</p></td>
 </tr>
-<tr class="row-odd"><td><p>$$EV$$</p></td>
-<td><p>$$\mathrm{BAC} \cdot WP$$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(EV\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathrm{BAC} \cdot WP\)</span></p></td>
 <td><p>Earned Value</p></td>
 </tr>
-<tr class="row-even"><td><p>$$CV$$</p></td>
-<td><p>$$EV-AC$$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(CV\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(EV-AC\)</span></p></td>
 <td><p>Cost Variance</p></td>
 </tr>
-<tr class="row-odd"><td><p>$$SV$$</p></td>
-<td><p>$$EV-PV$$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(SV\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(EV-PV\)</span></p></td>
 <td><p>Schedule Variance</p></td>
 </tr>
-<tr class="row-even"><td><p>$$CPI$$</p></td>
-<td><p>$$EV/AC$$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(CPI\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(EV/AC\)</span></p></td>
 <td><p>Cost Performance Index</p></td>
 </tr>
-<tr class="row-odd"><td><p>$$SPI$$</p></td>
-<td><p>$$EV/PV$$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(SPI\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(EV/PV\)</span></p></td>
 <td><p>Schedule Performance Index</p></td>
 </tr>
-<tr class="row-even"><td><p>$$cEAC$$</p></td>
-<td><p>$$\mathrm{BAC}$$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(cEAC\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathrm{BAC}\)</span></p></td>
 <td><p>Cost Estimate at Completion</p></td>
 </tr>
 <tr class="row-odd"><td><p></p></td>
-<td><p>$$\mathrm{BAC}-CV$$</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathrm{BAC}-CV\)</span></p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
-<td><p>$$\mathrm{BAC}/CPI$$</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathrm{BAC}/CPI\)</span></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p>$$tEAC$$</p></td>
-<td><p>$$\mathrm{PD}$$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(tEAC\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathrm{PD}\)</span></p></td>
 <td><p>Time Estimate at Completion</p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
-<td><p>$$\mathrm{PD}/SPI$$</p></td>
+<td><p><span class="math notranslate nohighlight">\(\mathrm{PD}/SPI\)</span></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p>$$cETC$$</p></td>
-<td><p>$$cEAC-AC$$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(cETC\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(cEAC-AC\)</span></p></td>
 <td><p>Cost Estimate to Complete</p></td>
 </tr>
-<tr class="row-even"><td><p>$$tETC$$</p></td>
-<td><p>$$tEAC-AT$$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(tETC\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(tEAC-AT\)</span></p></td>
 <td><p>Time Estimate to Complete</p></td>
 </tr>
-<tr class="row-odd"><td><p>$$cVAC$$</p></td>
-<td><p>$$cEAC-\mathrm{BAC}$$</p></td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(cVAC\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(cEAC-\mathrm{BAC}\)</span></p></td>
 <td><p>Cost Variance at Completion</p></td>
 </tr>
-<tr class="row-even"><td><p>$$tVAC$$</p></td>
-<td><p>$$tEAC-\mathrm{PD}$$</p></td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(tVAC\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(tEAC-\mathrm{PD}\)</span></p></td>
 <td><p>Time Variance at Completion</p></td>
 </tr>
 </tbody>
@@ -1106,7 +1108,7 @@ $$</p>
 <section id="dot-voting-or-multi-voting">
 <h6>Dot Voting or Multi-Voting<a class="headerlink" href="#dot-voting-or-multi-voting" title="Link to this heading">#</a></h6>
 <ol class="arabic simple">
-<li><p>Give stakeholders $$n$$ dots</p></li>
+<li><p>Give stakeholders <span class="math notranslate nohighlight">\(n\)</span> dots</p></li>
 <li><p>Ask stakeholders to distribute points to options presented</p></li>
 </ol>
 </section>

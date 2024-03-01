@@ -14,7 +14,7 @@ kernelspec:
 ## The Norden-Rayleigh Curve
 The curve is modeled by differential equation
 
-$m{(t)} = \frac{dy}{dt} = 2Kate^{-at^2}$
+$$m{(t)} = \frac{dy}{dt} = 2Kate^{-at^2}$$
 
 <!-- ```{code-cell} ipython3
 :tags: ["remove-input"]
@@ -42,50 +42,15 @@ where
 |$K$|total project effort in staff years - area underneath the curve in $\left[0,\infty\right]$|
 |$t$|elapsed time|
 
-Integrating $m{(t)}$ on $[0,\infty]$, we obtain
+Integrating $m{(t)}$ on $[0,\infty]$, we obtain $y{(t)} = K\left[1-e^{-at^2}\right]$.
 
-$
-y{(t)} = K\left[1-e^{-at^2}\right]
-$
+If $y(0) = 0$ and $y(\infty) = K$, then $\frac{d^2y}{dt^2} = 2Kae^{-at^2}\left[1-2at^2\right]=0$, and $t_d^2 = \frac{1}{2a}$, where $t_d$ is the time at which the maximum effort rate occurs.
 
-If $y(0) = 0$ and $y(\infty) = K$, then
+Replacing $t_d$ leads to $E=y{(t)}=K\left(1-e^{\frac{t_d^2}{2t_d^2}}\right) = K\left(1-e^{-.5}\right)$, $E=y(t)=.3935K$, and $a=\frac{1}{2t_d^2}$.
 
-$
-\frac{d^2y}{dt^2} = 2Kae^{-at^2}\left[1-2at^2\right]=0
-$
+Replacing $a$ with $\frac{1}{2t_d^2}$ in the N/R model, we obtain $m(t)=\frac{2K}{2t_d^2}te^{-\frac{t^2}{2t_d^2}} = \frac{K}{t_d^2}te^{-\frac{t^2}{2t_d^2}}$.
 
-$
-t_d^2 = \frac{1}{2a}
-$
-
-where $t_d$ is the time at which the maximum effort rate occurs.
-
-Replacing $t_d$ leads to
-
-$
-E=y{(t)}=K\left(1-e^{\frac{t_d^2}{2t_d^2}}\right) = K\left(1-e^{-.5}\right)
-$
-
-$
-E=y(t)=.3935K
-$
-
-$
-a=\frac{1}{2t_d^2}
-$
-
-Replacing $a$ with $\frac{1}{2t_d^2}$ in the N/R model, we obtain
-
-$
-m(t)=\frac{2K}{2t_d^2}te^{-\frac{t^2}{2t_d^2}} = \frac{K}{t_d^2}te^{-\frac{t^2}{2t_d^2}}
-$
-
-The peak manning is denoted by $m_0$ and is obtained
-
-$
-m(t_d) = m_0 = \frac{K}{t_d \sqrt{e}}
-$
-
+The peak manning is denoted by $m_0$ and is obtained $m(t_d) = m_0 = \frac{K}{t_d \sqrt{e}}$, 
 where
 |Term|Definition|
 |-|-|

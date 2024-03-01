@@ -437,6 +437,11 @@ document.write(`
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Interpretation</a></li>
 </ul>
 </li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#payback-period">Payback Period</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Formula</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#interprettation">Interprettation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -780,18 +785,18 @@ document.write(`
 <section id="twelve-principles">
 <h4>Twelve Principles<a class="headerlink" href="#twelve-principles" title="Link to this heading">#</a></h4>
 <blockquote>
-<div><p>Our highest priority is to satisfy the customerthrough early and continuous deliveryof valuable software</p>
+<div><p>Our highest priority is to satisfy the customer through early and continuous deliveryof valuable software</p>
 <p>Welcome changing requirements, even late indevelopment. Agile processes harness change forthe customer’s competitive advantage</p>
 <p>Deliver working software frequently, from acouple of weeks to a couple of months, with apreference to the shorter timescale</p>
 <p>Business people and developers must worktogether daily throughout the project</p>
-<p>Build projects around motivated individuals.Give them the environment and support they need,and trust them to get the job done</p>
-<p>The most efficient and effective method ofconveying information to and within a developmentteam is face-to-face conversation</p>
+<p>Build projects around motivated individuals. Give them the environment and support they need,and trust them to get the job done</p>
+<p>The most efficient and effective method of conveying information to and within a developmentteam is face-to-face conversation</p>
 <p>Working software is the primary measure of progress</p>
-<p>Agile processes promote sustainable development.The sponsors, developers, and users should be ableto maintain a constant pace indefinitely</p>
+<p>Agile processes promote sustainable development. The sponsors, developers, and users should be ableto maintain a constant pace indefinitely</p>
 <p>Continuous attention to technical excellenceand good design enhances agility</p>
-<p>Simplicity–the art of maximizing the amountof work not done–is essential</p>
-<p>The best architectures, requirements, and designsemerge from self-organizing teams</p>
-<p>At regular intervals, the team reflects on howto become more effective, then tunes and adjustsits behavior accordingly</p>
+<p>Simplicity—the art of maximizing the amountof work not done—is essential</p>
+<p>The best architectures, requirements, and designs emerge from self-organizing teams</p>
+<p>At regular intervals, the team reflects on how to become more effective, then tunes and adjustsits behavior accordingly</p>
 </div></blockquote>
 </section>
 </section>
@@ -845,18 +850,24 @@ document.write(`
 <h5>Return on Investment (ROI)<a class="headerlink" href="#return-on-investment-roi" title="Link to this heading">#</a></h5>
 <section id="formula">
 <h6>Formula<a class="headerlink" href="#formula" title="Link to this heading">#</a></h6>
-<p>$ROI = Benefits/Investment$</p>
+<p>$$
+ROI = Benefits/Investment
+$$</p>
 </section>
 </section>
 <section id="present-value-pv">
 <h5>Present Value (PV)<a class="headerlink" href="#present-value-pv" title="Link to this heading">#</a></h5>
-<p>$PV = FV/(1+r)^t$</p>
+<p>$$
+PV = FV_t/(1+r)^t
+$$</p>
 </section>
 <section id="net-present-value-npv">
 <h5>Net Present Value (NPV)<a class="headerlink" href="#net-present-value-npv" title="Link to this heading">#</a></h5>
 <section id="id1">
 <h6>Formula<a class="headerlink" href="#id1" title="Link to this heading">#</a></h6>
-<p>$NPV=\sum_{t=0}^{T} CF_t/(1+r)^t$</p>
+<p>$$
+NPV=\sum_{t=0}^{T} CF_t/(1+r)^t
+$$</p>
 </section>
 <section id="interpretation">
 <h6>Interpretation<a class="headerlink" href="#interpretation" title="Link to this heading">#</a></h6>
@@ -867,11 +878,26 @@ document.write(`
 <h5>Internal Rate of Return (IRR)<a class="headerlink" href="#internal-rate-of-return-irr" title="Link to this heading">#</a></h5>
 <section id="id2">
 <h6>Formula<a class="headerlink" href="#id2" title="Link to this heading">#</a></h6>
-<p>$IRR = r : NPV(r) = 0$</p>
+<p>$$
+IRR = r : NPV(r) = 0
+$$</p>
 </section>
 <section id="id3">
 <h6>Interpretation<a class="headerlink" href="#id3" title="Link to this heading">#</a></h6>
 <p>IF $IRR&gt;r$ THEN accept ELSE reject</p>
+</section>
+</section>
+<section id="payback-period">
+<h5>Payback Period<a class="headerlink" href="#payback-period" title="Link to this heading">#</a></h5>
+<section id="id4">
+<h6>Formula<a class="headerlink" href="#id4" title="Link to this heading">#</a></h6>
+<p>$$
+T : NPV(T)=0
+$$</p>
+</section>
+<section id="interprettation">
+<h6>Interprettation<a class="headerlink" href="#interprettation" title="Link to this heading">#</a></h6>
+<p>IF $T&lt;PB$ THEN accept ELSE reject</p>
 </section>
 </section>
 </section>
@@ -981,6 +1007,11 @@ document.write(`
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#internal-rate-of-return-irr">Internal Rate of Return (IRR)</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Formula</a></li>
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Interpretation</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#payback-period">Payback Period</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Formula</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#interprettation">Interprettation</a></li>
 </ul>
 </li>
 </ul>

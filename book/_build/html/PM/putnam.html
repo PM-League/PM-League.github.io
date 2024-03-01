@@ -68,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'PM/putnam';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Agile" href="../APM/agile.html" />
+    <link rel="next" title="Agile Domains, Tools, and Techniques" href="../APM/agile.html" />
     <link rel="prev" title="Project Portfolio Management" href="ppm.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -196,7 +196,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Agile Project Management</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../APM/agile.html">Agile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../APM/agile.html">Agile Domains, Tools, and Techniques</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../APM/scrum.html">Scrum</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">System Dynamics</span></p>
@@ -420,9 +420,9 @@ document.write(`
 <section id="the-norden-rayleigh-curve">
 <h2>The Norden-Rayleigh Curve<a class="headerlink" href="#the-norden-rayleigh-curve" title="Link to this heading">#</a></h2>
 <p>The curve is modeled by differential equation</p>
-<p>$$
+<p>$
 m{(t)} = \frac{dy}{dt} = 2Kate^{-at^2}
-$$</p>
+$</p>
 <!-- ```{code-cell} ipython3
 :tags: ["remove-input"]
 import numpy as np
@@ -463,35 +463,35 @@ plt.show()
 </tbody>
 </table>
 <p>Integrating $m{(t)}$ on $[0,\infty]$, we obtain</p>
-<p>$$
+<p>$
 y{(t)} = K\left[1-e^{-at^2}\right]
-$$</p>
+$</p>
 <p>If $y(0) = 0$ and $y(\infty) = K$, then</p>
-<p>$$
+<p>$
 \frac{d^2y}{dt^2} = 2Kae^{-at^2}\left[1-2at^2\right]=0
-$$</p>
-<p>$$
+$</p>
+<p>$
 t_d^2 = \frac{1}{2a}
-$$</p>
+$</p>
 <p>where $t_d$ is the time at which the maximum effort rate occurs.</p>
 <p>Replacing $t_d$ leads to</p>
-<p>$$
+<p>$
 E=y{(t)}=K\left(1-e^{\frac{t_d^2}{2t_d^2}}\right) = K\left(1-e^{-.5}\right)
-$$</p>
-<p>$$
+$</p>
+<p>$
 E=y(t)=.3935K
-$$</p>
-<p>$$
+$</p>
+<p>$
 a=\frac{1}{2t_d^2}
-$$</p>
+$</p>
 <p>Replacing $a$ with $\frac{1}{2t_d^2}$ in the N/R model, we obtain</p>
-<p>$$
+<p>$
 m(t)=\frac{2K}{2t_d^2}te^{-\frac{t^2}{2t_d^2}} = \frac{K}{t_d^2}te^{-\frac{t^2}{2t_d^2}}
-$$</p>
+$</p>
 <p>The peak manning is denoted by $m_0$ and is obtained</p>
-<p>$$
+<p>$
 m(t_d) = m_0 = \frac{K}{t_d \sqrt{e}}
-$$</p>
+$</p>
 <p>where</p>
 <table class="table">
 <thead>
@@ -515,29 +515,29 @@ $$</p>
 <section id="difficulty-metric">
 <h2>Difficulty Metric<a class="headerlink" href="#difficulty-metric" title="Link to this heading">#</a></h2>
 <p>Slope of manpower distribution curve at $t=0$ has some useful properties.</p>
-<p>$$
+<p>$
 m’{(t)} = \frac{d^2y}{dt^2} = 2Kae^{-at^2}\left(1-2at^2\right)
-$$</p>
+$</p>
 <p>For $t=0$,</p>
-<p>$$
+<p>$
 m’{(0)} = 2Ka = \frac{2K}{2t_d^2} = \frac{K}{t_d^2}
-$$</p>
+$</p>
 <p>The ratio</p>
-<p>$$
+<p>$
 D = \frac{K}{t_d^2}
-$$</p>
+$</p>
 <p>is called difficulty metric $D$ (person/year)</p>
 </section>
 <section id="the-software-equation">
 <h2>The Software Equation<a class="headerlink" href="#the-software-equation" title="Link to this heading">#</a></h2>
 <p>The average productivity</p>
-<p>$$
+<p>$
 \overline{PR} = \frac{\text{total end product code}}{\text{total effort to produce code}}
-$$</p>
+$</p>
 <p>The general size of the product in source statements is</p>
-<p>$$
+<p>$
 S_s = C_k K^{1/3} t_d^{4/3}
-$$</p>
+$</p>
 <p>where $C_k$ is a measure of the state of technology of the human-machine system.</p>
 <p>This is a reasonable relation linking the output ($S_s$) to the input ($K$, $t_d$ - management parameters) and a constant ($C_k$) which is somehow a measure of the state of technology being applied to the project. <br />
 Adding people to accelerate a project can accomplish this until the gradient condition is reached, but only at a very high cost.</p>
@@ -545,9 +545,9 @@ Adding people to accelerate a project can accomplish this until the gradient con
 <h3>The Effort-Time Tradeoff Law<a class="headerlink" href="#the-effort-time-tradeoff-law" title="Link to this heading">#</a></h3>
 <p>The tradeoff law between effort and time can be obtained
 explicity from the software equation</p>
-<p>$$
+<p>$
 S_s = C_k K^{1/3} t_d^{4/3}
-$$</p>
+$</p>
 <p>A constant number of source statements ($S_s = \text{const}$) implies $K t_d^4 = \text{const}$. <br />
 So, $K = \text{constant}/t_d^4$, or proportionally, development effort = constat/$t_d^4$, is the effort-development tradeoff law.</p>
 </section>
@@ -555,13 +555,13 @@ So, $K = \text{constant}/t_d^4$, or proportionally, development effort = constat
 <h3>Effect of Constant Productivity<a class="headerlink" href="#effect-of-constant-productivity" title="Link to this heading">#</a></h3>
 <p>One other relation is worth obtaining; the one where the
 average productivity remains constant.</p>
-<p>$$
+<p>$
 \overline{PR} = C_n D^{-2/3}
-$$</p>
+$</p>
 <p>implies that</p>
-<p>$$
+<p>$
 D = \text{const}
-$$</p>
+$</p>
 <p>So the productivity for different projects will be the same
 only if the difficulty is the same. <br />
 This does not seem reasonable to expect very frequently since the difficulty is a measure of the software work to be done, i.e., $K/t_d^2 = D$  which is a function of the number of files, the number of reports, and the number of programs the system has. <br />
@@ -614,7 +614,7 @@ Thus, planning a new project based on using the same productivity a previous pro
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Agile</p>
+        <p class="prev-next-title">Agile Domains, Tools, and Techniques</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

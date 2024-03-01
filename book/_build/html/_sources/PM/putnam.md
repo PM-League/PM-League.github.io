@@ -14,9 +14,9 @@ kernelspec:
 ## The Norden-Rayleigh Curve
 The curve is modeled by differential equation
 
-$$
+$
 m{(t)} = \frac{dy}{dt} = 2Kate^{-at^2}
-$$
+$
 
 <!-- ```{code-cell} ipython3
 :tags: ["remove-input"]
@@ -46,47 +46,47 @@ where
 
 Integrating $m{(t)}$ on $[0,\infty]$, we obtain
 
-$$
+$
 y{(t)} = K\left[1-e^{-at^2}\right]
-$$
+$
 
 If $y(0) = 0$ and $y(\infty) = K$, then
 
-$$
+$
 \frac{d^2y}{dt^2} = 2Kae^{-at^2}\left[1-2at^2\right]=0
-$$
+$
 
-$$
+$
 t_d^2 = \frac{1}{2a}
-$$
+$
 
 where $t_d$ is the time at which the maximum effort rate occurs.
 
 Replacing $t_d$ leads to
 
-$$
+$
 E=y{(t)}=K\left(1-e^{\frac{t_d^2}{2t_d^2}}\right) = K\left(1-e^{-.5}\right)
-$$
+$
 
-$$
+$
 E=y(t)=.3935K
-$$
+$
 
-$$
+$
 a=\frac{1}{2t_d^2}
-$$
+$
 
 Replacing $a$ with $\frac{1}{2t_d^2}$ in the N/R model, we obtain
 
-$$
+$
 m(t)=\frac{2K}{2t_d^2}te^{-\frac{t^2}{2t_d^2}} = \frac{K}{t_d^2}te^{-\frac{t^2}{2t_d^2}}
-$$
+$
 
 The peak manning is denoted by $m_0$ and is obtained
 
-$$
+$
 m(t_d) = m_0 = \frac{K}{t_d \sqrt{e}}
-$$
+$
 
 where
 |Term|Definition|
@@ -98,36 +98,36 @@ where
 ## Difficulty Metric
 Slope of manpower distribution curve at $t=0$ has some useful properties.
 
-$$
+$
 m'{(t)} = \frac{d^2y}{dt^2} = 2Kae^{-at^2}\left(1-2at^2\right)
-$$
+$
 
 For $t=0$, 
 
-$$
+$
 m'{(0)} = 2Ka = \frac{2K}{2t_d^2} = \frac{K}{t_d^2}
-$$
+$
 
 The ratio 
 
-$$
+$
 D = \frac{K}{t_d^2}
-$$
+$
 
 is called difficulty metric $D$ (person/year) 
 
 ## The Software Equation
 The average productivity
 
-$$
+$
 \overline{PR} = \frac{\text{total end product code}}{\text{total effort to produce code}}
-$$
+$
 
 The general size of the product in source statements is
 
-$$
+$
 S_s = C_k K^{1/3} t_d^{4/3}
-$$
+$
 
 where $C_k$ is a measure of the state of technology of the human-machine system.
 
@@ -138,9 +138,9 @@ Adding people to accelerate a project can accomplish this until the gradient con
 The tradeoff law between effort and time can be obtained
 explicity from the software equation
 
-$$
+$
 S_s = C_k K^{1/3} t_d^{4/3}
-$$
+$
 
 A constant number of source statements ($S_s = \text{const}$) implies $K t_d^4 = \text{const}$. \
 So, $K = \text{constant}/t_d^4$, or proportionally, development effort = constat/$t_d^4$, is the effort-development tradeoff law.
@@ -149,15 +149,15 @@ So, $K = \text{constant}/t_d^4$, or proportionally, development effort = constat
 One other relation is worth obtaining; the one where the
 average productivity remains constant.
 
-$$
+$
 \overline{PR} = C_n D^{-2/3}
-$$
+$
 
 implies that
 
-$$
+$
 D = \text{const}
-$$
+$
 
 So the productivity for different projects will be the same
 only if the difficulty is the same. \

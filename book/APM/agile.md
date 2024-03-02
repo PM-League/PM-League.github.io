@@ -177,15 +177,11 @@
 
 ###### Formula
 
-$
-ROI = Benefits/Investment
-$
+$ROI = Benefits/Investment$
 
 ##### Present Value (PV)
 
-$
-PV = FV_t/(1+r)^t
-$
+$PV = FV_t/(1+r)^t$
 
 ##### Net Present Value (NPV)
 
@@ -228,7 +224,7 @@ IF $T<PB$ THEN accept ELSE reject
 ##### Metrics
 
 | Symbol           | Formula                   | Name                        |
-| - | - | - |
+| ---------------- | ------------------------- | --------------------------- |
 | $AT$           |                           | Actual Time                 |
 | $WS$           |                           | Work Scheduled              |
 | $WP$           |                           | Work Performed              |

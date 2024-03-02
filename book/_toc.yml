@@ -12,7 +12,6 @@ parts:
   - file: PM/rm
   - file: PM/eac
   - file: PM/ppm
-  - file: PM/putnam
 - caption: Agile Project Management
   chapters:
   - file: APM/agile
@@ -23,3 +22,7 @@ parts:
 - caption: Systems Engineering
   chapters:
   - file: SE/se-concepts
+- caption: Misc 
+  chapters:
+  - title: Processes
+    file: Misc/putnam

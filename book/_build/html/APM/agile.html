@@ -598,7 +598,129 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#daily-stand-ups">Daily Stand-Ups</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-detection-and-resolution">Problem Detection and Resolution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-detection-and-resolution">Problem Detection and Resolution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-problems">Understanding Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-problems-impact-a-project">How Problems Impact a Project</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cost-of-change">The Cost of Change</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#technical-debt">Technical Debt</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-safe-and-open-environment">Create a Safe and Open Environment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#failure-modes">Failure Modes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#success-modes">Success Modes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#success-strategies">Success Strategies</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detecting-problems">Detecting Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-time-and-cycle-time">Lead Time and Cycle Time</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-time">Lead Time</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#cycle-time-wip-and-throughput">Cycle Time, WIP, and Throughput</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#throughput-and-productivity">Throughput and Productivity</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#defects">Defects</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#defect-rates">Defect Rates</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#variance-analysis">Variance Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#causes-of-variation">Causes of Variation</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#accept-the-variance-of-take-action">Accept the Variance of Take Action?</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#trend-analysis">Trend Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#control-limits">Control Limits</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-threats-and-issues">Managing Threats and Issues</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-adjusted-backlog">Risk-Adjusted Backlog</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-risk-adjusted-backlog">Creating the Risk-Adjusted Backlog</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-severity">Risk Severity</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-burndown-graphs">Risk Burndown Graphs</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solving-problems">Solving Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-solving-as-continuous-improvement">Problem Solving as Continuous Improvement</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#engage-the-team">Engage the Team</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-benefits-of-team-engagement">The Benefits of Team Engagement</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-and-cautions-for-engaging-the-team">Considerations and Cautions for Engaging the Team</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#some-problems-can-t-be-solved">Some Problems Can’t Be Solved</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement">Continuous Improvement</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kaizen">Kaizen</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pdca-cycle">PDCA Cycle</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fishbone-analysis">Fishbone Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-levels-of-improvement-process">Multiple Levels of Improvement—Process</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#process-tailoring">Process Tailoring</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mitigating-the-risk-of-process-tailoring">Mitigating the Risk of Process Tailoring</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#hybrid-models">Hybrid Models</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-agile-hybrid-scrum-xp">Agile-Agile Hybrid: Scrum-XP</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-traditional-hybrids">Agile-Traditional Hybrids</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#systems-thinking">Systems Thinking</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#process-analysis">Process Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-anti-patterns">Methodology Anti-Patterns</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#success-criteria">Success Criteria</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-success-patterns">Methodology Success Patterns</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#value-stream-mapping">Value Stream Mapping</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#process">Process</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Metrics</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#project-pre-mortems">Project Pre-Mortems</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement-product">Continuous Improvement—Product</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reviews">Reviews</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-scientific-method">The Scientific Method</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#product-feedback-loops-and-learning-cycles">Product Feedback Loops and Learning Cycles</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-methods">Feedback Methods</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#approved-iterations">Approved Iterations</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement-people">Continuous Improvement—People</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#retrospectives">Retrospectives</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits">Benefits</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Process</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#set-stage">Set stage</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#activities">Activities</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#gather-data">Gather data</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#techniques">Techniques</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-insights">Generate insights</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#five-whys">Five Whys</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Fishbone Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#decide-what-to-do">Decide what to do</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#close-retrospective">Close retrospective</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#team-self-assessments">Team Self-Assessments</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#shore-s-team-self-assessment-scoring-model">Shore’s Team Self-Assessment Scoring Model</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#tabaka-s-team-self-assessment-model">Tabaka’s Team Self-Assessment Model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -1758,7 +1880,7 @@ document.write(`
 <h5>Creating the User Stories<a class="headerlink" href="#creating-the-user-stories" title="Link to this heading">#</a></h5>
 <p>Template 1</p>
 <blockquote>
-<div><p>As a <code class="docutils literal notranslate"><span class="pre">&lt;role&gt;,</span></code> I want <code class="docutils literal notranslate"><span class="pre">&lt;Functionality&gt;</span></code>, so that <code class="docutils literal notranslate"><span class="pre">&lt;Business</span> <span class="pre">benefit&gt;</span></code>.</p>
+<div><p>As a <code class="docutils literal notranslate"><span class="pre">&lt;Role&gt;,</span></code> I want <code class="docutils literal notranslate"><span class="pre">&lt;Functionality&gt;</span></code>, so that <code class="docutils literal notranslate"><span class="pre">&lt;Business</span> <span class="pre">benefit&gt;</span></code>.</p>
 </div></blockquote>
 <p>Template 2</p>
 <blockquote>
@@ -1795,7 +1917,7 @@ document.write(`
 <h6>INVEST: Characteristics of Effective User Stories<a class="headerlink" href="#invest-characteristics-of-effective-user-stories" title="Link to this heading">#</a></h6>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>I</p></th>
+<tr class="row-odd"><th class="head"><p>Letter</p></th>
 <th class="head"><p>Description</p></th>
 </tr>
 </thead>
@@ -1955,6 +2077,346 @@ document.write(`
 </section>
 <section id="problem-detection-and-resolution">
 <h2>Problem Detection and Resolution<a class="headerlink" href="#problem-detection-and-resolution" title="Link to this heading">#</a></h2>
+<section id="understanding-problems">
+<h3>Understanding Problems<a class="headerlink" href="#understanding-problems" title="Link to this heading">#</a></h3>
+<section id="how-problems-impact-a-project">
+<h4>How Problems Impact a Project<a class="headerlink" href="#how-problems-impact-a-project" title="Link to this heading">#</a></h4>
+</section>
+<section id="the-cost-of-change">
+<h4>The Cost of Change<a class="headerlink" href="#the-cost-of-change" title="Link to this heading">#</a></h4>
+</section>
+<section id="technical-debt">
+<h4>Technical Debt<a class="headerlink" href="#technical-debt" title="Link to this heading">#</a></h4>
+</section>
+<section id="create-a-safe-and-open-environment">
+<h4>Create a Safe and Open Environment<a class="headerlink" href="#create-a-safe-and-open-environment" title="Link to this heading">#</a></h4>
+</section>
+<section id="failure-modes">
+<h4>Failure Modes<a class="headerlink" href="#failure-modes" title="Link to this heading">#</a></h4>
+</section>
+<section id="success-modes">
+<h4>Success Modes<a class="headerlink" href="#success-modes" title="Link to this heading">#</a></h4>
+</section>
+<section id="success-strategies">
+<h4>Success Strategies<a class="headerlink" href="#success-strategies" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="detecting-problems">
+<h3>Detecting Problems<a class="headerlink" href="#detecting-problems" title="Link to this heading">#</a></h3>
+<section id="lead-time-and-cycle-time">
+<h4>Lead Time and Cycle Time<a class="headerlink" href="#lead-time-and-cycle-time" title="Link to this heading">#</a></h4>
+<section id="lead-time">
+<h5>Lead Time<a class="headerlink" href="#lead-time" title="Link to this heading">#</a></h5>
+<p><span class="math notranslate nohighlight">\(LeadTime=Time(ToDo \rightarrow Done)\)</span></p>
+</section>
+<section id="cycle-time-wip-and-throughput">
+<h5>Cycle Time, WIP, and Throughput<a class="headerlink" href="#cycle-time-wip-and-throughput" title="Link to this heading">#</a></h5>
+<p><span class="math notranslate nohighlight">\(TH=Work/Time\)</span></p>
+</section>
+<section id="throughput-and-productivity">
+<h5>Throughput and Productivity<a class="headerlink" href="#throughput-and-productivity" title="Link to this heading">#</a></h5>
+<p><span class="math notranslate nohighlight">\(Productivity=WorkDone/TeamMember\)</span></p>
+</section>
+</section>
+<section id="defects">
+<h4>Defects<a class="headerlink" href="#defects" title="Link to this heading">#</a></h4>
+<section id="defect-rates">
+<h5>Defect Rates<a class="headerlink" href="#defect-rates" title="Link to this heading">#</a></h5>
+</section>
+</section>
+<section id="variance-analysis">
+<h4>Variance Analysis<a class="headerlink" href="#variance-analysis" title="Link to this heading">#</a></h4>
+<section id="causes-of-variation">
+<h5>Causes of Variation<a class="headerlink" href="#causes-of-variation" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Common</p></li>
+<li><p>Special</p></li>
+</ul>
+</section>
+<section id="accept-the-variance-of-take-action">
+<h5>Accept the Variance of Take Action?<a class="headerlink" href="#accept-the-variance-of-take-action" title="Link to this heading">#</a></h5>
+</section>
+</section>
+<section id="trend-analysis">
+<h4>Trend Analysis<a class="headerlink" href="#trend-analysis" title="Link to this heading">#</a></h4>
+</section>
+<section id="control-limits">
+<h4>Control Limits<a class="headerlink" href="#control-limits" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="managing-threats-and-issues">
+<h3>Managing Threats and Issues<a class="headerlink" href="#managing-threats-and-issues" title="Link to this heading">#</a></h3>
+<section id="risk-adjusted-backlog">
+<h4>Risk-Adjusted Backlog<a class="headerlink" href="#risk-adjusted-backlog" title="Link to this heading">#</a></h4>
+<section id="creating-the-risk-adjusted-backlog">
+<h5>Creating the Risk-Adjusted Backlog<a class="headerlink" href="#creating-the-risk-adjusted-backlog" title="Link to this heading">#</a></h5>
+<p><span class="math notranslate nohighlight">\(EVM=Probability \cdot Impact[€]\)</span></p>
+</section>
+</section>
+<section id="risk-severity">
+<h4>Risk Severity<a class="headerlink" href="#risk-severity" title="Link to this heading">#</a></h4>
+<p><span class="math notranslate nohighlight">\(Severity=Probability \cdot Impact[l/m/h]\)</span></p>
+</section>
+<section id="risk-burndown-graphs">
+<h4>Risk Burndown Graphs<a class="headerlink" href="#risk-burndown-graphs" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="solving-problems">
+<h3>Solving Problems<a class="headerlink" href="#solving-problems" title="Link to this heading">#</a></h3>
+<section id="problem-solving-as-continuous-improvement">
+<h4>Problem Solving as Continuous Improvement<a class="headerlink" href="#problem-solving-as-continuous-improvement" title="Link to this heading">#</a></h4>
+</section>
+<section id="engage-the-team">
+<h4>Engage the Team<a class="headerlink" href="#engage-the-team" title="Link to this heading">#</a></h4>
+<section id="the-benefits-of-team-engagement">
+<h5>The Benefits of Team Engagement<a class="headerlink" href="#the-benefits-of-team-engagement" title="Link to this heading">#</a></h5>
+</section>
+<section id="considerations-and-cautions-for-engaging-the-team">
+<h5>Considerations and Cautions for Engaging the Team<a class="headerlink" href="#considerations-and-cautions-for-engaging-the-team" title="Link to this heading">#</a></h5>
+</section>
+</section>
+<section id="some-problems-can-t-be-solved">
+<h4>Some Problems Can’t Be Solved<a class="headerlink" href="#some-problems-can-t-be-solved" title="Link to this heading">#</a></h4>
+</section>
+</section>
+</section>
+<section id="continuous-improvement">
+<h2>Continuous Improvement<a class="headerlink" href="#continuous-improvement" title="Link to this heading">#</a></h2>
+<section id="kaizen">
+<h3>Kaizen<a class="headerlink" href="#kaizen" title="Link to this heading">#</a></h3>
+<section id="pdca-cycle">
+<h4>PDCA Cycle<a class="headerlink" href="#pdca-cycle" title="Link to this heading">#</a></h4>
+<p>Plan - Do - Check - Act</p>
+</section>
+<section id="fishbone-analysis">
+<h4>Fishbone Analysis<a class="headerlink" href="#fishbone-analysis" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="multiple-levels-of-improvement-process">
+<h3>Multiple Levels of Improvement—Process<a class="headerlink" href="#multiple-levels-of-improvement-process" title="Link to this heading">#</a></h3>
+<section id="process-tailoring">
+<h4>Process Tailoring<a class="headerlink" href="#process-tailoring" title="Link to this heading">#</a></h4>
+<section id="mitigating-the-risk-of-process-tailoring">
+<h5>Mitigating the Risk of Process Tailoring<a class="headerlink" href="#mitigating-the-risk-of-process-tailoring" title="Link to this heading">#</a></h5>
+</section>
+<section id="hybrid-models">
+<h5>Hybrid Models<a class="headerlink" href="#hybrid-models" title="Link to this heading">#</a></h5>
+<section id="agile-agile-hybrid-scrum-xp">
+<h6>Agile-Agile Hybrid: Scrum-XP<a class="headerlink" href="#agile-agile-hybrid-scrum-xp" title="Link to this heading">#</a></h6>
+</section>
+<section id="agile-traditional-hybrids">
+<h6>Agile-Traditional Hybrids<a class="headerlink" href="#agile-traditional-hybrids" title="Link to this heading">#</a></h6>
+</section>
+</section>
+</section>
+<section id="systems-thinking">
+<h4>Systems Thinking<a class="headerlink" href="#systems-thinking" title="Link to this heading">#</a></h4>
+</section>
+<section id="process-analysis">
+<h4>Process Analysis<a class="headerlink" href="#process-analysis" title="Link to this heading">#</a></h4>
+<section id="methodology-anti-patterns">
+<h5>Methodology Anti-Patterns<a class="headerlink" href="#methodology-anti-patterns" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>One size for all projects</p></li>
+<li><p>Intolerant</p></li>
+<li><p>Heavy</p></li>
+<li><p>Embellished</p></li>
+<li><p>Untried</p></li>
+<li><p>Used Once</p></li>
+</ul>
+</section>
+<section id="success-criteria">
+<h5>Success Criteria<a class="headerlink" href="#success-criteria" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Project got shipped</p></li>
+<li><p>Leadership remained intact</p></li>
+<li><p>Team would work the same way again</p></li>
+</ul>
+</section>
+<section id="methodology-success-patterns">
+<h5>Methodology Success Patterns<a class="headerlink" href="#methodology-success-patterns" title="Link to this heading">#</a></h5>
+</section>
+</section>
+<section id="value-stream-mapping">
+<h4>Value Stream Mapping<a class="headerlink" href="#value-stream-mapping" title="Link to this heading">#</a></h4>
+<section id="process">
+<h5>Process<a class="headerlink" href="#process" title="Link to this heading">#</a></h5>
+<ol class="arabic simple">
+<li><p>Identify product/service to be analyzed</p></li>
+<li><p>Create a value stream map of the current process, identifying steps, queues, delays, and information flows</p></li>
+<li><p>Review the map to find delays, waste, and constraints</p></li>
+<li><p>Create a new value stream map of the desired future state of the process, optimized to remove or reduce delays, waste, and constraints</p></li>
+<li><p>Develop a roadmap for creating the optimized state</p></li>
+<li><p>Plan to revisit the process in the future to continually refine and optimize it</p></li>
+</ol>
+</section>
+<section id="id7">
+<h5>Metrics<a class="headerlink" href="#id7" title="Link to this heading">#</a></h5>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Term</p></th>
+<th class="head"><p>Formula</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Total cycle time</p></td>
+<td><p><span class="math notranslate nohighlight">\(TCT=VAT+NVAT\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Value-added time</p></td>
+<td><p><span class="math notranslate nohighlight">\(VAT\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Nonvalue-added time</p></td>
+<td><p><span class="math notranslate nohighlight">\(NVAT\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Process cycle efficiency</p></td>
+<td><p><span class="math notranslate nohighlight">\(VAT/TCT=VAT/(VAT+NVAT)\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="project-pre-mortems">
+<h4>Project Pre-Mortems<a class="headerlink" href="#project-pre-mortems" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Imagine the Failure</p></li>
+<li><p>Generate the Reasons for Failure</p></li>
+<li><p>Consolidate the List</p></li>
+<li><p>Revisit the Plan</p></li>
+</ol>
+</section>
+</section>
+<section id="continuous-improvement-product">
+<h3>Continuous Improvement—Product<a class="headerlink" href="#continuous-improvement-product" title="Link to this heading">#</a></h3>
+<section id="reviews">
+<h4>Reviews<a class="headerlink" href="#reviews" title="Link to this heading">#</a></h4>
+<section id="the-scientific-method">
+<h5>The Scientific Method<a class="headerlink" href="#the-scientific-method" title="Link to this heading">#</a></h5>
+</section>
+</section>
+<section id="product-feedback-loops-and-learning-cycles">
+<h4>Product Feedback Loops and Learning Cycles<a class="headerlink" href="#product-feedback-loops-and-learning-cycles" title="Link to this heading">#</a></h4>
+</section>
+<section id="feedback-methods">
+<h4>Feedback Methods<a class="headerlink" href="#feedback-methods" title="Link to this heading">#</a></h4>
+</section>
+<section id="approved-iterations">
+<h4>Approved Iterations<a class="headerlink" href="#approved-iterations" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="continuous-improvement-people">
+<h3>Continuous Improvement—People<a class="headerlink" href="#continuous-improvement-people" title="Link to this heading">#</a></h3>
+<section id="retrospectives">
+<h4>Retrospectives<a class="headerlink" href="#retrospectives" title="Link to this heading">#</a></h4>
+<section id="benefits">
+<h5>Benefits<a class="headerlink" href="#benefits" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Improved productivity</p></li>
+<li><p>Improved capability</p></li>
+<li><p>Improved quality</p></li>
+<li><p>Improved capacity</p></li>
+</ul>
+</section>
+<section id="id8">
+<h5>Process<a class="headerlink" href="#id8" title="Link to this heading">#</a></h5>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Stage</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Typical Time</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Set stage</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Gather data</p></td>
+<td><p>40</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Generate insights</p></td>
+<td><p>25</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Decide what to do</p></td>
+<td><p>20</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Close retrospective</p></td>
+<td><p>20</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="set-stage">
+<h5>Set stage<a class="headerlink" href="#set-stage" title="Link to this heading">#</a></h5>
+<section id="activities">
+<h6>Activities<a class="headerlink" href="#activities" title="Link to this heading">#</a></h6>
+<ul class="simple">
+<li><p>Check-In</p></li>
+<li><p>Focus On/Off</p>
+<ul>
+<li><p>Inquiry rather than Advocacy</p></li>
+<li><p>Dialogue rather than Debate</p></li>
+<li><p>Conversation rather than Argument</p></li>
+<li><p>Udnerstanding rather than Defending</p></li>
+</ul>
+</li>
+<li><p>ESVP</p>
+<ul>
+<li><p>Explorers</p></li>
+<li><p>Shoppers</p></li>
+<li><p>Vacationers</p></li>
+<li><p>Prisoners</p></li>
+</ul>
+</li>
+<li><p>Working Agreements</p></li>
+</ul>
+</section>
+</section>
+<section id="gather-data">
+<h5>Gather data<a class="headerlink" href="#gather-data" title="Link to this heading">#</a></h5>
+<section id="techniques">
+<h6>Techniques<a class="headerlink" href="#techniques" title="Link to this heading">#</a></h6>
+<ul class="simple">
+<li><p>Timeline</p></li>
+<li><p>Triple Nickels</p></li>
+<li><p>Color Code Dots</p></li>
+<li><p>Mad, Sad, Glad</p></li>
+<li><p>Locate Strengths</p></li>
+<li><p>Satisfcation Histogram</p></li>
+<li><p>Team Radar</p></li>
+<li><p>Like to Like</p></li>
+</ul>
+</section>
+</section>
+<section id="generate-insights">
+<h5>Generate insights<a class="headerlink" href="#generate-insights" title="Link to this heading">#</a></h5>
+<section id="five-whys">
+<h6>Five Whys<a class="headerlink" href="#five-whys" title="Link to this heading">#</a></h6>
+</section>
+<section id="id9">
+<h6>Fishbone Analysis<a class="headerlink" href="#id9" title="Link to this heading">#</a></h6>
+</section>
+</section>
+<section id="decide-what-to-do">
+<h5>Decide what to do<a class="headerlink" href="#decide-what-to-do" title="Link to this heading">#</a></h5>
+</section>
+<section id="close-retrospective">
+<h5>Close retrospective<a class="headerlink" href="#close-retrospective" title="Link to this heading">#</a></h5>
+</section>
+</section>
+<section id="team-self-assessments">
+<h4>Team Self-Assessments<a class="headerlink" href="#team-self-assessments" title="Link to this heading">#</a></h4>
+<section id="shore-s-team-self-assessment-scoring-model">
+<h5>Shore’s Team Self-Assessment Scoring Model<a class="headerlink" href="#shore-s-team-self-assessment-scoring-model" title="Link to this heading">#</a></h5>
+</section>
+<section id="tabaka-s-team-self-assessment-model">
+<h5>Tabaka’s Team Self-Assessment Model<a class="headerlink" href="#tabaka-s-team-self-assessment-model" title="Link to this heading">#</a></h5>
+</section>
+</section>
+</section>
 </section>
 </section>
 
@@ -2317,7 +2779,129 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#daily-stand-ups">Daily Stand-Ups</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-detection-and-resolution">Problem Detection and Resolution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-detection-and-resolution">Problem Detection and Resolution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-problems">Understanding Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-problems-impact-a-project">How Problems Impact a Project</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cost-of-change">The Cost of Change</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#technical-debt">Technical Debt</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-safe-and-open-environment">Create a Safe and Open Environment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#failure-modes">Failure Modes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#success-modes">Success Modes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#success-strategies">Success Strategies</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detecting-problems">Detecting Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-time-and-cycle-time">Lead Time and Cycle Time</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-time">Lead Time</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#cycle-time-wip-and-throughput">Cycle Time, WIP, and Throughput</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#throughput-and-productivity">Throughput and Productivity</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#defects">Defects</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#defect-rates">Defect Rates</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#variance-analysis">Variance Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#causes-of-variation">Causes of Variation</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#accept-the-variance-of-take-action">Accept the Variance of Take Action?</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#trend-analysis">Trend Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#control-limits">Control Limits</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-threats-and-issues">Managing Threats and Issues</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-adjusted-backlog">Risk-Adjusted Backlog</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-risk-adjusted-backlog">Creating the Risk-Adjusted Backlog</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-severity">Risk Severity</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-burndown-graphs">Risk Burndown Graphs</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solving-problems">Solving Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-solving-as-continuous-improvement">Problem Solving as Continuous Improvement</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#engage-the-team">Engage the Team</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-benefits-of-team-engagement">The Benefits of Team Engagement</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-and-cautions-for-engaging-the-team">Considerations and Cautions for Engaging the Team</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#some-problems-can-t-be-solved">Some Problems Can’t Be Solved</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement">Continuous Improvement</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kaizen">Kaizen</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pdca-cycle">PDCA Cycle</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fishbone-analysis">Fishbone Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-levels-of-improvement-process">Multiple Levels of Improvement—Process</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#process-tailoring">Process Tailoring</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mitigating-the-risk-of-process-tailoring">Mitigating the Risk of Process Tailoring</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#hybrid-models">Hybrid Models</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-agile-hybrid-scrum-xp">Agile-Agile Hybrid: Scrum-XP</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-traditional-hybrids">Agile-Traditional Hybrids</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#systems-thinking">Systems Thinking</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#process-analysis">Process Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-anti-patterns">Methodology Anti-Patterns</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#success-criteria">Success Criteria</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-success-patterns">Methodology Success Patterns</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#value-stream-mapping">Value Stream Mapping</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#process">Process</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Metrics</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#project-pre-mortems">Project Pre-Mortems</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement-product">Continuous Improvement—Product</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reviews">Reviews</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-scientific-method">The Scientific Method</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#product-feedback-loops-and-learning-cycles">Product Feedback Loops and Learning Cycles</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-methods">Feedback Methods</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#approved-iterations">Approved Iterations</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement-people">Continuous Improvement—People</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#retrospectives">Retrospectives</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits">Benefits</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Process</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#set-stage">Set stage</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#activities">Activities</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#gather-data">Gather data</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#techniques">Techniques</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-insights">Generate insights</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#five-whys">Five Whys</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Fishbone Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#decide-what-to-do">Decide what to do</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#close-retrospective">Close retrospective</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#team-self-assessments">Team Self-Assessments</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#shore-s-team-self-assessment-scoring-model">Shore’s Team Self-Assessment Scoring Model</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#tabaka-s-team-self-assessment-model">Tabaka’s Team Self-Assessment Model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

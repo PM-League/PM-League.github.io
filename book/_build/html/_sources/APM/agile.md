@@ -262,8 +262,8 @@ IF $T<PB$ THEN accept ELSE reject
 
 ###### MoSCoW
 
-| Letter      | Description |
-| ----------- | ----------- |
+| Letter           | Description |
+| ---------------- | ----------- |
 | **M**ust   |             |
 | **S**hould |             |
 | **C**ould  |             |
@@ -632,7 +632,7 @@ Likely Time = Task duration with distractions
 
 Template 1
 
-> As a `<role>,` I want `<Functionality>`, so that `<Business benefit>`.
+> As a `<Role>,` I want `<Functionality>`, so that `<Business benefit>`.
 
 Template 2
 
@@ -652,7 +652,7 @@ Template 2
 
 ###### INVEST: Characteristics of Effective User Stories
 
-| I                     | Description |
+| Letter                | Description |
 | --------------------- | ----------- |
 | **I**ndependent |             |
 | **N**egotiable  |             |
@@ -755,3 +755,227 @@ Characteristics:
 ### Daily Stand-Ups
 
 ## Problem Detection and Resolution
+
+### Understanding Problems
+
+#### How Problems Impact a Project
+
+#### The Cost of Change
+
+#### Technical Debt
+
+#### Create a Safe and Open Environment
+
+#### Failure Modes
+
+#### Success Modes
+
+#### Success Strategies
+
+### Detecting Problems
+
+#### Lead Time and Cycle Time
+
+##### Lead Time
+
+$LeadTime=Time(ToDo \rightarrow Done)$
+
+##### Cycle Time, WIP, and Throughput
+
+$TH=Work/Time$
+
+##### Throughput and Productivity
+
+$Productivity=WorkDone/TeamMember$
+
+#### Defects
+
+##### Defect Rates
+
+#### Variance Analysis
+
+##### Causes of Variation
+
+* Common
+* Special
+
+##### Accept the Variance of Take Action?
+
+#### Trend Analysis
+
+#### Control Limits
+
+### Managing Threats and Issues
+
+#### Risk-Adjusted Backlog
+
+##### Creating the Risk-Adjusted Backlog
+
+$EVM=Probability \cdot Impact[€]$
+
+#### Risk Severity
+
+$Severity=Probability \cdot Impact[l/m/h]$
+
+#### Risk Burndown Graphs
+
+### Solving Problems
+
+#### Problem Solving as Continuous Improvement
+
+#### Engage the Team
+
+##### The Benefits of Team Engagement
+
+##### Considerations and Cautions for Engaging the Team
+
+#### Some Problems Can't Be Solved
+
+## Continuous Improvement
+
+### Kaizen
+
+#### PDCA Cycle
+
+Plan - Do - Check - Act
+
+#### Fishbone Analysis
+
+### Multiple Levels of Improvement---Process
+
+#### Process Tailoring
+
+##### Mitigating the Risk of Process Tailoring
+
+##### Hybrid Models
+
+###### Agile-Agile Hybrid: Scrum-XP
+
+###### Agile-Traditional Hybrids
+
+#### Systems Thinking
+
+#### Process Analysis
+
+##### Methodology Anti-Patterns
+
+* One size for all projects
+* Intolerant
+* Heavy
+* Embellished
+* Untried
+* Used Once
+
+##### Success Criteria
+
+* Project got shipped
+* Leadership remained intact
+* Team would work the same way again
+
+##### Methodology Success Patterns
+
+#### Value Stream Mapping
+
+##### Process
+
+1. Identify product/service to be analyzed
+2. Create a value stream map of the current process, identifying steps, queues, delays, and information flows
+3. Review the map to find delays, waste, and constraints
+4. Create a new value stream map of the desired future state of the process, optimized to remove or reduce delays, waste, and constraints
+5. Develop a roadmap for creating the optimized state
+6. Plan to revisit the process in the future to continually refine and optimize it
+
+##### Metrics
+
+| Term                     | Formula                    |
+| ------------------------ | -------------------------- |
+| Total cycle time         | $TCT=VAT+NVAT$           |
+| Value-added time         | $VAT$                    |
+| Nonvalue-added time      | $NVAT$                   |
+| Process cycle efficiency | $VAT/TCT=VAT/(VAT+NVAT)$ |
+
+#### Project Pre-Mortems
+
+1. Imagine the Failure
+2. Generate the Reasons for Failure
+3. Consolidate the List
+4. Revisit the Plan
+
+### Continuous Improvement---Product
+
+#### Reviews
+
+##### The Scientific Method
+
+#### Product Feedback Loops and Learning Cycles
+
+#### Feedback Methods
+
+#### Approved Iterations
+
+### Continuous Improvement---People
+
+#### Retrospectives
+
+##### Benefits
+
+* Improved productivity
+* Improved capability
+* Improved quality
+* Improved capacity
+
+##### Process
+
+| Stage | Name                | Typical Time |
+| ----- | ------------------- | ------------ |
+| 1     | Set stage           | 6            |
+| 2     | Gather data         | 40           |
+| 3     | Generate insights   | 25           |
+| 4     | Decide what to do   | 20           |
+| 5     | Close retrospective | 20           |
+
+##### Set stage
+
+###### Activities
+
+* Check-In
+* Focus On/Off
+  * Inquiry rather than Advocacy
+  * Dialogue rather than Debate
+  * Conversation rather than Argument
+  * Udnerstanding rather than Defending
+* ESVP
+  * Explorers
+  * Shoppers
+  * Vacationers
+  * Prisoners
+* Working Agreements
+
+##### Gather data
+
+###### Techniques
+
+* Timeline
+* Triple Nickels
+* Color Code Dots
+* Mad, Sad, Glad
+* Locate Strengths
+* Satisfcation Histogram
+* Team Radar
+* Like to Like
+
+##### Generate insights
+
+###### Five Whys
+
+###### Fishbone Analysis
+
+##### Decide what to do
+
+##### Close retrospective
+
+#### Team Self-Assessments
+
+##### Shore's Team Self-Assessment Scoring Model
+
+##### Tabaka's Team Self-Assessment Model

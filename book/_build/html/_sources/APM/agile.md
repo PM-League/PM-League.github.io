@@ -1,6 +1,8 @@
 # Agile Domains, Tools, and Techniques
 
-## Domains
+## Introduction
+
+### Domains
 
 | ID Domain | Domain                                            | Sub-Domain                        |
 | --------- | ------------------------------------------------- | --------------------------------- |
@@ -21,7 +23,7 @@
 | VI        | Problem Detection and Resolution                  |                                   |
 | VII       | Continuous Improvement (Product, Process, People) |                                   |
 
-## Tools and Techniques
+### Tools and Techniques
 
 | Toolkit                            | Including but not limited to:                                  |
 | ---------------------------------- | -------------------------------------------------------------- |
@@ -347,3 +349,185 @@ IF $T<PB$ THEN accept ELSE reject
 ###### Acceptance Test-Driven Development (ATDD)
 
 ## Stakeholder Engagement
+
+### Establishing a Shared Vision
+
+#### Agile Chartering
+
+##### Agile versus Non-Agile Charters
+
+##### Developing an Agile Charter
+
+W5H questions:
+
+* Who will be engaged?
+* What is this project about?
+* Where will it occur?
+* When will it start and end?
+* Why is it being undertaken?
+* How will it be undertaken?
+
+Project elevator statement:
+
+* For:		Target customers
+* Who:	Need
+* The:		Product/service name
+* Is a:		Product category
+* That:	Key benefits/reason to buy
+* Unlike:	Primary competitive alternative(s)
+
+#### Definition of "Done"
+
+Necessary at all levels:
+
+* Deliverables
+* Releases
+* User Stories
+
+Consist of multiple **acceptance criteria**
+
+#### Agile Modeling
+
+Types:
+
+* Use case diagrams
+* Data models
+* Screen designs
+
+#### Wireframes
+
+Quick and cheap mock-up of a product/service
+
+#### Personas
+
+Quick guides/reminders of key stakeholders and their interests
+
+Augment requirements:
+
+* Help prioritize work
+* Stay focused on users
+* Gain insights into who users will be
+
+Help empathize with final users of product/service
+
+Keep focus on delivering features that users will find valuable
+
+### Communicating with Stakeholders
+
+#### Face-to-Face (F2F) Communication
+
+Highest efficiency: highest interactivity & highest bandwith/information density
+
+#### Two-Way Communication
+
+##### Dispatching model
+
+##### Collaborative model
+
+#### Knowledge Sharing
+
+#### Information Radiators
+
+#### Social Media
+
+### Working Collaboratively
+
+Collaboration benefits:
+
+* Generates wiser decisions
+* Problem solving
+* Fosters action
+* Build social capital
+* Fosters ownership of collective problems
+
+#### Workshops
+
+#### Brainstorming
+
+##### Methods
+
+| Method        | Description |
+| ------------- | ----------- |
+| Quiet Writing |             |
+| Round-Robin   |             |
+| Free-for-All  |             |
+
+#### Collaboration Games
+
+| Game                     | Description |
+| ------------------------ | ----------- |
+| Remember the Future      |             |
+| Prune the Product Tree   |             |
+| Speedboat (aka Sailboat) |             |
+| Buy a Feature            |             |
+| Bang-for-the-Buck        |             |
+
+##### Remember the Future
+
+##### Prune the Product Tree
+
+##### Speedboat
+
+### Using Critical Interpersonal Skills
+
+#### Emotional Intelligence
+
+#### Active Listening
+
+#### Facilitation
+
+#### Negotiation
+
+#### Conflict Resolution
+
+#### Participatory Decision Making
+
+##### Participatory Decision Models
+
+###### Simple Voting
+
+###### Thumbs Up/Down/Sideways
+
+###### Fist-of-Five Voting
+
+###### Highstmith's Decision Spectrum
+
+## Team Performance
+
+### Agile Team Roles
+
+* Development Team/Delivery Team
+* Product Owner/Customer/Proxy Customer/Value Management Team/Business Representative
+
+* ScrumMaster/Coach/Team Leader
+* Project Sponsor
+
+#### Development Team/Delivery Team
+
+#### Product Owner/Customer/Proxy Customer/Value Management Team/Business Representative
+
+#### ScrumMaster/Coach/Team Leader
+
+#### Project Sponsor
+
+### Building Agile Teams
+
+Development Team 
+
+- Size < 12
+
+* Have complementary skills & generalizing specialists with cross-functional skills rather than experts in one field
+* Commited to a common purpose
+* Hold themselves mutually accountable -> shared ownership for project outcomes
+
+#### Characteristics of High-Performing Teams
+
+* Create a shared vision for the team
+
+- Set realistic goals
+
+- Limit team size to 12 or fewer members
+
+- Build a sense of team identity
+
+- Provide strong leadership

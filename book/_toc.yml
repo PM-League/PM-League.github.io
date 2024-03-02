@@ -1,12 +1,13 @@
 format: jb-book
 root: intro
 defaults:
-  titlesonly: true
-  numbered: true
+  titlesonly: True
+  numbered: True
 parts:
 - caption: Project Management 
   chapters:
   - file: PM/pm-concepts
+    title: Concepts
   - file: PM/pm-processes
   - file: PM/evm
   - file: PM/rm
@@ -16,12 +17,15 @@ parts:
   chapters:
   - file: APM/agile
   - file: APM/scrum
-- caption: System Dynamics
-  chapters:
-  - file: SD/sd-concepts
 - caption: Systems Engineering
   chapters:
   - file: SE/se-concepts
+- caption: Systems Project Management
+  chapters:
+  - file: SPM/spm-concepts
+- caption: System Dynamics
+  chapters:
+  - file: SD/sd-concepts
 - caption: Misc 
   chapters:
   - file: Misc/PERTmod

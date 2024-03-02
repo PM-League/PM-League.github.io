@@ -326,7 +326,9 @@ document.write(`
 <h2>The Norden-Rayleigh Curve<a class="headerlink" href="#the-norden-rayleigh-curve" title="Link to this heading">#</a></h2>
 <p>The curve is modeled by differential equation</p>
 <div class="math notranslate nohighlight">
-\[m{(t)} = \frac{dy}{dt} = 2Kate^{-at^2}\]</div>
+\[
+m{(t)} = \frac{dy}{dt} = 2Kate^{-at^2}
+\]</div>
 <!-- ```{code-cell} ipython3
 :tags: ["remove-input"]
 import numpy as np
@@ -359,7 +361,7 @@ plt.show()
 <td><p>acceleration factor - curve sharpness parameter</p></td>
 </tr>
 <tr class="row-even"><td><p><span class="math notranslate nohighlight">\(K\)</span></p></td>
-<td><p>total project effort in staff years - area underneath the curve in <span class="math notranslate nohighlight">\(\left[0,\infty\right]\)</span></p></td>
+<td><p>total project effort in staff years - area underneath the curve in<span class="math notranslate nohighlight">\(\left[0,\infty\right]\)</span></p></td>
 </tr>
 <tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(t\)</span></p></td>
 <td><p>elapsed time</p></td>
@@ -369,12 +371,12 @@ plt.show()
 <p>Integrating <span class="math notranslate nohighlight">\(m{(t)}\)</span> on <span class="math notranslate nohighlight">\([0,\infty]\)</span>, we obtain <span class="math notranslate nohighlight">\(y{(t)} = K\left[1-e^{-at^2}\right]\)</span>.</p>
 <p>If <span class="math notranslate nohighlight">\(y(0) = 0\)</span> and <span class="math notranslate nohighlight">\(y(\infty) = K\)</span>, then <span class="math notranslate nohighlight">\(\frac{d^2y}{dt^2} = 2Kae^{-at^2}\left[1-2at^2\right]=0\)</span>, and <span class="math notranslate nohighlight">\(t_d^2 = \frac{1}{2a}\)</span>, where <span class="math notranslate nohighlight">\(t_d\)</span> is the time at which the maximum effort rate occurs.</p>
 <p>Replacing <span class="math notranslate nohighlight">\(t_d\)</span> leads to <span class="math notranslate nohighlight">\(E=y{(t)}=K\left(1-e^{\frac{t_d^2}{2t_d^2}}\right) = K\left(1-e^{-.5}\right)\)</span>, <span class="math notranslate nohighlight">\(E=y(t)=.3935K\)</span>, and <span class="math notranslate nohighlight">\(a=\frac{1}{2t_d^2}\)</span>.</p>
-<p>Replacing <span class="math notranslate nohighlight">\(a\)</span> with <span class="math notranslate nohighlight">\(\frac{1}{2t_d^2}\)</span> in the N/R model, we obtain
-$<span class="math notranslate nohighlight">\(
+<p>Replacing <span class="math notranslate nohighlight">\(a\)</span> with <span class="math notranslate nohighlight">\(\frac{1}{2t_d^2}\)</span> in the N/R model, we obtain</p>
+<div class="math notranslate nohighlight">
+\[
 m(t)=\frac{2K}{2t_d^2}te^{-\frac{t^2}{2t_d^2}} = \frac{K}{t_d^2}te^{-\frac{t^2}{2t_d^2}}.
-\)</span>$</p>
-<p>The peak manning is denoted by <span class="math notranslate nohighlight">\(m_0\)</span> and is obtained <span class="math notranslate nohighlight">\(m(t_d) = m_0 = \frac{K}{t_d \sqrt{e}}\)</span>,
-where</p>
+\]</div>
+<p>The peak manning is denoted by <span class="math notranslate nohighlight">\(m_0\)</span> and is obtained <span class="math notranslate nohighlight">\(m(t_d) = m_0 = \frac{K}{t_d \sqrt{e}}\)</span>, where</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Term</p></th>
@@ -426,7 +428,7 @@ D = \frac{K}{t_d^2}
 S_s = C_k K^{1/3} t_d^{4/3}
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(C_k\)</span> is a measure of the state of technology of the human-machine system.</p>
-<p>This is a reasonable relation linking the output (<span class="math notranslate nohighlight">\(S_s\)</span>) to the input (<span class="math notranslate nohighlight">\(K\)</span>, <span class="math notranslate nohighlight">\(t_d\)</span> - management parameters) and a constant (<span class="math notranslate nohighlight">\(C_k\)</span>) which is somehow a measure of the state of technology being applied to the project. <br />
+<p>This is a reasonable relation linking the output (<span class="math notranslate nohighlight">\(S_s\)</span>) to the input (<span class="math notranslate nohighlight">\(K\)</span>, <span class="math notranslate nohighlight">\(t_d\)</span> - management parameters) and a constant (<span class="math notranslate nohighlight">\(C_k\)</span>) which is somehow a measure of the state of technology being applied to the project.
 Adding people to accelerate a project can accomplish this until the gradient condition is reached, but only at a very high cost.</p>
 <section id="the-effort-time-tradeoff-law">
 <h3>The Effort-Time Tradeoff Law<a class="headerlink" href="#the-effort-time-tradeoff-law" title="Link to this heading">#</a></h3>
@@ -436,7 +438,7 @@ explicity from the software equation</p>
 \[
 S_s = C_k K^{1/3} t_d^{4/3}
 \]</div>
-<p>A constant number of source statements (<span class="math notranslate nohighlight">\(S_s = \text{const}\)</span>) implies <span class="math notranslate nohighlight">\(K t_d^4 = \text{const}\)</span>. <br />
+<p>A constant number of source statements (<span class="math notranslate nohighlight">\(S_s = \text{const}\)</span>) implies <span class="math notranslate nohighlight">\(K t_d^4 = \text{const}\)</span>.
 So, <span class="math notranslate nohighlight">\(K = \text{constant}/t_d^4\)</span>, or proportionally, development effort = constat/<span class="math notranslate nohighlight">\(t_d^4\)</span>, is the effort-development tradeoff law.</p>
 </section>
 <section id="effect-of-constant-productivity">

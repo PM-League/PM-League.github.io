@@ -362,13 +362,13 @@ W5H questions:
 
 Project elevator statement:
 
-| For    | Target customers                   |
-| ------ | ---------------------------------- |
-| Who    | Need                               |
-| The    | Product/service name               |
-| Is a   | Product category                   |
-| That   | Key benefits/reason to buy         |
-| Unlike | Primary competitive alternative(s) |
+| For     | Target customers                   |
+| ------- | ---------------------------------- |
+| Who:    | Need                               |
+| The:    | Product/service name               |
+| Is a:   | Product category                   |
+| That:   | Key benefits/reason to buy         |
+| Unlike: | Primary competitive alternative(s) |
 
 #### Definition of "Done"
 

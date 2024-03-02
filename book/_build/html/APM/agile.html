@@ -114,8 +114,8 @@ const thebe_selector_output = ".output, .cell_output"
          class="form-control"
          name="q"
          id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
+         placeholder="Search..."
+         aria-label="Search..."
          autocomplete="off"
          autocorrect="off"
          autocapitalize="off"
@@ -178,14 +178,6 @@ const thebe_selector_output = ".output, .cell_output"
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../intro.html">
-                    Welcome PM League’s Wiki
-                </a>
-            </li>
-        </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Project Management</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../PM/pm-concepts.html">Processes</a></li>
@@ -252,101 +244,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-source-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
-    <i class="fab fa-github"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://github.com/PM-League/PM-League.github.io" target="_blank"
-   class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="btn__text-container">Repository</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://github.com/PM-League/PM-League.github.io/issues/new?title=Issue%20on%20page%20%2FAPM/agile.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="btn__text-container">Open issue</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
-<div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
-    <i class="fas fa-download"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="../_sources/APM/agile.md" target="_blank"
-   class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="btn__text-container">.md</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li>
-<button onclick="window.print()"
-  class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
-  data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="btn__text-container">.pdf</span>
-</button>
-</li>
-      
-  </ul>
-</div>
-
 
 
 
@@ -626,10 +523,82 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Adaptive Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-versus-non-agile-planning">Agile versus Non-Agile Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#principles-of-agile-planning">Principles of Agile Planning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-discovery">Agile Discovery</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#progressive-elaboration">Progressive Elaboration</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#value-based-analysis">Value-Based Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#value-based-decomposition">Value-Based Decomposition</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#timeboxing">Timeboxing</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estimate-ranges">Estimate Ranges</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ideal-time">Ideal Time</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-for-sizing-and-estimating">Tools for Sizing and Estimating</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sizing-estimating-and-planning">Sizing, Estimating, and Planning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#decomposition-requirements">Decomposition Requirements</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements-are-decomposed-just-in-time">Requirements Are Decomposed “Just in Time”</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#user-stories">User Stories</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-user-stories">Creating the User Stories</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#the-three-c-s">The Three C’s</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#invest-characteristics-of-effective-user-stories">INVEST: Characteristics of Effective User Stories</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#user-story-backlog-product-backlog">User Story Backlog (Product Backlog)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#refining-grooming-the-backlog">Refining (Grooming) the Backlog</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-sizing-and-story-points">Relative Sizing and Story Points</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fibonacci-sequence">The Fibonacci Sequence</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#guidelines-for-using-story-points">Guidelines for Using Story Points</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#affinity-estimating">Affinity Estimating</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#t-shirt-sizing">T-shirt Sizing</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#story-maps">Story Maps</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#product-roadmap">Product Roadmap</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#wideband-delphi">Wideband Delphi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#planning-poker">Planning Poker</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#release-and-iteration-planning">Release and Iteration Planning</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-iterations">Types of Iterations</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spikes">Spikes</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#architectural-spike">Architectural Spike</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-based-spike">Risk-Based Spike</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#fast-failure">Fast Failure</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#high-level-planning-visioning">High-Level Planning (Visioning)</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs-of-high-level-planning">Outputs of High-Level Planning</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#release-planning">Release Planning</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-the-user-stories-for-the-release">Selecting the User Stories for the Release</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#how-much-can-we-get-done">How Much Can We Get Done?</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-velocity-for-the-first-iteration">Estimating Velocity for the First Iteration</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing-the-stories">Slicing the Stories</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing-compound-stories">Slicing Compound Stories</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing-complex-stories">Slicing Complex Stories</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration-planning">Iteration Planning</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-iteration-planning-process">The Iteration Planning Process</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration-planning-summary">Iteration Planning Summary</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-the-user-stories">Selecting the User Stories</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-the-acceptance-criteria-nad-writing-the-acceptance-tests">Defining the Acceptance Criteria nad Writing the Acceptance Tests</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-tasks">Estimating the Tasks</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#use-actual-results-to-refine-estimates">Use Actual Results to Refine Estimates</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#daily-stand-ups">Daily Stand-Ups</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-detection-and-resolution">Problem Detection and Resolution</a></li>
 </ul>
             </nav>
         </div>
@@ -1046,9 +1015,7 @@ document.write(`
 <h5>Net Present Value (NPV)<a class="headerlink" href="#net-present-value-npv" title="Link to this heading">#</a></h5>
 <section id="id1">
 <h6>Formula<a class="headerlink" href="#id1" title="Link to this heading">#</a></h6>
-<p><span class="math notranslate nohighlight">\(
-NPV=\sum_{t=0}^{T} CF_t/(1+r)^t
-\)</span></p>
+<p><span class="math notranslate nohighlight">\(NPV=\sum_{t=0}^{T} CF_t/(1+r)^t\)</span></p>
 </section>
 <section id="interpretation">
 <h6>Interpretation<a class="headerlink" href="#interpretation" title="Link to this heading">#</a></h6>
@@ -1059,9 +1026,7 @@ NPV=\sum_{t=0}^{T} CF_t/(1+r)^t
 <h5>Internal Rate of Return (IRR)<a class="headerlink" href="#internal-rate-of-return-irr" title="Link to this heading">#</a></h5>
 <section id="id2">
 <h6>Formula<a class="headerlink" href="#id2" title="Link to this heading">#</a></h6>
-<p><span class="math notranslate nohighlight">\(
-IRR = r : NPV(r) = 0
-\)</span></p>
+<p><span class="math notranslate nohighlight">\(IRR = r : NPV(r) = 0\)</span></p>
 </section>
 <section id="id3">
 <h6>Interpretation<a class="headerlink" href="#id3" title="Link to this heading">#</a></h6>
@@ -1072,9 +1037,7 @@ IRR = r : NPV(r) = 0
 <h5>Payback Period<a class="headerlink" href="#payback-period" title="Link to this heading">#</a></h5>
 <section id="id4">
 <h6>Formula<a class="headerlink" href="#id4" title="Link to this heading">#</a></h6>
-<p><span class="math notranslate nohighlight">\(
-T : NPV(T)=0
-\)</span></p>
+<p><span class="math notranslate nohighlight">\(T : NPV(T)=0\)</span></p>
 </section>
 <section id="id5">
 <h6>Interpretation<a class="headerlink" href="#id5" title="Link to this heading">#</a></h6>
@@ -1207,10 +1170,27 @@ T : NPV(T)=0
 </section>
 <section id="moscow">
 <h6>MoSCoW<a class="headerlink" href="#moscow" title="Link to this heading">#</a></h6>
-<p><strong>M</strong>ust Have
-<strong>S</strong>hould Have
-<strong>C</strong>ould Have
-<strong>W</strong>ould like to have, but not now</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Letter</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>M</strong>ust</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>S</strong>hould</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>C</strong>ould</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>W</strong>ould</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="monopoly-money">
 <h6>Monopoly Money<a class="headerlink" href="#monopoly-money" title="Link to this heading">#</a></h6>
@@ -1342,14 +1322,30 @@ T : NPV(T)=0
 <li><p>How will it be undertaken?</p></li>
 </ul>
 <p>Project elevator statement:</p>
-<ul class="simple">
-<li><p>For:		Target customers</p></li>
-<li><p>Who:	    Need</p></li>
-<li><p>The:		Product/service name</p></li>
-<li><p>Is a:		Product category</p></li>
-<li><p>That:	    Key benefits/reason to buy</p></li>
-<li><p>Unlike:	Primary competitive alternative(s)</p></li>
-</ul>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>For</p></th>
+<th class="head"><p>Target customers</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Who</p></td>
+<td><p>Need</p></td>
+</tr>
+<tr class="row-odd"><td><p>The</p></td>
+<td><p>Product/service name</p></td>
+</tr>
+<tr class="row-even"><td><p>Is a</p></td>
+<td><p>Product category</p></td>
+</tr>
+<tr class="row-odd"><td><p>That</p></td>
+<td><p>Key benefits/reason to buy</p></td>
+</tr>
+<tr class="row-even"><td><p>Unlike</p></td>
+<td><p>Primary competitive alternative(s)</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 <section id="definition-of-done">
@@ -1721,7 +1717,244 @@ T : NPV(T)=0
 <section id="principles-of-agile-planning">
 <h4>Principles of Agile Planning<a class="headerlink" href="#principles-of-agile-planning" title="Link to this heading">#</a></h4>
 </section>
+<section id="agile-discovery">
+<h4>Agile Discovery<a class="headerlink" href="#agile-discovery" title="Link to this heading">#</a></h4>
 </section>
+<section id="progressive-elaboration">
+<h4>Progressive Elaboration<a class="headerlink" href="#progressive-elaboration" title="Link to this heading">#</a></h4>
+</section>
+<section id="value-based-analysis">
+<h4>Value-Based Analysis<a class="headerlink" href="#value-based-analysis" title="Link to this heading">#</a></h4>
+</section>
+<section id="value-based-decomposition">
+<h4>Value-Based Decomposition<a class="headerlink" href="#value-based-decomposition" title="Link to this heading">#</a></h4>
+</section>
+<section id="timeboxing">
+<h4>Timeboxing<a class="headerlink" href="#timeboxing" title="Link to this heading">#</a></h4>
+</section>
+<section id="estimate-ranges">
+<h4>Estimate Ranges<a class="headerlink" href="#estimate-ranges" title="Link to this heading">#</a></h4>
+</section>
+<section id="ideal-time">
+<h4>Ideal Time<a class="headerlink" href="#ideal-time" title="Link to this heading">#</a></h4>
+<p>Ideal Time = Task duration without distractions</p>
+<p>Likely Time = Task duration with distractions</p>
+</section>
+</section>
+<section id="tools-for-sizing-and-estimating">
+<h3>Tools for Sizing and Estimating<a class="headerlink" href="#tools-for-sizing-and-estimating" title="Link to this heading">#</a></h3>
+<section id="sizing-estimating-and-planning">
+<h4>Sizing, Estimating, and Planning<a class="headerlink" href="#sizing-estimating-and-planning" title="Link to this heading">#</a></h4>
+</section>
+<section id="decomposition-requirements">
+<h4>Decomposition Requirements<a class="headerlink" href="#decomposition-requirements" title="Link to this heading">#</a></h4>
+<section id="requirements-are-decomposed-just-in-time">
+<h5>Requirements Are Decomposed “Just in Time”<a class="headerlink" href="#requirements-are-decomposed-just-in-time" title="Link to this heading">#</a></h5>
+</section>
+</section>
+<section id="user-stories">
+<h4>User Stories<a class="headerlink" href="#user-stories" title="Link to this heading">#</a></h4>
+<section id="creating-the-user-stories">
+<h5>Creating the User Stories<a class="headerlink" href="#creating-the-user-stories" title="Link to this heading">#</a></h5>
+<p>Template 1</p>
+<blockquote>
+<div><p>As a <code class="docutils literal notranslate"><span class="pre">&lt;role&gt;,</span></code> I want <code class="docutils literal notranslate"><span class="pre">&lt;Functionality&gt;</span></code>, so that <code class="docutils literal notranslate"><span class="pre">&lt;Business</span> <span class="pre">benefit&gt;</span></code>.</p>
+</div></blockquote>
+<p>Template 2</p>
+<blockquote>
+<div><p>Given</p>
+<p>When</p>
+<p>Then</p>
+</div></blockquote>
+<section id="the-three-c-s">
+<h6>The Three C’s<a class="headerlink" href="#the-three-c-s" title="Link to this heading">#</a></h6>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>C</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Card</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Conversation</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Confirmation</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="invest-characteristics-of-effective-user-stories">
+<h6>INVEST: Characteristics of Effective User Stories<a class="headerlink" href="#invest-characteristics-of-effective-user-stories" title="Link to this heading">#</a></h6>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>I</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>I</strong>ndependent</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>N</strong>egotiable</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>V</strong>aluable</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>E</strong>stimatable</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>S</strong>mall</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>T</strong>estable</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="user-story-backlog-product-backlog">
+<h4>User Story Backlog (Product Backlog)<a class="headerlink" href="#user-story-backlog-product-backlog" title="Link to this heading">#</a></h4>
+</section>
+<section id="refining-grooming-the-backlog">
+<h4>Refining (Grooming) the Backlog<a class="headerlink" href="#refining-grooming-the-backlog" title="Link to this heading">#</a></h4>
+</section>
+<section id="relative-sizing-and-story-points">
+<h4>Relative Sizing and Story Points<a class="headerlink" href="#relative-sizing-and-story-points" title="Link to this heading">#</a></h4>
+<section id="the-fibonacci-sequence">
+<h5>The Fibonacci Sequence<a class="headerlink" href="#the-fibonacci-sequence" title="Link to this heading">#</a></h5>
+</section>
+<section id="guidelines-for-using-story-points">
+<h5>Guidelines for Using Story Points<a class="headerlink" href="#guidelines-for-using-story-points" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>The team should own the definition of their story points</p></li>
+<li><p>Story point estimates shouldbe all-inclusive</p></li>
+<li><p>The point sizes should be relative</p></li>
+<li><p>When disaggregating estimates, the totals don’t need to match</p></li>
+<li><p>Complexity, work effort, andrisk should all be included in the estimates</p></li>
+</ul>
+</section>
+</section>
+<section id="affinity-estimating">
+<h4>Affinity Estimating<a class="headerlink" href="#affinity-estimating" title="Link to this heading">#</a></h4>
+</section>
+<section id="t-shirt-sizing">
+<h4>T-shirt Sizing<a class="headerlink" href="#t-shirt-sizing" title="Link to this heading">#</a></h4>
+<p>ES &lt; S &lt; M &lt; L &lt; XL &lt; XXL</p>
+</section>
+<section id="story-maps">
+<h4>Story Maps<a class="headerlink" href="#story-maps" title="Link to this heading">#</a></h4>
+</section>
+<section id="product-roadmap">
+<h4>Product Roadmap<a class="headerlink" href="#product-roadmap" title="Link to this heading">#</a></h4>
+</section>
+<section id="wideband-delphi">
+<h4>Wideband Delphi<a class="headerlink" href="#wideband-delphi" title="Link to this heading">#</a></h4>
+<p>Biases:</p>
+<ul class="simple">
+<li><p>Bandwagon</p></li>
+<li><p>HIPPO</p></li>
+<li><p>Groupthink</p></li>
+</ul>
+<p>Characteristics:</p>
+<ul class="simple">
+<li><p>Iterative</p></li>
+<li><p>Adaptive</p></li>
+<li><p>Collaborative</p></li>
+</ul>
+</section>
+<section id="planning-poker">
+<h4>Planning Poker<a class="headerlink" href="#planning-poker" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="release-and-iteration-planning">
+<h3>Release and Iteration Planning<a class="headerlink" href="#release-and-iteration-planning" title="Link to this heading">#</a></h3>
+<section id="types-of-iterations">
+<h4>Types of Iterations<a class="headerlink" href="#types-of-iterations" title="Link to this heading">#</a></h4>
+</section>
+<section id="spikes">
+<h4>Spikes<a class="headerlink" href="#spikes" title="Link to this heading">#</a></h4>
+<section id="architectural-spike">
+<h5>Architectural Spike<a class="headerlink" href="#architectural-spike" title="Link to this heading">#</a></h5>
+</section>
+<section id="risk-based-spike">
+<h5>Risk-Based Spike<a class="headerlink" href="#risk-based-spike" title="Link to this heading">#</a></h5>
+</section>
+<section id="fast-failure">
+<h5>Fast Failure<a class="headerlink" href="#fast-failure" title="Link to this heading">#</a></h5>
+</section>
+</section>
+<section id="high-level-planning-visioning">
+<h4>High-Level Planning (Visioning)<a class="headerlink" href="#high-level-planning-visioning" title="Link to this heading">#</a></h4>
+<section id="outputs-of-high-level-planning">
+<h5>Outputs of High-Level Planning<a class="headerlink" href="#outputs-of-high-level-planning" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Updated, prioritized backlog of user stories and risk response actions</p></li>
+<li><p>High-level (coarse-grained) relative estimates for each user story</p></li>
+<li><p>Release goal focused on customer value</p></li>
+<li><p>Target release date</p></li>
+</ul>
+</section>
+</section>
+<section id="release-planning">
+<h4>Release Planning<a class="headerlink" href="#release-planning" title="Link to this heading">#</a></h4>
+<section id="selecting-the-user-stories-for-the-release">
+<h5>Selecting the User Stories for the Release<a class="headerlink" href="#selecting-the-user-stories-for-the-release" title="Link to this heading">#</a></h5>
+</section>
+<section id="how-much-can-we-get-done">
+<h5>How Much Can We Get Done?<a class="headerlink" href="#how-much-can-we-get-done" title="Link to this heading">#</a></h5>
+</section>
+<section id="estimating-velocity-for-the-first-iteration">
+<h5>Estimating Velocity for the First Iteration<a class="headerlink" href="#estimating-velocity-for-the-first-iteration" title="Link to this heading">#</a></h5>
+</section>
+<section id="slicing-the-stories">
+<h5>Slicing the Stories<a class="headerlink" href="#slicing-the-stories" title="Link to this heading">#</a></h5>
+<section id="slicing-compound-stories">
+<h6>Slicing Compound Stories<a class="headerlink" href="#slicing-compound-stories" title="Link to this heading">#</a></h6>
+</section>
+<section id="slicing-complex-stories">
+<h6>Slicing Complex Stories<a class="headerlink" href="#slicing-complex-stories" title="Link to this heading">#</a></h6>
+</section>
+</section>
+</section>
+<section id="iteration-planning">
+<h4>Iteration Planning<a class="headerlink" href="#iteration-planning" title="Link to this heading">#</a></h4>
+<section id="the-iteration-planning-process">
+<h5>The Iteration Planning Process<a class="headerlink" href="#the-iteration-planning-process" title="Link to this heading">#</a></h5>
+</section>
+<section id="iteration-planning-summary">
+<h5>Iteration Planning Summary<a class="headerlink" href="#iteration-planning-summary" title="Link to this heading">#</a></h5>
+</section>
+<section id="selecting-the-user-stories">
+<h5>Selecting the User Stories<a class="headerlink" href="#selecting-the-user-stories" title="Link to this heading">#</a></h5>
+</section>
+<section id="defining-the-acceptance-criteria-nad-writing-the-acceptance-tests">
+<h5>Defining the Acceptance Criteria nad Writing the Acceptance Tests<a class="headerlink" href="#defining-the-acceptance-criteria-nad-writing-the-acceptance-tests" title="Link to this heading">#</a></h5>
+</section>
+<section id="estimating-the-tasks">
+<h5>Estimating the Tasks<a class="headerlink" href="#estimating-the-tasks" title="Link to this heading">#</a></h5>
+</section>
+<section id="use-actual-results-to-refine-estimates">
+<h5>Use Actual Results to Refine Estimates<a class="headerlink" href="#use-actual-results-to-refine-estimates" title="Link to this heading">#</a></h5>
+</section>
+</section>
+</section>
+<section id="daily-stand-ups">
+<h3>Daily Stand-Ups<a class="headerlink" href="#daily-stand-ups" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="problem-detection-and-resolution">
+<h2>Problem Detection and Resolution<a class="headerlink" href="#problem-detection-and-resolution" title="Link to this heading">#</a></h2>
 </section>
 </section>
 
@@ -2009,10 +2242,82 @@ T : NPV(T)=0
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Adaptive Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-versus-non-agile-planning">Agile versus Non-Agile Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#principles-of-agile-planning">Principles of Agile Planning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-discovery">Agile Discovery</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#progressive-elaboration">Progressive Elaboration</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#value-based-analysis">Value-Based Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#value-based-decomposition">Value-Based Decomposition</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#timeboxing">Timeboxing</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#estimate-ranges">Estimate Ranges</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ideal-time">Ideal Time</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-for-sizing-and-estimating">Tools for Sizing and Estimating</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sizing-estimating-and-planning">Sizing, Estimating, and Planning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#decomposition-requirements">Decomposition Requirements</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements-are-decomposed-just-in-time">Requirements Are Decomposed “Just in Time”</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#user-stories">User Stories</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-user-stories">Creating the User Stories</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#the-three-c-s">The Three C’s</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#invest-characteristics-of-effective-user-stories">INVEST: Characteristics of Effective User Stories</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#user-story-backlog-product-backlog">User Story Backlog (Product Backlog)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#refining-grooming-the-backlog">Refining (Grooming) the Backlog</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-sizing-and-story-points">Relative Sizing and Story Points</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fibonacci-sequence">The Fibonacci Sequence</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#guidelines-for-using-story-points">Guidelines for Using Story Points</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#affinity-estimating">Affinity Estimating</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#t-shirt-sizing">T-shirt Sizing</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#story-maps">Story Maps</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#product-roadmap">Product Roadmap</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#wideband-delphi">Wideband Delphi</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#planning-poker">Planning Poker</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#release-and-iteration-planning">Release and Iteration Planning</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-iterations">Types of Iterations</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spikes">Spikes</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#architectural-spike">Architectural Spike</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-based-spike">Risk-Based Spike</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#fast-failure">Fast Failure</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#high-level-planning-visioning">High-Level Planning (Visioning)</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs-of-high-level-planning">Outputs of High-Level Planning</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#release-planning">Release Planning</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-the-user-stories-for-the-release">Selecting the User Stories for the Release</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#how-much-can-we-get-done">How Much Can We Get Done?</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-velocity-for-the-first-iteration">Estimating Velocity for the First Iteration</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing-the-stories">Slicing the Stories</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing-compound-stories">Slicing Compound Stories</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing-complex-stories">Slicing Complex Stories</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration-planning">Iteration Planning</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-iteration-planning-process">The Iteration Planning Process</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration-planning-summary">Iteration Planning Summary</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-the-user-stories">Selecting the User Stories</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-the-acceptance-criteria-nad-writing-the-acceptance-tests">Defining the Acceptance Criteria nad Writing the Acceptance Tests</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-tasks">Estimating the Tasks</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#use-actual-results-to-refine-estimates">Use Actual Results to Refine Estimates</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#daily-stand-ups">Daily Stand-Ups</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-detection-and-resolution">Problem Detection and Resolution</a></li>
 </ul>
   </nav></div>
 

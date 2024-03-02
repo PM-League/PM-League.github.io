@@ -189,9 +189,7 @@ $PV = FV_t/(1+r)^t$
 
 ###### Formula
 
-$
-NPV=\sum_{t=0}^{T} CF_t/(1+r)^t
-$
+$NPV=\sum_{t=0}^{T} CF_t/(1+r)^t$
 
 ###### Interpretation
 
@@ -201,9 +199,7 @@ IF $NPV>0$ THEN accept ELSE reject
 
 ###### Formula
 
-$
-IRR = r : NPV(r) = 0
-$
+$IRR = r : NPV(r) = 0$
 
 ###### Interpretation
 
@@ -213,9 +209,7 @@ IF $IRR>r$ THEN accept ELSE reject
 
 ###### Formula
 
-$
-T : NPV(T)=0
-$
+$T : NPV(T)=0$
 
 ###### Interpretation
 
@@ -268,10 +262,12 @@ IF $T<PB$ THEN accept ELSE reject
 
 ###### MoSCoW
 
-**M**ust Have
-**S**hould Have
-**C**ould Have
-**W**ould like to have, but not now
+| Letter      | Description |
+| ----------- | ----------- |
+| **M**ust   |             |
+| **S**hould |             |
+| **C**ould  |             |
+| **W**ould  |             |
 
 ###### Monopoly Money
 
@@ -366,12 +362,13 @@ W5H questions:
 
 Project elevator statement:
 
-* For:		Target customers
-* Who:	    Need
-* The:		Product/service name
-* Is a:		Product category
-* That:	    Key benefits/reason to buy
-* Unlike:	Primary competitive alternative(s)
+| For    | Target customers                   |
+| ------ | ---------------------------------- |
+| Who    | Need                               |
+| The    | Product/service name               |
+| Is a   | Product category                   |
+| That   | Key benefits/reason to buy         |
+| Unlike | Primary competitive alternative(s) |
 
 #### Definition of "Done"
 
@@ -602,3 +599,159 @@ $Velocity=Work/Iteration$, where $Work=StoryPoints,UserStories,Hours,...$
 #### Agile versus Non-Agile Planning
 
 #### Principles of Agile Planning
+
+#### Agile Discovery
+
+#### Progressive Elaboration
+
+#### Value-Based Analysis
+
+#### Value-Based Decomposition
+
+#### Timeboxing
+
+#### Estimate Ranges
+
+#### Ideal Time
+
+Ideal Time = Task duration without distractions
+
+Likely Time = Task duration with distractions
+
+### Tools for Sizing and Estimating
+
+#### Sizing, Estimating, and Planning
+
+#### Decomposition Requirements
+
+##### Requirements Are Decomposed "Just in Time"
+
+#### User Stories
+
+##### Creating the User Stories
+
+Template 1
+
+> As a `<role>,` I want `<Functionality>`, so that `<Business benefit>`.
+
+Template 2
+
+> Given
+>
+> When
+>
+> Then
+
+###### The Three C's
+
+| C            | Description |  |
+| ------------ | ----------- | - |
+| Card         |             |  |
+| Conversation |             |  |
+| Confirmation |             |  |
+
+###### INVEST: Characteristics of Effective User Stories
+
+| I                     | Description |
+| --------------------- | ----------- |
+| **I**ndependent |             |
+| **N**egotiable  |             |
+| **V**aluable    |             |
+| **E**stimatable |             |
+| **S**mall       |             |
+| **T**estable    |             |
+
+#### User Story Backlog (Product Backlog)
+
+#### Refining (Grooming) the Backlog
+
+#### Relative Sizing and Story Points
+
+##### The Fibonacci Sequence
+
+##### Guidelines for Using Story Points
+
+* The team should own the definition of their story points
+* Story point estimates shouldbe all-inclusive
+* The point sizes should be relative
+* When disaggregating estimates, the totals don't need to match
+* Complexity, work effort, andrisk should all be included in the estimates
+
+#### Affinity Estimating
+
+#### T-shirt Sizing
+
+ES < S < M < L < XL < XXL
+
+#### Story Maps
+
+#### Product Roadmap
+
+#### Wideband Delphi
+
+Biases:
+
+* Bandwagon
+* HIPPO
+* Groupthink
+
+Characteristics:
+
+* Iterative
+* Adaptive
+* Collaborative
+
+#### Planning Poker
+
+### Release and Iteration Planning
+
+#### Types of Iterations
+
+#### Spikes
+
+##### Architectural Spike
+
+##### Risk-Based Spike
+
+##### Fast Failure
+
+#### High-Level Planning (Visioning)
+
+##### Outputs of High-Level Planning
+
+* Updated, prioritized backlog of user stories and risk response actions
+* High-level (coarse-grained) relative estimates for each user story
+* Release goal focused on customer value
+* Target release date
+
+#### Release Planning
+
+##### Selecting the User Stories for the Release
+
+##### How Much Can We Get Done?
+
+##### Estimating Velocity for the First Iteration
+
+##### Slicing the Stories
+
+###### Slicing Compound Stories
+
+###### Slicing Complex Stories
+
+#### Iteration Planning
+
+##### The Iteration Planning Process
+
+##### Iteration Planning Summary
+
+##### Selecting the User Stories
+
+##### Defining the Acceptance Criteria nad Writing the Acceptance Tests
+
+##### Estimating the Tasks
+
+##### Use Actual Results to Refine Estimates
+
+### Daily Stand-Ups
+
+## Problem Detection and Resolution

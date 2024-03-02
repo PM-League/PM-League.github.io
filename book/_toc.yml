@@ -5,8 +5,7 @@ defaults:
 parts:
 - caption: Project Management 
   chapters:
-  - title: Processes
-    file: PM/pm-concepts
+  - file: PM/pm-concepts
   - file: PM/pm-processes
   - file: PM/evm
   - file: PM/rm

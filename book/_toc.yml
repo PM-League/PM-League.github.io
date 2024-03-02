@@ -1,13 +1,12 @@
 format: jb-book
 root: intro
-defaults:
-  titlesonly: True
-  numbered: True
+# defaults:
+#   titlesonly: True
+#   numbered: True
 parts:
 - caption: Project Management 
   chapters:
   - file: PM/pm-concepts
-    title: Concepts
   - file: PM/pm-processes
   - file: PM/evm
   - file: PM/rm

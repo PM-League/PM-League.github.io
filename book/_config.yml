@@ -5,7 +5,7 @@ logo: logo.png
 sphinx:
   config:
     html_theme_options:
-      use_download_button: false
+      use_download_button: False
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 execute:
   execute_notebooks: force
@@ -19,13 +19,9 @@ repository:
   path_to_book: docs
   branch: master
 html:
-  use_issues_button: true
+  use_issues_button: True
 parse:
   myst_enable_extensions:
     - amsmath
     - dollarmath
-only_build_toc_files: true
-
-# sphinx:
-#   config:
-#     html_theme: sphinx_book_theme
+only_build_toc_files: True

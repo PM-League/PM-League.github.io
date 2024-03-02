@@ -4,8 +4,8 @@
 
 ### Domains
 
-| ID Domain | Domain                                            | Sub-Domain                        |
-| --------- | ------------------------------------------------- | --------------------------------- |
+| ID Domain | <center>Domain<\center>                       | Sub-Domain                        |
+| :-------- | ------------------------------------------------- | --------------------------------: |
 | I         | Agile Principles and Mindset                      |                                   |
 | II        | Value-Driven Delivery                             | Define Positive Value             |
 |           |                                                   | Avoid Potential Downsides         |
@@ -177,8 +177,6 @@
 
 ##### Return on Investment (ROI)
 
-###### Formula
-
 $ROI = Benefits/Investment$
 
 ##### Present Value (PV)
@@ -187,31 +185,19 @@ $PV = FV_t/(1+r)^t$
 
 ##### Net Present Value (NPV)
 
-###### Formula
-
 $NPV=\sum_{t=0}^{T} CF_t/(1+r)^t$
-
-###### Interpretation
 
 IF $NPV>0$ THEN accept ELSE reject
 
 ##### Internal Rate of Return (IRR)
 
-###### Formula
-
 $IRR = r : NPV(r) = 0$
-
-###### Interpretation
 
 IF $IRR>r$ THEN accept ELSE reject
 
 ##### Payback Period
 
-###### Formula
-
 $T : NPV(T)=0$
-
-###### Interpretation
 
 IF $T<PB$ THEN accept ELSE reject
 

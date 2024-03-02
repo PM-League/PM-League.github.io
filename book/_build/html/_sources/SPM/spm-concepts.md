@@ -1,1 +1,0 @@
-# Systems Project Management Concepts

@@ -4,8 +4,6 @@ copyright: '2024'
 logo: logo.png
 sphinx:
   config:
-    html_theme_options:
-            use_download_button: false
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 execute:
   execute_notebooks: force
@@ -19,6 +17,7 @@ repository:
   path_to_book: docs
   branch: master
 html:
+  use_download_button: false
   use_issues_button: true
   use_repository_button: true
 parse:

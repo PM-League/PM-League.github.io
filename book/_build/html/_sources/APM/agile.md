@@ -269,11 +269,8 @@ IF $T<PB$ THEN accept ELSE reject
 ###### MoSCoW
 
 **M**ust Have
-
 **S**hould Have
-
 **C**ould Have
-
 **W**ould like to have, but not now
 
 ###### Monopoly Money
@@ -370,10 +367,10 @@ W5H questions:
 Project elevator statement:
 
 * For:		Target customers
-* Who:	Need
+* Who:	    Need
 * The:		Product/service name
 * Is a:		Product category
-* That:	Key benefits/reason to buy
+* That:	    Key benefits/reason to buy
 * Unlike:	Primary competitive alternative(s)
 
 #### Definition of "Done"
@@ -498,7 +495,6 @@ Collaboration benefits:
 
 * Development Team/Delivery Team
 * Product Owner/Customer/Proxy Customer/Value Management Team/Business Representative
-
 * ScrumMaster/Coach/Team Leader
 * Project Sponsor
 
@@ -512,10 +508,9 @@ Collaboration benefits:
 
 ### Building Agile Teams
 
-Development Team 
+Development Team
 
-- Size < 12
-
+* Size < 12
 * Have complementary skills & generalizing specialists with cross-functional skills rather than experts in one field
 * Commited to a common purpose
 * Hold themselves mutually accountable -> shared ownership for project outcomes
@@ -523,11 +518,87 @@ Development Team
 #### Characteristics of High-Performing Teams
 
 * Create a shared vision for the team
+* Set realistic goals
+* Limit team size to 12 or fewer members
+* Build a sense of team identity
+* Provide strong leadership
 
-- Set realistic goals
+#### Models of Team Development
 
-- Limit team size to 12 or fewer members
+##### Shu-Ha-Ri Model of Skill Mastery
 
-- Build a sense of team identity
+* Shu	Obeying the rules
+* Ha	Consciously moving away from the rules
+* Ri	Unconsciously finding an individual path
 
-- Provide strong leadership
+##### Dreyfus Model of Adult Skill Acquisition
+
+| Stage             | Description |
+| ----------------- | ----------- |
+| Novice            |             |
+| Advanced beginner |             |
+| Competent         |             |
+| Proficient        |             |
+| Expert            |             |
+
+##### Tuckman Model of Team Formation and Development
+
+| Stage      | Description                       |
+| ---------- | --------------------------------- |
+| Forming    | Working group                     |
+| Storming   | Pseudo team -> Potential team     |
+| Norming    | Potential team -> Real team       |
+| Performing | Real team -> High performing team |
+
+#### Adaptive Leadership
+
+| Stage | Team Stage | Leadership Style |
+| ----- | ---------- | ---------------- |
+| 1     | Forming    | Directing        |
+| 2     | Storming   | Coaching         |
+| 3     | Norming    | Supporting       |
+| 4     | Performing | Delegating       |
+
+#### Team Motivation
+
+#### Training, Coaching, and Mentoring
+
+##### Training
+
+##### Coaching
+
+##### Mentoring
+
+### Creating Collaborative Team Spaces
+
+#### Co-located Teams
+
+#### Team Space
+
+#### Osmotic Communication
+
+#### Global, Cultural, and Team Diversity
+
+#### Distributed Teams
+
+### Tracking Team Performance
+
+#### Burn Charts
+
+##### Burndown Charts
+
+##### Burnup Charts
+
+#### Velocity
+
+$Velocity=Work/Iteration$, where $Work=StoryPoints,UserStories,Hours,...$
+
+## Adaptive Planning
+
+### Agile Planning Concepts
+
+#### Adaptive Planning
+
+#### Agile versus Non-Agile Planning
+
+#### Principles of Agile Planning

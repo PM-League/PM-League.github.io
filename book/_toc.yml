@@ -1,7 +1,8 @@
 format: jb-book
 root: intro
 defaults:
-  titlesonly: False
+  titlesonly: true
+  numbered: true
 parts:
 - caption: Project Management 
   chapters:

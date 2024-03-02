@@ -4,7 +4,7 @@
 
 ### Domains
 
-| ID Domain | Domain                                            | Sub-Domain                        |
+| ID Domain | `<p style="text-align: center;">`Domain`</p>` | Sub-Domain                        |
 | --------- | ------------------------------------------------- | --------------------------------- |
 | I         | Agile Principles and Mindset                      |                                   |
 | II        | Value-Driven Delivery                             | Define Positive Value             |

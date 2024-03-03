@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -314,22 +314,51 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-principles-and-mindset">Agile Principles and Mindset</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-agile-mindset">The Agile Mindset</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#declaration-of-interdependence-doi">Declaration of Interdependence (DOI)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-agile-triangle">The Agile Triangle</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-agile-manifesto">The Agile Manifesto</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#four-values">Four Values</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#twelve-principles">Twelve Principles</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-methodologies">Agile Methodologies</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scrum">Scrum</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extreme-programming-xp">Extreme Programming (XP)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lean-product-development">Lean Product Development</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kanban">Kanban</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scrum">Scrum</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#principles">Principles</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#values">Values</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#sprints">Sprints</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#team-roles">Team Roles</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#activities-events-ceremonies">Activities (Events/Ceremonies)</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#artifacts">Artifacts</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extreme-programming-xp">Extreme Programming (XP)</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#core-values">Core Values</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Team Roles</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#practices">Practices</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lean-product-development">Lean Product Development</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#core-concepts">Core Concepts</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#seven-wastes">Seven Wastes</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kanban">Kanban</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Principles</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#wip-limits">WIP Limits</a></li>
+</ul>
+</li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-driven-development-fdd">Feature-driven Development (FDD)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-systems-development-method-dsdm">Dynamic Systems Development Method (DSDM)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal">Crystal</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-leadership">Agile Leadership</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-leadership">Agile Leadership</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#management-versus-leadership">Management versus Leadership</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#servant-leadership">Servant Leadership</a></li>
 </ul>
 </li>
@@ -355,11 +384,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prioritizing-value">Prioritizing Value</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#customer-valued-prioritization">Customer-Valued Prioritization</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#prioritization-schemes">Prioritization Schemes</a><ul class="nav section-nav flex-column">
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-schemes">Simple Schemes</a></li>
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#moscow">MoSCoW</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#monopoly-money">Monopoly Money</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#point-method">100-Point Method</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#dot-voting-or-multi-voting">Dot Voting or Multi-Voting</a></li>
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#kano-analysis">Kano Analysis</a></li>
 </ul>
 </li>
@@ -369,10 +394,9 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deliver-incrementally">Deliver Incrementally</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#minimum-viable-product-mvp">Minimum Viable Product (MVP)</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-tooling">Agile Tooling</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#low-tech-high-touch-tools">Low-Tech, High-Touch Tools</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#task-kanban-boards">Task/Kanban Boards</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#work-in-progress-wip">Work in Progress (WIP)</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#wip-limits">WIP Limits</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">WIP Limits</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#cumulative-flow-diagram-cfds">Cumulative Flow Diagram (CFDs)</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#little-s-law">Little’s Law</a></li>
 </ul>
@@ -380,15 +404,7 @@ document.write(`
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#bottleneck-and-theory-of-constraints-toc">Bottleneck and Theory of Constraints (TOC)</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-contracting">Agile Contracting</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-constraints-and-contracts">Agile Constraints and Contracts</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#dsdm-contract">DSDM Contract</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#money-for-nothing-and-change-for-free">Money for Nothing and Change for Free</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#graduated-fixed-price-contract">Graduated Fixed-Price Contract</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-price-work-packages">Fixed-Price Work Packages</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#customized-contracts">Customized Contracts</a></li>
-</ul>
-</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#to-do-agile-contracting">(To Do) Agile Contracting</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#verifying-and-validating-value">Verifying and Validating Value</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#frequent-verification-and-validation">Frequent Verification and Validation</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-and-verification-in-software-development">Testing and Verification in Software Development</a><ul class="nav section-nav flex-column">
@@ -510,7 +526,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adaptive-planning">Adaptive Planning</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-planning-concepts">Agile Planning Concepts</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Adaptive Planning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Adaptive Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-versus-non-agile-planning">Agile versus Non-Agile Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#principles-of-agile-planning">Principles of Agile Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-discovery">Agile Discovery</a></li>
@@ -665,7 +681,7 @@ document.write(`
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#value-stream-mapping">Value Stream Mapping</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#process">Process</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Metrics</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Metrics</a></li>
 </ul>
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#project-pre-mortems">Project Pre-Mortems</a></li>
@@ -684,7 +700,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement-people">Continuous Improvement—People</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#retrospectives">Retrospectives</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits">Benefits</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Process</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Process</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#set-stage">Set stage</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#activities">Activities</a></li>
 </ul>
@@ -695,7 +711,7 @@ document.write(`
 </li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-insights">Generate insights</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#five-whys">Five Whys</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Fishbone Analysis</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Fishbone Analysis</a></li>
 </ul>
 </li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#decide-what-to-do">Decide what to do</a></li>
@@ -730,75 +746,75 @@ document.write(`
 <h3>Domains<a class="headerlink" href="#domains" title="Link to this heading">#</a></h3>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>ID Domain</p></th>
-<th class="head"><p><center>Domain&lt;\center&gt;</p></th>
-<th class="head text-right"><p>Sub-Domain</p></th>
+<tr class="row-odd"><th class="head text-center"><p>ID Domain</p></th>
+<th class="head text-left"><p>Domain</p></th>
+<th class="head text-left"><p>Sub-Domain</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>I</p></td>
-<td><p>Agile Principles and Mindset</p></td>
-<td class="text-right"><p></p></td>
+<tr class="row-even"><td class="text-center"><p>I</p></td>
+<td class="text-left"><p>Agile Principles and Mindset</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>II</p></td>
-<td><p>Value-Driven Delivery</p></td>
-<td class="text-right"><p>Define Positive Value</p></td>
+<tr class="row-odd"><td class="text-center"><p>II</p></td>
+<td class="text-left"><p>Value-Driven Delivery</p></td>
+<td class="text-left"><p>Define Positive Value</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p></p></td>
-<td><p></p></td>
-<td class="text-right"><p>Avoid Potential Downsides</p></td>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>Avoid Potential Downsides</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p></p></td>
-<td><p></p></td>
-<td class="text-right"><p>Prioritization</p></td>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>Prioritization</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p></p></td>
-<td><p></p></td>
-<td class="text-right"><p>Incremental Development</p></td>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>Incremental Development</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>III</p></td>
-<td><p>Stakeholder Engagement</p></td>
-<td class="text-right"><p>Understand Stakeholder Needs</p></td>
+<tr class="row-odd"><td class="text-center"><p>III</p></td>
+<td class="text-left"><p>Stakeholder Engagement</p></td>
+<td class="text-left"><p>Understand Stakeholder Needs</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p></p></td>
-<td><p></p></td>
-<td class="text-right"><p>Ensure Stakeholder Involvement</p></td>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>Ensure Stakeholder Involvement</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p></p></td>
-<td><p></p></td>
-<td class="text-right"><p>Manage Stakeholder Expectations</p></td>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>Manage Stakeholder Expectations</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>IV</p></td>
-<td><p>Team Performance</p></td>
-<td class="text-right"><p>Team Formation</p></td>
+<tr class="row-even"><td class="text-center"><p>IV</p></td>
+<td class="text-left"><p>Team Performance</p></td>
+<td class="text-left"><p>Team Formation</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p></p></td>
-<td><p></p></td>
-<td class="text-right"><p>Team Empowerment</p></td>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>Team Empowerment</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p></p></td>
-<td><p></p></td>
-<td class="text-right"><p>Team Collaboration and Commitment</p></td>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>Team Collaboration and Commitment</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>V</p></td>
-<td><p>Adaptive Planning</p></td>
-<td class="text-right"><p>Levels of Planning</p></td>
+<tr class="row-odd"><td class="text-center"><p>V</p></td>
+<td class="text-left"><p>Adaptive Planning</p></td>
+<td class="text-left"><p>Levels of Planning</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p></p></td>
-<td><p></p></td>
-<td class="text-right"><p>Adaptation</p></td>
+<tr class="row-even"><td class="text-center"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>Adaptation</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p></p></td>
-<td><p></p></td>
-<td class="text-right"><p>Agile Sizing and Estimation</p></td>
+<tr class="row-odd"><td class="text-center"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>Agile Sizing and Estimation</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>VI</p></td>
-<td><p>Problem Detection and Resolution</p></td>
-<td class="text-right"><p></p></td>
+<tr class="row-even"><td class="text-center"><p>VI</p></td>
+<td class="text-left"><p>Problem Detection and Resolution</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>VII</p></td>
-<td><p>Continuous Improvement (Product, Process, People)</p></td>
-<td class="text-right"><p></p></td>
+<tr class="row-odd"><td class="text-center"><p>VII</p></td>
+<td class="text-left"><p>Continuous Improvement (Product, Process, People)</p></td>
+<td class="text-left"><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -808,7 +824,7 @@ document.write(`
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Toolkit</p></th>
-<th class="head"><p>Including but not limited to:</p></th>
+<th class="head"><p>Tool/Technique</p></th>
 </tr>
 </thead>
 <tbody>
@@ -1037,6 +1053,47 @@ document.write(`
 </section>
 <section id="agile-principles-and-mindset">
 <h2>Agile Principles and Mindset<a class="headerlink" href="#agile-principles-and-mindset" title="Link to this heading">#</a></h2>
+<section id="the-agile-mindset">
+<h3>The Agile Mindset<a class="headerlink" href="#the-agile-mindset" title="Link to this heading">#</a></h3>
+<section id="declaration-of-interdependence-doi">
+<h4>Declaration of Interdependence (DOI)<a class="headerlink" href="#declaration-of-interdependence-doi" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Written in 2005 by Agile Project Leadership Network</p></li>
+<li><p>Six Precepts:</p></li>
+</ul>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>We increase <strong>return on investment</strong> by making continuous flow of value our focus.</p></li>
+<li><p>We <strong>deliver reliable results</strong> by engaging customers in frequent interactions and shared ownership.</p></li>
+<li><p>We <strong>expect uncertainty</strong> and manage for it through iterations, anticipation, and adaptation.</p></li>
+<li><p>We <strong>unleash creativity</strong> and innovation by recognizing that individuals are the ultimate source of value, and creating an environment where they can make a difference.</p></li>
+<li><p>We <strong>boost performance</strong> through group accountability for results and shared responsibility for team effectiveness.</p></li>
+<li><p>We <strong>improve effectiveness and reliability</strong> through situationally specific strategies, processes, and practices.</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="the-agile-triangle">
+<h4>The Agile Triangle<a class="headerlink" href="#the-agile-triangle" title="Link to this heading">#</a></h4>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Methodology</p></th>
+<th class="head"><p>Constraint</p></th>
+<th class="head"><p>Variable</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Predictive</p></td>
+<td><p>Scope</p></td>
+<td><p>Time, Cost</p></td>
+</tr>
+<tr class="row-odd"><td><p>Agile</p></td>
+<td><p>Time, Cost</p></td>
+<td><p>Scope</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
 <section id="the-agile-manifesto">
 <h3>The Agile Manifesto<a class="headerlink" href="#the-agile-manifesto" title="Link to this heading">#</a></h3>
 <section id="four-values">
@@ -1079,21 +1136,189 @@ document.write(`
 </ul>
 <section id="scrum">
 <h4>Scrum<a class="headerlink" href="#scrum" title="Link to this heading">#</a></h4>
+<section id="principles">
+<h5>Principles<a class="headerlink" href="#principles" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Transparency</p></li>
+<li><p>Inspection</p></li>
+<li><p>Adaptation</p></li>
+</ul>
+</section>
+<section id="values">
+<h5>Values<a class="headerlink" href="#values" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Focus</p></li>
+<li><p>Courage</p></li>
+<li><p>Openness</p></li>
+<li><p>Commitment</p></li>
+<li><p>Respect</p></li>
+</ul>
+</section>
+<section id="sprints">
+<h5>Sprints<a class="headerlink" href="#sprints" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Sprint = timeboxed iteration of &lt; 1 month</p></li>
+<li><p>No changes affecting the sprint goal are made throughout the sprint</p></li>
+<li><p>Scope can be clarified/renegotiated as new information becomes available</p></li>
+<li><p>Can be cancelled by Product Owner before timebox is over due to</p>
+<ul>
+<li><p>goal becomes obsolete</p></li>
+<li><p>change in business direction/technology conditions</p></li>
+</ul>
+</li>
+<li><p>Sequence of Activities</p>
+<ol class="arabic simple">
+<li><p>Sprint Planning Meeting</p></li>
+<li><p>Development period</p>
+<ul>
+<li><p>Daily scrums</p></li>
+<li><p>Sprint review meeting</p></li>
+<li><p>Sprint retrospective meeting</p></li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</section>
+<section id="team-roles">
+<h5>Team Roles<a class="headerlink" href="#team-roles" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Product Owner</p></li>
+<li><p>Scrum Master</p></li>
+<li><p>Development Team</p></li>
+</ul>
+</section>
+<section id="activities-events-ceremonies">
+<h5>Activities (Events/Ceremonies)<a class="headerlink" href="#activities-events-ceremonies" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Product Backlog Refinement</p></li>
+<li><p>Sprint Planning Meeting</p></li>
+<li><p>Daily Scrums</p></li>
+<li><p>Sprint Reviews</p></li>
+<li><p>Sprint Retrospectives</p></li>
+</ul>
+</section>
+<section id="artifacts">
+<h5>Artifacts<a class="headerlink" href="#artifacts" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Product Increment</p></li>
+<li><p>Product Backlog</p></li>
+<li><p>Sprint Backlog</p></li>
+</ul>
+</section>
 </section>
 <section id="extreme-programming-xp">
 <h4>Extreme Programming (XP)<a class="headerlink" href="#extreme-programming-xp" title="Link to this heading">#</a></h4>
+<section id="core-values">
+<h5>Core Values<a class="headerlink" href="#core-values" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Simplicity</p></li>
+<li><p>Communication</p></li>
+<li><p>Feedback</p></li>
+<li><p>Courage</p></li>
+<li><p>Respect</p></li>
+</ul>
+</section>
+<section id="id1">
+<h5>Team Roles<a class="headerlink" href="#id1" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Coach</p></li>
+<li><p>Customer</p></li>
+<li><p>Programmers</p></li>
+<li><p>Testers</p></li>
+</ul>
+</section>
+<section id="practices">
+<h5>Practices<a class="headerlink" href="#practices" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Whole Team</p></li>
+<li><p>Planning Games</p></li>
+<li><p>Small Releases</p></li>
+<li><p>Customer Tests</p></li>
+<li><p>Collective Code Ownership</p></li>
+<li><p>Code Standards</p></li>
+<li><p>Sustainable Pace</p></li>
+<li><p>Metaphor</p></li>
+<li><p>Continuous Integration</p></li>
+<li><p>Test-Driven Development</p></li>
+<li><p>Refactoring</p></li>
+<li><p>Simple Design</p></li>
+<li><p>Pair Programming</p></li>
+</ul>
+</section>
 </section>
 <section id="lean-product-development">
 <h4>Lean Product Development<a class="headerlink" href="#lean-product-development" title="Link to this heading">#</a></h4>
+<section id="core-concepts">
+<h5>Core Concepts<a class="headerlink" href="#core-concepts" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Eliminate waste</p></li>
+<li><p>Empower team</p></li>
+<li><p>Deliver fast</p></li>
+<li><p>Optimize the whole</p></li>
+<li><p>Build quality in</p></li>
+<li><p>Defer decisions</p></li>
+<li><p>Amplify learning</p></li>
+</ul>
+</section>
+<section id="seven-wastes">
+<h5>Seven Wastes<a class="headerlink" href="#seven-wastes" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Partially done work</p></li>
+<li><p>Extra processes</p></li>
+<li><p>Extra features</p></li>
+<li><p>Task switching</p></li>
+<li><p>Waiting</p></li>
+<li><p>Motion</p></li>
+<li><p>Defects</p></li>
+</ul>
+</section>
 </section>
 <section id="kanban">
 <h4>Kanban<a class="headerlink" href="#kanban" title="Link to this heading">#</a></h4>
+<section id="id2">
+<h5>Principles<a class="headerlink" href="#id2" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Visualzie workflow</p></li>
+<li><p>Limit WIP</p></li>
+<li><p>Manage flow</p></li>
+<li><p>Make process policies explicit</p></li>
+<li><p>Improve collaboratively</p></li>
+</ul>
+</section>
+<section id="wip-limits">
+<h5>WIP Limits<a class="headerlink" href="#wip-limits" title="Link to this heading">#</a></h5>
+<p><span class="math notranslate nohighlight">\(\downarrow\)</span> WIP <span class="math notranslate nohighlight">\(\rightarrow\)</span> <span class="math notranslate nohighlight">\(\uparrow\)</span> Team’s productivity</p>
+<p>Little’s Law: <span class="math notranslate nohighlight">\(Queue.Duration = m(Queue.Size)\)</span></p>
+</section>
 </section>
 <section id="feature-driven-development-fdd">
 <h4>Feature-driven Development (FDD)<a class="headerlink" href="#feature-driven-development-fdd" title="Link to this heading">#</a></h4>
+<p>Practices:</p>
+<ul class="simple">
+<li><p>Domain object modeling</p></li>
+<li><p>Developing by feature</p></li>
+<li><p>Individual class (code) ownership</p></li>
+<li><p>Feature teams</p></li>
+<li><p>Inspections</p></li>
+<li><p>Configuration management</p></li>
+<li><p>Regular builds</p></li>
+<li><p>Visibility of progress/results</p></li>
+</ul>
 </section>
 <section id="dynamic-systems-development-method-dsdm">
 <h4>Dynamic Systems Development Method (DSDM)<a class="headerlink" href="#dynamic-systems-development-method-dsdm" title="Link to this heading">#</a></h4>
+<p>Principles:</p>
+<ul class="simple">
+<li><p>Focus on the business needs</p></li>
+<li><p>Deliver on time</p></li>
+<li><p>Collaborate</p></li>
+<li><p>Never compromise quality</p></li>
+<li><p>Build incrementally from firm foundations</p></li>
+<li><p>Develop iteratively</p></li>
+<li><p>Communicate continuously and clearly</p></li>
+<li><p>Demonstrate control</p></li>
+</ul>
 </section>
 <section id="crystal">
 <h4>Crystal<a class="headerlink" href="#crystal" title="Link to this heading">#</a></h4>
@@ -1101,9 +1326,50 @@ document.write(`
 </section>
 <section id="agile-leadership">
 <h3>Agile Leadership<a class="headerlink" href="#agile-leadership" title="Link to this heading">#</a></h3>
+<p>Align project objectives with personal objectives to improve productivity</p>
+<section id="management-versus-leadership">
+<h4>Management versus Leadership<a class="headerlink" href="#management-versus-leadership" title="Link to this heading">#</a></h4>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Management Focus</p></th>
+<th class="head"><p>Leadership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Tasks/things</p></td>
+<td><p>People</p></td>
+</tr>
+<tr class="row-odd"><td><p>Control</p></td>
+<td><p>Empowerment</p></td>
+</tr>
+<tr class="row-even"><td><p>Efficiency</p></td>
+<td><p>Effectiveness</p></td>
+</tr>
+<tr class="row-odd"><td><p>Doing things right</p></td>
+<td><p>Doing the right things</p></td>
+</tr>
+<tr class="row-even"><td><p>Speed</p></td>
+<td><p>Direction</p></td>
+</tr>
+<tr class="row-odd"><td><p>Practices</p></td>
+<td><p>Principles</p></td>
+</tr>
+<tr class="row-even"><td><p>Command</p></td>
+<td><p>Communication</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="servant-leadership">
 <h3>Servant Leadership<a class="headerlink" href="#servant-leadership" title="Link to this heading">#</a></h3>
+<p>Duties</p>
+<ul class="simple">
+<li><p>Shield the team from interruptions</p></li>
+<li><p>Remove impediments to progress</p></li>
+<li><p>Communicate</p></li>
+<li><p>“Carry food and water”</p></li>
+</ul>
 </section>
 </section>
 <section id="value-driven-delivery">
@@ -1114,26 +1380,39 @@ document.write(`
 <h4>Financial Assessment Metrics<a class="headerlink" href="#financial-assessment-metrics" title="Link to this heading">#</a></h4>
 <section id="return-on-investment-roi">
 <h5>Return on Investment (ROI)<a class="headerlink" href="#return-on-investment-roi" title="Link to this heading">#</a></h5>
-<p><span class="math notranslate nohighlight">\(ROI = Benefits/Investment\)</span></p>
+<p>Formula: <span class="math notranslate nohighlight">\(ROI = Investment.Benefits/Investment.Cost\)</span></p>
+<p>Interpretation: <span class="math notranslate nohighlight">\(ROI&gt;1\)</span></p>
 </section>
 <section id="present-value-pv">
 <h5>Present Value (PV)<a class="headerlink" href="#present-value-pv" title="Link to this heading">#</a></h5>
-<p><span class="math notranslate nohighlight">\(PV = FV_t/(1+r)^t\)</span></p>
+<p>Formula: <span class="math notranslate nohighlight">\(PV = FV_t/(1+r)^t\)</span></p>
 </section>
 <section id="net-present-value-npv">
 <h5>Net Present Value (NPV)<a class="headerlink" href="#net-present-value-npv" title="Link to this heading">#</a></h5>
-<p><span class="math notranslate nohighlight">\(NPV=\sum_{t=0}^{T} CF_t/(1+r)^t\)</span></p>
-<p>IF <span class="math notranslate nohighlight">\(NPV&gt;0\)</span> THEN accept ELSE reject</p>
+<p>Formula: <span class="math notranslate nohighlight">\(NPV=\sum_{t=0}^{T} CF_t/(1+r)^t\)</span></p>
+<p>Interpretation:</p>
+<ul class="simple">
+<li><p>IF <span class="math notranslate nohighlight">\(NPV&gt;0\)</span> THEN accept ELSE reject</p></li>
+<li><p>Select project with <strong>higher</strong> <span class="math notranslate nohighlight">\(NPV\)</span></p></li>
+</ul>
 </section>
 <section id="internal-rate-of-return-irr">
 <h5>Internal Rate of Return (IRR)<a class="headerlink" href="#internal-rate-of-return-irr" title="Link to this heading">#</a></h5>
-<p><span class="math notranslate nohighlight">\(IRR = r : NPV(r) = 0\)</span></p>
-<p>IF <span class="math notranslate nohighlight">\(IRR&gt;r\)</span> THEN accept ELSE reject</p>
+<p>Formula: <span class="math notranslate nohighlight">\(IRR = r : NPV(r) = 0\)</span></p>
+<p>Interpretation:</p>
+<ul class="simple">
+<li><p>IF <span class="math notranslate nohighlight">\(IRR&gt;r\)</span> THEN accept ELSE reject</p></li>
+<li><p>Select project with <strong>higher</strong> <span class="math notranslate nohighlight">\(IRR\)</span></p></li>
+</ul>
 </section>
 <section id="payback-period">
 <h5>Payback Period<a class="headerlink" href="#payback-period" title="Link to this heading">#</a></h5>
-<p><span class="math notranslate nohighlight">\(T : NPV(T)=0\)</span></p>
-<p>IF <span class="math notranslate nohighlight">\(T&lt;PB\)</span> THEN accept ELSE reject</p>
+<p>Formula: <span class="math notranslate nohighlight">\(T : NPV(T)=0\)</span></p>
+<p>Interpretation:</p>
+<ul class="simple">
+<li><p>IF <span class="math notranslate nohighlight">\(T&lt;PB\)</span> THEN accept ELSE reject</p></li>
+<li><p>Select project with <strong>lower</strong> <span class="math notranslate nohighlight">\(PB\)</span></p></li>
+</ul>
 </section>
 </section>
 <section id="earned-value-management">
@@ -1238,27 +1517,42 @@ document.write(`
 </section>
 <section id="agile-project-accounting">
 <h4>Agile Project Accounting<a class="headerlink" href="#agile-project-accounting" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Break down product/service into MVP</p></li>
+<li><p>Deliver MVP asap</p></li>
+<li><p>Exploit opportunities for early benefits by using part of the product/service while completing the remainder</p></li>
+</ul>
 </section>
 <section id="key-performance-indexes">
 <h4>Key Performance Indexes<a class="headerlink" href="#key-performance-indexes" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Rate of Progress</p></li>
+<li><p>Remaining Work</p></li>
+<li><p>Likely Completion Date</p></li>
+<li><p>Likely Costs Remaining</p></li>
+</ul>
 </section>
 <section id="regulatory-compliance">
 <h4>Regulatory Compliance<a class="headerlink" href="#regulatory-compliance" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Regulations <span class="math notranslate nohighlight">\(\rightarrow \)</span> safety</p></li>
+<li><p>A project that is subejct to regulatory compliance require special documentation to prove that required practices were followed</p></li>
+<li><p>Approaches for integrating regulatory compliance:</p>
+<ul>
+<li><p>Doing compliance work <strong>during</strong> product development to keep them linked and relevant</p></li>
+<li><p>Doing compliance work <strong>after</strong> product development to avoid rework</p></li>
+</ul>
+</li>
+</ul>
 </section>
 </section>
 <section id="prioritizing-value">
 <h3>Prioritizing Value<a class="headerlink" href="#prioritizing-value" title="Link to this heading">#</a></h3>
 <section id="customer-valued-prioritization">
 <h4>Customer-Valued Prioritization<a class="headerlink" href="#customer-valued-prioritization" title="Link to this heading">#</a></h4>
+<p>Work on items that maximize value delivered to customer first</p>
 <section id="prioritization-schemes">
 <h5>Prioritization Schemes<a class="headerlink" href="#prioritization-schemes" title="Link to this heading">#</a></h5>
-<section id="simple-schemes">
-<h6>Simple Schemes<a class="headerlink" href="#simple-schemes" title="Link to this heading">#</a></h6>
-<ul class="simple">
-<li><p>Priority 1, 2, 3</p></li>
-<li><p>High, Medium, Low</p></li>
-</ul>
-</section>
 <section id="moscow">
 <h6>MoSCoW<a class="headerlink" href="#moscow" title="Link to this heading">#</a></h6>
 <table class="table">
@@ -1283,27 +1577,6 @@ document.write(`
 </tbody>
 </table>
 </section>
-<section id="monopoly-money">
-<h6>Monopoly Money<a class="headerlink" href="#monopoly-money" title="Link to this heading">#</a></h6>
-<ol class="arabic simple">
-<li><p>Give stakeholders money equal to the project budget</p></li>
-<li><p>Ask stakeholders to distribute funds to system features</p></li>
-</ol>
-</section>
-<section id="point-method">
-<h6>100-Point Method<a class="headerlink" href="#point-method" title="Link to this heading">#</a></h6>
-<ol class="arabic simple">
-<li><p>Give stakeholders 100 points</p></li>
-<li><p>Ask stakeholders to distribute points to system features</p></li>
-</ol>
-</section>
-<section id="dot-voting-or-multi-voting">
-<h6>Dot Voting or Multi-Voting<a class="headerlink" href="#dot-voting-or-multi-voting" title="Link to this heading">#</a></h6>
-<ol class="arabic simple">
-<li><p>Give stakeholders <span class="math notranslate nohighlight">\(n\)</span> dots</p></li>
-<li><p>Ask stakeholders to distribute points to options presented</p></li>
-</ol>
-</section>
 <section id="kano-analysis">
 <h6>Kano Analysis<a class="headerlink" href="#kano-analysis" title="Link to this heading">#</a></h6>
 <ul class="simple">
@@ -1316,58 +1589,96 @@ document.write(`
 </section>
 <section id="relative-prioritization-ranking">
 <h5>Relative Prioritization/Ranking<a class="headerlink" href="#relative-prioritization-ranking" title="Link to this heading">#</a></h5>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Feature</p></th>
+<th class="head"><p>Priority</p></th>
+<th class="head"><p>MVP</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p>1</p></td>
+<td><p>True</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p>2</p></td>
+<td><p>True</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>C</p></td>
+<td><p>3</p></td>
+<td><p>True</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>D</p></td>
+<td><p>4</p></td>
+<td><p>True</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>E</p></td>
+<td><p>5</p></td>
+<td><p>False</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>…</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>Cutoff to meet budget/time</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 <section id="deliver-incrementally">
 <h4>Deliver Incrementally<a class="headerlink" href="#deliver-incrementally" title="Link to this heading">#</a></h4>
+<p>Delivering the “plain-vanilla” version of a product/service allows realizing benefits to get an early <span class="math notranslate nohighlight">\(ROI\)</span></p>
 <section id="minimum-viable-product-mvp">
 <h5>Minimum Viable Product (MVP)<a class="headerlink" href="#minimum-viable-product-mvp" title="Link to this heading">#</a></h5>
+<p>“Package of functionality that is complete enough to be useful to the users or the market, yet still small enough that it does not represent the entire project”</p>
 </section>
 <section id="agile-tooling">
 <h5>Agile Tooling<a class="headerlink" href="#agile-tooling" title="Link to this heading">#</a></h5>
-</section>
-<section id="low-tech-high-touch-tools">
-<h5>Low-Tech, High-Touch Tools<a class="headerlink" href="#low-tech-high-touch-tools" title="Link to this heading">#</a></h5>
+<p>Prefer low tech, high touch (military) tools over sophisticated computerized models</p>
 </section>
 <section id="task-kanban-boards">
 <h5>Task/Kanban Boards<a class="headerlink" href="#task-kanban-boards" title="Link to this heading">#</a></h5>
 </section>
 <section id="work-in-progress-wip">
 <h5>Work in Progress (WIP)<a class="headerlink" href="#work-in-progress-wip" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Work started but not started yet</p></li>
+<li><p>Excessive WIP:</p>
+<ul>
+<li><p>consumes investment capital and delivers no <span class="math notranslate nohighlight">\(ROI\)</span> until converted into product/service</p></li>
+<li><p>hides bottlenecks/inefficiencies</p></li>
+<li><p>increases probability of rework</p></li>
+</ul>
+</li>
+</ul>
 </section>
-<section id="wip-limits">
-<h5>WIP Limits<a class="headerlink" href="#wip-limits" title="Link to this heading">#</a></h5>
+<section id="id3">
+<h5>WIP Limits<a class="headerlink" href="#id3" title="Link to this heading">#</a></h5>
+<p>Set limit to WIP (to Task/Kanban Board)</p>
+<p>Optimize ~~resource utilization~~ throughput</p>
 </section>
 <section id="cumulative-flow-diagram-cfds">
 <h5>Cumulative Flow Diagram (CFDs)<a class="headerlink" href="#cumulative-flow-diagram-cfds" title="Link to this heading">#</a></h5>
+<p>Used for tracking and forecasting delivery of value</p>
 <section id="little-s-law">
 <h6>Little’s Law<a class="headerlink" href="#little-s-law" title="Link to this heading">#</a></h6>
+<p><span class="math notranslate nohighlight">\(Queue = In Progress - Done\)</span></p>
 </section>
 </section>
 <section id="bottleneck-and-theory-of-constraints-toc">
 <h5>Bottleneck and Theory of Constraints (TOC)<a class="headerlink" href="#bottleneck-and-theory-of-constraints-toc" title="Link to this heading">#</a></h5>
+<p>Figure</p>
 </section>
 </section>
-<section id="agile-contracting">
-<h4>Agile Contracting<a class="headerlink" href="#agile-contracting" title="Link to this heading">#</a></h4>
-<section id="agile-constraints-and-contracts">
-<h5>Agile Constraints and Contracts<a class="headerlink" href="#agile-constraints-and-contracts" title="Link to this heading">#</a></h5>
-</section>
-<section id="dsdm-contract">
-<h5>DSDM Contract<a class="headerlink" href="#dsdm-contract" title="Link to this heading">#</a></h5>
-</section>
-<section id="money-for-nothing-and-change-for-free">
-<h5>Money for Nothing and Change for Free<a class="headerlink" href="#money-for-nothing-and-change-for-free" title="Link to this heading">#</a></h5>
-</section>
-<section id="graduated-fixed-price-contract">
-<h5>Graduated Fixed-Price Contract<a class="headerlink" href="#graduated-fixed-price-contract" title="Link to this heading">#</a></h5>
-</section>
-<section id="fixed-price-work-packages">
-<h5>Fixed-Price Work Packages<a class="headerlink" href="#fixed-price-work-packages" title="Link to this heading">#</a></h5>
-</section>
-<section id="customized-contracts">
-<h5>Customized Contracts<a class="headerlink" href="#customized-contracts" title="Link to this heading">#</a></h5>
-</section>
+<section id="to-do-agile-contracting">
+<h4>(To Do) Agile Contracting<a class="headerlink" href="#to-do-agile-contracting" title="Link to this heading">#</a></h4>
 </section>
 <section id="verifying-and-validating-value">
 <h4>Verifying and Validating Value<a class="headerlink" href="#verifying-and-validating-value" title="Link to this heading">#</a></h4>
@@ -1799,8 +2110,8 @@ document.write(`
 <h2>Adaptive Planning<a class="headerlink" href="#adaptive-planning" title="Link to this heading">#</a></h2>
 <section id="agile-planning-concepts">
 <h3>Agile Planning Concepts<a class="headerlink" href="#agile-planning-concepts" title="Link to this heading">#</a></h3>
-<section id="id1">
-<h4>Adaptive Planning<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<section id="id4">
+<h4>Adaptive Planning<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
 </section>
 <section id="agile-versus-non-agile-planning">
 <h4>Agile versus Non-Agile Planning<a class="headerlink" href="#agile-versus-non-agile-planning" title="Link to this heading">#</a></h4>
@@ -2219,8 +2530,8 @@ document.write(`
 <li><p>Plan to revisit the process in the future to continually refine and optimize it</p></li>
 </ol>
 </section>
-<section id="id2">
-<h5>Metrics<a class="headerlink" href="#id2" title="Link to this heading">#</a></h5>
+<section id="id5">
+<h5>Metrics<a class="headerlink" href="#id5" title="Link to this heading">#</a></h5>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Term</p></th>
@@ -2285,8 +2596,8 @@ document.write(`
 <li><p>Improved capacity</p></li>
 </ul>
 </section>
-<section id="id3">
-<h5>Process<a class="headerlink" href="#id3" title="Link to this heading">#</a></h5>
+<section id="id6">
+<h5>Process<a class="headerlink" href="#id6" title="Link to this heading">#</a></h5>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Stage</p></th>
@@ -2365,8 +2676,8 @@ document.write(`
 <section id="five-whys">
 <h6>Five Whys<a class="headerlink" href="#five-whys" title="Link to this heading">#</a></h6>
 </section>
-<section id="id4">
-<h6>Fishbone Analysis<a class="headerlink" href="#id4" title="Link to this heading">#</a></h6>
+<section id="id7">
+<h6>Fishbone Analysis<a class="headerlink" href="#id7" title="Link to this heading">#</a></h6>
 </section>
 </section>
 <section id="decide-what-to-do">
@@ -2459,22 +2770,51 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-principles-and-mindset">Agile Principles and Mindset</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-agile-mindset">The Agile Mindset</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#declaration-of-interdependence-doi">Declaration of Interdependence (DOI)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-agile-triangle">The Agile Triangle</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-agile-manifesto">The Agile Manifesto</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#four-values">Four Values</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#twelve-principles">Twelve Principles</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-methodologies">Agile Methodologies</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scrum">Scrum</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extreme-programming-xp">Extreme Programming (XP)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lean-product-development">Lean Product Development</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kanban">Kanban</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scrum">Scrum</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#principles">Principles</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#values">Values</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#sprints">Sprints</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#team-roles">Team Roles</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#activities-events-ceremonies">Activities (Events/Ceremonies)</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#artifacts">Artifacts</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extreme-programming-xp">Extreme Programming (XP)</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#core-values">Core Values</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Team Roles</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#practices">Practices</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lean-product-development">Lean Product Development</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#core-concepts">Core Concepts</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#seven-wastes">Seven Wastes</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kanban">Kanban</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Principles</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#wip-limits">WIP Limits</a></li>
+</ul>
+</li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-driven-development-fdd">Feature-driven Development (FDD)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-systems-development-method-dsdm">Dynamic Systems Development Method (DSDM)</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal">Crystal</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-leadership">Agile Leadership</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-leadership">Agile Leadership</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#management-versus-leadership">Management versus Leadership</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#servant-leadership">Servant Leadership</a></li>
 </ul>
 </li>
@@ -2500,11 +2840,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prioritizing-value">Prioritizing Value</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#customer-valued-prioritization">Customer-Valued Prioritization</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#prioritization-schemes">Prioritization Schemes</a><ul class="nav section-nav flex-column">
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-schemes">Simple Schemes</a></li>
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#moscow">MoSCoW</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#monopoly-money">Monopoly Money</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#point-method">100-Point Method</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#dot-voting-or-multi-voting">Dot Voting or Multi-Voting</a></li>
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#kano-analysis">Kano Analysis</a></li>
 </ul>
 </li>
@@ -2514,10 +2850,9 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deliver-incrementally">Deliver Incrementally</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#minimum-viable-product-mvp">Minimum Viable Product (MVP)</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-tooling">Agile Tooling</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#low-tech-high-touch-tools">Low-Tech, High-Touch Tools</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#task-kanban-boards">Task/Kanban Boards</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#work-in-progress-wip">Work in Progress (WIP)</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#wip-limits">WIP Limits</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">WIP Limits</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#cumulative-flow-diagram-cfds">Cumulative Flow Diagram (CFDs)</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#little-s-law">Little’s Law</a></li>
 </ul>
@@ -2525,15 +2860,7 @@ document.write(`
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#bottleneck-and-theory-of-constraints-toc">Bottleneck and Theory of Constraints (TOC)</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-contracting">Agile Contracting</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-constraints-and-contracts">Agile Constraints and Contracts</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#dsdm-contract">DSDM Contract</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#money-for-nothing-and-change-for-free">Money for Nothing and Change for Free</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#graduated-fixed-price-contract">Graduated Fixed-Price Contract</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed-price-work-packages">Fixed-Price Work Packages</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#customized-contracts">Customized Contracts</a></li>
-</ul>
-</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#to-do-agile-contracting">(To Do) Agile Contracting</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#verifying-and-validating-value">Verifying and Validating Value</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#frequent-verification-and-validation">Frequent Verification and Validation</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-and-verification-in-software-development">Testing and Verification in Software Development</a><ul class="nav section-nav flex-column">
@@ -2655,7 +2982,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adaptive-planning">Adaptive Planning</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-planning-concepts">Agile Planning Concepts</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Adaptive Planning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Adaptive Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-versus-non-agile-planning">Agile versus Non-Agile Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#principles-of-agile-planning">Principles of Agile Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-discovery">Agile Discovery</a></li>
@@ -2810,7 +3137,7 @@ document.write(`
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#value-stream-mapping">Value Stream Mapping</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#process">Process</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Metrics</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Metrics</a></li>
 </ul>
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#project-pre-mortems">Project Pre-Mortems</a></li>
@@ -2829,7 +3156,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement-people">Continuous Improvement—People</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#retrospectives">Retrospectives</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits">Benefits</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Process</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Process</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#set-stage">Set stage</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#activities">Activities</a></li>
 </ul>
@@ -2840,7 +3167,7 @@ document.write(`
 </li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-insights">Generate insights</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#five-whys">Five Whys</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Fishbone Analysis</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Fishbone Analysis</a></li>
 </ul>
 </li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#decide-what-to-do">Decide what to do</a></li>

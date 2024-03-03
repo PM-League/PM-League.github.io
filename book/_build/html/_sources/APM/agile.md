@@ -4,28 +4,28 @@
 
 ### Domains
 
-| ID Domain | <center>Domain<\center>                       | Sub-Domain                        |
-| :-------- | ------------------------------------------------- | --------------------------------: |
-| I         | Agile Principles and Mindset                      |                                   |
-| II        | Value-Driven Delivery                             | Define Positive Value             |
-|           |                                                   | Avoid Potential Downsides         |
-|           |                                                   | Prioritization                    |
-|           |                                                   | Incremental Development           |
-| III       | Stakeholder Engagement                            | Understand Stakeholder Needs      |
-|           |                                                   | Ensure Stakeholder Involvement    |
-|           |                                                   | Manage Stakeholder Expectations   |
-| IV        | Team Performance                                  | Team Formation                    |
-|           |                                                   | Team Empowerment                  |
-|           |                                                   | Team Collaboration and Commitment |
-| V         | Adaptive Planning                                 | Levels of Planning                |
-|           |                                                   | Adaptation                        |
-|           |                                                   | Agile Sizing and Estimation       |
-| VI        | Problem Detection and Resolution                  |                                   |
-| VII       | Continuous Improvement (Product, Process, People) |                                   |
+| ID Domain | Domain                                            | Sub-Domain                        |
+| :-------: | :------------------------------------------------ | :-------------------------------- |
+|     I     | Agile Principles and Mindset                      |                                   |
+|    II    | Value-Driven Delivery                             | Define Positive Value             |
+|          |                                                   | Avoid Potential Downsides         |
+|          |                                                   | Prioritization                    |
+|          |                                                   | Incremental Development           |
+|    III    | Stakeholder Engagement                            | Understand Stakeholder Needs      |
+|          |                                                   | Ensure Stakeholder Involvement    |
+|          |                                                   | Manage Stakeholder Expectations   |
+|    IV    | Team Performance                                  | Team Formation                    |
+|          |                                                   | Team Empowerment                  |
+|          |                                                   | Team Collaboration and Commitment |
+|     V     | Adaptive Planning                                 | Levels of Planning                |
+|          |                                                   | Adaptation                        |
+|          |                                                   | Agile Sizing and Estimation       |
+|    VI    | Problem Detection and Resolution                  |                                   |
+|    VII    | Continuous Improvement (Product, Process, People) |                                   |
 
 ### Tools and Techniques
 
-| Toolkit                            | Including but not limited to:                                  |
+| Toolkit                            | Tool/Technique                                                 |
 | ---------------------------------- | -------------------------------------------------------------- |
 | Agile Analysis and Design         | Product Roadmap                                                |
 |                                    | User Stories/Backlog                                           |
@@ -103,6 +103,27 @@
 
 ## Agile Principles and Mindset
 
+### The Agile Mindset
+
+#### Declaration of Interdependence (DOI)
+
+* Written in 2005 by Agile Project Leadership Network
+* Six Precepts:
+
+> 1. We increase **return on investment** by making continuous flow of value our focus.
+> 2. We **deliver reliable results** by engaging customers in frequent interactions and shared ownership.
+> 3. We **expect uncertainty** and manage for it through iterations, anticipation, and adaptation.
+> 4. We **unleash creativity** and innovation by recognizing that individuals are the ultimate source of value, and creating an environment where they can make a difference.
+> 5. We **boost performance** through group accountability for results and shared responsibility for team effectiveness.
+> 6. We **improve effectiveness and reliability** through situationally specific strategies, processes, and practices.
+
+#### The Agile Triangle
+
+| Methodology | Constraint | Variable   |
+| ----------- | ---------- | ---------- |
+| Predictive  | Scope      | Time, Cost |
+| Agile       | Time, Cost | Scope      |
+
 ### The Agile Manifesto
 
 #### Four Values
@@ -153,21 +174,180 @@
 
 #### Scrum
 
+##### Principles
+
+* Transparency
+* Inspection
+* Adaptation
+
+##### Values
+
+* Focus
+* Courage
+* Openness
+* Commitment
+* Respect
+
+##### Sprints
+
+* Sprint = timeboxed iteration of < 1 month
+* No changes affecting the sprint goal are made throughout the sprint
+* Scope can be clarified/renegotiated as new information becomes available
+* Can be cancelled by Product Owner before timebox is over due to
+
+  * goal becomes obsolete
+  * change in business direction/technology conditions
+* Sequence of Activities
+
+  1. Sprint Planning Meeting
+  2. Development period
+     * Daily scrums
+     * Sprint review meeting
+     * Sprint retrospective meeting
+
+##### Team Roles
+
+* Product Owner
+* Scrum Master
+* Development Team
+
+##### Activities (Events/Ceremonies)
+
+* Product Backlog Refinement
+* Sprint Planning Meeting
+* Daily Scrums
+* Sprint Reviews
+* Sprint Retrospectives
+
+##### Artifacts
+
+* Product Increment
+* Product Backlog
+* Sprint Backlog
+
 #### Extreme Programming (XP)
+
+##### Core Values
+
+* Simplicity
+* Communication
+* Feedback
+* Courage
+* Respect
+
+##### Team Roles
+
+* Coach
+* Customer
+* Programmers
+* Testers
+
+##### Practices
+
+* Whole Team
+* Planning Games
+* Small Releases
+* Customer Tests
+* Collective Code Ownership
+* Code Standards
+* Sustainable Pace
+* Metaphor
+* Continuous Integration
+* Test-Driven Development
+* Refactoring
+* Simple Design
+* Pair Programming
 
 #### Lean Product Development
 
+##### Core Concepts
+
+* Eliminate waste
+* Empower team
+* Deliver fast
+* Optimize the whole
+* Build quality in
+* Defer decisions
+* Amplify learning
+
+##### Seven Wastes
+
+* Partially done work
+* Extra processes
+* Extra features
+* Task switching
+* Waiting
+* Motion
+* Defects
+
 #### Kanban
+
+##### Principles
+
+* Visualzie workflow
+* Limit WIP
+* Manage flow
+* Make process policies explicit
+* Improve collaboratively
+
+##### WIP Limits
+
+$\downarrow$ WIP $\rightarrow$ $\uparrow$ Team's productivity
+
+Little's Law: $Queue.Duration = m(Queue.Size)$
 
 #### Feature-driven Development (FDD)
 
+Practices:
+
+* Domain object modeling
+* Developing by feature
+* Individual class (code) ownership
+* Feature teams
+* Inspections
+* Configuration management
+* Regular builds
+* Visibility of progress/results
+
 #### Dynamic Systems Development Method (DSDM)
+
+Principles:
+
+* Focus on the business needs
+* Deliver on time
+* Collaborate
+* Never compromise quality
+* Build incrementally from firm foundations
+* Develop iteratively
+* Communicate continuously and clearly
+* Demonstrate control
 
 #### Crystal
 
 ### Agile Leadership
 
+Align project objectives with personal objectives to improve productivity
+
+#### Management versus Leadership
+
+| Management Focus   | Leadership             |
+| ------------------ | ---------------------- |
+| Tasks/things       | People                 |
+| Control            | Empowerment            |
+| Efficiency         | Effectiveness          |
+| Doing things right | Doing the right things |
+| Speed              | Direction              |
+| Practices          | Principles             |
+| Command            | Communication          |
+
 ### Servant Leadership
+
+Duties
+
+* Shield the team from interruptions
+* Remove impediments to progress
+* Communicate
+* "Carry food and water"
 
 ## Value-Driven Delivery
 
@@ -177,29 +357,40 @@
 
 ##### Return on Investment (ROI)
 
-$ROI = Benefits/Investment$
+Formula: $ROI = Investment.Benefits/Investment.Cost$
+
+Interpretation: $ROI>1$
 
 ##### Present Value (PV)
 
-$PV = FV_t/(1+r)^t$
+Formula: $PV = FV_t/(1+r)^t$
 
 ##### Net Present Value (NPV)
 
-$NPV=\sum_{t=0}^{T} CF_t/(1+r)^t$
+Formula: $NPV=\sum_{t=0}^{T} CF_t/(1+r)^t$
 
-IF $NPV>0$ THEN accept ELSE reject
+Interpretation:
+
+* IF $NPV>0$ THEN accept ELSE reject
+* Select project with **higher** $NPV$
 
 ##### Internal Rate of Return (IRR)
 
-$IRR = r : NPV(r) = 0$
+Formula: $IRR = r : NPV(r) = 0$
 
-IF $IRR>r$ THEN accept ELSE reject
+Interpretation:
+
+* IF $IRR>r$ THEN accept ELSE reject
+* Select project with **higher** $IRR$
 
 ##### Payback Period
 
-$T : NPV(T)=0$
+Formula: $T : NPV(T)=0$
 
-IF $T<PB$ THEN accept ELSE reject
+Interpretation:
+
+* IF $T<PB$ THEN accept ELSE reject
+* Select project with **lower** $PB$
 
 #### Earned Value Management
 
@@ -231,20 +422,32 @@ IF $T<PB$ THEN accept ELSE reject
 
 #### Agile Project Accounting
 
+* Break down product/service into MVP
+* Deliver MVP asap
+* Exploit opportunities for early benefits by using part of the product/service while completing the remainder
+
 #### Key Performance Indexes
 
+* Rate of Progress
+* Remaining Work
+* Likely Completion Date
+* Likely Costs Remaining
+
 #### Regulatory Compliance
+
+* Regulations $\rightarrow $ safety
+* A project that is subejct to regulatory compliance require special documentation to prove that required practices were followed
+* Approaches for integrating regulatory compliance:
+  * Doing compliance work **during** product development to keep them linked and relevant
+  * Doing compliance work **after** product development to avoid rework
 
 ### Prioritizing Value
 
 #### Customer-Valued Prioritization
 
+Work on items that maximize value delivered to customer first
+
 ##### Prioritization Schemes
-
-###### Simple Schemes
-
-* Priority 1, 2, 3
-* High, Medium, Low
 
 ###### MoSCoW
 
@@ -255,21 +458,6 @@ IF $T<PB$ THEN accept ELSE reject
 | **C**ould  |             |
 | **W**ould  |             |
 
-###### Monopoly Money
-
-1. Give stakeholders money equal to the project budget
-2. Ask stakeholders to distribute funds to system features
-
-###### 100-Point Method
-
-1. Give stakeholders 100 points
-2. Ask stakeholders to distribute points to system features
-
-###### Dot Voting or Multi-Voting
-
-1. Give stakeholders $n$ dots
-2. Ask stakeholders to distribute points to options presented
-
 ###### Kano Analysis
 
 * Delighters/exciters
@@ -279,39 +467,57 @@ IF $T<PB$ THEN accept ELSE reject
 
 ##### Relative Prioritization/Ranking
 
+| Feature | Priority | MVP   |                            |
+| ------- | -------- | ----- | -------------------------- |
+| A       | 1        | True  |                            |
+| B       | 2        | True  |                            |
+| C       | 3        | True  |                            |
+| D       | 4        | True  |                            |
+| E       | 5        | False |                            |
+| ...     |          |       | Cutoff to meet budget/time |
+
 #### Deliver Incrementally
+
+Delivering the "plain-vanilla" version of a product/service allows realizing benefits to get an early $ROI$
 
 ##### Minimum Viable Product (MVP)
 
+"Package of functionality that is complete enough to be useful to the users or the market, yet still small enough that it does not represent the entire project"
+
 ##### Agile Tooling
 
-##### Low-Tech, High-Touch Tools
+Prefer low tech, high touch (military) tools over sophisticated computerized models
 
 ##### Task/Kanban Boards
 
 ##### Work in Progress (WIP)
 
+* Work started but not started yet
+* Excessive WIP:
+  * consumes investment capital and delivers no $ROI$ until converted into product/service
+  * hides bottlenecks/inefficiencies
+  * increases probability of rework
+
 ##### WIP Limits
+
+Set limit to WIP (to Task/Kanban Board)
+
+Optimize ~~resource utilization~~ throughput
 
 ##### Cumulative Flow Diagram (CFDs)
 
+Used for tracking and forecasting delivery of value
+
 ###### Little's Law
+
+$Queue = In Progress - Done$
 
 ##### Bottleneck and Theory of Constraints (TOC)
 
-#### Agile Contracting
+Figure
 
-##### Agile Constraints and Contracts
+#### (To Do) Agile Contracting
 
-##### DSDM Contract
-
-##### Money for Nothing and Change for Free
-
-##### Graduated Fixed-Price Contract
-
-##### Fixed-Price Work Packages
-
-##### Customized Contracts
 
 #### Verifying and Validating Value
 

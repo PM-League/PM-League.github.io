@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -65,8 +65,6 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Misc/PERTmod';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -310,12 +308,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="modified-pert-bistribution">
+  <section id="modified-pert-bistribution">
 <h1><span class="section-number">12. </span>Modified PERT Bistribution<a class="headerlink" href="#modified-pert-bistribution" title="Link to this heading">#</a></h1>
-<div class="math notranslate nohighlight">
-\[
+<p>$$
 PERT(min,Mo,max) = Beta(\alpha,\beta)\cdot(max-min)+ min = \frac{(x-min)^{\alpha-1}(max-x)^{\beta-1}}{B(\alpha,\beta)(max-min)^{\alpha+\beta-1}}
-\]</div>
+$$</p>
 <p>where</p>
 <table class="table">
 <thead>
@@ -324,31 +321,30 @@ PERT(min,Mo,max) = Beta(\alpha,\beta)\cdot(max-min)+ min = \frac{(x-min)^{\alpha
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(min\)</span></p></td>
+<tr class="row-even"><td><p>$min$</p></td>
 <td><p>Lower bound</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(Mo\)</span></p></td>
+<tr class="row-odd"><td><p>$Mo$</p></td>
 <td><p>Mode</p></td>
 </tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(max\)</span></p></td>
+<tr class="row-even"><td><p>$max$</p></td>
 <td><p>Upper bound</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\alpha\)</span></p></td>
+<tr class="row-odd"><td><p>$\alpha$</p></td>
 <td><p>first shape parameter</p></td>
 </tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\beta\)</span></p></td>
+<tr class="row-even"><td><p>$\beta$</p></td>
 <td><p>second shape parameter</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(B\)</span></p></td>
+<tr class="row-odd"><td><p>$B$</p></td>
 <td><p>Beta function</p></td>
 </tr>
 </tbody>
 </table>
-<p>The <span class="math notranslate nohighlight">\(B\)</span> function is defined as follows:</p>
-<div class="math notranslate nohighlight">
-\[
+<p>The $B$ function is defined as follows:</p>
+<p>$$
 B(\alpha,\beta) = \int_{0}^{1} u^{\alpha-1}\left(1-u\right)^{\beta-1}\textrm{d}u =  \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
-\]</div>
+$$</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Term</p></th>
@@ -356,30 +352,26 @@ B(\alpha,\beta) = \int_{0}^{1} u^{\alpha-1}\left(1-u\right)^{\beta-1}\textrm{d}u
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\Gamma\)</span></p></td>
+<tr class="row-even"><td><p>$\Gamma$</p></td>
 <td><p>Gamma distribution</p></td>
 </tr>
 </tbody>
 </table>
-<p>The shape parameters, <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>, are obtained as follows:</p>
-<div class="math notranslate nohighlight">
-\[
+<p>The shape parameters, $\alpha$ and $\beta$, are obtained as follows:</p>
+<p>$$
 \alpha = \frac{\gamma Mo + max-(\gamma+1)min}{max-min}=1+\gamma \frac{Mo-min}{max-min}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
+$$</p>
+<p>$$
 \beta = \frac{(\gamma+1)max-min-\gamma Mo}{max-min}=1+\gamma \frac{max-Mo}{max-min}
-\]</div>
+$$</p>
 <p>so that</p>
-<div class="math notranslate nohighlight">
-\[
+<p>$$
 \mu = \frac{min+\gamma Mo+max}{\gamma+2}
-\]</div>
+$$</p>
 <p>and</p>
-<div class="math notranslate nohighlight">
-\[
+<p>$$
 \sigma = \frac{(\mu-min)(max-\mu}{\gamma+3}
-\]</div>
+$$</p>
 </section>
 
     <script type="text/x-thebe-config">

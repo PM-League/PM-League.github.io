@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -65,8 +65,6 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Misc/putnam';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -325,15 +323,14 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="putnam-model">
+  <section id="putnam-model">
 <h1><span class="section-number">13. </span>Putnam Model<a class="headerlink" href="#putnam-model" title="Link to this heading">#</a></h1>
 <section id="the-norden-rayleigh-curve">
 <h2><span class="section-number">13.1. </span>The Norden-Rayleigh Curve<a class="headerlink" href="#the-norden-rayleigh-curve" title="Link to this heading">#</a></h2>
 <p>The curve is modeled by differential equation</p>
-<div class="math notranslate nohighlight">
-\[
+<p>$$
 m{(t)} = \frac{dy}{dt} = 2Kate^{-at^2}
-\]</div>
+$$</p>
 <!-- ```{code-cell} ipython3
 :tags: ["remove-input"]
 import numpy as np
@@ -359,29 +356,28 @@ plt.show()
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\frac{dy}{dt}\)</span></p></td>
+<tr class="row-even"><td><p>$\frac{dy}{dt}$</p></td>
 <td><p>manpower utilization rate per unit time</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(a\)</span></p></td>
+<tr class="row-odd"><td><p>$a$</p></td>
 <td><p>acceleration factor - curve sharpness parameter</p></td>
 </tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(K\)</span></p></td>
-<td><p>total project effort in staff years - area underneath the curve in<span class="math notranslate nohighlight">\(\left[0,\infty\right]\)</span></p></td>
+<tr class="row-even"><td><p>$K$</p></td>
+<td><p>total project effort in staff years - area underneath the curve in$\left[0,\infty\right]$</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(t\)</span></p></td>
+<tr class="row-odd"><td><p>$t$</p></td>
 <td><p>elapsed time</p></td>
 </tr>
 </tbody>
 </table>
-<p>Integrating <span class="math notranslate nohighlight">\(m{(t)}\)</span> on <span class="math notranslate nohighlight">\([0,\infty]\)</span>, we obtain <span class="math notranslate nohighlight">\(y{(t)} = K\left[1-e^{-at^2}\right]\)</span>.</p>
-<p>If <span class="math notranslate nohighlight">\(y(0) = 0\)</span> and <span class="math notranslate nohighlight">\(y(\infty) = K\)</span>, then <span class="math notranslate nohighlight">\(\frac{d^2y}{dt^2} = 2Kae^{-at^2}\left[1-2at^2\right]=0\)</span>, and <span class="math notranslate nohighlight">\(t_d^2 = \frac{1}{2a}\)</span>, where <span class="math notranslate nohighlight">\(t_d\)</span> is the time at which the maximum effort rate occurs.</p>
-<p>Replacing <span class="math notranslate nohighlight">\(t_d\)</span> leads to <span class="math notranslate nohighlight">\(E=y{(t)}=K\left(1-e^{\frac{t_d^2}{2t_d^2}}\right) = K\left(1-e^{-.5}\right)\)</span>, <span class="math notranslate nohighlight">\(E=y(t)=.3935K\)</span>, and <span class="math notranslate nohighlight">\(a=\frac{1}{2t_d^2}\)</span>.</p>
-<p>Replacing <span class="math notranslate nohighlight">\(a\)</span> with <span class="math notranslate nohighlight">\(\frac{1}{2t_d^2}\)</span> in the N/R model, we obtain</p>
-<div class="math notranslate nohighlight">
-\[
+<p>Integrating $m{(t)}$ on $[0,\infty]$, we obtain $y{(t)} = K\left[1-e^{-at^2}\right]$.</p>
+<p>If $y(0) = 0$ and $y(\infty) = K$, then $\frac{d^2y}{dt^2} = 2Kae^{-at^2}\left[1-2at^2\right]=0$, and $t_d^2 = \frac{1}{2a}$, where $t_d$ is the time at which the maximum effort rate occurs.</p>
+<p>Replacing $t_d$ leads to $E=y{(t)}=K\left(1-e^{\frac{t_d^2}{2t_d^2}}\right) = K\left(1-e^{-.5}\right)$, $E=y(t)=.3935K$, and $a=\frac{1}{2t_d^2}$.</p>
+<p>Replacing $a$ with $\frac{1}{2t_d^2}$ in the N/R model, we obtain</p>
+<p>$$
 m(t)=\frac{2K}{2t_d^2}te^{-\frac{t^2}{2t_d^2}} = \frac{K}{t_d^2}te^{-\frac{t^2}{2t_d^2}}.
-\]</div>
-<p>The peak manning is denoted by <span class="math notranslate nohighlight">\(m_0\)</span> and is obtained <span class="math notranslate nohighlight">\(m(t_d) = m_0 = \frac{K}{t_d \sqrt{e}}\)</span>, where</p>
+$$</p>
+<p>The peak manning is denoted by $m_0$ and is obtained $m(t_d) = m_0 = \frac{K}{t_d \sqrt{e}}$, where</p>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Term</p></th>
@@ -389,13 +385,13 @@ m(t)=\frac{2K}{2t_d^2}te^{-\frac{t^2}{2t_d^2}} = \frac{K}{t_d^2}te^{-\frac{t^2}{
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(K\)</span></p></td>
+<tr class="row-even"><td><p>$K$</p></td>
 <td><p>total project cost/effort (person-years)</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(t_d\)</span></p></td>
+<tr class="row-odd"><td><p>$t_d$</p></td>
 <td><p>delivery time (years)</p></td>
 </tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(m_0\)</span></p></td>
+<tr class="row-even"><td><p>$m_0$</p></td>
 <td><p>staffing level</p></td>
 </tr>
 </tbody>
@@ -403,55 +399,49 @@ m(t)=\frac{2K}{2t_d^2}te^{-\frac{t^2}{2t_d^2}} = \frac{K}{t_d^2}te^{-\frac{t^2}{
 </section>
 <section id="difficulty-metric">
 <h2><span class="section-number">13.2. </span>Difficulty Metric<a class="headerlink" href="#difficulty-metric" title="Link to this heading">#</a></h2>
-<p>Slope of manpower distribution curve at <span class="math notranslate nohighlight">\(t=0\)</span> has some useful properties.</p>
-<div class="math notranslate nohighlight">
-\[
-m'{(t)} = \frac{d^2y}{dt^2} = 2Kae^{-at^2}\left(1-2at^2\right)
-\]</div>
-<p>For <span class="math notranslate nohighlight">\(t=0\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[
-m'{(0)} = 2Ka = \frac{2K}{2t_d^2} = \frac{K}{t_d^2}
-\]</div>
+<p>Slope of manpower distribution curve at $t=0$ has some useful properties.</p>
+<p>$$
+m’{(t)} = \frac{d^2y}{dt^2} = 2Kae^{-at^2}\left(1-2at^2\right)
+$$</p>
+<p>For $t=0$,</p>
+<p>$$
+m’{(0)} = 2Ka = \frac{2K}{2t_d^2} = \frac{K}{t_d^2}
+$$</p>
 <p>The ratio</p>
-<div class="math notranslate nohighlight">
-\[
+<p>$$
 D = \frac{K}{t_d^2}
-\]</div>
-<p>is called difficulty metric <span class="math notranslate nohighlight">\(D\)</span> (person/year)</p>
+$$</p>
+<p>is called difficulty metric $D$ (person/year)</p>
 </section>
 <section id="the-software-equation">
 <h2><span class="section-number">13.3. </span>The Software Equation<a class="headerlink" href="#the-software-equation" title="Link to this heading">#</a></h2>
 <p>The average productivity</p>
-<div class="math notranslate nohighlight">
-\[
+<p>$$
 \overline{PR} = \frac{\text{total end product code}}{\text{total effort to produce code}}
-\]</div>
+$$</p>
 <p>The general size of the product in source statements is</p>
-<div class="math notranslate nohighlight">
-\[
+<p>$$
 S_s = C_k K^{1/3} t_d^{4/3}
-\]</div>
-<p>where <span class="math notranslate nohighlight">\(C_k\)</span> is a measure of the state of technology of the human-machine system.</p>
-<p>This is a reasonable relation linking the output (<span class="math notranslate nohighlight">\(S_s\)</span>) to the input (<span class="math notranslate nohighlight">\(K\)</span>, <span class="math notranslate nohighlight">\(t_d\)</span> - management parameters) and a constant (<span class="math notranslate nohighlight">\(C_k\)</span>) which is somehow a measure of the state of technology being applied to the project.
+$$</p>
+<p>where $C_k$ is a measure of the state of technology of the human-machine system.</p>
+<p>This is a reasonable relation linking the output ($S_s$) to the input ($K$, $t_d$ - management parameters) and a constant ($C_k$) which is somehow a measure of the state of technology being applied to the project.
 Adding people to accelerate a project can accomplish this until the gradient condition is reached, but only at a very high cost.</p>
 <section id="the-effort-time-tradeoff-law">
 <h3><span class="section-number">13.3.1. </span>The Effort-Time Tradeoff Law<a class="headerlink" href="#the-effort-time-tradeoff-law" title="Link to this heading">#</a></h3>
 <p>The tradeoff law between effort and time can be obtained
 explicity from the software equation</p>
-<div class="math notranslate nohighlight">
-\[
+<p>$$
 S_s = C_k K^{1/3} t_d^{4/3}
-\]</div>
-<p>A constant number of source statements (<span class="math notranslate nohighlight">\(S_s = \text{const}\)</span>) implies <span class="math notranslate nohighlight">\(K t_d^4 = \text{const}\)</span>.
-So, <span class="math notranslate nohighlight">\(K = \text{constant}/t_d^4\)</span>, or proportionally, development effort = constat/<span class="math notranslate nohighlight">\(t_d^4\)</span>, is the effort-development tradeoff law.</p>
+$$</p>
+<p>A constant number of source statements ($S_s = \text{const}$) implies $K t_d^4 = \text{const}$.
+So, $K = \text{constant}/t_d^4$, or proportionally, development effort = constat/$t_d^4$, is the effort-development tradeoff law.</p>
 </section>
 <section id="effect-of-constant-productivity">
 <h3><span class="section-number">13.3.2. </span>Effect of Constant Productivity<a class="headerlink" href="#effect-of-constant-productivity" title="Link to this heading">#</a></h3>
 <p>One other relation is worth obtaining; the one where the average productivity remains constant.</p>
-<p><span class="math notranslate nohighlight">\(\overline{PR} = C_n D^{-2/3}\)</span> implies that <span class="math notranslate nohighlight">\(D = \text{const}\)</span>
+<p>$\overline{PR} = C_n D^{-2/3}$ implies that $D = \text{const}$
 So the productivity for different projects will be the same only if the difficulty is the same.
-This does not seem reasonable to expect very frequently since the difficulty is a measure of the software work to be done, i.e., <span class="math notranslate nohighlight">\(K/t_d^2 = D\)</span>  which is a function of the number of files, the number of reports, and the number of programs the system has.
+This does not seem reasonable to expect very frequently since the difficulty is a measure of the software work to be done, i.e., $K/t_d^2 = D$  which is a function of the number of files, the number of reports, and the number of programs the system has.
 Thus, planning a new project based on using the same productivity a previous project had, is fallacious unless the difficulty is the same.</p>
 </section>
 </section>

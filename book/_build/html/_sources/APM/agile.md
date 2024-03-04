@@ -1007,7 +1007,7 @@ $Productivity=WorkDone/TeamMember$
 
 ##### Creating the Risk-Adjusted Backlog
 
-$EVM=Probability \cdot Impact [€] $
+$EVM = Probability \cdot Impact [\$]$
 
 #### Risk Severity
 

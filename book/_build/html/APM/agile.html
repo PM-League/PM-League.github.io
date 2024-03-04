@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -65,8 +65,6 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'APM/agile';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -732,7 +730,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="agile-domains-tools-and-techniques">
+  <section id="agile-domains-tools-and-techniques">
 <h1><span class="section-number">7. </span>Agile Domains, Tools, and Techniques<a class="headerlink" href="#agile-domains-tools-and-techniques" title="Link to this heading">#</a></h1>
 <section id="introduction">
 <h2><span class="section-number">7.1. </span>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
@@ -1281,8 +1279,8 @@ document.write(`
 </section>
 <section id="wip-limits">
 <h5><span class="section-number">7.2.3.4.2. </span>WIP Limits<a class="headerlink" href="#wip-limits" title="Link to this heading">#</a></h5>
-<p><span class="math notranslate nohighlight">\(\downarrow\)</span> WIP <span class="math notranslate nohighlight">\(\rightarrow\)</span> <span class="math notranslate nohighlight">\(\uparrow\)</span> Team’s productivity</p>
-<p>Little’s Law: <span class="math notranslate nohighlight">\(Queue.Duration = m(Queue.Size)\)</span></p>
+<p>$\downarrow$ WIP $\rightarrow$ $\uparrow$ Team’s productivity</p>
+<p>Little’s Law: $Queue.Duration = m(Queue.Size)$</p>
 </section>
 </section>
 <section id="feature-driven-development-fdd">
@@ -1373,38 +1371,38 @@ document.write(`
 <h4><span class="section-number">7.3.1.1. </span>Financial Assessment Metrics<a class="headerlink" href="#financial-assessment-metrics" title="Link to this heading">#</a></h4>
 <section id="return-on-investment-roi">
 <h5><span class="section-number">7.3.1.1.1. </span>Return on Investment (ROI)<a class="headerlink" href="#return-on-investment-roi" title="Link to this heading">#</a></h5>
-<p>Formula: <span class="math notranslate nohighlight">\(ROI = Investment.Benefits/Investment.Cost\)</span>
-Interpretation: <span class="math notranslate nohighlight">\(ROI&gt;1\)</span></p>
+<p>Formula: $ROI = Investment.Benefits/Investment.Cost$
+Interpretation: $ROI&gt;1$</p>
 </section>
 <section id="present-value-pv">
 <h5><span class="section-number">7.3.1.1.2. </span>Present Value (PV)<a class="headerlink" href="#present-value-pv" title="Link to this heading">#</a></h5>
-<p>Formula: <span class="math notranslate nohighlight">\(PV = FV_t/(1+r)^t\)</span></p>
+<p>Formula: $PV = FV_t/(1+r)^t$</p>
 </section>
 <section id="net-present-value-npv">
 <h5><span class="section-number">7.3.1.1.3. </span>Net Present Value (NPV)<a class="headerlink" href="#net-present-value-npv" title="Link to this heading">#</a></h5>
-<p>Formula: <span class="math notranslate nohighlight">\(NPV=\sum_{t=0}^{T} CF_t/(1+r)^t\)</span></p>
+<p>Formula: $NPV=\sum_{t=0}^{T} CF_t/(1+r)^t$</p>
 <p>Interpretation:</p>
 <ul class="simple">
-<li><p>IF <span class="math notranslate nohighlight">\(NPV&gt;0\)</span> THEN accept ELSE reject</p></li>
-<li><p>Select project with <strong>higher</strong> <span class="math notranslate nohighlight">\(NPV\)</span></p></li>
+<li><p>IF $NPV&gt;0$ THEN accept ELSE reject</p></li>
+<li><p>Select project with <strong>higher</strong> $NPV$</p></li>
 </ul>
 </section>
 <section id="internal-rate-of-return-irr">
 <h5><span class="section-number">7.3.1.1.4. </span>Internal Rate of Return (IRR)<a class="headerlink" href="#internal-rate-of-return-irr" title="Link to this heading">#</a></h5>
-<p>Formula: <span class="math notranslate nohighlight">\(IRR = r : NPV(r) = 0\)</span></p>
+<p>Formula: $IRR = r : NPV(r) = 0$</p>
 <p>Interpretation:</p>
 <ul class="simple">
-<li><p>IF <span class="math notranslate nohighlight">\(IRR&gt;r\)</span> THEN accept ELSE reject</p></li>
-<li><p>Select project with <strong>higher</strong> <span class="math notranslate nohighlight">\(IRR\)</span></p></li>
+<li><p>IF $IRR&gt;r$ THEN accept ELSE reject</p></li>
+<li><p>Select project with <strong>higher</strong> $IRR$</p></li>
 </ul>
 </section>
 <section id="payback-period">
 <h5><span class="section-number">7.3.1.1.5. </span>Payback Period<a class="headerlink" href="#payback-period" title="Link to this heading">#</a></h5>
-<p>Formula: <span class="math notranslate nohighlight">\(T : NPV(T)=0\)</span></p>
+<p>Formula: $T : NPV(T)=0$</p>
 <p>Interpretation:</p>
 <ul class="simple">
-<li><p>IF <span class="math notranslate nohighlight">\(T&lt;PB\)</span> THEN accept ELSE reject</p></li>
-<li><p>Select project with <strong>lower</strong> <span class="math notranslate nohighlight">\(PB\)</span></p></li>
+<li><p>IF $T&lt;PB$ THEN accept ELSE reject</p></li>
+<li><p>Select project with <strong>lower</strong> $PB$</p></li>
 </ul>
 </section>
 </section>
@@ -1418,88 +1416,88 @@ Interpretation: <span class="math notranslate nohighlight">\(ROI&gt;1\)</span></
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(AT\)</span></p></td>
+<tr class="row-even"><td><p>$AT$</p></td>
 <td><p></p></td>
 <td><p>Actual Time</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(WS\)</span></p></td>
+<tr class="row-odd"><td><p>$WS$</p></td>
 <td><p></p></td>
 <td><p>Work Scheduled</p></td>
 </tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(WP\)</span></p></td>
+<tr class="row-even"><td><p>$WP$</p></td>
 <td><p></p></td>
 <td><p>Work Performed</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\mathrm{BAC}\)</span></p></td>
+<tr class="row-odd"><td><p>$\mathrm{BAC}$</p></td>
 <td><p></p></td>
 <td><p>Budget at Completion</p></td>
 </tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\mathrm{PD}\)</span></p></td>
+<tr class="row-even"><td><p>$\mathrm{PD}$</p></td>
 <td><p></p></td>
 <td><p>Planned Duration</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(AC\)</span></p></td>
+<tr class="row-odd"><td><p>$AC$</p></td>
 <td><p></p></td>
 <td><p>Actual Cost</p></td>
 </tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(PV\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\mathrm{BAC} \cdot WS\)</span></p></td>
+<tr class="row-even"><td><p>$PV$</p></td>
+<td><p>$\mathrm{BAC} \cdot WS$</p></td>
 <td><p>Planned Value</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(EV\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\mathrm{BAC} \cdot WP\)</span></p></td>
+<tr class="row-odd"><td><p>$EV$</p></td>
+<td><p>$\mathrm{BAC} \cdot WP$</p></td>
 <td><p>Earned Value</p></td>
 </tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(CV\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(EV-AC\)</span></p></td>
+<tr class="row-even"><td><p>$CV$</p></td>
+<td><p>$EV-AC$</p></td>
 <td><p>Cost Variance</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(SV\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(EV-PV\)</span></p></td>
+<tr class="row-odd"><td><p>$SV$</p></td>
+<td><p>$EV-PV$</p></td>
 <td><p>Schedule Variance</p></td>
 </tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(CPI\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(EV/AC\)</span></p></td>
+<tr class="row-even"><td><p>$CPI$</p></td>
+<td><p>$EV/AC$</p></td>
 <td><p>Cost Performance Index</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(SPI\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(EV/PV\)</span></p></td>
+<tr class="row-odd"><td><p>$SPI$</p></td>
+<td><p>$EV/PV$</p></td>
 <td><p>Schedule Performance Index</p></td>
 </tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(cEAC\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\mathrm{BAC}\)</span></p></td>
+<tr class="row-even"><td><p>$cEAC$</p></td>
+<td><p>$\mathrm{BAC}$</p></td>
 <td><p>Cost Estimate at Completion</p></td>
 </tr>
 <tr class="row-odd"><td><p></p></td>
-<td><p><span class="math notranslate nohighlight">\(\mathrm{BAC}-CV\)</span></p></td>
+<td><p>$\mathrm{BAC}-CV$</p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
-<td><p><span class="math notranslate nohighlight">\(\mathrm{BAC}/CPI\)</span></p></td>
+<td><p>$\mathrm{BAC}/CPI$</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(tEAC\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\mathrm{PD}\)</span></p></td>
+<tr class="row-odd"><td><p>$tEAC$</p></td>
+<td><p>$\mathrm{PD}$</p></td>
 <td><p>Time Estimate at Completion</p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
-<td><p><span class="math notranslate nohighlight">\(\mathrm{PD}/SPI\)</span></p></td>
+<td><p>$\mathrm{PD}/SPI$</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(cETC\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(cEAC-AC\)</span></p></td>
+<tr class="row-odd"><td><p>$cETC$</p></td>
+<td><p>$cEAC-AC$</p></td>
 <td><p>Cost Estimate to Complete</p></td>
 </tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(tETC\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(tEAC-AT\)</span></p></td>
+<tr class="row-even"><td><p>$tETC$</p></td>
+<td><p>$tEAC-AT$</p></td>
 <td><p>Time Estimate to Complete</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(cVAC\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(cEAC-\mathrm{BAC}\)</span></p></td>
+<tr class="row-odd"><td><p>$cVAC$</p></td>
+<td><p>$cEAC-\mathrm{BAC}$</p></td>
 <td><p>Cost Variance at Completion</p></td>
 </tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(tVAC\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(tEAC-\mathrm{PD}\)</span></p></td>
+<tr class="row-even"><td><p>$tVAC$</p></td>
+<td><p>$tEAC-\mathrm{PD}$</p></td>
 <td><p>Time Variance at Completion</p></td>
 </tr>
 </tbody>
@@ -1525,7 +1523,7 @@ Interpretation: <span class="math notranslate nohighlight">\(ROI&gt;1\)</span></
 <section id="regulatory-compliance">
 <h4><span class="section-number">7.3.1.5. </span>Regulatory Compliance<a class="headerlink" href="#regulatory-compliance" title="Link to this heading">#</a></h4>
 <ul class="simple">
-<li><p>Regulations <span class="math notranslate nohighlight">\(\rightarrow \)</span> safety</p></li>
+<li><p>Regulations $\rightarrow $ safety</p></li>
 <li><p>A project that is subejct to regulatory compliance require special documentation to prove that required practices were followed</p></li>
 <li><p>Approaches for integrating regulatory compliance:</p>
 <ul>
@@ -1625,7 +1623,7 @@ Interpretation: <span class="math notranslate nohighlight">\(ROI&gt;1\)</span></
 </section>
 <section id="deliver-incrementally">
 <h3><span class="section-number">7.3.3. </span>Deliver Incrementally<a class="headerlink" href="#deliver-incrementally" title="Link to this heading">#</a></h3>
-<p>Delivering the “plain-vanilla” version of a product/service allows realizing benefits to get an early <span class="math notranslate nohighlight">\(ROI\)</span></p>
+<p>Delivering the “plain-vanilla” version of a product/service allows realizing benefits to get an early $ROI$</p>
 <section id="minimum-viable-product-mvp">
 <h4><span class="section-number">7.3.3.1. </span>Minimum Viable Product (MVP)<a class="headerlink" href="#minimum-viable-product-mvp" title="Link to this heading">#</a></h4>
 <p>“Package of functionality that is complete enough to be useful to the users or the market, yet still small enough that it does not represent the entire project”</p>
@@ -1643,7 +1641,7 @@ Interpretation: <span class="math notranslate nohighlight">\(ROI&gt;1\)</span></
 <li><p>Work started but not started yet</p></li>
 <li><p>Excessive WIP:</p>
 <ul>
-<li><p>consumes investment capital and delivers no <span class="math notranslate nohighlight">\(ROI\)</span> until converted into product/service</p></li>
+<li><p>consumes investment capital and delivers no $ROI$ until converted into product/service</p></li>
 <li><p>hides bottlenecks/inefficiencies</p></li>
 <li><p>increases probability of rework</p></li>
 </ul>
@@ -1660,7 +1658,7 @@ Interpretation: <span class="math notranslate nohighlight">\(ROI&gt;1\)</span></
 <p>Used for tracking and forecasting delivery of value</p>
 <section id="little-s-law">
 <h5><span class="section-number">7.3.3.6.1. </span>Little’s Law<a class="headerlink" href="#little-s-law" title="Link to this heading">#</a></h5>
-<p><span class="math notranslate nohighlight">\(Queue = In Progress - Done\)</span></p>
+<p>$Queue = In Progress - Done$</p>
 </section>
 </section>
 <section id="bottleneck-and-theory-of-constraints-toc">
@@ -2103,7 +2101,7 @@ Interpretation: <span class="math notranslate nohighlight">\(ROI&gt;1\)</span></
 </section>
 <section id="velocity">
 <h4><span class="section-number">7.5.4.2. </span>Velocity<a class="headerlink" href="#velocity" title="Link to this heading">#</a></h4>
-<p><span class="math notranslate nohighlight">\(Velocity=Work/Iteration\)</span>, where <span class="math notranslate nohighlight">\(Work=StoryPoints,UserStories,Hours,...\)</span></p>
+<p>$Velocity=Work/Iteration$, where $Work=StoryPoints,UserStories,Hours,…$</p>
 </section>
 </section>
 </section>
@@ -2384,15 +2382,15 @@ Interpretation: <span class="math notranslate nohighlight">\(ROI&gt;1\)</span></
 <h4><span class="section-number">7.7.2.1. </span>Lead Time and Cycle Time<a class="headerlink" href="#lead-time-and-cycle-time" title="Link to this heading">#</a></h4>
 <section id="lead-time">
 <h5><span class="section-number">7.7.2.1.1. </span>Lead Time<a class="headerlink" href="#lead-time" title="Link to this heading">#</a></h5>
-<p><span class="math notranslate nohighlight">\(LeadTime=Time(ToDo \rightarrow Done)\)</span></p>
+<p>$LeadTime=Time(ToDo \rightarrow Done)$</p>
 </section>
 <section id="cycle-time-wip-and-throughput">
 <h5><span class="section-number">7.7.2.1.2. </span>Cycle Time, WIP, and Throughput<a class="headerlink" href="#cycle-time-wip-and-throughput" title="Link to this heading">#</a></h5>
-<p><span class="math notranslate nohighlight">\(TH=Work/Time\)</span></p>
+<p>$TH=Work/Time$</p>
 </section>
 <section id="throughput-and-productivity">
 <h5><span class="section-number">7.7.2.1.3. </span>Throughput and Productivity<a class="headerlink" href="#throughput-and-productivity" title="Link to this heading">#</a></h5>
-<p><span class="math notranslate nohighlight">\(Productivity=WorkDone/TeamMember\)</span></p>
+<p>$Productivity=WorkDone/TeamMember$</p>
 </section>
 </section>
 <section id="defects">
@@ -2427,12 +2425,12 @@ Interpretation: <span class="math notranslate nohighlight">\(ROI&gt;1\)</span></
 <h4><span class="section-number">7.7.3.1. </span>Risk-Adjusted Backlog<a class="headerlink" href="#risk-adjusted-backlog" title="Link to this heading">#</a></h4>
 <section id="creating-the-risk-adjusted-backlog">
 <h5><span class="section-number">7.7.3.1.1. </span>Creating the Risk-Adjusted Backlog<a class="headerlink" href="#creating-the-risk-adjusted-backlog" title="Link to this heading">#</a></h5>
-<p><span class="math notranslate nohighlight">\(EVM=Probability \cdot Impact [€] \)</span></p>
+<p>$EVM = Probability \cdot Impact [$]$</p>
 </section>
 </section>
 <section id="risk-severity">
 <h4><span class="section-number">7.7.3.2. </span>Risk Severity<a class="headerlink" href="#risk-severity" title="Link to this heading">#</a></h4>
-<p><span class="math notranslate nohighlight">\(Severity=Probability \cdot Impact [l/m/h]\)</span></p>
+<p>$Severity=Probability \cdot Impact [l/m/h]$</p>
 </section>
 <section id="risk-burndown-graphs">
 <h4><span class="section-number">7.7.3.3. </span>Risk Burndown Graphs<a class="headerlink" href="#risk-burndown-graphs" title="Link to this heading">#</a></h4>
@@ -2537,16 +2535,16 @@ Interpretation: <span class="math notranslate nohighlight">\(ROI&gt;1\)</span></
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Total cycle time</p></td>
-<td><p><span class="math notranslate nohighlight">\(TCT=VAT+NVAT\)</span></p></td>
+<td><p>$TCT=VAT+NVAT$</p></td>
 </tr>
 <tr class="row-odd"><td><p>Value-added time</p></td>
-<td><p><span class="math notranslate nohighlight">\(VAT\)</span></p></td>
+<td><p>$VAT$</p></td>
 </tr>
 <tr class="row-even"><td><p>Nonvalue-added time</p></td>
-<td><p><span class="math notranslate nohighlight">\(NVAT\)</span></p></td>
+<td><p>$NVAT$</p></td>
 </tr>
 <tr class="row-odd"><td><p>Process cycle efficiency</p></td>
-<td><p><span class="math notranslate nohighlight">\(VAT/TCT=VAT/(VAT+NVAT)\)</span></p></td>
+<td><p>$VAT/TCT=VAT/(VAT+NVAT)$</p></td>
 </tr>
 </tbody>
 </table>

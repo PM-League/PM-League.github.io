@@ -23,5 +23,6 @@ html:
 parse:
   myst_enable_extensions:
     - amsmath
+    - amsymb
     - dollarmath
 only_build_toc_files: True

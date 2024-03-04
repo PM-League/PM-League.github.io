@@ -394,8 +394,6 @@ Interpretation:
 
 #### Earned Value Management
 
-##### Metrics
-
 | Symbol           | Formula                   | Name                        |
 | ---------------- | ------------------------- | --------------------------- |
 | $AT$           |                           | Actual Time                 |
@@ -447,9 +445,9 @@ Interpretation:
 
 Work on items that maximize value delivered to customer first
 
-##### Prioritization Schemes
+#### Prioritization Schemes
 
-###### MoSCoW
+##### MoSCoW
 
 | Letter           | Description |
 | ---------------- | ----------- |
@@ -458,14 +456,14 @@ Work on items that maximize value delivered to customer first
 | **C**ould  |             |
 | **W**ould  |             |
 
-###### Kano Analysis
+##### Kano Analysis
 
 * Delighters/exciters
 * Satisfiers
 * Dissatisfiers
 * Indifferent
 
-##### Relative Prioritization/Ranking
+#### Relative Prioritization/Ranking
 
 | Feature | Priority | MVP   |                            |
 | ------- | -------- | ----- | -------------------------- |
@@ -476,21 +474,21 @@ Work on items that maximize value delivered to customer first
 | E       | 5        | False |                            |
 | ...     |          |       | Cutoff to meet budget/time |
 
-#### Deliver Incrementally
+### Deliver Incrementally
 
 Delivering the "plain-vanilla" version of a product/service allows realizing benefits to get an early $ROI$
 
-##### Minimum Viable Product (MVP)
+#### Minimum Viable Product (MVP)
 
 "Package of functionality that is complete enough to be useful to the users or the market, yet still small enough that it does not represent the entire project"
 
-##### Agile Tooling
+#### Agile Tooling
 
 Prefer low tech, high touch (military) tools over sophisticated computerized models
 
-##### Task/Kanban Boards
+#### Task/Kanban Boards
 
-##### Work in Progress (WIP)
+#### Work in Progress (WIP)
 
 * Work started but not started yet
 * Excessive WIP:
@@ -498,40 +496,47 @@ Prefer low tech, high touch (military) tools over sophisticated computerized mod
   * hides bottlenecks/inefficiencies
   * increases probability of rework
 
-##### WIP Limits
+#### WIP Limits
 
 Set limit to WIP (to Task/Kanban Board)
 
 Optimize ~~resource utilization~~ throughput
 
-##### Cumulative Flow Diagram (CFDs)
+#### Cumulative Flow Diagram (CFDs)
 
 Used for tracking and forecasting delivery of value
 
-###### Little's Law
+##### Little's Law
 
 $Queue = In Progress - Done$
 
-##### Bottleneck and Theory of Constraints (TOC)
+#### Bottleneck and Theory of Constraints (TOC)
 
 Figure
 
-#### (To Do) Agile Contracting
+### (To Do) Agile Contracting
 
+### Verifying and Validating Value
 
-#### Verifying and Validating Value
+#### (To Do) Frequent Verification and Validation
 
-##### Frequent Verification and Validation
+#### Testing and Verification in Software Development
 
-##### Testing and Verification in Software Development
+##### Continuous Integration
 
-###### Exploratory and Usability Testing
+* Incorporate new and changed code into project code repository
+* Find and resolve problems asap
+* Ensure system still performs as intended after the new code is integrated
+* Components of system CI system
+  * Source code control system
+  * Build tools
+  * Test tools
+  * Scheduler/trigger
+  * Notifications
 
-###### Continuous Integration
+#### Test-Driven Development (TDD)
 
-###### Test-Driven Development (TDD)
-
-###### Acceptance Test-Driven Development (ATDD)
+#### Acceptance Test-Driven Development (ATDD)
 
 ## Stakeholder Engagement
 

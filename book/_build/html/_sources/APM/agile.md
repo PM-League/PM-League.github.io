@@ -109,7 +109,6 @@
 
 * Written in 2005 by Agile Project Leadership Network
 * Six Precepts:
-
 > 1. We increase **return on investment** by making continuous flow of value our focus.
 > 2. We **deliver reliable results** by engaging customers in frequent interactions and shared ownership.
 > 3. We **expect uncertainty** and manage for it through iterations, anticipation, and adaptation.
@@ -194,16 +193,14 @@
 * No changes affecting the sprint goal are made throughout the sprint
 * Scope can be clarified/renegotiated as new information becomes available
 * Can be cancelled by Product Owner before timebox is over due to
-
   * goal becomes obsolete
   * change in business direction/technology conditions
-* Sequence of Activities
-
-  1. Sprint Planning Meeting
-  2. Development period
-     * Daily scrums
-     * Sprint review meeting
-     * Sprint retrospective meeting
+  * Sequence of Activities
+    1. Sprint Planning Meeting
+    2. Development period
+      * Daily scrums
+      * Sprint review meeting
+      * Sprint retrospective meeting
 
 ##### Team Roles
 
@@ -343,7 +340,6 @@ Align project objectives with personal objectives to improve productivity
 ### Servant Leadership
 
 Duties
-
 * Shield the team from interruptions
 * Remove impediments to progress
 * Communicate
@@ -358,7 +354,6 @@ Duties
 ##### Return on Investment (ROI)
 
 Formula: $ROI = Investment.Benefits/Investment.Cost$
-
 Interpretation: $ROI>1$
 
 ##### Present Value (PV)
@@ -370,7 +365,6 @@ Formula: $PV = FV_t/(1+r)^t$
 Formula: $NPV=\sum_{t=0}^{T} CF_t/(1+r)^t$
 
 Interpretation:
-
 * IF $NPV>0$ THEN accept ELSE reject
 * Select project with **higher** $NPV$
 
@@ -379,7 +373,6 @@ Interpretation:
 Formula: $IRR = r : NPV(r) = 0$
 
 Interpretation:
-
 * IF $IRR>r$ THEN accept ELSE reject
 * Select project with **higher** $IRR$
 
@@ -388,13 +381,10 @@ Interpretation:
 Formula: $T : NPV(T)=0$
 
 Interpretation:
-
 * IF $T<PB$ THEN accept ELSE reject
 * Select project with **lower** $PB$
 
 #### Earned Value Management
-
-##### Metrics
 
 | Symbol           | Formula                   | Name                        |
 | ---------------- | ------------------------- | --------------------------- |
@@ -447,9 +437,9 @@ Interpretation:
 
 Work on items that maximize value delivered to customer first
 
-##### Prioritization Schemes
+#### Prioritization Schemes
 
-###### MoSCoW
+##### MoSCoW
 
 | Letter           | Description |
 | ---------------- | ----------- |
@@ -458,14 +448,14 @@ Work on items that maximize value delivered to customer first
 | **C**ould  |             |
 | **W**ould  |             |
 
-###### Kano Analysis
+##### Kano Analysis
 
 * Delighters/exciters
 * Satisfiers
 * Dissatisfiers
 * Indifferent
 
-##### Relative Prioritization/Ranking
+#### Relative Prioritization/Ranking
 
 | Feature | Priority | MVP   |                            |
 | ------- | -------- | ----- | -------------------------- |
@@ -476,21 +466,21 @@ Work on items that maximize value delivered to customer first
 | E       | 5        | False |                            |
 | ...     |          |       | Cutoff to meet budget/time |
 
-#### Deliver Incrementally
+### Deliver Incrementally
 
 Delivering the "plain-vanilla" version of a product/service allows realizing benefits to get an early $ROI$
 
-##### Minimum Viable Product (MVP)
+#### Minimum Viable Product (MVP)
 
 "Package of functionality that is complete enough to be useful to the users or the market, yet still small enough that it does not represent the entire project"
 
-##### Agile Tooling
+#### Agile Tooling
 
-Prefer low tech, high touch (military) tools over sophisticated computerized models
+Prefer low tech, high touch tools over sophisticated computerized models
 
-##### Task/Kanban Boards
+#### Task/Kanban Boards
 
-##### Work in Progress (WIP)
+#### Work in Progress (WIP)
 
 * Work started but not started yet
 * Excessive WIP:
@@ -498,40 +488,47 @@ Prefer low tech, high touch (military) tools over sophisticated computerized mod
   * hides bottlenecks/inefficiencies
   * increases probability of rework
 
-##### WIP Limits
+#### WIP Limits
 
 Set limit to WIP (to Task/Kanban Board)
 
 Optimize ~~resource utilization~~ throughput
 
-##### Cumulative Flow Diagram (CFDs)
+#### Cumulative Flow Diagram (CFDs)
 
 Used for tracking and forecasting delivery of value
 
-###### Little's Law
+##### Little's Law
 
 $Queue = In Progress - Done$
 
-##### Bottleneck and Theory of Constraints (TOC)
+#### Bottleneck and Theory of Constraints (TOC)
 
 Figure
 
-#### (To Do) Agile Contracting
+### (To Do) Agile Contracting
 
+### Verifying and Validating Value
 
-#### Verifying and Validating Value
+#### (To Do) Frequent Verification and Validation
 
-##### Frequent Verification and Validation
+#### Testing and Verification in Software Development
 
-##### Testing and Verification in Software Development
+##### Continuous Integration
 
-###### Exploratory and Usability Testing
+* Incorporate new and changed code into project code repository
+* Find and resolve problems asap
+* Ensure system still performs as intended after the new code is integrated
+* Components of system CI system
+  * Source code control system
+  * Build tools
+  * Test tools
+  * Scheduler/trigger
+  * Notifications
 
-###### Continuous Integration
+#### Test-Driven Development (TDD)
 
-###### Test-Driven Development (TDD)
-
-###### Acceptance Test-Driven Development (ATDD)
+#### Acceptance Test-Driven Development (ATDD)
 
 ## Stakeholder Engagement
 
@@ -565,7 +562,6 @@ Project elevator statement:
 #### Definition of "Done"
 
 Necessary at all levels:
-
 * Deliverables
 * Releases
 * User Stories
@@ -575,7 +571,6 @@ Consist of multiple **acceptance criteria**
 #### Agile Modeling
 
 Types:
-
 * Use case diagrams
 * Data models
 * Screen designs
@@ -589,7 +584,6 @@ Quick and cheap mock-up of a product/service
 Quick guides/reminders of key stakeholders and their interests
 
 Augment requirements:
-
 * Help prioritize work
 * Stay focused on users
 * Gain insights into who users will be
@@ -619,7 +613,6 @@ Highest efficiency: highest interactivity & highest bandwith/information density
 ### Working Collaboratively
 
 Collaboration benefits:
-
 * Generates wiser decisions
 * Problem solving
 * Fosters action
@@ -836,11 +829,11 @@ Template 2
 
 ###### The Three C's
 
-| C            | Description |  |
-| ------------ | ----------- | - |
-| Card         |             |  |
-| Conversation |             |  |
-| Confirmation |             |  |
+| C            | Description |
+| ------------ | ----------- |
+| Card         |             |
+| Conversation |             |
+| Confirmation |             |
 
 ###### INVEST: Characteristics of Effective User Stories
 
@@ -882,13 +875,11 @@ ES < S < M < L < XL < XXL
 #### Wideband Delphi
 
 Biases:
-
 * Bandwagon
 * HIPPO
 * Groupthink
 
 Characteristics:
-
 * Iterative
 * Adaptive
 * Collaborative

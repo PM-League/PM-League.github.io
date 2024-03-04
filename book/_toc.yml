@@ -15,7 +15,7 @@ parts:
 - caption: Agile Project Management
   chapters:
   - file: APM/agile
-  - file: APM/scrum
+  - file: APM/sbok
 - caption: Systems Engineering
   chapters:
   - file: SE/se-concepts

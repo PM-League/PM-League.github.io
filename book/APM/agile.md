@@ -109,6 +109,7 @@
 
 * Written in 2005 by Agile Project Leadership Network
 * Six Precepts:
+
 > 1. We increase **return on investment** by making continuous flow of value our focus.
 > 2. We **deliver reliable results** by engaging customers in frequent interactions and shared ownership.
 > 3. We **expect uncertainty** and manage for it through iterations, anticipation, and adaptation.
@@ -196,11 +197,13 @@
   * goal becomes obsolete
   * change in business direction/technology conditions
   * Sequence of Activities
+
     1. Sprint Planning Meeting
     2. Development period
-      * Daily scrums
-      * Sprint review meeting
-      * Sprint retrospective meeting
+
+    * Daily scrums
+    * Sprint review meeting
+    * Sprint retrospective meeting
 
 ##### Team Roles
 
@@ -340,6 +343,7 @@ Align project objectives with personal objectives to improve productivity
 ### Servant Leadership
 
 Duties
+
 * Shield the team from interruptions
 * Remove impediments to progress
 * Communicate
@@ -365,6 +369,7 @@ Formula: $PV = FV_t/(1+r)^t$
 Formula: $NPV=\sum_{t=0}^{T} CF_t/(1+r)^t$
 
 Interpretation:
+
 * IF $NPV>0$ THEN accept ELSE reject
 * Select project with **higher** $NPV$
 
@@ -373,6 +378,7 @@ Interpretation:
 Formula: $IRR = r : NPV(r) = 0$
 
 Interpretation:
+
 * IF $IRR>r$ THEN accept ELSE reject
 * Select project with **higher** $IRR$
 
@@ -381,6 +387,7 @@ Interpretation:
 Formula: $T : NPV(T)=0$
 
 Interpretation:
+
 * IF $T<PB$ THEN accept ELSE reject
 * Select project with **lower** $PB$
 
@@ -562,6 +569,7 @@ Project elevator statement:
 #### Definition of "Done"
 
 Necessary at all levels:
+
 * Deliverables
 * Releases
 * User Stories
@@ -571,6 +579,7 @@ Consist of multiple **acceptance criteria**
 #### Agile Modeling
 
 Types:
+
 * Use case diagrams
 * Data models
 * Screen designs
@@ -584,6 +593,7 @@ Quick and cheap mock-up of a product/service
 Quick guides/reminders of key stakeholders and their interests
 
 Augment requirements:
+
 * Help prioritize work
 * Stay focused on users
 * Gain insights into who users will be
@@ -613,6 +623,7 @@ Highest efficiency: highest interactivity & highest bandwith/information density
 ### Working Collaboratively
 
 Collaboration benefits:
+
 * Generates wiser decisions
 * Problem solving
 * Fosters action
@@ -875,11 +886,13 @@ ES < S < M < L < XL < XXL
 #### Wideband Delphi
 
 Biases:
+
 * Bandwagon
 * HIPPO
 * Groupthink
 
 Characteristics:
+
 * Iterative
 * Adaptive
 * Collaborative
@@ -994,11 +1007,11 @@ $Productivity=WorkDone/TeamMember$
 
 ##### Creating the Risk-Adjusted Backlog
 
-$EVM=Probability \cdot Impact[€]$
+$EVM=Probability \cdot Impact [€] $
 
 #### Risk Severity
 
-$Severity=Probability \cdot Impact[l/m/h]$
+$Severity=Probability \cdot Impact [l/m/h]$
 
 #### Risk Burndown Graphs
 

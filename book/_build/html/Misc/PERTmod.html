@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Modified PERT Bistribution &#8212; PM League Wiki</title>
+    <title>12. Modified PERT Bistribution &#8212; PM League Wiki</title>
   
   
   
@@ -70,8 +70,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Misc/PERTmod';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Putnam Model" href="putnam.html" />
-    <link rel="prev" title="SD Concepts" href="../SD/sd-concepts.html" />
+    <link rel="next" title="13. Putnam Model" href="putnam.html" />
+    <link rel="prev" title="11. SD Concepts" href="../SD/sd-concepts.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,34 +180,34 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Project Management</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../PM/pm-concepts.html">PM Concepts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../PM/pm-processes.html">PM Processes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../PM/evm.html">Earned Value Management</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../PM/rm.html">Risk Management</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../PM/eac.html">Estimates at Completion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../PM/ppm.html">Project Portfolio Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PM/pm-concepts.html">1. PM Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PM/pm-processes.html">2. PM Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PM/evm.html">3. Earned Value Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PM/rm.html">4. Risk Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PM/eac.html">5. Estimates at Completion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PM/ppm.html">6. Project Portfolio Management</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Agile Project Management</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../APM/agile.html">Agile Domains, Tools, and Techniques</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../APM/scrum.html">Scrum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../APM/agile.html">7. Agile Domains, Tools, and Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../APM/sbok.html">8. Scrum Body of Knowledge</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Systems Engineering</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../SE/se-concepts.html">SE Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SE/se-concepts.html">9. SE Concepts</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Systems Project Management</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../SPM/spm-concepts.html">Systems Project Management Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SPM/spm-concepts.html">10. Systems Project Management Concepts</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">System Dynamics</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../SD/sd-concepts.html">SD Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SD/sd-concepts.html">11. SD Concepts</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Misc</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Modified PERT Bistribution</a></li>
-<li class="toctree-l1"><a class="reference internal" href="putnam.html">Putnam Model</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">12. Modified PERT Bistribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="putnam.html">13. Putnam Model</a></li>
 </ul>
 
     </div>
@@ -311,7 +311,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="modified-pert-bistribution">
-<h1>Modified PERT Bistribution<a class="headerlink" href="#modified-pert-bistribution" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">12. </span>Modified PERT Bistribution<a class="headerlink" href="#modified-pert-bistribution" title="Link to this heading">#</a></h1>
 <div class="math notranslate nohighlight">
 \[
 PERT(min,Mo,max) = Beta(\alpha,\beta)\cdot(max-min)+ min = \frac{(x-min)^{\alpha-1}(max-x)^{\beta-1}}{B(\alpha,\beta)(max-min)^{\alpha+\beta-1}}
@@ -418,7 +418,7 @@ B(\alpha,\beta) = \int_{0}^{1} u^{\alpha-1}\left(1-u\right)^{\beta-1}\textrm{d}u
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">SD Concepts</p>
+        <p class="prev-next-title"><span class="section-number">11. </span>SD Concepts</p>
       </div>
     </a>
     <a class="right-next"
@@ -426,7 +426,7 @@ B(\alpha,\beta) = \int_{0}^{1} u^{\alpha-1}\left(1-u\right)^{\beta-1}\textrm{d}u
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Putnam Model</p>
+        <p class="prev-next-title"><span class="section-number">13. </span>Putnam Model</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

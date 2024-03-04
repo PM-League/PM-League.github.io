@@ -5,23 +5,23 @@
 ### Domains
 
 | ID Domain | Domain                                            | Sub-Domain                        |
-| :-------: | :------------------------------------------------ | :-------------------------------- |
-|     I     | Agile Principles and Mindset                      |                                   |
-|    II    | Value-Driven Delivery                             | Define Positive Value             |
-|          |                                                   | Avoid Potential Downsides         |
-|          |                                                   | Prioritization                    |
-|          |                                                   | Incremental Development           |
-|    III    | Stakeholder Engagement                            | Understand Stakeholder Needs      |
-|          |                                                   | Ensure Stakeholder Involvement    |
-|          |                                                   | Manage Stakeholder Expectations   |
-|    IV    | Team Performance                                  | Team Formation                    |
-|          |                                                   | Team Empowerment                  |
-|          |                                                   | Team Collaboration and Commitment |
-|     V     | Adaptive Planning                                 | Levels of Planning                |
-|          |                                                   | Adaptation                        |
-|          |                                                   | Agile Sizing and Estimation       |
-|    VI    | Problem Detection and Resolution                  |                                   |
-|    VII    | Continuous Improvement (Product, Process, People) |                                   |
+| --------- | ------------------------------------------------- | --------------------------------- |
+| I         | Agile Principles and Mindset                      |                                   |
+| II        | Value-Driven Delivery                             | Define Positive Value             |
+|           |                                                   | Avoid Potential Downsides         |
+|           |                                                   | Prioritization                    |
+|           |                                                   | Incremental Development           |
+| III       | Stakeholder Engagement                            | Understand Stakeholder Needs      |
+|           |                                                   | Ensure Stakeholder Involvement    |
+|           |                                                   | Manage Stakeholder Expectations   |
+| IV        | Team Performance                                  | Team Formation                    |
+|           |                                                   | Team Empowerment                  |
+|           |                                                   | Team Collaboration and Commitment |
+| V         | Adaptive Planning                                 | Levels of Planning                |
+|           |                                                   | Adaptation                        |
+|           |                                                   | Agile Sizing and Estimation       |
+| VI        | Problem Detection and Resolution                  |                                   |
+| VII       | Continuous Improvement (Product, Process, People) |                                   |
 
 ### Tools and Techniques
 

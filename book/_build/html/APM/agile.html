@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -416,7 +416,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#establishing-a-shared-vision">7.4.1. Establishing a Shared Vision</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-chartering">7.4.1.1. Agile Chartering</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-versus-non-agile-charters">7.4.1.1.1. Agile versus Non-Agile Charters</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#developing-an-agile-charter">7.4.1.1.2. Developing an Agile Charter</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#developing-an-agile-charter">7.4.1.1.2. Developing an Agile Charter</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#w5h-questions">7.4.1.1.2.1. W5H questions</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#project-elevator-statement">7.4.1.1.2.2. Project elevator statement</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-done">7.4.1.2. Definition of “Done”</a></li>
@@ -560,35 +564,25 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#release-and-iteration-planning">7.6.3. Release and Iteration Planning</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-iterations">7.6.3.1. Types of Iterations</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spikes">7.6.3.2. Spikes</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#architectural-spike">7.6.3.2.1. Architectural Spike</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-based-spike">7.6.3.2.2. Risk-Based Spike</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#fast-failure">7.6.3.2.3. Fast Failure</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spikes">7.6.3.1. Spikes</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#architectural-spike">7.6.3.1.1. Architectural Spike</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-based-spike">7.6.3.1.2. Risk-Based Spike</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#high-level-planning-visioning">7.6.3.3. High-Level Planning (Visioning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs-of-high-level-planning">7.6.3.3.1. Outputs of High-Level Planning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#release-planning">7.6.3.2. Release Planning</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-the-user-stories-for-the-release">7.6.3.2.1. Selecting the User Stories for the Release</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#how-much-can-we-get-done">7.6.3.2.2. How Much Can We Get Done?</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-velocity-for-the-first-iteration">7.6.3.2.3. Estimating Velocity for the First Iteration</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing-the-stories">7.6.3.2.4. Slicing the Stories</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#release-planning">7.6.3.4. Release Planning</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-the-user-stories-for-the-release">7.6.3.4.1. Selecting the User Stories for the Release</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#how-much-can-we-get-done">7.6.3.4.2. How Much Can We Get Done?</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-velocity-for-the-first-iteration">7.6.3.4.3. Estimating Velocity for the First Iteration</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing-the-stories">7.6.3.4.4. Slicing the Stories</a><ul class="nav section-nav flex-column">
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing-compound-stories">7.6.3.4.4.1. Slicing Compound Stories</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing-complex-stories">7.6.3.4.4.2. Slicing Complex Stories</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration-planning">7.6.3.5. Iteration Planning</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-iteration-planning-process">7.6.3.5.1. The Iteration Planning Process</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration-planning-summary">7.6.3.5.2. Iteration Planning Summary</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-the-user-stories">7.6.3.5.3. Selecting the User Stories</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-the-acceptance-criteria-nad-writing-the-acceptance-tests">7.6.3.5.4. Defining the Acceptance Criteria nad Writing the Acceptance Tests</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-tasks">7.6.3.5.5. Estimating the Tasks</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#use-actual-results-to-refine-estimates">7.6.3.5.6. Use Actual Results to Refine Estimates</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration-planning">7.6.3.3. Iteration Planning</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-iteration-planning-process">7.6.3.3.1. The Iteration Planning Process</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration-planning-summary">7.6.3.3.2. Iteration Planning Summary</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-the-user-stories">7.6.3.3.3. Selecting the User Stories</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-the-acceptance-criteria-nad-writing-the-acceptance-tests">7.6.3.3.4. Defining the Acceptance Criteria nad Writing the Acceptance Tests</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-tasks">7.6.3.3.5. Estimating the Tasks</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#use-actual-results-to-refine-estimates">7.6.3.3.6. Use Actual Results to Refine Estimates</a></li>
 </ul>
 </li>
 </ul>
@@ -597,69 +591,51 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-detection-and-resolution">7.7. Problem Detection and Resolution</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-problems">7.7.1. Understanding Problems</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-problems-impact-a-project">7.7.1.1. How Problems Impact a Project</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cost-of-change">7.7.1.2. The Cost of Change</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#technical-debt">7.7.1.3. Technical Debt</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-safe-and-open-environment">7.7.1.4. Create a Safe and Open Environment</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#failure-modes">7.7.1.5. Failure Modes</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#success-modes">7.7.1.6. Success Modes</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#success-strategies">7.7.1.7. Success Strategies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detecting-problems">7.7.1. Detecting Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-time-and-cycle-time">7.7.1.1. Lead Time and Cycle Time</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#cycle-time-wip-and-throughput">7.7.1.1.1. Cycle Time, WIP, and Throughput</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#throughput-and-productivity">7.7.1.1.2. Throughput and Productivity</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detecting-problems">7.7.2. Detecting Problems</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-time-and-cycle-time">7.7.2.1. Lead Time and Cycle Time</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-time">7.7.2.1.1. Lead Time</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#cycle-time-wip-and-throughput">7.7.2.1.2. Cycle Time, WIP, and Throughput</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#throughput-and-productivity">7.7.2.1.3. Throughput and Productivity</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#defects">7.7.1.2. Defects</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#defect-rates">7.7.1.2.1. Defect Rates</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#defects">7.7.2.2. Defects</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#defect-rates">7.7.2.2.1. Defect Rates</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#variance-analysis">7.7.1.3. Variance Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#causes-of-variation">7.7.1.3.1. Causes of Variation</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#variance-analysis">7.7.2.3. Variance Analysis</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#causes-of-variation">7.7.2.3.1. Causes of Variation</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#accept-the-variance-of-take-action">7.7.2.3.2. Accept the Variance of Take Action?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#trend-analysis">7.7.1.4. Trend Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#control-limits">7.7.1.5. Control Limits</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#trend-analysis">7.7.2.4. Trend Analysis</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#control-limits">7.7.2.5. Control Limits</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-threats-and-issues">7.7.2. Managing Threats and Issues</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-adjusted-backlog">7.7.2.1. Risk-Adjusted Backlog</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-risk-adjusted-backlog">7.7.2.1.1. Creating the Risk-Adjusted Backlog</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-threats-and-issues">7.7.3. Managing Threats and Issues</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-adjusted-backlog">7.7.3.1. Risk-Adjusted Backlog</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-risk-adjusted-backlog">7.7.3.1.1. Creating the Risk-Adjusted Backlog</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-severity">7.7.2.2. Risk Severity</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-burndown-graphs">7.7.2.3. Risk Burndown Graphs</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-severity">7.7.3.2. Risk Severity</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-burndown-graphs">7.7.3.3. Risk Burndown Graphs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solving-problems">7.7.3. Solving Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-solving-as-continuous-improvement">7.7.3.1. Problem Solving as Continuous Improvement</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#engage-the-team">7.7.3.2. Engage the Team</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-benefits-of-team-engagement">7.7.3.2.1. The Benefits of Team Engagement</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-and-cautions-for-engaging-the-team">7.7.3.2.2. Considerations and Cautions for Engaging the Team</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solving-problems">7.7.4. Solving Problems</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-solving-as-continuous-improvement">7.7.4.1. Problem Solving as Continuous Improvement</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#engage-the-team">7.7.4.2. Engage the Team</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-benefits-of-team-engagement">7.7.4.2.1. The Benefits of Team Engagement</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-and-cautions-for-engaging-the-team">7.7.4.2.2. Considerations and Cautions for Engaging the Team</a></li>
-</ul>
-</li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#some-problems-can-t-be-solved">7.7.4.3. Some Problems Can’t Be Solved</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement">7.8. Continuous Improvement</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kaizen">7.8.1. Kaizen</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pdca-cycle">7.8.1.1. PDCA Cycle</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fishbone-analysis">7.8.1.2. Fishbone Analysis</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-levels-of-improvement-process">7.8.2. Multiple Levels of Improvement—Process</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kaizen">7.8.1. Kaizen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement-process">7.8.2. Continuous Improvement—Process</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#process-tailoring">7.8.2.1. Process Tailoring</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mitigating-the-risk-of-process-tailoring">7.8.2.1.1. Mitigating the Risk of Process Tailoring</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#hybrid-models">7.8.2.1.2. Hybrid Models</a><ul class="nav section-nav flex-column">
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-agile-hybrid-scrum-xp">7.8.2.1.2.1. Agile-Agile Hybrid: Scrum-XP</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-traditional-hybrids">7.8.2.1.2.2. Agile-Traditional Hybrids</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#hybrid-models">7.8.2.1.1. Hybrid Models</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-agile-hybrid-scrum-xp">7.8.2.1.1.1. Agile-Agile Hybrid: Scrum-XP</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-traditional-hybrids">7.8.2.1.1.2. Agile-Traditional Hybrids</a></li>
 </ul>
 </li>
 </ul>
@@ -703,7 +679,7 @@ document.write(`
 </li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-insights">7.8.4.1.5. Generate insights</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#five-whys">7.8.4.1.5.1. Five Whys</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">7.8.4.1.5.2. Fishbone Analysis</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#fishbone-analysis">7.8.4.1.5.2. Fishbone Analysis</a></li>
 </ul>
 </li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#decide-what-to-do">7.8.4.1.6. Decide what to do</a></li>
@@ -732,6 +708,7 @@ document.write(`
                   
   <section id="agile-domains-tools-and-techniques">
 <h1><span class="section-number">7. </span>Agile Domains, Tools, and Techniques<a class="headerlink" href="#agile-domains-tools-and-techniques" title="Link to this heading">#</a></h1>
+<p>Notes from Mike Griffith, <em>PMI-ACP Exam Prep,</em> Second Edition.</p>
 <section id="introduction">
 <h2><span class="section-number">7.1. </span>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <section id="domains">
@@ -1544,27 +1521,12 @@ Interpretation: $ROI&gt;1$</p>
 <h4><span class="section-number">7.3.2.2. </span>Prioritization Schemes<a class="headerlink" href="#prioritization-schemes" title="Link to this heading">#</a></h4>
 <section id="moscow">
 <h5><span class="section-number">7.3.2.2.1. </span>MoSCoW<a class="headerlink" href="#moscow" title="Link to this heading">#</a></h5>
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Letter</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>M</strong>ust</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>S</strong>hould</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><strong>C</strong>ould</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>W</strong>ould</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+<ul class="simple">
+<li><p><strong>M</strong>ust have</p></li>
+<li><p><strong>S</strong>hould have</p></li>
+<li><p><strong>C</strong>ould have</p></li>
+<li><p><strong>W</strong>on’t have this time</p></li>
+</ul>
 </section>
 <section id="kano-analysis">
 <h5><span class="section-number">7.3.2.2.2. </span>Kano Analysis<a class="headerlink" href="#kano-analysis" title="Link to this heading">#</a></h5>
@@ -1713,7 +1675,8 @@ Interpretation: $ROI&gt;1$</p>
 </section>
 <section id="developing-an-agile-charter">
 <h5><span class="section-number">7.4.1.1.2. </span>Developing an Agile Charter<a class="headerlink" href="#developing-an-agile-charter" title="Link to this heading">#</a></h5>
-<p>W5H questions:</p>
+<section id="w5h-questions">
+<h6><span class="section-number">7.4.1.1.2.1. </span>W5H questions<a class="headerlink" href="#w5h-questions" title="Link to this heading">#</a></h6>
 <ul class="simple">
 <li><p>Who will be engaged?</p></li>
 <li><p>What is this project about?</p></li>
@@ -1722,7 +1685,9 @@ Interpretation: $ROI&gt;1$</p>
 <li><p>Why is it being undertaken?</p></li>
 <li><p>How will it be undertaken?</p></li>
 </ul>
-<p>Project elevator statement:</p>
+</section>
+<section id="project-elevator-statement">
+<h6><span class="section-number">7.4.1.1.2.2. </span>Project elevator statement<a class="headerlink" href="#project-elevator-statement" title="Link to this heading">#</a></h6>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>For</p></th>
@@ -1749,15 +1714,13 @@ Interpretation: $ROI&gt;1$</p>
 </table>
 </section>
 </section>
+</section>
 <section id="definition-of-done">
 <h4><span class="section-number">7.4.1.2. </span>Definition of “Done”<a class="headerlink" href="#definition-of-done" title="Link to this heading">#</a></h4>
-<p>Necessary at all levels:</p>
 <ul class="simple">
-<li><p>Deliverables</p></li>
-<li><p>Releases</p></li>
-<li><p>User Stories</p></li>
+<li><p>Necessary at all levels (i.e., Deliverables, Releases, and User Stories)</p></li>
+<li><p>Consist of multiple <strong>acceptance criteria</strong></p></li>
 </ul>
-<p>Consist of multiple <strong>acceptance criteria</strong></p>
 </section>
 <section id="agile-modeling">
 <h4><span class="section-number">7.4.1.3. </span>Agile Modeling<a class="headerlink" href="#agile-modeling" title="Link to this heading">#</a></h4>
@@ -1967,35 +1930,66 @@ Interpretation: $ROI&gt;1$</p>
 <h4><span class="section-number">7.5.2.2. </span>Models of Team Development<a class="headerlink" href="#models-of-team-development" title="Link to this heading">#</a></h4>
 <section id="shu-ha-ri-model-of-skill-mastery">
 <h5><span class="section-number">7.5.2.2.1. </span>Shu-Ha-Ri Model of Skill Mastery<a class="headerlink" href="#shu-ha-ri-model-of-skill-mastery" title="Link to this heading">#</a></h5>
-<ul class="simple">
-<li><p>Shu	Obeying the rules</p></li>
-<li><p>Ha	Consciously moving away from the rules</p></li>
-<li><p>Ri	Unconsciously finding an individual path</p></li>
-</ul>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Acronym</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Shu</p></td>
+<td><p>Obeying the rules</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ha</p></td>
+<td><p>Consciously moving away from the rules</p></td>
+</tr>
+<tr class="row-even"><td><p>Ri</p></td>
+<td><p>Unconsciously finding an individual path</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="dreyfus-model-of-adult-skill-acquisition">
 <h5><span class="section-number">7.5.2.2.2. </span>Dreyfus Model of Adult Skill Acquisition<a class="headerlink" href="#dreyfus-model-of-adult-skill-acquisition" title="Link to this heading">#</a></h5>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Stage</p></th>
-<th class="head"><p>Description</p></th>
+<th class="head"><p>Stage</p></th>
+<th class="head"><p>Commitment</p></th>
+<th class="head"><p>Decisions</p></th>
+<th class="head"><p>Perspective</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Novice</p></td>
-<td><p></p></td>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Novice</p></td>
+<td><p>Detached</p></td>
+<td><p>Analytic</p></td>
+<td><p>None</p></td>
 </tr>
-<tr class="row-odd"><td><p>Advanced beginner</p></td>
-<td><p></p></td>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Advanced beginner</p></td>
+<td><p>Detached</p></td>
+<td><p>Analytic</p></td>
+<td><p>None</p></td>
 </tr>
-<tr class="row-even"><td><p>Competent</p></td>
-<td><p></p></td>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Competent</p></td>
+<td><p>Detached understanding and deciding; involved outcome</p></td>
+<td><p>Analytic</p></td>
+<td><p>Chosen</p></td>
 </tr>
-<tr class="row-odd"><td><p>Proficient</p></td>
-<td><p></p></td>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Proficient</p></td>
+<td><p>Involved understanding; detached deciding</p></td>
+<td><p>Analytic</p></td>
+<td><p>Experienced</p></td>
 </tr>
-<tr class="row-even"><td><p>Expert</p></td>
-<td><p></p></td>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Expert</p></td>
+<td><p>Involved</p></td>
+<td><p>Intuitive</p></td>
+<td><p>Experienced</p></td>
 </tr>
 </tbody>
 </table>
@@ -2013,13 +2007,13 @@ Interpretation: $ROI&gt;1$</p>
 <td><p>Working group</p></td>
 </tr>
 <tr class="row-odd"><td><p>Storming</p></td>
-<td><p>Pseudo team -&gt; Potential team</p></td>
+<td><p>Pseudo team$\rightarrow$ Potential team</p></td>
 </tr>
 <tr class="row-even"><td><p>Norming</p></td>
-<td><p>Potential team -&gt; Real team</p></td>
+<td><p>Potential team$\rightarrow$ Real team</p></td>
 </tr>
 <tr class="row-odd"><td><p>Performing</p></td>
-<td><p>Real team -&gt; High performing team</p></td>
+<td><p>Real team$\rightarrow$ High performing team</p></td>
 </tr>
 </tbody>
 </table>
@@ -2276,73 +2270,58 @@ Interpretation: $ROI&gt;1$</p>
 </section>
 <section id="release-and-iteration-planning">
 <h3><span class="section-number">7.6.3. </span>Release and Iteration Planning<a class="headerlink" href="#release-and-iteration-planning" title="Link to this heading">#</a></h3>
-<section id="types-of-iterations">
-<h4><span class="section-number">7.6.3.1. </span>Types of Iterations<a class="headerlink" href="#types-of-iterations" title="Link to this heading">#</a></h4>
-</section>
 <section id="spikes">
-<h4><span class="section-number">7.6.3.2. </span>Spikes<a class="headerlink" href="#spikes" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">7.6.3.1. </span>Spikes<a class="headerlink" href="#spikes" title="Link to this heading">#</a></h4>
 <section id="architectural-spike">
-<h5><span class="section-number">7.6.3.2.1. </span>Architectural Spike<a class="headerlink" href="#architectural-spike" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.6.3.1.1. </span>Architectural Spike<a class="headerlink" href="#architectural-spike" title="Link to this heading">#</a></h5>
+<p>Short, timeboxed effort dedicated to “proof of concept” — checking whether the approach the team hopes to use will work for the project</p>
 </section>
 <section id="risk-based-spike">
-<h5><span class="section-number">7.6.3.2.2. </span>Risk-Based Spike<a class="headerlink" href="#risk-based-spike" title="Link to this heading">#</a></h5>
-</section>
-<section id="fast-failure">
-<h5><span class="section-number">7.6.3.2.3. </span>Fast Failure<a class="headerlink" href="#fast-failure" title="Link to this heading">#</a></h5>
-</section>
-</section>
-<section id="high-level-planning-visioning">
-<h4><span class="section-number">7.6.3.3. </span>High-Level Planning (Visioning)<a class="headerlink" href="#high-level-planning-visioning" title="Link to this heading">#</a></h4>
-<section id="outputs-of-high-level-planning">
-<h5><span class="section-number">7.6.3.3.1. </span>Outputs of High-Level Planning<a class="headerlink" href="#outputs-of-high-level-planning" title="Link to this heading">#</a></h5>
-<ul class="simple">
-<li><p>Updated, prioritized backlog of user stories and risk response actions</p></li>
-<li><p>High-level (coarse-grained) relative estimates for each user story</p></li>
-<li><p>Release goal focused on customer value</p></li>
-<li><p>Target release date</p></li>
-</ul>
+<h5><span class="section-number">7.6.3.1.2. </span>Risk-Based Spike<a class="headerlink" href="#risk-based-spike" title="Link to this heading">#</a></h5>
+<p>Short, timeboxed effort that makes the team sets aside to investigate, reduce or eliminate an issue/threat</p>
 </section>
 </section>
 <section id="release-planning">
-<h4><span class="section-number">7.6.3.4. </span>Release Planning<a class="headerlink" href="#release-planning" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">7.6.3.2. </span>Release Planning<a class="headerlink" href="#release-planning" title="Link to this heading">#</a></h4>
 <section id="selecting-the-user-stories-for-the-release">
-<h5><span class="section-number">7.6.3.4.1. </span>Selecting the User Stories for the Release<a class="headerlink" href="#selecting-the-user-stories-for-the-release" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.6.3.2.1. </span>Selecting the User Stories for the Release<a class="headerlink" href="#selecting-the-user-stories-for-the-release" title="Link to this heading">#</a></h5>
 </section>
 <section id="how-much-can-we-get-done">
-<h5><span class="section-number">7.6.3.4.2. </span>How Much Can We Get Done?<a class="headerlink" href="#how-much-can-we-get-done" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.6.3.2.2. </span>How Much Can We Get Done?<a class="headerlink" href="#how-much-can-we-get-done" title="Link to this heading">#</a></h5>
 </section>
 <section id="estimating-velocity-for-the-first-iteration">
-<h5><span class="section-number">7.6.3.4.3. </span>Estimating Velocity for the First Iteration<a class="headerlink" href="#estimating-velocity-for-the-first-iteration" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.6.3.2.3. </span>Estimating Velocity for the First Iteration<a class="headerlink" href="#estimating-velocity-for-the-first-iteration" title="Link to this heading">#</a></h5>
 </section>
 <section id="slicing-the-stories">
-<h5><span class="section-number">7.6.3.4.4. </span>Slicing the Stories<a class="headerlink" href="#slicing-the-stories" title="Link to this heading">#</a></h5>
-<section id="slicing-compound-stories">
-<h6><span class="section-number">7.6.3.4.4.1. </span>Slicing Compound Stories<a class="headerlink" href="#slicing-compound-stories" title="Link to this heading">#</a></h6>
-</section>
-<section id="slicing-complex-stories">
-<h6><span class="section-number">7.6.3.4.4.2. </span>Slicing Complex Stories<a class="headerlink" href="#slicing-complex-stories" title="Link to this heading">#</a></h6>
-</section>
+<h5><span class="section-number">7.6.3.2.4. </span>Slicing the Stories<a class="headerlink" href="#slicing-the-stories" title="Link to this heading">#</a></h5>
 </section>
 </section>
 <section id="iteration-planning">
-<h4><span class="section-number">7.6.3.5. </span>Iteration Planning<a class="headerlink" href="#iteration-planning" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">7.6.3.3. </span>Iteration Planning<a class="headerlink" href="#iteration-planning" title="Link to this heading">#</a></h4>
 <section id="the-iteration-planning-process">
-<h5><span class="section-number">7.6.3.5.1. </span>The Iteration Planning Process<a class="headerlink" href="#the-iteration-planning-process" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.6.3.3.1. </span>The Iteration Planning Process<a class="headerlink" href="#the-iteration-planning-process" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Discuss the user stories in the backlog</p></li>
+<li><p>Select the user stories for the iteration</p></li>
+<li><p>Define the acceptance criteria and write the acceptance tests for the stories</p></li>
+<li><p>Break down the user stories into tasks</p></li>
+<li><p>Estimate the tasks</p></li>
+</ul>
 </section>
 <section id="iteration-planning-summary">
-<h5><span class="section-number">7.6.3.5.2. </span>Iteration Planning Summary<a class="headerlink" href="#iteration-planning-summary" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.6.3.3.2. </span>Iteration Planning Summary<a class="headerlink" href="#iteration-planning-summary" title="Link to this heading">#</a></h5>
 </section>
 <section id="selecting-the-user-stories">
-<h5><span class="section-number">7.6.3.5.3. </span>Selecting the User Stories<a class="headerlink" href="#selecting-the-user-stories" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.6.3.3.3. </span>Selecting the User Stories<a class="headerlink" href="#selecting-the-user-stories" title="Link to this heading">#</a></h5>
 </section>
 <section id="defining-the-acceptance-criteria-nad-writing-the-acceptance-tests">
-<h5><span class="section-number">7.6.3.5.4. </span>Defining the Acceptance Criteria nad Writing the Acceptance Tests<a class="headerlink" href="#defining-the-acceptance-criteria-nad-writing-the-acceptance-tests" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.6.3.3.4. </span>Defining the Acceptance Criteria nad Writing the Acceptance Tests<a class="headerlink" href="#defining-the-acceptance-criteria-nad-writing-the-acceptance-tests" title="Link to this heading">#</a></h5>
 </section>
 <section id="estimating-the-tasks">
-<h5><span class="section-number">7.6.3.5.5. </span>Estimating the Tasks<a class="headerlink" href="#estimating-the-tasks" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.6.3.3.5. </span>Estimating the Tasks<a class="headerlink" href="#estimating-the-tasks" title="Link to this heading">#</a></h5>
 </section>
 <section id="use-actual-results-to-refine-estimates">
-<h5><span class="section-number">7.6.3.5.6. </span>Use Actual Results to Refine Estimates<a class="headerlink" href="#use-actual-results-to-refine-estimates" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.6.3.3.6. </span>Use Actual Results to Refine Estimates<a class="headerlink" href="#use-actual-results-to-refine-estimates" title="Link to this heading">#</a></h5>
 </section>
 </section>
 </section>
@@ -2352,106 +2331,96 @@ Interpretation: $ROI&gt;1$</p>
 </section>
 <section id="problem-detection-and-resolution">
 <h2><span class="section-number">7.7. </span>Problem Detection and Resolution<a class="headerlink" href="#problem-detection-and-resolution" title="Link to this heading">#</a></h2>
-<section id="understanding-problems">
-<h3><span class="section-number">7.7.1. </span>Understanding Problems<a class="headerlink" href="#understanding-problems" title="Link to this heading">#</a></h3>
-<section id="how-problems-impact-a-project">
-<h4><span class="section-number">7.7.1.1. </span>How Problems Impact a Project<a class="headerlink" href="#how-problems-impact-a-project" title="Link to this heading">#</a></h4>
-</section>
-<section id="the-cost-of-change">
-<h4><span class="section-number">7.7.1.2. </span>The Cost of Change<a class="headerlink" href="#the-cost-of-change" title="Link to this heading">#</a></h4>
-</section>
-<section id="technical-debt">
-<h4><span class="section-number">7.7.1.3. </span>Technical Debt<a class="headerlink" href="#technical-debt" title="Link to this heading">#</a></h4>
-</section>
-<section id="create-a-safe-and-open-environment">
-<h4><span class="section-number">7.7.1.4. </span>Create a Safe and Open Environment<a class="headerlink" href="#create-a-safe-and-open-environment" title="Link to this heading">#</a></h4>
-</section>
-<section id="failure-modes">
-<h4><span class="section-number">7.7.1.5. </span>Failure Modes<a class="headerlink" href="#failure-modes" title="Link to this heading">#</a></h4>
-</section>
-<section id="success-modes">
-<h4><span class="section-number">7.7.1.6. </span>Success Modes<a class="headerlink" href="#success-modes" title="Link to this heading">#</a></h4>
-</section>
-<section id="success-strategies">
-<h4><span class="section-number">7.7.1.7. </span>Success Strategies<a class="headerlink" href="#success-strategies" title="Link to this heading">#</a></h4>
-</section>
-</section>
 <section id="detecting-problems">
-<h3><span class="section-number">7.7.2. </span>Detecting Problems<a class="headerlink" href="#detecting-problems" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">7.7.1. </span>Detecting Problems<a class="headerlink" href="#detecting-problems" title="Link to this heading">#</a></h3>
 <section id="lead-time-and-cycle-time">
-<h4><span class="section-number">7.7.2.1. </span>Lead Time and Cycle Time<a class="headerlink" href="#lead-time-and-cycle-time" title="Link to this heading">#</a></h4>
-<section id="lead-time">
-<h5><span class="section-number">7.7.2.1.1. </span>Lead Time<a class="headerlink" href="#lead-time" title="Link to this heading">#</a></h5>
-<p>$LeadTime=Time(ToDo \rightarrow Done)$</p>
-</section>
+<h4><span class="section-number">7.7.1.1. </span>Lead Time and Cycle Time<a class="headerlink" href="#lead-time-and-cycle-time" title="Link to this heading">#</a></h4>
+<p>$Task.LT=Time(ToDo \rightarrow Done)$</p>
 <section id="cycle-time-wip-and-throughput">
-<h5><span class="section-number">7.7.2.1.2. </span>Cycle Time, WIP, and Throughput<a class="headerlink" href="#cycle-time-wip-and-throughput" title="Link to this heading">#</a></h5>
-<p>$TH=Work/Time$</p>
+<h5><span class="section-number">7.7.1.1.1. </span>Cycle Time, WIP, and Throughput<a class="headerlink" href="#cycle-time-wip-and-throughput" title="Link to this heading">#</a></h5>
+<p>$CT=WIP/TH$</p>
 </section>
 <section id="throughput-and-productivity">
-<h5><span class="section-number">7.7.2.1.3. </span>Throughput and Productivity<a class="headerlink" href="#throughput-and-productivity" title="Link to this heading">#</a></h5>
-<p>$Productivity=WorkDone/TeamMember$</p>
+<h5><span class="section-number">7.7.1.1.2. </span>Throughput and Productivity<a class="headerlink" href="#throughput-and-productivity" title="Link to this heading">#</a></h5>
+<p>$TH=Work/Time$</p>
+<p>$Productivity=Work/TeamMember$</p>
 </section>
 </section>
 <section id="defects">
-<h4><span class="section-number">7.7.2.2. </span>Defects<a class="headerlink" href="#defects" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">7.7.1.2. </span>Defects<a class="headerlink" href="#defects" title="Link to this heading">#</a></h4>
+<p>$Defect.CT=Time(Occurred \rightarrow Fixed)$</p>
 <section id="defect-rates">
-<h5><span class="section-number">7.7.2.2.1. </span>Defect Rates<a class="headerlink" href="#defect-rates" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.7.1.2.1. </span>Defect Rates<a class="headerlink" href="#defect-rates" title="Link to this heading">#</a></h5>
+<p>$DefectRate=#Defect/Time$</p>
 </section>
 </section>
 <section id="variance-analysis">
-<h4><span class="section-number">7.7.2.3. </span>Variance Analysis<a class="headerlink" href="#variance-analysis" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">7.7.1.3. </span>Variance Analysis<a class="headerlink" href="#variance-analysis" title="Link to this heading">#</a></h4>
 <section id="causes-of-variation">
-<h5><span class="section-number">7.7.2.3.1. </span>Causes of Variation<a class="headerlink" href="#causes-of-variation" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.7.1.3.1. </span>Causes of Variation<a class="headerlink" href="#causes-of-variation" title="Link to this heading">#</a></h5>
 <ul class="simple">
-<li><p>Common</p></li>
-<li><p>Special</p></li>
+<li><p>Common cause = average day-2-day differences of doing work</p></li>
+<li><p>Special cause = greater degree of variance $\leftarrow$ special/new factors</p></li>
 </ul>
-</section>
-<section id="accept-the-variance-of-take-action">
-<h5><span class="section-number">7.7.2.3.2. </span>Accept the Variance of Take Action?<a class="headerlink" href="#accept-the-variance-of-take-action" title="Link to this heading">#</a></h5>
 </section>
 </section>
 <section id="trend-analysis">
-<h4><span class="section-number">7.7.2.4. </span>Trend Analysis<a class="headerlink" href="#trend-analysis" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">7.7.1.4. </span>Trend Analysis<a class="headerlink" href="#trend-analysis" title="Link to this heading">#</a></h4>
+<p>Metrics</p>
+<ul class="simple">
+<li><p>Lagging $\rightarrow$ view of past</p></li>
+<li><p>Leading $\rightarrow$ view of future/what is occurring now/starting to happen $\rightarrow$ can adapt/replan accordinly</p></li>
+</ul>
 </section>
 <section id="control-limits">
-<h4><span class="section-number">7.7.2.5. </span>Control Limits<a class="headerlink" href="#control-limits" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">7.7.1.5. </span>Control Limits<a class="headerlink" href="#control-limits" title="Link to this heading">#</a></h4>
 </section>
 </section>
 <section id="managing-threats-and-issues">
-<h3><span class="section-number">7.7.3. </span>Managing Threats and Issues<a class="headerlink" href="#managing-threats-and-issues" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">7.7.2. </span>Managing Threats and Issues<a class="headerlink" href="#managing-threats-and-issues" title="Link to this heading">#</a></h3>
 <section id="risk-adjusted-backlog">
-<h4><span class="section-number">7.7.3.1. </span>Risk-Adjusted Backlog<a class="headerlink" href="#risk-adjusted-backlog" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">7.7.2.1. </span>Risk-Adjusted Backlog<a class="headerlink" href="#risk-adjusted-backlog" title="Link to this heading">#</a></h4>
 <section id="creating-the-risk-adjusted-backlog">
-<h5><span class="section-number">7.7.3.1.1. </span>Creating the Risk-Adjusted Backlog<a class="headerlink" href="#creating-the-risk-adjusted-backlog" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.7.2.1.1. </span>Creating the Risk-Adjusted Backlog<a class="headerlink" href="#creating-the-risk-adjusted-backlog" title="Link to this heading">#</a></h5>
 <p>$EVM = Probability \cdot Impact [$]$</p>
 </section>
 </section>
 <section id="risk-severity">
-<h4><span class="section-number">7.7.3.2. </span>Risk Severity<a class="headerlink" href="#risk-severity" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">7.7.2.2. </span>Risk Severity<a class="headerlink" href="#risk-severity" title="Link to this heading">#</a></h4>
 <p>$Severity=Probability \cdot Impact [l/m/h]$</p>
 </section>
 <section id="risk-burndown-graphs">
-<h4><span class="section-number">7.7.3.3. </span>Risk Burndown Graphs<a class="headerlink" href="#risk-burndown-graphs" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">7.7.2.3. </span>Risk Burndown Graphs<a class="headerlink" href="#risk-burndown-graphs" title="Link to this heading">#</a></h4>
 </section>
 </section>
 <section id="solving-problems">
-<h3><span class="section-number">7.7.4. </span>Solving Problems<a class="headerlink" href="#solving-problems" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">7.7.3. </span>Solving Problems<a class="headerlink" href="#solving-problems" title="Link to this heading">#</a></h3>
 <section id="problem-solving-as-continuous-improvement">
-<h4><span class="section-number">7.7.4.1. </span>Problem Solving as Continuous Improvement<a class="headerlink" href="#problem-solving-as-continuous-improvement" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">7.7.3.1. </span>Problem Solving as Continuous Improvement<a class="headerlink" href="#problem-solving-as-continuous-improvement" title="Link to this heading">#</a></h4>
 </section>
 <section id="engage-the-team">
-<h4><span class="section-number">7.7.4.2. </span>Engage the Team<a class="headerlink" href="#engage-the-team" title="Link to this heading">#</a></h4>
+<h4><span class="section-number">7.7.3.2. </span>Engage the Team<a class="headerlink" href="#engage-the-team" title="Link to this heading">#</a></h4>
 <section id="the-benefits-of-team-engagement">
-<h5><span class="section-number">7.7.4.2.1. </span>The Benefits of Team Engagement<a class="headerlink" href="#the-benefits-of-team-engagement" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.7.3.2.1. </span>The Benefits of Team Engagement<a class="headerlink" href="#the-benefits-of-team-engagement" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>By asking the team for a solution, we inherit consensus for the proposal</p></li>
+<li><p>Engaging the team accesses a broader knowledge base</p></li>
+<li><p>Team solutions are practical</p></li>
+<li><p>When consulted, people work hard to generate good ideas</p></li>
+<li><p>Asking for help shows confidence, not weakness</p></li>
+<li><p>Seeking others’ ideas models desired behavior</p></li>
+</ul>
 </section>
 <section id="considerations-and-cautions-for-engaging-the-team">
-<h5><span class="section-number">7.7.4.2.2. </span>Considerations and Cautions for Engaging the Team<a class="headerlink" href="#considerations-and-cautions-for-engaging-the-team" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.7.3.2.2. </span>Considerations and Cautions for Engaging the Team<a class="headerlink" href="#considerations-and-cautions-for-engaging-the-team" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Involve the team where it can be most helpful</p></li>
+<li><p>Solve real problems</p></li>
+<li><p>Team cohesion is necessary</p></li>
+<li><p>Check in after team or project changes</p></li>
+<li><p>Be sure to follow through</p></li>
+</ul>
 </section>
-</section>
-<section id="some-problems-can-t-be-solved">
-<h4><span class="section-number">7.7.4.3. </span>Some Problems Can’t Be Solved<a class="headerlink" href="#some-problems-can-t-be-solved" title="Link to this heading">#</a></h4>
 </section>
 </section>
 </section>
@@ -2459,36 +2428,55 @@ Interpretation: $ROI&gt;1$</p>
 <h2><span class="section-number">7.8. </span>Continuous Improvement<a class="headerlink" href="#continuous-improvement" title="Link to this heading">#</a></h2>
 <section id="kaizen">
 <h3><span class="section-number">7.8.1. </span>Kaizen<a class="headerlink" href="#kaizen" title="Link to this heading">#</a></h3>
-<section id="pdca-cycle">
-<h4><span class="section-number">7.8.1.1. </span>PDCA Cycle<a class="headerlink" href="#pdca-cycle" title="Link to this heading">#</a></h4>
-<p>Plan - Do - Check - Act</p>
+<p>Kaizen = process for continuous improvement</p>
+<p>Focus on:</p>
+<ul class="simple">
+<li><p>encourage the team</p></li>
+<li><p>frequently initiate and implement small, incremental improvements</p></li>
+</ul>
+<p>PDCA Cycle = Plan - Do - Check - Act</p>
 </section>
-<section id="fishbone-analysis">
-<h4><span class="section-number">7.8.1.2. </span>Fishbone Analysis<a class="headerlink" href="#fishbone-analysis" title="Link to this heading">#</a></h4>
-</section>
-</section>
-<section id="multiple-levels-of-improvement-process">
-<h3><span class="section-number">7.8.2. </span>Multiple Levels of Improvement—Process<a class="headerlink" href="#multiple-levels-of-improvement-process" title="Link to this heading">#</a></h3>
+<section id="continuous-improvement-process">
+<h3><span class="section-number">7.8.2. </span>Continuous Improvement—Process<a class="headerlink" href="#continuous-improvement-process" title="Link to this heading">#</a></h3>
 <section id="process-tailoring">
 <h4><span class="section-number">7.8.2.1. </span>Process Tailoring<a class="headerlink" href="#process-tailoring" title="Link to this heading">#</a></h4>
-<section id="mitigating-the-risk-of-process-tailoring">
-<h5><span class="section-number">7.8.2.1.1. </span>Mitigating the Risk of Process Tailoring<a class="headerlink" href="#mitigating-the-risk-of-process-tailoring" title="Link to this heading">#</a></h5>
-</section>
+<p>Process tailor = adapting our implementation of agile to better fit our project environment</p>
+<p>Teams new to agile should use their methodology “out-of-the-box” for a few projects before attempting to change it</p>
+<p>All techniques and practices in an agile methodology are designed to work in balance with each other</p>
 <section id="hybrid-models">
-<h5><span class="section-number">7.8.2.1.2. </span>Hybrid Models<a class="headerlink" href="#hybrid-models" title="Link to this heading">#</a></h5>
+<h5><span class="section-number">7.8.2.1.1. </span>Hybrid Models<a class="headerlink" href="#hybrid-models" title="Link to this heading">#</a></h5>
 <section id="agile-agile-hybrid-scrum-xp">
-<h6><span class="section-number">7.8.2.1.2.1. </span>Agile-Agile Hybrid: Scrum-XP<a class="headerlink" href="#agile-agile-hybrid-scrum-xp" title="Link to this heading">#</a></h6>
+<h6><span class="section-number">7.8.2.1.1.1. </span>Agile-Agile Hybrid: Scrum-XP<a class="headerlink" href="#agile-agile-hybrid-scrum-xp" title="Link to this heading">#</a></h6>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Methodology</p></th>
+<th class="head"><p>Focus</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>XP</p></td>
+<td><p>Technical guidance</p></td>
+</tr>
+<tr class="row-odd"><td><p>Scrum</p></td>
+<td><p>Project governance</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="agile-traditional-hybrids">
-<h6><span class="section-number">7.8.2.1.2.2. </span>Agile-Traditional Hybrids<a class="headerlink" href="#agile-traditional-hybrids" title="Link to this heading">#</a></h6>
+<h6><span class="section-number">7.8.2.1.1.2. </span>Agile-Traditional Hybrids<a class="headerlink" href="#agile-traditional-hybrids" title="Link to this heading">#</a></h6>
+<p>Implement agile components into linear project execution</p>
 </section>
 </section>
 </section>
 <section id="systems-thinking">
 <h4><span class="section-number">7.8.2.2. </span>Systems Thinking<a class="headerlink" href="#systems-thinking" title="Link to this heading">#</a></h4>
+<p>Understand the systems-level environment for the project</p>
+<p>Figure</p>
 </section>
 <section id="process-analysis">
 <h4><span class="section-number">7.8.2.3. </span>Process Analysis<a class="headerlink" href="#process-analysis" title="Link to this heading">#</a></h4>
+<p>Process Analysis = reviewing and diagnosing issues with a team’s agile methods</p>
 <section id="methodology-anti-patterns">
 <h5><span class="section-number">7.8.2.3.1. </span>Methodology Anti-Patterns<a class="headerlink" href="#methodology-anti-patterns" title="Link to this heading">#</a></h5>
 <ul class="simple">
@@ -2510,6 +2498,15 @@ Interpretation: $ROI&gt;1$</p>
 </section>
 <section id="methodology-success-patterns">
 <h5><span class="section-number">7.8.2.3.3. </span>Methodology Success Patterns<a class="headerlink" href="#methodology-success-patterns" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Interactive, face-to-face communication is the cheapest channel for exchanging information</p></li>
+<li><p>Excess methodology weight is costly</p></li>
+<li><p>Larger teams need heavier methodologies</p></li>
+<li><p>Projects with greater criticality require greater ceremony</p></li>
+<li><p>Feedback and communication reduce the need for intermediate deliverables</p></li>
+<li><p>Discipline, skills, and understanding counter process, formality, and coumentation</p></li>
+<li><p>Efficiency is expendable in nonbottleneck activities</p></li>
+</ul>
 </section>
 </section>
 <section id="value-stream-mapping">
@@ -2671,8 +2668,8 @@ Interpretation: $ROI&gt;1$</p>
 <section id="five-whys">
 <h6><span class="section-number">7.8.4.1.5.1. </span>Five Whys<a class="headerlink" href="#five-whys" title="Link to this heading">#</a></h6>
 </section>
-<section id="id6">
-<h6><span class="section-number">7.8.4.1.5.2. </span>Fishbone Analysis<a class="headerlink" href="#id6" title="Link to this heading">#</a></h6>
+<section id="fishbone-analysis">
+<h6><span class="section-number">7.8.4.1.5.2. </span>Fishbone Analysis<a class="headerlink" href="#fishbone-analysis" title="Link to this heading">#</a></h6>
 </section>
 </section>
 <section id="decide-what-to-do">
@@ -2869,7 +2866,11 @@ Interpretation: $ROI&gt;1$</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#establishing-a-shared-vision">7.4.1. Establishing a Shared Vision</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-chartering">7.4.1.1. Agile Chartering</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-versus-non-agile-charters">7.4.1.1.1. Agile versus Non-Agile Charters</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#developing-an-agile-charter">7.4.1.1.2. Developing an Agile Charter</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#developing-an-agile-charter">7.4.1.1.2. Developing an Agile Charter</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#w5h-questions">7.4.1.1.2.1. W5H questions</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#project-elevator-statement">7.4.1.1.2.2. Project elevator statement</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-done">7.4.1.2. Definition of “Done”</a></li>
@@ -3013,35 +3014,25 @@ Interpretation: $ROI&gt;1$</p>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#release-and-iteration-planning">7.6.3. Release and Iteration Planning</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-iterations">7.6.3.1. Types of Iterations</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spikes">7.6.3.2. Spikes</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#architectural-spike">7.6.3.2.1. Architectural Spike</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-based-spike">7.6.3.2.2. Risk-Based Spike</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#fast-failure">7.6.3.2.3. Fast Failure</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#spikes">7.6.3.1. Spikes</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#architectural-spike">7.6.3.1.1. Architectural Spike</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-based-spike">7.6.3.1.2. Risk-Based Spike</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#high-level-planning-visioning">7.6.3.3. High-Level Planning (Visioning)</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs-of-high-level-planning">7.6.3.3.1. Outputs of High-Level Planning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#release-planning">7.6.3.2. Release Planning</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-the-user-stories-for-the-release">7.6.3.2.1. Selecting the User Stories for the Release</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#how-much-can-we-get-done">7.6.3.2.2. How Much Can We Get Done?</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-velocity-for-the-first-iteration">7.6.3.2.3. Estimating Velocity for the First Iteration</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing-the-stories">7.6.3.2.4. Slicing the Stories</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#release-planning">7.6.3.4. Release Planning</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-the-user-stories-for-the-release">7.6.3.4.1. Selecting the User Stories for the Release</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#how-much-can-we-get-done">7.6.3.4.2. How Much Can We Get Done?</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-velocity-for-the-first-iteration">7.6.3.4.3. Estimating Velocity for the First Iteration</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing-the-stories">7.6.3.4.4. Slicing the Stories</a><ul class="nav section-nav flex-column">
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing-compound-stories">7.6.3.4.4.1. Slicing Compound Stories</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing-complex-stories">7.6.3.4.4.2. Slicing Complex Stories</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration-planning">7.6.3.5. Iteration Planning</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-iteration-planning-process">7.6.3.5.1. The Iteration Planning Process</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration-planning-summary">7.6.3.5.2. Iteration Planning Summary</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-the-user-stories">7.6.3.5.3. Selecting the User Stories</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-the-acceptance-criteria-nad-writing-the-acceptance-tests">7.6.3.5.4. Defining the Acceptance Criteria nad Writing the Acceptance Tests</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-tasks">7.6.3.5.5. Estimating the Tasks</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#use-actual-results-to-refine-estimates">7.6.3.5.6. Use Actual Results to Refine Estimates</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration-planning">7.6.3.3. Iteration Planning</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-iteration-planning-process">7.6.3.3.1. The Iteration Planning Process</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#iteration-planning-summary">7.6.3.3.2. Iteration Planning Summary</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-the-user-stories">7.6.3.3.3. Selecting the User Stories</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-the-acceptance-criteria-nad-writing-the-acceptance-tests">7.6.3.3.4. Defining the Acceptance Criteria nad Writing the Acceptance Tests</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-tasks">7.6.3.3.5. Estimating the Tasks</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#use-actual-results-to-refine-estimates">7.6.3.3.6. Use Actual Results to Refine Estimates</a></li>
 </ul>
 </li>
 </ul>
@@ -3050,69 +3041,51 @@ Interpretation: $ROI&gt;1$</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-detection-and-resolution">7.7. Problem Detection and Resolution</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-problems">7.7.1. Understanding Problems</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-problems-impact-a-project">7.7.1.1. How Problems Impact a Project</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cost-of-change">7.7.1.2. The Cost of Change</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#technical-debt">7.7.1.3. Technical Debt</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-safe-and-open-environment">7.7.1.4. Create a Safe and Open Environment</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#failure-modes">7.7.1.5. Failure Modes</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#success-modes">7.7.1.6. Success Modes</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#success-strategies">7.7.1.7. Success Strategies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detecting-problems">7.7.1. Detecting Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-time-and-cycle-time">7.7.1.1. Lead Time and Cycle Time</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#cycle-time-wip-and-throughput">7.7.1.1.1. Cycle Time, WIP, and Throughput</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#throughput-and-productivity">7.7.1.1.2. Throughput and Productivity</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detecting-problems">7.7.2. Detecting Problems</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-time-and-cycle-time">7.7.2.1. Lead Time and Cycle Time</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#lead-time">7.7.2.1.1. Lead Time</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#cycle-time-wip-and-throughput">7.7.2.1.2. Cycle Time, WIP, and Throughput</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#throughput-and-productivity">7.7.2.1.3. Throughput and Productivity</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#defects">7.7.1.2. Defects</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#defect-rates">7.7.1.2.1. Defect Rates</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#defects">7.7.2.2. Defects</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#defect-rates">7.7.2.2.1. Defect Rates</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#variance-analysis">7.7.1.3. Variance Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#causes-of-variation">7.7.1.3.1. Causes of Variation</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#variance-analysis">7.7.2.3. Variance Analysis</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#causes-of-variation">7.7.2.3.1. Causes of Variation</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#accept-the-variance-of-take-action">7.7.2.3.2. Accept the Variance of Take Action?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#trend-analysis">7.7.1.4. Trend Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#control-limits">7.7.1.5. Control Limits</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#trend-analysis">7.7.2.4. Trend Analysis</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#control-limits">7.7.2.5. Control Limits</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-threats-and-issues">7.7.2. Managing Threats and Issues</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-adjusted-backlog">7.7.2.1. Risk-Adjusted Backlog</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-risk-adjusted-backlog">7.7.2.1.1. Creating the Risk-Adjusted Backlog</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-threats-and-issues">7.7.3. Managing Threats and Issues</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-adjusted-backlog">7.7.3.1. Risk-Adjusted Backlog</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-the-risk-adjusted-backlog">7.7.3.1.1. Creating the Risk-Adjusted Backlog</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-severity">7.7.2.2. Risk Severity</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-burndown-graphs">7.7.2.3. Risk Burndown Graphs</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-severity">7.7.3.2. Risk Severity</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-burndown-graphs">7.7.3.3. Risk Burndown Graphs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solving-problems">7.7.3. Solving Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-solving-as-continuous-improvement">7.7.3.1. Problem Solving as Continuous Improvement</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#engage-the-team">7.7.3.2. Engage the Team</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-benefits-of-team-engagement">7.7.3.2.1. The Benefits of Team Engagement</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-and-cautions-for-engaging-the-team">7.7.3.2.2. Considerations and Cautions for Engaging the Team</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solving-problems">7.7.4. Solving Problems</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-solving-as-continuous-improvement">7.7.4.1. Problem Solving as Continuous Improvement</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#engage-the-team">7.7.4.2. Engage the Team</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#the-benefits-of-team-engagement">7.7.4.2.1. The Benefits of Team Engagement</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-and-cautions-for-engaging-the-team">7.7.4.2.2. Considerations and Cautions for Engaging the Team</a></li>
-</ul>
-</li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#some-problems-can-t-be-solved">7.7.4.3. Some Problems Can’t Be Solved</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement">7.8. Continuous Improvement</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kaizen">7.8.1. Kaizen</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pdca-cycle">7.8.1.1. PDCA Cycle</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fishbone-analysis">7.8.1.2. Fishbone Analysis</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-levels-of-improvement-process">7.8.2. Multiple Levels of Improvement—Process</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kaizen">7.8.1. Kaizen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement-process">7.8.2. Continuous Improvement—Process</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#process-tailoring">7.8.2.1. Process Tailoring</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mitigating-the-risk-of-process-tailoring">7.8.2.1.1. Mitigating the Risk of Process Tailoring</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#hybrid-models">7.8.2.1.2. Hybrid Models</a><ul class="nav section-nav flex-column">
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-agile-hybrid-scrum-xp">7.8.2.1.2.1. Agile-Agile Hybrid: Scrum-XP</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-traditional-hybrids">7.8.2.1.2.2. Agile-Traditional Hybrids</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#hybrid-models">7.8.2.1.1. Hybrid Models</a><ul class="nav section-nav flex-column">
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-agile-hybrid-scrum-xp">7.8.2.1.1.1. Agile-Agile Hybrid: Scrum-XP</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-traditional-hybrids">7.8.2.1.1.2. Agile-Traditional Hybrids</a></li>
 </ul>
 </li>
 </ul>
@@ -3156,7 +3129,7 @@ Interpretation: $ROI&gt;1$</p>
 </li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-insights">7.8.4.1.5. Generate insights</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#five-whys">7.8.4.1.5.1. Five Whys</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">7.8.4.1.5.2. Fishbone Analysis</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#fishbone-analysis">7.8.4.1.5.2. Fishbone Analysis</a></li>
 </ul>
 </li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#decide-what-to-do">7.8.4.1.6. Decide what to do</a></li>

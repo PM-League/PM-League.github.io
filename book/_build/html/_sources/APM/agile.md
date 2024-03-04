@@ -1,5 +1,7 @@
 # Agile Domains, Tools, and Techniques
 
+Notes from Mike Griffith, *PMI-ACP Exam Prep,* Second Edition.
+
 ## Introduction
 
 ### Domains
@@ -448,12 +450,10 @@ Work on items that maximize value delivered to customer first
 
 ##### MoSCoW
 
-| Letter           | Description |
-| ---------------- | ----------- |
-| **M**ust   |             |
-| **S**hould |             |
-| **C**ould  |             |
-| **W**ould  |             |
+* **M**ust have
+* **S**hould have
+* **C**ould have
+* **W**on't have this time
 
 ##### Kano Analysis
 
@@ -547,7 +547,7 @@ Figure
 
 ##### Developing an Agile Charter
 
-W5H questions:
+###### W5H questions
 
 * Who will be engaged?
 * What is this project about?
@@ -556,7 +556,7 @@ W5H questions:
 * Why is it being undertaken?
 * How will it be undertaken?
 
-Project elevator statement:
+###### Project elevator statement
 
 | For     | Target customers                   |
 | ------- | ---------------------------------- |
@@ -568,13 +568,8 @@ Project elevator statement:
 
 #### Definition of "Done"
 
-Necessary at all levels:
-
-* Deliverables
-* Releases
-* User Stories
-
-Consist of multiple **acceptance criteria**
+* Necessary at all levels (i.e., Deliverables, Releases, and User Stories)
+* Consist of multiple **acceptance criteria**
 
 #### Agile Modeling
 
@@ -720,28 +715,30 @@ Development Team
 
 ##### Shu-Ha-Ri Model of Skill Mastery
 
-* Shu	Obeying the rules
-* Ha	Consciously moving away from the rules
-* Ri	Unconsciously finding an individual path
+| Acronym | Description                              |
+| ------- | ---------------------------------------- |
+| Shu     | Obeying the rules                        |
+| Ha      | Consciously moving away from the rules   |
+| Ri      | Unconsciously finding an individual path |
 
 ##### Dreyfus Model of Adult Skill Acquisition
 
-| Stage             | Description |
-| ----------------- | ----------- |
-| Novice            |             |
-| Advanced beginner |             |
-| Competent         |             |
-| Proficient        |             |
-| Expert            |             |
+| Stage | Stage             | Commitment                                            | Decisions | Perspective |
+| ----- | ----------------- | ----------------------------------------------------- | --------- | ----------- |
+| 1     | Novice            | Detached                                              | Analytic  | None        |
+| 2     | Advanced beginner | Detached                                              | Analytic  | None        |
+| 3     | Competent         | Detached understanding and deciding; involved outcome | Analytic  | Chosen      |
+| 4     | Proficient        | Involved understanding; detached deciding             | Analytic  | Experienced |
+| 5     | Expert            | Involved                                              | Intuitive | Experienced |
 
 ##### Tuckman Model of Team Formation and Development
 
-| Stage      | Description                       |
-| ---------- | --------------------------------- |
-| Forming    | Working group                     |
-| Storming   | Pseudo team -> Potential team     |
-| Norming    | Potential team -> Real team       |
-| Performing | Real team -> High performing team |
+| Stage      | Description                                   |
+| ---------- | --------------------------------------------- |
+| Forming    | Working group                                 |
+| Storming   | Pseudo team$\rightarrow$ Potential team     |
+| Norming    | Potential team$\rightarrow$ Real team      |
+| Performing | Real team$\rightarrow$ High performing team |
 
 #### Adaptive Leadership
 
@@ -901,24 +898,15 @@ Characteristics:
 
 ### Release and Iteration Planning
 
-#### Types of Iterations
-
 #### Spikes
 
 ##### Architectural Spike
 
+Short, timeboxed effort dedicated to "proof of concept" --- checking whether the approach the team hopes to use will work for the project
+
 ##### Risk-Based Spike
 
-##### Fast Failure
-
-#### High-Level Planning (Visioning)
-
-##### Outputs of High-Level Planning
-
-* Updated, prioritized backlog of user stories and risk response actions
-* High-level (coarse-grained) relative estimates for each user story
-* Release goal focused on customer value
-* Target release date
+Short, timeboxed effort that makes the team sets aside to investigate, reduce or eliminate an issue/threat
 
 #### Release Planning
 
@@ -930,13 +918,15 @@ Characteristics:
 
 ##### Slicing the Stories
 
-###### Slicing Compound Stories
-
-###### Slicing Complex Stories
-
 #### Iteration Planning
 
 ##### The Iteration Planning Process
+
+* Discuss the user stories in the backlog
+* Select the user stories for the iteration
+* Define the acceptance criteria and write the acceptance tests for the stories
+* Break down the user stories into tasks
+* Estimate the tasks
 
 ##### Iteration Planning Summary
 
@@ -952,52 +942,43 @@ Characteristics:
 
 ## Problem Detection and Resolution
 
-### Understanding Problems
-
-#### How Problems Impact a Project
-
-#### The Cost of Change
-
-#### Technical Debt
-
-#### Create a Safe and Open Environment
-
-#### Failure Modes
-
-#### Success Modes
-
-#### Success Strategies
-
 ### Detecting Problems
 
 #### Lead Time and Cycle Time
 
-##### Lead Time
-
-$LeadTime=Time(ToDo \rightarrow Done)$
+$Task.LT=Time(ToDo \rightarrow Done)$
 
 ##### Cycle Time, WIP, and Throughput
 
-$TH=Work/Time$
+$CT=WIP/TH$
 
 ##### Throughput and Productivity
 
-$Productivity=WorkDone/TeamMember$
+$TH=Work/Time$
+
+$Productivity=Work/TeamMember$
 
 #### Defects
 
+$Defect.CT=Time(Occurred \rightarrow Fixed)$
+
 ##### Defect Rates
+
+$DefectRate=\#Defect/Time$
 
 #### Variance Analysis
 
 ##### Causes of Variation
 
-* Common
-* Special
-
-##### Accept the Variance of Take Action?
+* Common cause = average day-2-day differences of doing work
+* Special cause = greater degree of variance $\leftarrow$ special/new factors
 
 #### Trend Analysis
+
+Metrics
+
+* Lagging $\rightarrow$ view of past
+* Leading $\rightarrow$ view of future/what is occurring now/starting to happen $\rightarrow$ can adapt/replan accordinly
 
 #### Control Limits
 
@@ -1023,35 +1004,66 @@ $Severity=Probability \cdot Impact [l/m/h]$
 
 ##### The Benefits of Team Engagement
 
+* By asking the team for a solution, we inherit consensus for the proposal
+* Engaging the team accesses a broader knowledge base
+* Team solutions are practical
+* When consulted, people work hard to generate good ideas
+* Asking for help shows confidence, not weakness
+* Seeking others' ideas models desired behavior
+
 ##### Considerations and Cautions for Engaging the Team
 
-#### Some Problems Can't Be Solved
+* Involve the team where it can be most helpful
+* Solve real problems
+* Team cohesion is necessary
+* Check in after team or project changes
+* Be sure to follow through
 
 ## Continuous Improvement
 
 ### Kaizen
 
-#### PDCA Cycle
+Kaizen = process for continuous improvement
 
-Plan - Do - Check - Act
+Focus on:
 
-#### Fishbone Analysis
+* encourage the team
+* frequently initiate and implement small, incremental improvements
 
-### Multiple Levels of Improvement---Process
+PDCA Cycle = Plan - Do - Check - Act
+
+### Continuous Improvement---Process
 
 #### Process Tailoring
 
-##### Mitigating the Risk of Process Tailoring
+Process tailor = adapting our implementation of agile to better fit our project environment
+
+Teams new to agile should use their methodology "out-of-the-box" for a few projects before attempting to change it
+
+All techniques and practices in an agile methodology are designed to work in balance with each other
 
 ##### Hybrid Models
 
 ###### Agile-Agile Hybrid: Scrum-XP
 
+| Methodology | Focus              |
+| ----------- | ------------------ |
+| XP          | Technical guidance |
+| Scrum       | Project governance |
+
 ###### Agile-Traditional Hybrids
+
+Implement agile components into linear project execution
 
 #### Systems Thinking
 
+Understand the systems-level environment for the project
+
+Figure
+
 #### Process Analysis
+
+Process Analysis = reviewing and diagnosing issues with a team's agile methods
 
 ##### Methodology Anti-Patterns
 
@@ -1069,6 +1081,14 @@ Plan - Do - Check - Act
 * Team would work the same way again
 
 ##### Methodology Success Patterns
+
+* Interactive, face-to-face communication is the cheapest channel for exchanging information
+* Excess methodology weight is costly
+* Larger teams need heavier methodologies
+* Projects with greater criticality require greater ceremony
+* Feedback and communication reduce the need for intermediate deliverables
+* Discipline, skills, and understanding counter process, formality, and coumentation
+* Efficiency is expendable in nonbottleneck activities
 
 #### Value Stream Mapping
 

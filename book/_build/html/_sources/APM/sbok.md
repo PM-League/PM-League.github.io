@@ -51,24 +51,24 @@ The **Sprint** cycle ends with a **Retrospect Sprint Meeting** where the team me
 
 Some of the key benefits of using Scrum in any project are:
 
-| Benefit                       | Description                                                                                                                                                                             |
-| :---------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Adaptability                  | Empirical process control and iterative delivery make projects adaptable and open to incorporating change                                                                               |
-| Transparency                  | All information radiators like a **Scrumboard **and**Sprint Burndown Chart** are shared, leading to an open work environment                                                    |
-| Continuous Feedback           | Continuous feedback is provided through the*Conduct Daily Standup* and *Demonstrate and Validate Sprint* processes                                                                  |
-| Continuous Improvement        | The deliverables are improved progressively Sprint by Sprint , through the*Refine Prioritized Product Backlog* process                                                                |
-| Continuous Value Delivery     | Iterative processes enable the continuous delivery of value through the*Ship Deliverables* process as frequently as the customer requires                                             |
-| Sustainable Pace              | Scrum processes are designed such that the people involved can work at a sustainable pace that they can, in theory, continue indefinitely                                               |
-| Early High Value Delivery     | The*Create Prioritized Product Backlog* process ensures that the highest value requirements of the customer are satisfied first.                                                      |
-| Efficient Development Process | Time-boxing and minimizing non-essential work leads to higher efficiency levels.                                                                                                        |
-| Motivation                    | The*Conduct Daily Standup* and *Retrospect Sprint* processes lead to greater levels of motivation among employees                                                                   |
-| Faster Problem Resolution     | Collaboration and colocation of cross-functional teams lead to faster problem-solving                                                                                                   |
-| Effective Deliverables        | The*Create Prioritized Product Backlog* process and regular reviews after creating deliverables ensure effective deliverables to the customer                                         |
-| Customer Centric              | Emphasis on business value and having a collaborative approach to engage business stakeholders ensures a customer-oriented framework                                                    |
-| High Trust Environment        | *Conduct Daily Standup* and *Retrospect Sprint* processes promote transparency and collaboration, leading to a high-trust work environment ensuring low friction among employees    |
-| Collective Ownership          | The*Commit User Stories* process allows team members to take ownership of the project and their work, leading to better quality                                                       |
-| High Velocity                 | A collaborative framework enables highly skilled cross-functional teams to achieve their full potential and high velocity                                                               |
-| Innovative Environment        | The*Retrospect Sprint* and *Retrospect Release* processes create an environment of introspection, learning, and adaptability leading to an innovative and creative work environment |
+| Benefit                       | Description                                                                                                                                                                               |
+| :---------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Adaptability                  | Empirical process control and iterative delivery make projects adaptable and open to incorporating change                                                                                 |
+| Transparency                  | All information radiators like a **Scrumboard** and **Sprint Burndown Chart** are shared, leading to an open work environment                                                  |
+| Continuous Feedback           | Continuous feedback is provided through the *Conduct Daily Standup* and *Demonstrate and Validate Sprint* processes                                                                    |
+| Continuous Improvement        | The deliverables are improved progressively Sprint by Sprint , through the *Refine Prioritized Product Backlog* process                                                                  |
+| Continuous Value Delivery     | Iterative processes enable the continuous delivery of value through the *Ship Deliverables* process as frequently as the customer requires                                               |
+| Sustainable Pace              | Scrum processes are designed such that the people involved can work at a sustainable pace that they can, in theory, continue indefinitely                                                 |
+| Early High Value Delivery     | The *Create Prioritized Product Backlog* process ensures that the highest value requirements of the customer are satisfied first.                                                        |
+| Efficient Development Process | Time-boxing and minimizing non-essential work leads to higher efficiency levels.                                                                                                          |
+| Motivation                    | The *Conduct Daily Standup* and *Retrospect Sprint* processes lead to greater levels of motivation among employees                                                                     |
+| Faster Problem Resolution     | Collaboration and colocation of cross-functional teams lead to faster problem-solving                                                                                                     |
+| Effective Deliverables        | The *Create Prioritized Product Backlog* process and regular reviews after creating deliverables ensure effective deliverables to the customer                                           |
+| Customer Centric              | Emphasis on business value and having a collaborative approach to engage business stakeholders ensures a customer-oriented framework                                                      |
+| High Trust Environment        | *Conduct Daily Standup* and *Retrospect Sprint* processes promote transparency and collaboration, leading to a high-trust work environment ensuring low friction among employees      |
+| Collective Ownership          | The *Commit User Stories* process allows team members to take ownership of the project and their work, leading to better quality                                                         |
+| High Velocity                 | A collaborative framework enables highly skilled cross-functional teams to achieve their full potential and high velocity                                                                 |
+| Innovative Environment        | The *Retrospect Sprint* and *Retrospect Release* processes create an environment of introspection, learning, and adaptability leading to an innovative and creative work environment |
 
 #### Scalability
 
@@ -146,8 +146,8 @@ The six Scrum principles presented are:
 
 #### Processes
 
-| Phase                 | Fundamental Scrum Processes                          |
-| --------------------- | ---------------------------------------------------- |
+| Phase                 | Fundamental Scrum Processes                           |
+| --------------------- | ----------------------------------------------------- |
 | Initiate              | *Create Project Vision*                             |
 |                       | *Identify Scrum Master and Business Stakeholder(s)* |
 |                       | *Form Development Team*                             |

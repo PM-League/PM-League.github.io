@@ -569,6 +569,10 @@ Used for tracking and forecasting delivery of value
 | :------------------------------------: |
 |                  CFD                  |
 
+| ![Figure CFD2](../images/agile-CFD2.svg) |
+| :------------------------------------: |
+|              Detailed CFD              |
+
 ##### Little's Law
 
 $Queue = In Progress - Done$
@@ -587,15 +591,25 @@ Figure
 
 ##### Continuous Integration
 
+###### Objective
+
 * Incorporate new and changed code into project code repository
 * Find and resolve problems asap
 * Ensure system still performs as intended after the new code is integrated
-* Components of system CI system
-  * Source code control system
-  * Build tools
-  * Test tools
-  * Scheduler/trigger
-  * Notifications
+
+###### Process
+
+| ![Figure continuous_integration](../images/agile-continuous_integration.svg) |
+| :------------------------------------------------------------------------: |
+|                           Continuous integration                           |
+
+###### Components of system CI system
+
+* Source code control system
+* Build tools
+* Test tools
+* Scheduler/trigger
+* Notifications
 
 #### Test-Driven Development (TDD)
 

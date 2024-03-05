@@ -17,7 +17,7 @@ Scrum:
 
 A key strength of Scrum is its use of cross-functional, self-organized, and empowered teams who divide their work into short, concentrated work cycles called **Sprints**.
 
-|    ![Figure 1](../images/sbok-1.png)    |
+|    ![Figure 1](../images/sbok-1.svg)    |
 | :-----------------------------------: |
 | Figure 1 — Scrum Flow for 1x Sprint |
 
@@ -84,7 +84,7 @@ The Scrum framework consists of three areas:
 * aspects, and
 * processes.
 
-| ![Figure 2](../images/sbok-2.png) |
+| ![Figure 2](../images/sbok-2.svg) |
 | :-----------------------------: |
 |   Figure 2 — Scrum Framework   |
 

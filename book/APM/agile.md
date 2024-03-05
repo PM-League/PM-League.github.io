@@ -523,6 +523,10 @@ Work on items that maximize value delivered to customer first
 
 Delivering the "plain-vanilla" version of a product/service allows realizing benefits to get an early $ROI$
 
+|       ![Figure cost_of_change](../images/agile-cost_of_change.svg)       |
+| :---------------------------------------------------------------------: |
+| Cost of Change (Image copyright Scott W. Ambler, www.agilemodeling.com) |
+
 #### Minimum Viable Product (MVP)
 
 MVP = Package of functionality that is complete enough to be useful to the users or the market, yet still small enough that it does not represent the entire project
@@ -543,13 +547,27 @@ Prefer low tech, high touch tools over sophisticated computerized models
 
 #### WIP Limits
 
-Set limit to WIP (to Task/Kanban Board)
+Set limit to WIP (to Task/Kanban Board) $\rightarrow$ Optimize ~~resource utilization~~ throughput
 
-Optimize ~~resource utilization~~ throughput
+| ![Figure kanban_no_limit](../images/agile-kanban_no_limit.svg) |
+| :----------------------------------------------------------: |
+|                 Kanban board without limits                 |
+
+| ![Figure kanban_yes_limit](../images/agile-kanban_yes_limit.svg) |
+| :------------------------------------------------------------: |
+|               Kanban board with limit too strict               |
+
+| ![Figure kanban_yes_limit_right](../images/agile-kanban_yes_limit_right.svg) |
+| :------------------------------------------------------------------------: |
+|                       Kanban board with right limit                       |
 
 #### Cumulative Flow Diagram (CFDs)
 
 Used for tracking and forecasting delivery of value
+
+| ![Figure CFD1](../images/agile-CFD1.svg) |
+| :------------------------------------: |
+|                  CFD                  |
 
 ##### Little's Law
 
@@ -604,13 +622,14 @@ Figure
 
 ###### Project elevator statement
 
-| For     | Target customers                   |
-| ------- | ---------------------------------- |
-| Who:    | Need                               |
-| The:    | Product/service name               |
-| Is a:   | Product category                   |
-| That:   | Key benefits/reason to buy         |
-| Unlike: | Primary competitive alternative(s) |
+| Statement | Description                        |
+| :-------- | ---------------------------------- |
+| For       | Target customers                   |
+| Who       | Need                               |
+| The       | Product/service name               |
+| Is a      | Product category                   |
+| That      | Key benefits/reason to buy         |
+| Unlike    | Primary competitive alternative(s) |
 
 #### Definition of "Done"
 

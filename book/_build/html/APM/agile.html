@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -1122,7 +1122,7 @@ document.write(`
 <h5>Process<a class="headerlink" href="#process" title="Link to this heading">#</a></h5>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><img alt="Figure SCRUM" src="../_images/agile-scrum.png" /></p></th>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure SCRUM" src="../_images/agile-scrum.svg" /></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1367,7 +1367,7 @@ document.write(`
 <h5>Process<a class="headerlink" href="#id3" title="Link to this heading">#</a></h5>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><img alt="Figure FDD" src="../_images/agile-FDD.png" /></p></th>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure FDD" src="../_images/agile-FDD.svg" /></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1396,7 +1396,7 @@ document.write(`
 <h5>Process<a class="headerlink" href="#id5" title="Link to this heading">#</a></h5>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><img alt="Figure DSDM" src="../_images/agile-DSDM.png" /></p></th>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure DSDM" src="../_images/agile-DSDM.svg" /></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1555,7 +1555,7 @@ document.write(`
 </ul>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><img alt="Figure NPV" src="../_images/agile-NPV.png" /></p></th>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure NPV" src="../_images/agile-NPV.svg" /></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1574,7 +1574,7 @@ document.write(`
 </ul>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-center"><p><img alt="Figure IRR" src="../_images/agile-IRR.png" /></p></th>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure IRR" src="../_images/agile-IRR.svg" /></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1732,63 +1732,51 @@ document.write(`
 <h4>Prioritization Schemes<a class="headerlink" href="#prioritization-schemes" title="Link to this heading">#</a></h4>
 <section id="moscow">
 <h5>MoSCoW<a class="headerlink" href="#moscow" title="Link to this heading">#</a></h5>
-<ul class="simple">
-<li><p><strong>M</strong>ust have</p></li>
-<li><p><strong>S</strong>hould have</p></li>
-<li><p><strong>C</strong>ould have</p></li>
-<li><p><strong>W</strong>on’t have this time</p></li>
-</ul>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Definition</p></th>
+<th class="head"><p>Priority</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>M</strong>ust have</p></td>
+<td><p>Top</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>S</strong>hould have</p></td>
+<td><p>Medium</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>C</strong>ould have</p></td>
+<td><p>Low</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>W</strong>on’t have this time</p></td>
+<td><p>Null</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="kano-analysis">
 <h5>Kano Analysis<a class="headerlink" href="#kano-analysis" title="Link to this heading">#</a></h5>
-<ul class="simple">
-<li><p>Delighters/exciters</p></li>
-<li><p>Satisfiers</p></li>
-<li><p>Dissatisfiers</p></li>
-<li><p>Indifferent</p></li>
-</ul>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure Kano" src="../_images/agile-Kano.svg" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Kano Analysis</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 <section id="relative-prioritization-ranking">
 <h4>Relative Prioritization/Ranking<a class="headerlink" href="#relative-prioritization-ranking" title="Link to this heading">#</a></h4>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Feature</p></th>
-<th class="head"><p>Priority</p></th>
-<th class="head"><p>MVP</p></th>
-<th class="head"><p></p></th>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure rel_prio_rank" src="../_images/agile-rel_prio_rank.svg" /></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>A</p></td>
-<td><p>1</p></td>
-<td><p>True</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>B</p></td>
-<td><p>2</p></td>
-<td><p>True</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>C</p></td>
-<td><p>3</p></td>
-<td><p>True</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>D</p></td>
-<td><p>4</p></td>
-<td><p>True</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>E</p></td>
-<td><p>5</p></td>
-<td><p>False</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>…</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p>Cutoff to meet budget/time</p></td>
+<tr class="row-even"><td class="text-center"><p>Incorporating changes into a relative priority list</p></td>
 </tr>
 </tbody>
 </table>

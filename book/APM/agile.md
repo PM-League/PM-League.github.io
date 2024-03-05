@@ -500,7 +500,7 @@ Work on items that maximize value delivered to customer first
 
 ##### MoSCoW
 
-| Definition                          | Priority |
+| Definition                     | Priority |
 | ------------------------------ | -------- |
 | **M**ust have            | Top      |
 | **S**hould have          | Medium   |
@@ -510,19 +510,14 @@ Work on items that maximize value delivered to customer first
 ##### Kano Analysis
 
 | ![Figure Kano](../images/agile-Kano.svg) |
-| :--------------------------------------: |
-|              Kano Analysis              |
+| :------------------------------------: |
+|             Kano Analysis             |
 
 #### Relative Prioritization/Ranking
 
-| Feature | Priority | MVP   |                            |
-| ------- | -------- | ----- | -------------------------- |
-| A       | 1        | True  |                            |
-| B       | 2        | True  |                            |
-| C       | 3        | True  |                            |
-| D       | 4        | True  |                            |
-| E       | 5        | False |                            |
-| ...     |          |       | Cutoff to meet budget/time |
+| ![Figure rel_prio_rank](../images/agile-rel_prio_rank.svg) |
+| :------------------------------------------------------: |
+|   Incorporating changes into a relative priority list   |
 
 ### Deliver Incrementally
 

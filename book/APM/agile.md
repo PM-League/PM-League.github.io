@@ -178,7 +178,7 @@ Notes from Mike Griffith, *PMI-ACP Exam Prep,* Second Edition.
 
 ##### Process
 
-| ![Figure SCRUM](../images/agile-scrum.png) |
+| ![Figure SCRUM](../images/agile-scrum.svg) |
 | :--------------------------------------: |
 |              Scrum Process              |
 
@@ -323,7 +323,7 @@ Little's Law: $Queue.Duration = m(Queue.Size)$
 
 ##### Process
 
-| ![Figure FDD](../images/agile-FDD.png) |
+| ![Figure FDD](../images/agile-FDD.svg) |
 | :----------------------------------: |
 |             FDD Process             |
 
@@ -342,7 +342,7 @@ Little's Law: $Queue.Duration = m(Queue.Size)$
 
 ##### Process
 
-| ![Figure DSDM](../images/agile-DSDM.png) |
+| ![Figure DSDM](../images/agile-DSDM.svg) |
 | :------------------------------------: |
 |              DSDM Process              |
 
@@ -422,7 +422,7 @@ Interpretation:
 * IF $NPV>0$ THEN accept ELSE reject
 * Select project with **higher** $NPV$
 
-| ![Figure NPV](../images/agile-NPV.png) |
+| ![Figure NPV](../images/agile-NPV.svg) |
 | :----------------------------------: |
 |           NPV calculation           |
 
@@ -435,7 +435,7 @@ Interpretation:
 * IF $IRR>r$ THEN accept ELSE reject
 * Select project with **higher** $IRR$
 
-| ![Figure IRR](../images/agile-IRR.png) |
+| ![Figure IRR](../images/agile-IRR.svg) |
 | :----------------------------------: |
 |       IRR graphical derivation       |
 
@@ -500,17 +500,18 @@ Work on items that maximize value delivered to customer first
 
 ##### MoSCoW
 
-* **M**ust have
-* **S**hould have
-* **C**ould have
-* **W**on't have this time
+| Definition                          | Priority |
+| ------------------------------ | -------- |
+| **M**ust have            | Top      |
+| **S**hould have          | Medium   |
+| **C**ould have           | Low      |
+| **W**on't have this time | Null     |
 
 ##### Kano Analysis
 
-* Delighters/exciters
-* Satisfiers
-* Dissatisfiers
-* Indifferent
+| ![Figure Kano](../images/agile-Kano.svg) |
+| :--------------------------------------: |
+|              Kano Analysis              |
 
 #### Relative Prioritization/Ranking
 

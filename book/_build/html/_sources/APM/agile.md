@@ -6,24 +6,24 @@ Notes from Mike Griffith, *PMI-ACP Exam Prep,* Second Edition.
 
 ### Domains
 
-| ID Domain | Domain                                            | Sub-Domain                        |
-| --------- | ------------------------------------------------- | --------------------------------- |
-| I         | Agile Principles and Mindset                      |                                   |
-| II        | Value-Driven Delivery                             | Define Positive Value             |
-|           |                                                   | Avoid Potential Downsides         |
-|           |                                                   | Prioritization                    |
-|           |                                                   | Incremental Development           |
-| III       | Stakeholder Engagement                            | Understand Stakeholder Needs      |
-|           |                                                   | Ensure Stakeholder Involvement    |
-|           |                                                   | Manage Stakeholder Expectations   |
-| IV        | Team Performance                                  | Team Formation                    |
-|           |                                                   | Team Empowerment                  |
-|           |                                                   | Team Collaboration and Commitment |
-| V         | Adaptive Planning                                 | Levels of Planning                |
-|           |                                                   | Adaptation                        |
-|           |                                                   | Agile Sizing and Estimation       |
-| VI        | Problem Detection and Resolution                  |                                   |
-| VII       | Continuous Improvement (Product, Process, People) |                                   |
+| Domain                                            | Weight | Sub-Domain                        |
+| ------------------------------------------------- | ------ | --------------------------------- |
+| Agile Principles and Mindset                      | 16%    |                                   |
+| Value-Driven Delivery                             | 20%    | Define Positive Value             |
+|                                                   |        | Avoid Potential Downsides         |
+|                                                   |        | Prioritization                    |
+|                                                   |        | Incremental Development           |
+| Stakeholder Engagement                            | 17%    | Understand Stakeholder Needs      |
+|                                                   |        | Ensure Stakeholder Involvement    |
+|                                                   |        | Manage Stakeholder Expectations   |
+| Team Performance                                  | 16%    | Team Formation                    |
+|                                                   |        | Team Empowerment                  |
+|                                                   |        | Team Collaboration and Commitment |
+| Adaptive Planning                                 | 12%    | Levels of Planning                |
+|                                                   |        | Adaptation                        |
+|                                                   |        | Agile Sizing and Estimation       |
+| Problem Detection and Resolution                  | 10%    |                                   |
+| Continuous Improvement (Product, Process, People) | 9%     |                                   |
 
 ### Tools and Techniques
 
@@ -142,19 +142,19 @@ Notes from Mike Griffith, *PMI-ACP Exam Prep,* Second Edition.
 
 > Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
 >
-> Welcome changing requirements, even late indevelopment. Agile processes harness change for the customer's competitive advantage.
+> Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.
 >
-> Deliver working software frequently, from acouple of weeks to a couple of months, with apreference to the shorter timescale.
+> Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
 >
 > Business people and developers must work together daily throughout the project.
 >
-> Build projects around motivated individuals. Give them the environment and support they need,and trust them to get the job done.
+> Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
 >
-> The most efficient and effective method of conveying information to and within a developmentteam is face-to-face conversation.
+> The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
 >
 > Working software is the primary measure of progress.
 >
-> Agile processes promote sustainable development. The sponsors, developers, and users should be ableto maintain a constant pace indefinitely.
+> Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
 >
 > Continuous attention to technical excellence and good design enhances agility.
 >
@@ -162,7 +162,7 @@ Notes from Mike Griffith, *PMI-ACP Exam Prep,* Second Edition.
 >
 > The best architectures, requirements, and designs emerge from self-organizing teams.
 >
-> At regular intervals, the team reflects on how to become more effective, then tunes and adjustsits behavior accordingly.
+> At regular intervals, the team reflects on how to become more effective, then tunes and adjust sits behavior accordingly.
 
 ### Agile Methodologies
 
@@ -175,6 +175,12 @@ Notes from Mike Griffith, *PMI-ACP Exam Prep,* Second Edition.
 * Crystal
 
 #### Scrum
+
+##### Process
+
+| ![Figure SCRUM](../images/agile-scrum.png) |
+| :--------------------------------------: |
+|              Scrum Process              |
 
 ##### Principles
 
@@ -198,14 +204,13 @@ Notes from Mike Griffith, *PMI-ACP Exam Prep,* Second Edition.
 * Can be cancelled by Product Owner before timebox is over due to
   * goal becomes obsolete
   * change in business direction/technology conditions
-  * Sequence of Activities
+  * sequence of Activities
 
     1. Sprint Planning Meeting
     2. Development period
-
-    * Daily scrums
-    * Sprint review meeting
-    * Sprint retrospective meeting
+       * Daily scrums
+       * Sprint review meeting
+       * Sprint retrospective meeting
 
 ##### Team Roles
 
@@ -284,9 +289,16 @@ Notes from Mike Griffith, *PMI-ACP Exam Prep,* Second Edition.
 
 #### Kanban
 
+| To Do | In Progress | Done |
+| ----- | ----------- | ---- |
+| G     | C           | A    |
+| H     | D           | B    |
+| I     | E           |      |
+| J     | F           |      |
+
 ##### Principles
 
-* Visualzie workflow
+* Visualize workflow
 * Limit WIP
 * Manage flow
 * Make process policies explicit
@@ -298,9 +310,24 @@ $\downarrow$ WIP $\rightarrow$ $\uparrow$ Team's productivity
 
 Little's Law: $Queue.Duration = m(Queue.Size)$
 
+| Backlog | Selected (4) | Develop (3) | Acceptance (2) | Deploy |
+| ------- | ------------ | ----------- | -------------- | ------ |
+| L       | I            | F           | E              | A      |
+| M       | J            | G           |                | B      |
+| N       | K            | H           |                | C      |
+| O       |              |             |                | D      |
+| P       |              |             |                |        |
+| Q       |              |             |                |        |
+
 #### Feature-driven Development (FDD)
 
-Practices:
+##### Process
+
+| ![Figure FDD](../images/agile-FDD.png) |
+| :----------------------------------: |
+|             FDD Process             |
+
+##### Practices
 
 * Domain object modeling
 * Developing by feature
@@ -313,7 +340,13 @@ Practices:
 
 #### Dynamic Systems Development Method (DSDM)
 
-Principles:
+##### Process
+
+| ![Figure DSDM](../images/agile-DSDM.png) |
+| :------------------------------------: |
+|              DSDM Process              |
+
+##### Principles
 
 * Focus on the business needs
 * Deliver on time
@@ -325,6 +358,19 @@ Principles:
 * Demonstrate control
 
 #### Crystal
+
+Crystal = family of situationally specific, customzied methodologies coded by color names
+
+$Criticality = f(Defect.Impact)$
+
+| Criticality         | Clear        | Yellow        | Orange        | Red            | Magenta        |
+| ------------------- | ------------ | ------------- | ------------- | -------------- | -------------- |
+| Life                | L6           | L20           | L40           | L100           | **L200** |
+| Essential funds     | E6           | **E20** | **E40** | **E100** | **E200** |
+| Discretionary funds | **D6** | **D20** | **D40** | **D100** | **D200** |
+| Comfort             | **C6** | **C20** | **C40** | **C100** | **C200** |
+|                     |              |               |               |                |                |
+| Team size           | 1-6          | 7-20          | 21-40         | 41-100         | 101-200        |
 
 ### Agile Leadership
 
@@ -344,7 +390,7 @@ Align project objectives with personal objectives to improve productivity
 
 ### Servant Leadership
 
-Duties
+#### Duties
 
 * Shield the team from interruptions
 * Remove impediments to progress
@@ -360,6 +406,7 @@ Duties
 ##### Return on Investment (ROI)
 
 Formula: $ROI = Investment.Benefits/Investment.Cost$
+
 Interpretation: $ROI>1$
 
 ##### Present Value (PV)
@@ -375,6 +422,10 @@ Interpretation:
 * IF $NPV>0$ THEN accept ELSE reject
 * Select project with **higher** $NPV$
 
+| ![Figure NPV](../images/agile-NPV.png) |
+| :----------------------------------: |
+|           NPV calculation           |
+
 ##### Internal Rate of Return (IRR)
 
 Formula: $IRR = r : NPV(r) = 0$
@@ -384,16 +435,15 @@ Interpretation:
 * IF $IRR>r$ THEN accept ELSE reject
 * Select project with **higher** $IRR$
 
-##### Payback Period
-
-Formula: $T : NPV(T)=0$
-
-Interpretation:
-
-* IF $T<PB$ THEN accept ELSE reject
-* Select project with **lower** $PB$
+| ![Figure IRR](../images/agile-IRR.png) |
+| :----------------------------------: |
+|       IRR graphical derivation       |
 
 #### Earned Value Management
+
+| ![Figure EVM](../images/agile-EVM.svg) |
+| :----------------------------------: |
+|           EVM calculation           |
 
 | Symbol           | Formula                   | Name                        |
 | ---------------- | ------------------------- | --------------------------- |
@@ -479,7 +529,7 @@ Delivering the "plain-vanilla" version of a product/service allows realizing ben
 
 #### Minimum Viable Product (MVP)
 
-"Package of functionality that is complete enough to be useful to the users or the market, yet still small enough that it does not represent the entire project"
+MVP = Package of functionality that is complete enough to be useful to the users or the market, yet still small enough that it does not represent the entire project
 
 #### Agile Tooling
 

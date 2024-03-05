@@ -1,0 +1,136 @@
+<mxfile host="65bd71144e">
+    <diagram id="T9uuaTeBy4bPSP1g8a4x" name="Page-1">
+        <mxGraphModel dx="807" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="94" value="Product&amp;nbsp;Backlog" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="135" y="240" width="90" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="60" y="280" width="650" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="33">
+                    <mxGeometry x="-10" y="-90" width="660" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="33" vertex="1">
+                    <mxGeometry width="50" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="endArrow=none;html=1;rounded=0;" parent="33" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="10.000000000000057" y="10" as="sourcePoint"/>
+                        <mxPoint x="39.99999999999994" y="10" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="" style="endArrow=none;html=1;rounded=0;" parent="33" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="10.000000000000057" y="20" as="sourcePoint"/>
+                        <mxPoint x="29.999999999999943" y="20" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=none;size=10;" parent="33" vertex="1">
+                    <mxGeometry x="10" y="30" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="Project&lt;br&gt;Vision" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="240" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;Backlog review&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;Team discussion&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;Definition of sprint goal&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;Definition of &quot;done&quot;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;Plan to deliver the sprint goal&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="275" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="Sprint Planning&lt;br&gt;Meeting" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="240" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;Backlog review&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;Team discussion&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;Definition of sprint goal&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;Definition of &quot;done&quot;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: left; font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;Plan to deliver the sprint goal&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="275" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="Daily Scrum" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="250" width="140" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="150" y="270" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="103" vertex="1">
+                    <mxGeometry width="60" height="13.333333333333332" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="103" vertex="1">
+                    <mxGeometry y="13.333333333333332" width="60" height="13.333333333333332" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="103" vertex="1">
+                    <mxGeometry y="26.666666666666664" width="60" height="13.333333333333332" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="103" vertex="1">
+                    <mxGeometry y="40" width="60" height="13.333333333333332" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="103" vertex="1">
+                    <mxGeometry y="53.33333333333333" width="60" height="13.333333333333332" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="103" vertex="1">
+                    <mxGeometry y="66.66666666666666" width="60" height="13.333333333333332" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="430.00146520284227" y="286.3682640875851" width="67.54706959431542" height="47.263471824829765" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;" parent="109" vertex="1">
+                    <mxGeometry x="28.608534797157688" y="3.6317359124148823" width="33.33" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;" parent="109" vertex="1">
+                    <mxGeometry x="16.278534797157732" y="3.6317359124148823" width="33.33" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-15;" parent="109" vertex="1">
+                    <mxGeometry x="4.608534797157745" y="3.6317359124148823" width="33.33" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="Sprint Backlog&lt;br&gt;&amp;nbsp;and Plan" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="240" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="" style="endArrow=classic;html=1;fontSize=10;startSize=3;endSize=3;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="120" y="310" as="sourcePoint"/>
+                        <mxPoint x="140" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="112" value="" style="endArrow=classic;html=1;fontSize=10;startSize=3;endSize=3;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="220" y="309.83000000000004" as="sourcePoint"/>
+                        <mxPoint x="240" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="113" value="" style="endArrow=classic;html=1;fontSize=10;startSize=3;endSize=3;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="309.83000000000004" as="sourcePoint"/>
+                        <mxPoint x="420" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="114" value="" style="endArrow=classic;html=1;fontSize=10;startSize=3;endSize=3;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="500" y="309.83000000000004" as="sourcePoint"/>
+                        <mxPoint x="520" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="115" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=10;startSize=3;endSize=3;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="98" target="99" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="600" y="240" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="680" y="310"/>
+                            <mxPoint x="680" y="230"/>
+                            <mxPoint x="600" y="230"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="116" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=10;startSize=3;endSize=3;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="94" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="669.9999999999998" y="310" as="sourcePoint"/>
+                        <mxPoint x="600" y="250" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="700" y="310"/>
+                            <mxPoint x="700" y="220"/>
+                            <mxPoint x="180" y="220"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="117" value="Sprint (1-4 weeks)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="354" y="190" width="120" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

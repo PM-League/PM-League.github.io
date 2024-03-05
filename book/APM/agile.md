@@ -6,24 +6,24 @@ Notes from Mike Griffith, *PMI-ACP Exam Prep,* Second Edition.
 
 ### Domains
 
-| ID Domain | Domain                                            | Sub-Domain                        |
-| --------- | ------------------------------------------------- | --------------------------------- |
-| I         | Agile Principles and Mindset                      |                                   |
-| II        | Value-Driven Delivery                             | Define Positive Value             |
-|           |                                                   | Avoid Potential Downsides         |
-|           |                                                   | Prioritization                    |
-|           |                                                   | Incremental Development           |
-| III       | Stakeholder Engagement                            | Understand Stakeholder Needs      |
-|           |                                                   | Ensure Stakeholder Involvement    |
-|           |                                                   | Manage Stakeholder Expectations   |
-| IV        | Team Performance                                  | Team Formation                    |
-|           |                                                   | Team Empowerment                  |
-|           |                                                   | Team Collaboration and Commitment |
-| V         | Adaptive Planning                                 | Levels of Planning                |
-|           |                                                   | Adaptation                        |
-|           |                                                   | Agile Sizing and Estimation       |
-| VI        | Problem Detection and Resolution                  |                                   |
-| VII       | Continuous Improvement (Product, Process, People) |                                   |
+| Domain                                            | Weight | Sub-Domain                        |
+| ------------------------------------------------- | ------ | --------------------------------- |
+| Agile Principles and Mindset                      | 16%    |                                   |
+| Value-Driven Delivery                             | 20%    | Define Positive Value             |
+|                                                   |        | Avoid Potential Downsides         |
+|                                                   |        | Prioritization                    |
+|                                                   |        | Incremental Development           |
+| Stakeholder Engagement                            | 17%    | Understand Stakeholder Needs      |
+|                                                   |        | Ensure Stakeholder Involvement    |
+|                                                   |        | Manage Stakeholder Expectations   |
+| Team Performance                                  | 16%    | Team Formation                    |
+|                                                   |        | Team Empowerment                  |
+|                                                   |        | Team Collaboration and Commitment |
+| Adaptive Planning                                 | 12%    | Levels of Planning                |
+|                                                   |        | Adaptation                        |
+|                                                   |        | Agile Sizing and Estimation       |
+| Problem Detection and Resolution                  | 10%    |                                   |
+| Continuous Improvement (Product, Process, People) | 9%     |                                   |
 
 ### Tools and Techniques
 
@@ -175,6 +175,12 @@ Notes from Mike Griffith, *PMI-ACP Exam Prep,* Second Edition.
 * Crystal
 
 #### Scrum
+
+#### Process
+
+| ![Figure 1](../images/agile-scrum.png) |
+| :----------------------------------: |
+|            Scrum Process            |
 
 ##### Principles
 

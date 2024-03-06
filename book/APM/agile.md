@@ -589,7 +589,7 @@ Figure
 
 #### Testing and Verification in Software Development
 
-##### Continuous Integration
+##### Continuous Integration (CI)
 
 ###### Objective
 
@@ -603,7 +603,7 @@ Figure
 | :------------------------------------------------------------------------: |
 |                           Continuous integration                           |
 
-###### Components of system CI system
+###### Components
 
 * Source code control system
 * Build tools
@@ -611,7 +611,31 @@ Figure
 * Scheduler/trigger
 * Notifications
 
+###### Pros and Cons
+
+Pros
+
+* Early warning of wrong code
+* Problems fixed as they occur $\rightarrow$ $\downarrow$ cost of change
+* Immediate feedback
+* Frequent unit testing
+* Can be reverted to last stable version
+
+Cons
+
+* Require setup time
+* Cost of procuring machines
+* Require time to automate system
+
 #### Test-Driven Development (TDD)
+
+Philosopy = tests should be written before code
+
+First tests will fail as no code has been written
+
+Start coding $\rightarrow$ run tests until the code passes all tests
+
+Refactoring = clean up design to make it easier to understand and maintain without changing the code's behavior
 
 #### Acceptance Test-Driven Development (ATDD)
 

@@ -416,21 +416,31 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verifying-and-validating-value">Verifying and Validating Value</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#to-do-frequent-verification-and-validation">(To Do) Frequent Verification and Validation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-and-verification-in-software-development">Testing and Verification in Software Development</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-integration">Continuous Integration</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-integration-ci">Continuous Integration (CI)</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">Objective</a></li>
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Process</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#components-of-system-ci-system">Components of system CI system</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#components">Components</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#pros-and-cons">Pros and Cons</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#test-driven-development-tdd">Test-Driven Development (TDD)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#acceptance-test-driven-development-atdd">Acceptance Test-Driven Development (ATDD)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#test-driven-development-tdd-test-first-development-tfd">Test-Driven Development (TDD)/Test-First Development (TFD)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#acceptance-test-driven-development-atdd">Acceptance Test-Driven Development (ATDD)</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Process</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stakeholder-engagement">Stakeholder Engagement</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#taking-care-of-stakeholders">Taking Care of Stakeholders</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#keeping-stakeholders-engaged">Keeping Stakeholders Engaged</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#incorporating-stakeholder-values">Incorporating Stakeholder Values</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#incorporating-community-values">Incorporating Community Values</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#establishing-a-shared-vision">Establishing a Shared Vision</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-chartering">Agile Chartering</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-versus-non-agile-charters">Agile versus Non-Agile Charters</a></li>
@@ -540,7 +550,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adaptive-planning">Adaptive Planning</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-planning-concepts">Agile Planning Concepts</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Adaptive Planning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Adaptive Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-versus-non-agile-planning">Agile versus Non-Agile Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#principles-of-agile-planning">Principles of Agile Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-discovery">Agile Discovery</a></li>
@@ -666,7 +676,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#value-stream-mapping">Value Stream Mapping</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Process</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Process</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#metrics">Metrics</a></li>
 </ul>
 </li>
@@ -686,7 +696,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement-people">Continuous Improvement—People</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#retrospectives">Retrospectives</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits">Benefits</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Process</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Process</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#set-stage">Set stage</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#activities">Activities</a></li>
 </ul>
@@ -1901,8 +1911,8 @@ document.write(`
 </section>
 <section id="testing-and-verification-in-software-development">
 <h4>Testing and Verification in Software Development<a class="headerlink" href="#testing-and-verification-in-software-development" title="Link to this heading">#</a></h4>
-<section id="continuous-integration">
-<h5>Continuous Integration<a class="headerlink" href="#continuous-integration" title="Link to this heading">#</a></h5>
+<section id="continuous-integration-ci">
+<h5>Continuous Integration (CI)<a class="headerlink" href="#continuous-integration-ci" title="Link to this heading">#</a></h5>
 <section id="objective">
 <h6>Objective<a class="headerlink" href="#objective" title="Link to this heading">#</a></h6>
 <ul class="simple">
@@ -1924,8 +1934,8 @@ document.write(`
 </tbody>
 </table>
 </section>
-<section id="components-of-system-ci-system">
-<h6>Components of system CI system<a class="headerlink" href="#components-of-system-ci-system" title="Link to this heading">#</a></h6>
+<section id="components">
+<h6>Components<a class="headerlink" href="#components" title="Link to this heading">#</a></h6>
 <ul class="simple">
 <li><p>Source code control system</p></li>
 <li><p>Build tools</p></li>
@@ -1934,18 +1944,116 @@ document.write(`
 <li><p>Notifications</p></li>
 </ul>
 </section>
+<section id="pros-and-cons">
+<h6>Pros and Cons<a class="headerlink" href="#pros-and-cons" title="Link to this heading">#</a></h6>
+<p>Pros</p>
+<ul class="simple">
+<li><p>Early warning of wrong code</p></li>
+<li><p>Problems fixed as they occur <span class="math notranslate nohighlight">\(\rightarrow\)</span> <span class="math notranslate nohighlight">\(\downarrow\)</span> cost of change</p></li>
+<li><p>Immediate feedback</p></li>
+<li><p>Frequent unit testing</p></li>
+<li><p>Can be reverted to last stable version</p></li>
+</ul>
+<p>Cons</p>
+<ul class="simple">
+<li><p>Require setup time</p></li>
+<li><p>Cost of procuring machines</p></li>
+<li><p>Require time to automate system</p></li>
+</ul>
 </section>
 </section>
-<section id="test-driven-development-tdd">
-<h4>Test-Driven Development (TDD)<a class="headerlink" href="#test-driven-development-tdd" title="Link to this heading">#</a></h4>
+</section>
+<section id="test-driven-development-tdd-test-first-development-tfd">
+<h4>Test-Driven Development (TDD)/Test-First Development (TFD)<a class="headerlink" href="#test-driven-development-tdd-test-first-development-tfd" title="Link to this heading">#</a></h4>
+<p>Philosopy = tests should be written before code</p>
+<p>First tests will fail as no code has been written</p>
+<p>Start coding <span class="math notranslate nohighlight">\(\rightarrow\)</span> run tests until the code passes all tests</p>
+<p>Refactoring = clean up design to make it easier to understand and maintain without changing the code’s behavior</p>
+<p>Red, Green, Refactor/Clean = Writing a test that initially fails, adding code until it passes, and refactoring the code</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure TDD" src="../_images/agile-TDD.svg" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>TDD process</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="acceptance-test-driven-development-atdd">
 <h4>Acceptance Test-Driven Development (ATDD)<a class="headerlink" href="#acceptance-test-driven-development-atdd" title="Link to this heading">#</a></h4>
+<p>Testing focus on ~~code~~ business</p>
+<p>Acceptance tests captured in functional test framework (FIT/FitNesse = Framework Integrated Testing)</p>
+<section id="id9">
+<h5>Process<a class="headerlink" href="#id9" title="Link to this heading">#</a></h5>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure ATDD" src="../_images/agile-ATDD.svg" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>ATDD process</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple">
+<li><p><strong>Discuss</strong> the requirements = gather acceptance criteria</p></li>
+<li><p><strong>Distill</strong> tests in a framework-friendly format = structure tests in a table format</p></li>
+<li><p><strong>Develop</strong> the code and hookup the tests = hook tests to the code and run acceptance tests</p></li>
+<li><p><strong>Demo</strong> = exploratory testings</p></li>
+</ol>
+</section>
 </section>
 </section>
 </section>
 <section id="stakeholder-engagement">
 <h2>Stakeholder Engagement<a class="headerlink" href="#stakeholder-engagement" title="Link to this heading">#</a></h2>
+<section id="taking-care-of-stakeholders">
+<h3>Taking Care of Stakeholders<a class="headerlink" href="#taking-care-of-stakeholders" title="Link to this heading">#</a></h3>
+<section id="keeping-stakeholders-engaged">
+<h4>Keeping Stakeholders Engaged<a class="headerlink" href="#keeping-stakeholders-engaged" title="Link to this heading">#</a></h4>
+<p>Benefits</p>
+<ul class="simple">
+<li><p>Short iterations keep stakeholders interested in the process</p></li>
+<li><p>Hear about change requests as soon as possible</p></li>
+<li><p>Identify potential risks, defects, and issues</p></li>
+<li><p>Use emotional intelligence and interpersonal skills to understand stakeholders’ concerns and find a positive way to engage them with the project</p></li>
+<li><p>Establish a process for escalating issues that need a high level of authority to resolve</p></li>
+</ul>
+</section>
+<section id="incorporating-stakeholder-values">
+<h4>Incorporating Stakeholder Values<a class="headerlink" href="#incorporating-stakeholder-values" title="Link to this heading">#</a></h4>
+<p>Agile methods focus on bringing project priorities into alignment with stakeholder priorities by</p>
+<ul class="simple">
+<li><p>engaging the PO in the prioritization of the backlog, and</p></li>
+<li><p>inviting stakeholders to planning meetings and retrospectives</p></li>
+</ul>
+</section>
+<section id="incorporating-community-values">
+<h4>Incorporating Community Values<a class="headerlink" href="#incorporating-community-values" title="Link to this heading">#</a></h4>
+<p>Values shared by Scrum and XP:</p>
+<ul class="simple">
+<li><p><strong>Respect</strong> = seek consensus</p>
+<ul>
+<li><p>Don’t judge suggestions</p></li>
+<li><p>No idea is stupid</p></li>
+</ul>
+</li>
+<li><p><strong>Courage</strong></p>
+<ul>
+<li><p>Perform early evaluations</p></li>
+<li><p>Focus on transparency by showing</p>
+<ul>
+<li><p>Velocity data</p></li>
+<li><p>Defect rates</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
 <section id="establishing-a-shared-vision">
 <h3>Establishing a Shared Vision<a class="headerlink" href="#establishing-a-shared-vision" title="Link to this heading">#</a></h3>
 <section id="agile-chartering">
@@ -1970,27 +2078,27 @@ document.write(`
 <h6>Project elevator statement<a class="headerlink" href="#project-elevator-statement" title="Link to this heading">#</a></h6>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>Statement</p></th>
+<tr class="row-odd"><th class="head"><p>Statement</p></th>
 <th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>For</p></td>
+<tr class="row-even"><td><p>For</p></td>
 <td><p>Target customers</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Who</p></td>
+<tr class="row-odd"><td><p>Who</p></td>
 <td><p>Need</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>The</p></td>
+<tr class="row-even"><td><p>The</p></td>
 <td><p>Product/service name</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Is a</p></td>
+<tr class="row-odd"><td><p>Is a</p></td>
 <td><p>Product category</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>That</p></td>
+<tr class="row-even"><td><p>That</p></td>
 <td><p>Key benefits/reason to buy</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Unlike</p></td>
+<tr class="row-odd"><td><p>Unlike</p></td>
 <td><p>Primary competitive alternative(s)</p></td>
 </tr>
 </tbody>
@@ -2386,8 +2494,8 @@ document.write(`
 <h2>Adaptive Planning<a class="headerlink" href="#adaptive-planning" title="Link to this heading">#</a></h2>
 <section id="agile-planning-concepts">
 <h3>Agile Planning Concepts<a class="headerlink" href="#agile-planning-concepts" title="Link to this heading">#</a></h3>
-<section id="id9">
-<h4>Adaptive Planning<a class="headerlink" href="#id9" title="Link to this heading">#</a></h4>
+<section id="id10">
+<h4>Adaptive Planning<a class="headerlink" href="#id10" title="Link to this heading">#</a></h4>
 </section>
 <section id="agile-versus-non-agile-planning">
 <h4>Agile versus Non-Agile Planning<a class="headerlink" href="#agile-versus-non-agile-planning" title="Link to this heading">#</a></h4>
@@ -2794,8 +2902,8 @@ document.write(`
 </section>
 <section id="value-stream-mapping">
 <h4>Value Stream Mapping<a class="headerlink" href="#value-stream-mapping" title="Link to this heading">#</a></h4>
-<section id="id10">
-<h5>Process<a class="headerlink" href="#id10" title="Link to this heading">#</a></h5>
+<section id="id11">
+<h5>Process<a class="headerlink" href="#id11" title="Link to this heading">#</a></h5>
 <ol class="arabic simple">
 <li><p>Identify product/service to be analyzed</p></li>
 <li><p>Create a value stream map of the current process, identifying steps, queues, delays, and information flows</p></li>
@@ -2871,8 +2979,8 @@ document.write(`
 <li><p>Improved capacity</p></li>
 </ul>
 </section>
-<section id="id11">
-<h5>Process<a class="headerlink" href="#id11" title="Link to this heading">#</a></h5>
+<section id="id12">
+<h5>Process<a class="headerlink" href="#id12" title="Link to this heading">#</a></h5>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Stage</p></th>
@@ -3147,21 +3255,31 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verifying-and-validating-value">Verifying and Validating Value</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#to-do-frequent-verification-and-validation">(To Do) Frequent Verification and Validation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-and-verification-in-software-development">Testing and Verification in Software Development</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-integration">Continuous Integration</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-integration-ci">Continuous Integration (CI)</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">Objective</a></li>
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Process</a></li>
-<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#components-of-system-ci-system">Components of system CI system</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#components">Components</a></li>
+<li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#pros-and-cons">Pros and Cons</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#test-driven-development-tdd">Test-Driven Development (TDD)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#acceptance-test-driven-development-atdd">Acceptance Test-Driven Development (ATDD)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#test-driven-development-tdd-test-first-development-tfd">Test-Driven Development (TDD)/Test-First Development (TFD)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#acceptance-test-driven-development-atdd">Acceptance Test-Driven Development (ATDD)</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Process</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stakeholder-engagement">Stakeholder Engagement</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#taking-care-of-stakeholders">Taking Care of Stakeholders</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#keeping-stakeholders-engaged">Keeping Stakeholders Engaged</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#incorporating-stakeholder-values">Incorporating Stakeholder Values</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#incorporating-community-values">Incorporating Community Values</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#establishing-a-shared-vision">Establishing a Shared Vision</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-chartering">Agile Chartering</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-versus-non-agile-charters">Agile versus Non-Agile Charters</a></li>
@@ -3271,7 +3389,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adaptive-planning">Adaptive Planning</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-planning-concepts">Agile Planning Concepts</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Adaptive Planning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Adaptive Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-versus-non-agile-planning">Agile versus Non-Agile Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#principles-of-agile-planning">Principles of Agile Planning</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#agile-discovery">Agile Discovery</a></li>
@@ -3397,7 +3515,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#value-stream-mapping">Value Stream Mapping</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Process</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Process</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#metrics">Metrics</a></li>
 </ul>
 </li>
@@ -3417,7 +3535,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement-people">Continuous Improvement—People</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#retrospectives">Retrospectives</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits">Benefits</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Process</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Process</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#set-stage">Set stage</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#activities">Activities</a></li>
 </ul>

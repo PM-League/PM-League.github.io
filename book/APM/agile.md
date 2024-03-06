@@ -502,30 +502,30 @@ Work on items that maximize value delivered to customer first
 
 | Definition                     | Priority |
 | ------------------------------ | -------- |
-| **M**ust have            | Top      |
-| **S**hould have          | Medium   |
-| **C**ould have           | Low      |
-| **W**on't have this time | Null     |
+| **M**ust have                  | Top      |
+| **S**hould have                | Medium   |
+| **C**ould have                 | Low      |
+| **W**on't have this time       | Null     |
 
 ##### Kano Analysis
 
 | ![Figure Kano](../images/agile-Kano.svg) |
-| :------------------------------------: |
-|             Kano Analysis             |
+| :--------------------------------------: |
+|             Kano Analysis                |
 
 #### Relative Prioritization/Ranking
 
 | ![Figure rel_prio_rank](../images/agile-rel_prio_rank.svg) |
-| :------------------------------------------------------: |
-|   Incorporating changes into a relative priority list   |
+| :--------------------------------------------------------: |
+|   Incorporating changes into a relative priority list      |
 
 ### Deliver Incrementally
 
 Delivering the "plain-vanilla" version of a product/service allows realizing benefits to get an early $ROI$
 
 |       ![Figure cost_of_change](../images/agile-cost_of_change.svg)       |
-| :---------------------------------------------------------------------: |
-| Cost of Change (Image copyright Scott W. Ambler, www.agilemodeling.com) |
+| :----------------------------------------------------------------------: |
+| Cost of Change (Image copyright Scott W. Ambler, www.agilemodeling.com)  |
 
 #### Minimum Viable Product (MVP)
 
@@ -550,28 +550,28 @@ Prefer low tech, high touch tools over sophisticated computerized models
 Set limit to WIP (to Task/Kanban Board) $\rightarrow$ Optimize ~~resource utilization~~ throughput
 
 | ![Figure kanban_no_limit](../images/agile-kanban_no_limit.svg) |
-| :----------------------------------------------------------: |
-|                 Kanban board without limits                 |
+| :------------------------------------------------------------: |
+|                 Kanban board without limits                    |
 
 | ![Figure kanban_yes_limit](../images/agile-kanban_yes_limit.svg) |
-| :------------------------------------------------------------: |
-|               Kanban board with limit too strict               |
+| :--------------------------------------------------------------: |
+|               Kanban board with limit too strict                 |
 
 | ![Figure kanban_yes_limit_right](../images/agile-kanban_yes_limit_right.svg) |
-| :------------------------------------------------------------------------: |
-|                       Kanban board with right limit                       |
+| :--------------------------------------------------------------------------: |
+|                       Kanban board with right limit                          |
 
 #### Cumulative Flow Diagram (CFDs)
 
 Used for tracking and forecasting delivery of value
 
 | ![Figure CFD1](../images/agile-CFD1.svg) |
-| :------------------------------------: |
-|                  CFD                  |
+| :--------------------------------------: |
+|                  CFD                     |
 
 | ![Figure CFD2](../images/agile-CFD2.svg) |
-| :------------------------------------: |
-|              Detailed CFD              |
+| :--------------------------------------: |
+|              Detailed CFD                |
 
 ##### Little's Law
 
@@ -600,8 +600,8 @@ Figure
 ###### Process
 
 | ![Figure continuous_integration](../images/agile-continuous_integration.svg) |
-| :------------------------------------------------------------------------: |
-|                           Continuous integration                           |
+| :--------------------------------------------------------------------------: |
+|                           Continuous integration                             |
 
 ###### Components
 
@@ -627,7 +627,7 @@ Cons
 * Cost of procuring machines
 * Require time to automate system
 
-#### Test-Driven Development (TDD)
+#### Test-Driven Development (TDD)/Test-First Development (TFD)
 
 Philosopy = tests should be written before code
 
@@ -637,13 +637,65 @@ Start coding $\rightarrow$ run tests until the code passes all tests
 
 Refactoring = clean up design to make it easier to understand and maintain without changing the code's behavior
 
+Red, Green, Refactor/Clean = Writing a test that initially fails, adding code until it passes, and refactoring the code
+
+| ![Figure TDD](../images/agile-TDD.svg) |
+| :------------------------------------: |
+|             TDD process                |
+
 #### Acceptance Test-Driven Development (ATDD)
 
+Testing focus on ~~code~~ business
+
+Acceptance tests captured in functional test framework (FIT/FitNesse = Framework Integrated Testing)
+
+##### Process
+
+| ![Figure ATDD](../images/agile-ATDD.svg) |
+| :--------------------------------------: |
+|              ATDD process                |
+
+1. **Discuss** the requirements = gather acceptance criteria
+2. **Distill** tests in a framework-friendly format = structure tests in a table format
+3. **Develop** the code and hookup the tests = hook tests to the code and run acceptance tests
+4. **Demo** = exploratory testings
+
 ## Stakeholder Engagement
+
+### Taking Care of Stakeholders
+
+#### Keeping Stakeholders Engaged
+
+Benefits
+* Short iterations keep stakeholders interested in the process
+* Hear about change requests as soon as possible
+* Identify potential risks, defects, and issues
+* Use emotional intelligence and interpersonal skills to understand stakeholders' concerns and find a positive way to engage them with the project
+* Establish a process for escalating issues that need a high level of authority to resolve
+
+#### Incorporating Stakeholder Values
+
+Agile methods focus on bringing project priorities into alignment with stakeholder priorities by 
+* engaging the PO in the prioritization of the backlog, and 
+* inviting stakeholders to planning meetings and retrospectives
+
+#### Incorporating Community Values
+
+Values shared by Scrum and XP:
+* **Respect** = seek consensus
+  * Don't judge suggestions
+  * No idea is stupid 
+* **Courage**
+  * Perform early evaluations
+  * Focus on transparency by showing
+    * Velocity data
+    * Defect rates
 
 ### Establishing a Shared Vision
 
 #### Agile Chartering
+
+
 
 ##### Agile versus Non-Agile Charters
 
@@ -661,7 +713,7 @@ Refactoring = clean up design to make it easier to understand and maintain witho
 ###### Project elevator statement
 
 | Statement | Description                        |
-| :-------- | ---------------------------------- |
+| --------- | ---------------------------------- |
 | For       | Target customers                   |
 | Who       | Need                               |
 | The       | Product/service name               |

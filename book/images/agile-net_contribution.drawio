@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="T9uuaTeBy4bPSP1g8a4x" name="Page-1">
+        <mxGraphModel dx="704" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="189" value="" style="shape=manualInput;whiteSpace=wrap;html=1;size=80;rotation=-180;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="240" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="190" value="" style="shape=manualInput;whiteSpace=wrap;html=1;size=140;rotation=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="120" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="191" value="Undermining/&lt;br style=&quot;font-size: 12px;&quot;&gt;resistance" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="280" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="193" value="Passive compliance" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="280" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="194" value="Active participation&lt;br style=&quot;font-size: 12px;&quot;&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="280" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="195" value="Committed dedication" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="280" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="196" value="Passionate innovation" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="280" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="198" value="-" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="240" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="199" value="+" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="120" width="40" height="120" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

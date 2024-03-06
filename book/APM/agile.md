@@ -695,23 +695,45 @@ Values shared by Scrum and XP:
 
 #### Agile Chartering
 
-
+Project charter content:
+* Goal
+* Purpose
+* Composition
+* Approach
+* Authorization from sponsor to proceed
 
 ##### Agile versus Non-Agile Charters
 
+Shared goal = 
+* gain agreement about Who, What, Where, When, Why, How
+* obtain authority to proceed
+
+Differences:
+* Agile.details < Non-agile.details
+* Agile.focus @ How
+
 ##### Developing an Agile Charter
 
-###### W5H questions
+W5H
+* **Who**
+  * Participants
+  * Stakeholders
+* **What**
+  * Vision
+  * Mission
+  * Goals
+  * Objectives
+* **Where** 
+  * Work sites
+  * Deployment requirements
+  * ...
+* **When**
+  * Start
+  * End
+* **Why** = Business rationale
+* **How** = Approach
 
-* Who will be engaged?
-* What is this project about?
-* Where will it occur?
-* When will it start and end?
-* Why is it being undertaken?
-* How will it be undertaken?
-
-###### Project elevator statement
-
+Project elevator statement
 | Statement | Description                        |
 | --------- | ---------------------------------- |
 | For       | Target customers                   |
@@ -728,22 +750,30 @@ Values shared by Scrum and XP:
 
 #### Agile Modeling
 
-Types:
+Rationale: value of agile models is in ~~preservation~~ creation
 
+Aim:
+* Reflective purposes
+* Investigate problems and find solutions
+
+| ![Figure modeling_value](../images/agile-modeling_value.svg) |
+| :----------------------------------------------------------: |
+|              Modeling Value against Time                     |
+
+Types:
 * Use case diagrams
 * Data models
 * Screen designs
 
 #### Wireframes
 
-Quick and cheap mock-up of a product/service
+Wireframes = quick and cheap mock-up of a product/service
 
 #### Personas
 
-Quick guides/reminders of key stakeholders and their interests
+Personas = quick guides/reminders of key stakeholders and their interests
 
 Augment requirements:
-
 * Help prioritize work
 * Stay focused on users
 * Gain insights into who users will be
@@ -760,20 +790,42 @@ Highest efficiency: highest interactivity & highest bandwith/information density
 
 #### Two-Way Communication
 
-##### Dispatching model
+Information flow between stakeholders = **bidirectional**
 
-##### Collaborative model
+| ![Figure 2-way_comm](../images/agile-2-way_comm.svg) |
+| :--------------------------------------------------: |
+|     Dispatching vs Collaborative Communication Model |
 
 #### Knowledge Sharing
 
+Agile projects are encouraged to take an abundance-based—rather than scarcity-based—attitude toward sharing knowledge
+
+Benefits:
+* $\uparrow$ #people who know about something, $\uparrow$ #people there will be who can help you when you get stuck
+* Helps balance the workload between team members
+
 #### Information Radiators
+
+Information radiators = highly visible displays of information, including:
+* large charts
+* graphs
+* summaries
+
+Data:
+* Features delivered vs features remaining
+* Who is working on what
+* Features selected for the current iteration
+* Velocity and defect metrics
+* Retrospective findings
+* List of threats and issues
+* Story maps
+* Burn charts
 
 #### Social Media
 
 ### Working Collaboratively
 
-Collaboration benefits:
-
+Benefits:
 * Generates wiser decisions
 * Problem solving
 * Fosters action
@@ -782,25 +834,30 @@ Collaboration benefits:
 
 #### Workshops
 
+Tips:
+* Diverse groups reflect a wider range of viewpoints than just a few experts
+* Use techniques to prevent dominant individuals and extroverts from monopolizing the discussion
+* Start with an activity that gets everyone participating within the first five minutes
+
 #### Brainstorming
 
 ##### Methods
 
 | Method        | Description |
 | ------------- | ----------- |
-| Quiet Writing |             |
-| Round-Robin   |             |
-| Free-for-All  |             |
+| Quiet Writing | 5-7 minutes to generate list of ideas |
+| Round-Robin   | Take turns to suggest ideas |
+| Free-for-All  | Shout ideas |
 
 #### Collaboration Games
 
-| Game                     | Description |
+| Game                     | Summary |
 | ------------------------ | ----------- |
-| Remember the Future      |             |
-| Prune the Product Tree   |             |
-| Speedboat (aka Sailboat) |             |
-| Buy a Feature            |             |
-| Bang-for-the-Buck        |             |
+| Remember the Future      | Vision-setting and requirements-elicitation exercise |
+| Prune the Product Tree   | Helps stakeholders gather and shape requirements |
+| Speedboat (aka Sailboat) | Identify threats and opportunities (risks) |
+| Buy a Feature            | Prioritization exercise |
+| Bang-for-the-Buck        | Value versus cost rankings |
 
 ##### Remember the Future
 
@@ -888,12 +945,16 @@ Development Team
 
 ##### Tuckman Model of Team Formation and Development
 
+| ![Figure tuckman](../images/agile-tuckman.svg)       |
+| :--------------------------------------------------: |
+|  Tuckman model team formation and development stages |
+
 | Stage      | Description                                   |
 | ---------- | --------------------------------------------- |
 | Forming    | Working group                                 |
-| Storming   | Pseudo team$\rightarrow$ Potential team     |
-| Norming    | Potential team$\rightarrow$ Real team      |
-| Performing | Real team$\rightarrow$ High performing team |
+| Storming   | Pseudo team $\rightarrow$ Potential team     |
+| Norming    | Potential team $\rightarrow$ Real team      |
+| Performing | Real team $\rightarrow$ High performing team |
 
 #### Adaptive Leadership
 
@@ -906,13 +967,31 @@ Development Team
 
 #### Team Motivation
 
+| ![Figure net_contribution](../images/agile-net_contribution.svg) |
+| :--------------------------------------------------:             |
+| Continuum of Net Contribution                                    |
+
 #### Training, Coaching, and Mentoring
 
 ##### Training
 
+Training = teaching skills/knowledge through practice and instructions
+
 ##### Coaching
 
+Coaching = facilitated process that helps developing and improving performance
+
+Guidelines for 1-to-1 coaching:
+* Meet them a half-step ahead
+* Guarantee safety
+* Partner with managers
+* Create positive regard
+
 ##### Mentoring
+
+Mentoring = professional relantionship where:
+* Mentor $\rightarrow$ tackles issues on as an-needed basis
+* Mentee $\rightarrow$ free-flowing agenda
 
 ### Creating Collaborative Team Spaces
 
@@ -932,11 +1011,23 @@ Development Team
 
 ##### Burndown Charts
 
+| ![Figure burndown](../images/agile-burndown.svg) |
+| :-----------------------------------------------:|
+| Burndown chart                                   |
+
 ##### Burnup Charts
+
+| ![Figure burnup](../images/agile-burnup.svg)  |
+| :-------------------------------------------: |
+| Burnup chart                                  |
 
 #### Velocity
 
-$Velocity=Work/Iteration$, where $Work=StoryPoints,UserStories,Hours,...$
+$Velocity=Work/Iteration$, where $Work=StoryPoints, UserStories, Hours,...$
+
+| ![Figure velocity](../images/agile-velocity.svg) |
+| :----------------------------------------------: |
+|  Velocity chart                                  |
 
 ## Adaptive Planning
 

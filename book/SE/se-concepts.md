@@ -170,13 +170,13 @@ The generic LC model below applies to a single SoI.
 
 SE must generally be synchronized across a number of tailored instances of such LC models to fully satisfy stakeholder needs.
 
-|![Figure SBS](../images/sebok-SBS.svg)
-|:--:|
-|System Breakdown Structure|
+| ![Figure SBS](../images/sebok-SBS.svg) |
+| :----------------------------------: |
+|      System Breakdown Structure      |
 
-|![Figure SOI_LC](../images/sebok-SOI_LC.svg)
-|:--:|
-|SoI LC/Processes|
+| ![Figure SOI_LC](../images/sebok-SOI_LC.svg) |
+| :----------------------------------------: |
+|              SoI LC/Processes              |
 
 #### A Generic System Life Cycle Model
 
@@ -260,9 +260,9 @@ The views presented below should be seen as examples of the ways in which differ
 
 In the Generic LC Model, the execution of process activities is not compartmentalized to particular LC stages.
 
-|![Figure RUP](../images/sebok-RUP.svg)
-|:--:|
-|RUP Hump|
+| ![Figure RUP](../images/sebok-RUP.svg) |
+| :----------------------------------: |
+|               RUP Hump               |
 
 The lines on this diagram represent the amount of activity for each process over the generic life cycle.
 The peaks (or humps) of activity represent the periods when a process activity becomes the main focus of a stage.
@@ -275,16 +275,17 @@ Ensuring this hump diagram principle is implemented in a way which is achievable
 
 The concept of iteration applies to LC stages within a LC model, and also applies to processes.
 
-|![Figure LC_process_iteration](../images/sebok-LC_process_iteration.svg)
-|:--:|
-|Concept and System Definition processes iterations|
+| ![Figure LC_process_iteration](../images/sebok-LC_process_iteration.svg) |
+| :--------------------------------------------------------------------: |
+|           Concept and System Definition processes iterations           |
 
 Figure 3 below gives an example of the iteration between the other life cycle processes.
 The iterations in this example relate to the overlaps in process outcomes shown in Figure 1.
 They either allow consideration of cross process issues to influence the system definition (e.g. considering likely integration or verification approaches might make us think about failure modes or add data collection or monitoring elements into the system) or they allow risk management and through life planning activities to identify the need for future activities.
-|![Figure LC_process_iteration_2](../images/sebok-LC_process_iteration_2.svg)
-|:--:|
-|Concept and System Definition processes iterations --- System realization|
+
+| ![Figure LC_process_iteration_2](../images/sebok-LC_process_iteration_2.svg) |
+| :------------------------------------------------------------------------: |
+| Concept and System Definition processes iterations --- System realization |
 
 #### Life Cycle Process Recursion
 
@@ -295,19 +296,20 @@ The comprehensive definition of a SoI is generally achieved using decomposition 
 In each decomposition layer and for each system, the System Definition processes are applied recursively because the notion of "system" is in itself recursive; the notions of SoI, system, and system element are based on the same
 concepts (see Part 2).
 
-|![Figure LC_process_iteration_recursion](../images/sebok-LC_process_iteration_recursion.svg)
-|:--:|
-|Concept and System Definition processes iterations --- Recursion|
+| ![Figure LC_process_iteration_recursion](../images/sebok-LC_process_iteration_recursion.svg) |
+| :----------------------------------------------------------------------------------------: |
+|              Concept and System Definition processes iterations --- Recursion              |
 
 #### Systems Approach to Solution Synthesis
 
 ##### Top-Down Approach: From Problem to Solution
 
-In a **top-down** approach, concept definition activities 
+In a **top-down** approach, concept definition activities
+
 * are focused primarily on understanding
-    * the problem,
-    * the operational needs/requirements within the problem space, and
-    * the conditions that constrain the solution and bound the solution space.
+  * the problem,
+  * the operational needs/requirements within the problem space, and
+  * the conditions that constrain the solution and bound the solution space.
 * determine
   * the mission context,
   * the mission analysis, and
@@ -316,12 +318,14 @@ In a **top-down** approach, concept definition activities
 * consider functional, behavioral, temporal, and physical aspects of one or more solutions based on the results of concept definition.
 
 System analysis:
+
 * considers the advantages and disadvantages of the proposed system solutions both in terms of
   * how they satisfy the needs established in concept definition, as well as
   * the relative cost, time scales and other development issues.
 * requires further refinement of the concept definition to ensure all legacy relationships and stakeholders relevant to a particular solution architecture have been considered in the stakeholder requirements.
 
 The outcomes of this iteration between *Concept Definition* and *System Definition* define
+
 * a required system solution and
 * its associated problem context, which are used for
   * *System Realization*,
@@ -329,7 +333,8 @@ The outcomes of this iteration between *Concept Definition* and *System Definiti
   * *Product and Service Life Management* of one or more solution implementations.
 
 In this approach, problem understanding and solution selection activities are
-* completed in the front-end portion of system development and design and then 
+
+* completed in the front-end portion of system development and design and then
 * maintained and refined as necessary throughout the LC of any resulting solution systems.
 
 Depending upon the LC model, **top-down** activities can be
@@ -337,25 +342,28 @@ Depending upon the LC model, **top-down** activities can be
 * sequential,
 * iterative,
 * recursive, or
-* evolutionary. 
+* evolutionary.
 
 ##### Bottom-Up Approach: Evolution of the Solution
 
-In some situations, the concept definition activities 
-* determine the need to evolve existing capabilities or 
-* add new capabilities to an existing system. 
+In some situations, the concept definition activities
+
+* determine the need to evolve existing capabilities or
+* add new capabilities to an existing system.
 
 During the concept definition, the alternatives to address the needs are evaluated.
 
 Engineers are then led to reconsider the system definition in order to modify or adapt some structural, functional, behavioral, or temporal properties during the product or service life cycle for a changing context of use or for the purpose of improving existing solutions.
 
-Reverse engineering is often necessary to 
+Reverse engineering is often necessary to
+
 * enable system engineers to (re)characterize the properties of the
-system-of-interest (SoI) or its elements.
+  system-of-interest (SoI) or its elements.
 * ensure that system engineers understand the SoI before beginning modification.
 
-A **bottom-up** approach is necessary for 
-* analysis purposes, or 
+A **bottom-up** approach is necessary for
+
+* analysis purposes, or
 * (re)using existing elements in the design architecture.
 
 Changes in the context of use or a need for improvement can prompt this.
@@ -367,6 +375,101 @@ In most real problems, a combination of **bottom-up** and **top-down** approache
 
 This is often referred to as a "middle-out" approach.
 
-As well as being the most pragmatic approach, synthesis has the potential to 
+As well as being the most pragmatic approach, synthesis has the potential to
+
 * keep the life cycle focused on whole system issues, and
 * allow the exploration of the focused levels of detail needed to describe realizable solutions.
+
+## Knowledge Area: System Life Cycle Models
+
+### Categories of Life Cycle Model
+
+Categories of potential LC process models:
+
+* Pre-specified and sequential processes
+* Evolutionary and concurrent processes
+* Interpersonal and emergent processes
+
+The emergence of integrated, interactive hardware-software systems made pre-specified processes potentially harmful, as the most effective human-system interfaces tended to emerge with its use.
+This led to the introduction of more lean approaches to concurrent hardware-software-human factors approaches such as:
+
+* concurrent vee models, and
+* Incremental Commitment Spiral Model.
+
+## System Lifecycle Process Drivers and Choices
+
+LC processes:
+
+* impacted by many organizational factors,
+* impact all other aspects of system design and development.
+
+### Fixed-Requirements and Evolutionary Development Processes
+
+Aside from the traditional, pre-specified, sequential, single-step development process (identified as Fixed Requirements), there are several models of evolutionary development processes; however, there is no one-size-fits-all approach that is best for all situations.
+
+For rapid-fielding situations, an easiest-first, prototyping approach may be most appropriate.
+For enduring systems, an easiest-first approach may produce an unscalable system, in which the architecture is incapable of achieving high levels of performance, safety, or security.
+
+In general, system evolution now requires
+
+* much higher sustained levels of SE effort,
+* earlier and continuous integration and testing,
+* proactive approaches to address sources of system change,
+* greater levels of concurrent engineering, and
+* achievement reviews based on evidence of feasibility versus plans and system descriptions.
+
+Evolutionary development processes or methods have been in use since the 1960s (and perhaps earlier).
+
+They allow a project to provide an initial capability followed by successive deliveries to reach the desired SoI.
+
+This practice is particularly valuable in cases in which
+
+* rapid exploration and implementation of part of the system is desired,
+* requirements are unclear from the beginning, or are rapidly changing,
+* funding is constrained,
+* the customer wishes to hold the SoI open to the possibility of inserting new technology when it becomes mature, and
+* experimentation is required to develop successive versions.
+
+In evolutionary development a capability of the product is developed in an increment of time.
+Each cycle of the increment subsumes the system elements of the previous increment and adds new capabilities to the evolving product to create an expanded version of the product in development.
+This evolutionary development process, that uses increments, can provide a number of advantages, including:
+
+* continuous integration, verification, and validation of the evolving product,
+* frequent demonstrations of progress,
+* early detection of defects,
+* early warning of process problems, and
+* systematic incorporation of the inevitable rework that may occur.
+
+### Primary Models of Incremental and Evolutionary Development
+
+| ![Figure models_incremental_delivery](../images/sebok-models_incremental_delivery.svg) |
+| :----------------------------------------------------------------------------------: |
+|              Primary models of incremental and evolutionary development              |
+
+| Type          | Subtype       | Pros                                                                                           | Cons                                                                                    | Examples                                                                    |
+| ------------- | ------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Pre-specified | Single-step   | Efficient<br />Easy to verify                                                                  | Difficulties with rapid change<br />Emerging requirements                               | Simple manufactured products                                                |
+|               | Multi-step    | Early initial capability<br />Scalability when stable human-intensive systems                 | Emergent requirements or rapid change<br />Architecture breakers                        | Vehicle platform plus value-adding pre-planned product improvements (PPPIs) |
+| Evolutionary  | Sequential    | Adaptability to change<br />Smaller human-intensive systems                                    | Easiest-first<br />Late<br />Costly fixes<br />SE time gaps<br />Slow for large systems | Small: Agile<br />Larger: Rapid fielding                                    |
+|               | Opportunistic | Mature technology upgrades                                                                     | Emergent requirements or rapid change<br />SySE time gaps                               | Stable development<br />Maturing technology                                 |
+|               | Concurrent    | Emergent requirements or rapid change<br />Stable development increments<br />SysE continuity | Overkill on small or highly stable systems                                              | Rapid, emergent development<br />Systems of systems                         |
+
+### Incremental and Evolutionary Development Decision Table
+
+| Type          | Subtype       | Stable, pre-specific<br /> requirements? | Ok to wait for full system<br />to be developed? | Need to wait for<br />next-increment priorities? | Need to wait for<br />next-increment enablers? |
+| ------------- | ------------- | ---------------------------------------- | ------------------------------------------------ | ------------------------------------------------ | ---------------------------------------------- |
+| Pre-specified | Single-step   | True                                     | True                                             |                                                  |                                                |
+|               | Multi-step    | True                                     | False                                            |                                                  |                                                |
+| Evolutionary  | Sequential    | False                                    | False                                            | True                                             |                                                |
+|               | Opportunistic | False                                    | False                                            | False                                            | True                                           |
+|               | Concurrent    | False                                    | False                                            | False                                            | False                                          |
+
+### System Life Cycle Process Models: Vee
+
+| ![Figure vee](../images/sebok-vee.svg) |
+| :------------------------------------: |
+| Left Side of the Sequential Vee Model  |
+
+| ![Figure stages](../images/sebok-stages.svg) |
+| :------------------------------------------: |
+|  Stages, Purposes, and Major Decision Gates  |

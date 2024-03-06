@@ -295,9 +295,9 @@ The comprehensive definition of a SoI is generally achieved using decomposition 
 In each decomposition layer and for each system, the System Definition processes are applied recursively because the notion of "system" is in itself recursive; the notions of SoI, system, and system element are based on the same
 concepts (see Part 2).
 
-Figure 5 shows an example of the recursion of life cycle processes.
-Figure 5. Recursion of Processes on Layers (Faisandier 2012). Permission Granted by Sinergy'Com. All other rights are reserved by the
-copyright owner.
+|![Figure LC_process_iteration_recursion](../images/sebok-LC_process_iteration_recursion.svg)
+|:--:|
+|Concept and System Definition processes iterations --- Recursion|
 
 #### Systems Approach to Solution Synthesis
 

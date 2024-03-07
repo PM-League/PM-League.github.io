@@ -182,7 +182,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../PM/pm-concepts.html">PM Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../PM/pm-processes.html">PM Processes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../PM/jcsrua.html">Joint Cost and Schedule Risk and Uncertainty Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PM/jcsrua.html">Probabilistic Scheduling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../PM/lob.html">Line of Balance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../PM/ccm.html">Critical Chain Method</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../PM/evm.html">Earned Value Management</a></li>
@@ -347,6 +347,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="design-structure-matrix-dsm">
 <h1>Design Structure Matrix (DSM)<a class="headerlink" href="#design-structure-matrix-dsm" title="Link to this heading">#</a></h1>
+<p>Notes from ESD.36</p>
 <section id="sequencing-tasks">
 <h2>Sequencing Tasks<a class="headerlink" href="#sequencing-tasks" title="Link to this heading">#</a></h2>
 <table class="table">
@@ -485,7 +486,7 @@ document.write(`
 <tbody>
 <tr class="row-even"><td><p>Sequential</p></td>
 <td><p>=1</p></td>
-<td><p>Next action <span class="math notranslate nohighlight">\(\leftarrow\)</span> Probabilities</p></td>
+<td><p>Next action<span class="math notranslate nohighlight">\(\leftarrow\)</span> Probabilities</p></td>
 <td><p>Signal Flow Graph</p></td>
 </tr>
 <tr class="row-odd"><td><p>Parallel</p></td>
@@ -557,7 +558,7 @@ where</p>
 <td><p>Substitution</p></td>
 </tr>
 <tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\sum_{t=0}^\infty \land^t = (I-\land)^{-1}\)</span></p></td>
-<td><p>Diagonal matrix of <span class="math notranslate nohighlight">\(1/(1-\lambda)\)</span> terms</p></td>
+<td><p>Diagonal matrix of<span class="math notranslate nohighlight">\(1/(1-\lambda)\)</span> terms</p></td>
 </tr>
 <tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(U=S[(I-\land)^{-1}S^{-1}u_0]\)</span></p></td>
 <td><p>Total work is a scaling of the eigenvectors</p></td>

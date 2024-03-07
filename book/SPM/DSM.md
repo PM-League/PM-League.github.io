@@ -1,5 +1,7 @@
 # Design Structure Matrix (DSM)
 
+Notes from ESD.36
+
 ## Sequencing Tasks
 
 | ![Figure sequences](../images/DSM/sequences.svg) |
@@ -77,23 +79,24 @@ Iterations = repetition of tasks due to:
 
 | Style      | #Activities | Assumption                                  | Model               |
 | ---------- | ----------- | ------------------------------------------- | ------------------- |
-| Sequential | =1          | Next action $\leftarrow$ Probabilities     | Signal Flow Graph   |
+| Sequential | =1          | Next action$\leftarrow$ Probabilities     | Signal Flow Graph   |
 | Parallel   | >=2         | Rework created for other coupled activities | Work Transformation |
 
 | ![Figure iteration_style](../images/DSM/iteration_style.svg) |
-| :------------------------------------------: |
-|              Iteration Styles              |
+| :--------------------------------------------------------: |
+|                      Iteration Styles                      |
 
 #### Signal Flow Graph Model
 
-A $- pz^t \rightarrow $ B 
+A $- pz^t \rightarrow $ B
 where
+
 * $p$ = probability
 * $z^t$ = duration
 
 | ![Figure signal_flow_graph_model](../images/DSM/signal_flow_graph_model.svg) |
-| :------------------------------------------: |
-|              Signal Flow Graph Model              |
+| :------------------------------------------------------------------------: |
+|                          Signal Flow Graph Model                          |
 
 #### Work Transformation Model
 
@@ -105,15 +108,16 @@ where
 
 #### Mathematics
 
-| Math | Name |
-| -- | --| 
-| $u_{t+1} = A u_t$|Work vector|
-| $U = \sum_{t=0}^\infty u_t = (\sum_{t=0}^\infty A^t)u_0$|Total work vector|
-| $A= S \land S^{-1}$ |Eigenvalue decomposition|
-|$U=S(\sum_{t=0}^\infty \land^t)S^{-1}u_0$|Substitution|
-|$\sum_{t=0}^\infty \land^t = (I-\land)^{-1}$|Diagonal matrix of $1/(1-\lambda)$ terms|
-|$U=S[(I-\land)^{-1}S^{-1}u_0]$|Total work is a scaling of the eigenvectors| 
-where
+| Math                                                       | Name                                        |
+| ---------------------------------------------------------- | ------------------------------------------- |
+| $u_{t+1} = A u_t$                                        | Work vector                                 |
+| $U = \sum_{t=0}^\infty u_t = (\sum_{t=0}^\infty A^t)u_0$ | Total work vector                           |
+| $A= S \land S^{-1}$                                      | Eigenvalue decomposition                    |
+| $U=S(\sum_{t=0}^\infty \land^t)S^{-1}u_0$                | Substitution                                |
+| $\sum_{t=0}^\infty \land^t = (I-\land)^{-1}$             | Diagonal matrix of$1/(1-\lambda)$ terms   |
+| $U=S[(I-\land)^{-1}S^{-1}u_0]$                           | Total work is a scaling of the eigenvectors |
+| where                                                      |                                             |
+
 * $U$ = total work
 * $S$ = eigenvector matrix
 * $[(I-\land)^{-1}S^{-1}u_0]$ = scaling vector
@@ -125,5 +129,5 @@ where
 3. Find non-zero diagonals
 
 | ![Figure find_loops](../images/DSM/find_loops.svg) |
-| :------------------------------------------: |
-|              Find Loop Process              |
+| :----------------------------------------------: |
+|                Find Loop Process                |

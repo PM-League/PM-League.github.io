@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Joint Cost and Schedule Risk and Uncertainty Analysis &#8212; PM League Wiki</title>
+    <title>Probabilistic Scheduling &#8212; PM League Wiki</title>
   
   
   
@@ -65,6 +65,8 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'PM/jcsrua';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -180,7 +182,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="pm-concepts.html">PM Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pm-processes.html">PM Processes</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Joint Cost and Schedule Risk and Uncertainty Analysis</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Probabilistic Scheduling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lob.html">Line of Balance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ccm.html">Critical Chain Method</a></li>
 <li class="toctree-l1"><a class="reference internal" href="evm.html">Earned Value Management</a></li>
@@ -287,7 +289,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -298,11 +302,58 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Joint Cost and Schedule Risk and Uncertainty Analysis</h1>
+    <h1>Probabilistic Scheduling</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scheduling-methods">Scheduling Methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deterministics-vs-probabilistic">Deterministics vs Probabilistic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics">Statistics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#descriptive-statistics">Descriptive Statistics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#point-estimate">Point Estimate</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">Requirements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-method">Estimating Method</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-method">Implementation Method</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#output">Output</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sensitivity-analysis">Sensitivity Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">Objective</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Output</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-distributions">Uncertainty Distributions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Objective</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Definition</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#regression-analysis">Regression Analysis</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#curve-fitting">Curve Fitting</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subjective">Subjective</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Definition</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conditions">Conditions</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#biases">Biases</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#best-practices">Best Practices</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#adjustment">Adjustment</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -312,8 +363,279 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="joint-cost-and-schedule-risk-and-uncertainty-analysis">
-<h1>Joint Cost and Schedule Risk and Uncertainty Analysis<a class="headerlink" href="#joint-cost-and-schedule-risk-and-uncertainty-analysis" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="probabilistic-scheduling">
+<h1>Probabilistic Scheduling<a class="headerlink" href="#probabilistic-scheduling" title="Link to this heading">#</a></h1>
+<p>Objective:</p>
+<ol class="arabic simple">
+<li><p>Describe techniques to model cost and schedule uncertainty</p></li>
+<li><p>Provide an introduction to building a fully integrated cost and schedule uncertainty analysis</p></li>
+</ol>
+<section id="scheduling-methods">
+<h2>Scheduling Methods<a class="headerlink" href="#scheduling-methods" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Deterministic</p>
+<ul>
+<li><p>Critical Path Method</p></li>
+<li><p>Precedence Diagram Method</p></li>
+<li><p>Critical Resource Diagram</p></li>
+<li><p>Line-of-Balance</p></li>
+<li><p>Critical Chain Method</p></li>
+<li><p>Design Structure Matrix</p></li>
+</ul>
+</li>
+<li><p>Probabilistic</p>
+<ul>
+<li><p>PERT</p></li>
+<li><p>Monte Carlo</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="deterministics-vs-probabilistic">
+<h2>Deterministics vs Probabilistic<a class="headerlink" href="#deterministics-vs-probabilistic" title="Link to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure PE_to_distribution" src="../_images/PE_to_distribution.svg" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>From Deterministic to Probabilistic</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="statistics">
+<h2>Statistics<a class="headerlink" href="#statistics" title="Link to this heading">#</a></h2>
+<section id="descriptive-statistics">
+<h3>Descriptive Statistics<a class="headerlink" href="#descriptive-statistics" title="Link to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>1</p></th>
+<th class="head"><p>2</p></th>
+<th class="head"><p>3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mean</p></td>
+<td><p><span class="math notranslate nohighlight">\( \mu = \frac{1}{n} \sum_{i=0}^n y_i\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Median</p></td>
+<td><p><span class="math notranslate nohighlight">\( y_i : P[y_j \leq y_i] = .5 \quad \text{where} \quad j \neq i\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Mode</p></td>
+<td><p><span class="math notranslate nohighlight">\( ml : P[y = ml] = max(P[y])\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Skewness</p></td>
+<td><p><span class="math notranslate nohighlight">\( Skewness(Y) = E \left( \frac{y-\mu_Y}{\sigma_Y} \right)^3\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Standard Deviation</p></td>
+<td><p><span class="math notranslate nohighlight">\( S = \sqrt{\frac{\sum_{i=0}^n (y_i - \bar{y})^2}{n-1}}\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Probability Distribution</p></td>
+<td><p><span class="math notranslate nohighlight">\(P[x]\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>PDF</p></td>
+<td><p><span class="math notranslate nohighlight">\(f(x) = P(X = x)\)</span></p></td>
+<td><p>PDF is the “smoothed out” version of a normalized histogram.<br /> The area under any PDF is equal to 1.<br /> The area under a PDF for a specific interval identifies the probability associated with that interval.</p></td>
+</tr>
+<tr class="row-odd"><td><p>CDF</p></td>
+<td><p><span class="math notranslate nohighlight">\(F(x) = P(X \leq x) = \int_{-\infty}^{\infty} f(x) \text{d}x\)</span></p></td>
+<td><p>The CDF is a mathematical curve that identifies the probability that the actual value will be less than or equal</p></td>
+</tr>
+<tr class="row-even"><td><p>to the given value.</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="point-estimate">
+<h2>Point Estimate<a class="headerlink" href="#point-estimate" title="Link to this heading">#</a></h2>
+<section id="requirements">
+<h3>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Base</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Program of Record</p></td>
+<td><p>Defined in the requirements documents</p></td>
+</tr>
+<tr class="row-odd"><td><p>Technical Baseline</p></td>
+<td><p>Alternative that reflects a technical assessment</p></td>
+</tr>
+<tr class="row-even"><td><p>What-If Case</p></td>
+<td><p>For a specific sensitivity analysis</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="estimating-method">
+<h3>Estimating Method<a class="headerlink" href="#estimating-method" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Analogy</p></li>
+<li><p>Parametric</p></li>
+<li><p>Engineering</p></li>
+<li><p>Extrapolation</p></li>
+</ul>
+</section>
+<section id="implementation-method">
+<h3>Implementation Method<a class="headerlink" href="#implementation-method" title="Link to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Modeling Approach</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>As a function of technical parameters</p></td>
+<td><p>Uncertainty is assigned to the equation itself and to its inputs</p></td>
+</tr>
+<tr class="row-odd"><td><p>As a factor of another estimate</p></td>
+<td><p>The factor is one form of a parametric equation</p></td>
+</tr>
+<tr class="row-even"><td><p>Level of Effort (LOE)</p></td>
+<td><p>Quantity times the cost per unit, burn rate times a duration, etc.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Throughputs</p></td>
+<td><p>Analogies, quotes, subject matter expert opinion, etc.</p></td>
+</tr>
+<tr class="row-even"><td><p>Third Party tool results</p></td>
+<td><p>When moving results from another model or tool into another, it is not enough to import the point estimate; the uncertainty needs to be imported as well</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="output">
+<h3>Output<a class="headerlink" href="#output" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(PE = f(X)\)</span></p>
+</section>
+</section>
+<section id="sensitivity-analysis">
+<h2>Sensitivity Analysis<a class="headerlink" href="#sensitivity-analysis" title="Link to this heading">#</a></h2>
+<section id="definition">
+<h3>Definition<a class="headerlink" href="#definition" title="Link to this heading">#</a></h3>
+<p>Systematic approach used to identify the impact of potential changes to one or more of an estimate’s major input parameters on the total PE.</p>
+</section>
+<section id="objective">
+<h3>Objective<a class="headerlink" href="#objective" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Vary input parameters over a range of probable valuesm</p></li>
+<li><p>Recalculate the PE</p></li>
+<li><p>Determine how sensitive the PE is to changes in the input parameters</p></li>
+</ol>
+</section>
+<section id="id1">
+<h3>Output<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(opt\)</span>, <span class="math notranslate nohighlight">\(ml\)</span>, <span class="math notranslate nohighlight">\(pess\)</span></p>
+</section>
+</section>
+<section id="uncertainty-distributions">
+<h2>Uncertainty Distributions<a class="headerlink" href="#uncertainty-distributions" title="Link to this heading">#</a></h2>
+<section id="overview">
+<h3>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h3>
+<p>The PE:</p>
+<ul class="simple">
+<li><p>represents one possible estimate based upon a given set of program characteristics,</p></li>
+<li><p>serves as the reference point on which the cost uncertainty analysis is anchored,</p></li>
+<li><p>may be determined via one of three approaches:</p>
+<ul>
+<li><p><strong>objective</strong> (statistical analysis of relevant historical data),</p></li>
+<li><p><strong>subjective</strong> (expert opinion), or</p></li>
+<li><p><strong>third-party tools</strong> (separate models).</p></li>
+</ul>
+</li>
+</ul>
+<section id="id2">
+<h4>Objective<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+</section>
+<section id="id3">
+<h4>Definition<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
+<p><strong>Objective uncertainty</strong> is an assessment of the uncertainty based on well-defined statistical processes.</p>
+</section>
+<section id="methods">
+<h4>Methods<a class="headerlink" href="#methods" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Developing parametric equations through <strong>regression analysis</strong></p></li>
+<li><p><strong>Fitting</strong> distributions to historical data or residuals</p></li>
+</ul>
+<section id="regression-analysis">
+<h5>Regression Analysis<a class="headerlink" href="#regression-analysis" title="Link to this heading">#</a></h5>
+</section>
+<section id="curve-fitting">
+<h5>Curve Fitting<a class="headerlink" href="#curve-fitting" title="Link to this heading">#</a></h5>
+</section>
+</section>
+<section id="subjective">
+<h4>Subjective<a class="headerlink" href="#subjective" title="Link to this heading">#</a></h4>
+</section>
+<section id="id4">
+<h4>Definition<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
+<p><strong>Objective uncertainty</strong> is an assessment of the uncertainty based on well-defined statistical processes.</p>
+</section>
+<section id="conditions">
+<h4>Conditions<a class="headerlink" href="#conditions" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Applies where objective uncertainty distributions are not available</p></li>
+<li><p>Distributions are characterized by parameters describing their</p>
+<ul>
+<li><p>dispersion (<span class="math notranslate nohighlight">\(LB\)</span>, <span class="math notranslate nohighlight">\(UB\)</span>)</p></li>
+<li><p>skewness</p></li>
+</ul>
+</li>
+</ul>
+<p>Ideally, distribution parameters are developed from an objective assessment of relevant historical data. Often, it is necessary to rely on <strong>informed opinion</strong>. The analyst generally has to resort to expert judgment, such as that possessed by engineers, managers, and other knowledgeable people
+This process is called elicitation, which can be difficult to do and subject to numerous biases, categorized as <strong>Motivational</strong> and <strong>Cognitive</strong>.</p>
+<section id="biases">
+<h5>Biases<a class="headerlink" href="#biases" title="Link to this heading">#</a></h5>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Category</p></th>
+<th class="head"><p>Bias</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Motivational</p></td>
+<td><p>Social pressure (face-to-face)<br />Impression (not face-to)<br />Group Think<br />Wishful thinking<br />Career goals<br />Misunderstanding<br />Project Advocacy<br />Competitive Pressures</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cognitive</p></td>
+<td><p>Representativeness (small sample)<br />Availability (most recent)<br />Anchoring and Adjustment<br />Inconsistency (opinion changes over time)<br />Relating to irrelevant analogies<br />Underestimation<br />Human Nature</p></td>
+</tr>
+<tr class="row-even"><td><p>Other</p></td>
+<td><p>Confirmation Bias<br />Premature Termination<br />Inertia<br />Selective Perception<br />Optimism Bias<br />Recency<br />Repetition Bias<br />Escalating Commitment<br />Attribution Asymmetry</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="best-practices">
+<h5>Best Practices<a class="headerlink" href="#best-practices" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>Have historical <strong><span class="math notranslate nohighlight">\(min\)</span></strong>, <strong><span class="math notranslate nohighlight">\(max\)</span></strong>, and <strong>averages</strong> on hand for discussion</p></li>
+<li><p>Ask for <strong><span class="math notranslate nohighlight">\(LB\)</span></strong> and <strong><span class="math notranslate nohighlight">\(UB\)</span></strong></p></li>
+<li><p>Seek the <strong><span class="math notranslate nohighlight">\(ml\)</span></strong> value</p></li>
+<li><p>Select a distribution shape based on <strong>skew</strong> and <strong>firmness</strong> of the bounds</p></li>
+</ul>
+</section>
+<section id="adjustment">
+<h5>Adjustment<a class="headerlink" href="#adjustment" title="Link to this heading">#</a></h5>
+<p>Unless there is no evidence to do otherwise,</p>
+<ol class="arabic simple">
+<li><p>Treat subjective bounds (expert opinion) as 70% range, and</p></li>
+<li><p>Adjust for skew when using triangular, uniform, or PERT.</p></li>
+</ol>
+</section>
+</section>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -371,7 +693,59 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scheduling-methods">Scheduling Methods</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deterministics-vs-probabilistic">Deterministics vs Probabilistic</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#statistics">Statistics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#descriptive-statistics">Descriptive Statistics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#point-estimate">Point Estimate</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">Requirements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-method">Estimating Method</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-method">Implementation Method</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#output">Output</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sensitivity-analysis">Sensitivity Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">Objective</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Output</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uncertainty-distributions">Uncertainty Distributions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Objective</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Definition</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#regression-analysis">Regression Analysis</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#curve-fitting">Curve Fitting</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#subjective">Subjective</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Definition</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conditions">Conditions</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#biases">Biases</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#best-practices">Best Practices</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#adjustment">Adjustment</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

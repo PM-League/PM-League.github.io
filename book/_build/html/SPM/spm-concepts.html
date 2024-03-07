@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Systems Project Management Concepts &#8212; PM League Wiki</title>
+    <title>SPM Concepts &#8212; PM League Wiki</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -68,8 +68,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'SPM/spm-concepts';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="SD Concepts" href="../SD/sd-concepts.html" />
-    <link rel="prev" title="SEBoK" href="../SE/se-sebok.html" />
+    <link rel="next" title="Design Structure Matrix (DSM)" href="DSM.html" />
+    <link rel="prev" title="SEBoK" href="../SE/sebok.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -192,11 +192,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Systems Engineering</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../SE/se-sebok.html">SEBoK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SE/sebok.html">SEBoK</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Systems Project Management</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Systems Project Management Concepts</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">SPM Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DSM.html">Design Structure Matrix (DSM)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">System Dynamics</span></p>
 <ul class="nav bd-sidenav">
@@ -204,7 +205,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Misc</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../Misc/PERTmod.html">Modified PERT Bistribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Misc/pert-mod.html">Modified PERT Bistribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Misc/putnam.html">Putnam Model</a></li>
 </ul>
 
@@ -283,7 +284,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -294,11 +297,24 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Systems Project Management Concepts</h1>
+    <h1>SPM Concepts</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iron-triangle">Iron Triangle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#system">System</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-management-pm">Project Management (PM)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#research-development-r-d">Research &amp; Development (R&amp;D)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-as-an-object-process-diagram">Task as an Object-Process-Diagram</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -308,8 +324,107 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="systems-project-management-concepts">
-<h1>Systems Project Management Concepts<a class="headerlink" href="#systems-project-management-concepts" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="spm-concepts">
+<h1>SPM Concepts<a class="headerlink" href="#spm-concepts" title="Link to this heading">#</a></h1>
+<section id="project">
+<h2>Project<a class="headerlink" href="#project" title="Link to this heading">#</a></h2>
+<p>Project = set of tasks that:</p>
+<ul class="simple">
+<li><p>are related to each other</p></li>
+<li><p>have a specific objective to be completed within certain specifications</p></li>
+<li><p>have defined start and end dates</p></li>
+<li><p>have funding limits</p></li>
+<li><p>consume resources</p></li>
+</ul>
+</section>
+<section id="iron-triangle">
+<h2>Iron Triangle<a class="headerlink" href="#iron-triangle" title="Link to this heading">#</a></h2>
+<p>Project:</p>
+<ul class="simple">
+<li><p>Constraints: Scope</p></li>
+<li><p>Variables: Cost, Schedule</p></li>
+</ul>
+</section>
+<section id="system">
+<h2>System<a class="headerlink" href="#system" title="Link to this heading">#</a></h2>
+<p>System = set of physical/virtual objects whose interrelationships enable desired function(s).</p>
+<ul class="simple">
+<li><p>More than the sum of its parts</p></li>
+<li><p>Undesired (emergent) functions often exist</p></li>
+<li><p>System complexity scales with the number of objects as well as the type and number of interconnections between them</p></li>
+<li><p>Instantaneously available functions, versus “lifecycle” properties (scalability, flexibility, robustness, etc.)</p></li>
+</ul>
+<p>Product = system sold for profit</p>
+</section>
+<section id="project-management-pm">
+<h2>Project Management (PM)<a class="headerlink" href="#project-management-pm" title="Link to this heading">#</a></h2>
+<p>Project Management (PM) = body of methods and tools that facilitate the achievement of project objectives</p>
+<ul class="simple">
+<li><p>Within time</p></li>
+<li><p>Within cost</p></li>
+<li><p>Within scope</p></li>
+<li><p>At the desired performance/specification level</p></li>
+<li><p>While effectively and efficiently utilizing resources</p></li>
+<li><p>While carefully managing risks and opportunities</p></li>
+</ul>
+</section>
+<section id="research-development-r-d">
+<h2>Research &amp; Development (R&amp;D)<a class="headerlink" href="#research-development-r-d" title="Link to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Development</p></th>
+<th class="head"><p>Structured</p></th>
+<th class="head"><p>Planning</p></th>
+<th class="head"><p>Predictive</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Research/Technology</p></td>
+<td><p>False</p></td>
+<td><p>Hard</p></td>
+<td><p>False</p></td>
+</tr>
+<tr class="row-odd"><td><p>Product/System Development</p></td>
+<td><p>True</p></td>
+<td><p>Easy</p></td>
+<td><p>True</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="task-as-an-object-process-diagram">
+<h2>Task as an Object-Process-Diagram<a class="headerlink" href="#task-as-an-object-process-diagram" title="Link to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure task_as_object_process_diagram" src="../_images/task_as_object_process_diagram.svg" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Task</p></td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure project_as_object_process_diagram" src="../_images/project_as_object_process_diagram.svg" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Project</p></td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure SPM_ESD36_framework" src="../_images/SPM_ESD36_framework.svg" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>SPM ESD.36 Framework</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -343,7 +458,7 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../SE/se-sebok.html"
+       href="../SE/sebok.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
@@ -352,11 +467,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="../SD/sd-concepts.html"
+       href="DSM.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">SD Concepts</p>
+        <p class="prev-next-title">Design Structure Matrix (DSM)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -367,7 +482,25 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project">Project</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iron-triangle">Iron Triangle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#system">System</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-management-pm">Project Management (PM)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#research-development-r-d">Research &amp; Development (R&amp;D)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-as-an-object-process-diagram">Task as an Object-Process-Diagram</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

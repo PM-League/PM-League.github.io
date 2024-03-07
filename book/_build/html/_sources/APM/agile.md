@@ -169,7 +169,7 @@ Notes from Mike Griffith, *PMI-ACP Exam Prep,* Second Edition.
 
 ##### Process
 
-| ![Figure SCRUM](../images/agile-scrum.svg) |
+| ![Figure SCRUM](../images/agile/agile-scrum.svg) |
 | :--------------------------------------: |
 |              Scrum Process              |
 
@@ -314,7 +314,7 @@ Little's Law: $Queue.Duration = m(Queue.Size)$
 
 ##### Process
 
-| ![Figure FDD](../images/agile-FDD.svg) |
+| ![Figure FDD](../images/agile/agile-FDD.svg) |
 | :----------------------------------: |
 |             FDD Process             |
 
@@ -333,7 +333,7 @@ Little's Law: $Queue.Duration = m(Queue.Size)$
 
 ##### Process
 
-| ![Figure DSDM](../images/agile-DSDM.svg) |
+| ![Figure DSDM](../images/agile/agile-DSDM.svg) |
 | :------------------------------------: |
 |              DSDM Process              |
 
@@ -413,7 +413,7 @@ Interpretation:
 * IF $NPV>0$ THEN accept ELSE reject
 * Select project with **higher** $NPV$
 
-| ![Figure NPV](../images/agile-NPV.svg) |
+| ![Figure NPV](../images/agile/agile-NPV.svg) |
 | :----------------------------------: |
 |           NPV calculation           |
 
@@ -426,13 +426,13 @@ Interpretation:
 * IF $IRR>r$ THEN accept ELSE reject
 * Select project with **higher** $IRR$
 
-| ![Figure IRR](../images/agile-IRR.svg) |
+| ![Figure IRR](../images/agile/agile-IRR.svg) |
 | :----------------------------------: |
 |       IRR graphical derivation       |
 
 #### Earned Value Management
 
-| ![Figure EVM](../images/agile-EVM.svg) |
+| ![Figure EVM](../images/agile/agile-EVM.svg) |
 | :----------------------------------: |
 |           EVM calculation           |
 
@@ -497,13 +497,13 @@ Work on items that maximize value delivered to customer first
 
 ##### Kano Analysis
 
-| ![Figure Kano](../images/agile-Kano.svg) |
+| ![Figure Kano](../images/agile/agile-Kano.svg) |
 | :------------------------------------: |
 |             Kano Analysis             |
 
 #### Relative Prioritization/Ranking
 
-| ![Figure rel_prio_rank](../images/agile-rel_prio_rank.svg) |
+| ![Figure rel_prio_rank](../images/agile/agile-rel_prio_rank.svg) |
 | :------------------------------------------------------: |
 |   Incorporating changes into a relative priority list   |
 
@@ -511,7 +511,7 @@ Work on items that maximize value delivered to customer first
 
 Delivering the "plain-vanilla" version of a product/service allows realizing benefits to get an early $ROI$
 
-|       ![Figure cost_of_change](../images/agile-cost_of_change.svg)       |
+|       ![Figure cost_of_change](../images/agile/agile-cost_of_change.svg)       |
 | :---------------------------------------------------------------------: |
 | Cost of Change (Image copyright Scott W. Ambler, www.agilemodeling.com) |
 
@@ -537,15 +537,15 @@ Prefer low tech, high touch tools over sophisticated computerized models
 
 Set limit to WIP (to Task/Kanban Board) $\rightarrow$ Optimize ~~resource utilization~~ throughput
 
-| ![Figure kanban_no_limit](../images/agile-kanban_no_limit.svg) |
+| ![Figure kanban_no_limit](../images/agile/agile-kanban_no_limit.svg) |
 | :----------------------------------------------------------: |
 |                 Kanban board without limits                 |
 
-| ![Figure kanban_yes_limit](../images/agile-kanban_yes_limit.svg) |
+| ![Figure kanban_yes_limit](../images/agile/agile-kanban_yes_limit.svg) |
 | :------------------------------------------------------------: |
 |               Kanban board with limit too strict               |
 
-| ![Figure kanban_yes_limit_right](../images/agile-kanban_yes_limit_right.svg) |
+| ![Figure kanban_yes_limit_right](../images/agile/agile-kanban_yes_limit_right.svg) |
 | :------------------------------------------------------------------------: |
 |                       Kanban board with right limit                       |
 
@@ -553,11 +553,11 @@ Set limit to WIP (to Task/Kanban Board) $\rightarrow$ Optimize ~~resource utiliz
 
 Used for tracking and forecasting delivery of value
 
-| ![Figure CFD1](../images/agile-CFD1.svg) |
+| ![Figure CFD1](../images/agile/agile-CFD1.svg) |
 | :------------------------------------: |
 |                  CFD                  |
 
-| ![Figure CFD2](../images/agile-CFD2.svg) |
+| ![Figure CFD2](../images/agile/agile-CFD2.svg) |
 | :------------------------------------: |
 |              Detailed CFD              |
 
@@ -587,7 +587,7 @@ Figure
 
 ###### Process
 
-| ![Figure continuous_integration](../images/agile-continuous_integration.svg) |
+| ![Figure continuous_integration](../images/agile/agile-continuous_integration.svg) |
 | :------------------------------------------------------------------------: |
 |                           Continuous integration                           |
 
@@ -627,7 +627,7 @@ Refactoring = clean up design to make it easier to understand and maintain witho
 
 Red, Green, Refactor/Clean = Writing a test that initially fails, adding code until it passes, and refactoring the code
 
-| ![Figure TDD](../images/agile-TDD.svg) |
+| ![Figure TDD](../images/agile/agile-TDD.svg) |
 | :----------------------------------: |
 |             TDD process             |
 
@@ -639,7 +639,7 @@ Acceptance tests captured in functional test framework (FIT/FitNesse = Framework
 
 ##### Process
 
-| ![Figure ATDD](../images/agile-ATDD.svg) |
+| ![Figure ATDD](../images/agile/agile-ATDD.svg) |
 | :------------------------------------: |
 |              ATDD process              |
 
@@ -753,7 +753,7 @@ Aim:
 * Reflective purposes
 * Investigate problems and find solutions
 
-| ![Figure modeling_value](../images/agile-modeling_value.svg) |
+| ![Figure modeling_value](../images/agile/agile-modeling_value.svg) |
 | :--------------------------------------------------------: |
 |                Modeling Value against Time                |
 
@@ -791,7 +791,7 @@ Highest efficiency: highest interactivity & highest bandwith/information density
 
 Information flow between stakeholders = **bidirectional**
 
-| ![Figure 2-way_comm](../images/agile-2-way_comm.svg) |
+| ![Figure 2-way_comm](../images/agile/agile-2-way_comm.svg) |
 | :------------------------------------------------: |
 |  Dispatching vs Collaborative Communication Model  |
 
@@ -949,7 +949,7 @@ Development Team
 
 ##### Tuckman Model of Team Formation and Development
 
-|    ![Figure tuckman](../images/agile-tuckman.svg)    |
+|    ![Figure tuckman](../images/agile/agile-tuckman.svg)    |
 | :-------------------------------------------------: |
 | Tuckman model team formation and development stages |
 
@@ -971,7 +971,7 @@ Development Team
 
 #### Team Motivation
 
-| ![Figure net_contribution](../images/agile-net_contribution.svg) |
+| ![Figure net_contribution](../images/agile/agile-net_contribution.svg) |
 | :------------------------------------------------------------: |
 |                 Continuum of Net Contribution                 |
 
@@ -1017,13 +1017,13 @@ Mentoring = professional relantionship where:
 
 ##### Burndown Charts
 
-| ![Figure burndown](../images/agile-burndown.svg) |
+| ![Figure burndown](../images/agile/agile-burndown.svg) |
 | :--------------------------------------------: |
 |                 Burndown chart                 |
 
 ##### Burnup Charts
 
-| ![Figure burnup](../images/agile-burnup.svg) |
+| ![Figure burnup](../images/agile/agile-burnup.svg) |
 | :----------------------------------------: |
 |                Burnup chart                |
 
@@ -1031,7 +1031,7 @@ Mentoring = professional relantionship where:
 
 $Velocity=Work/Iteration$, where $Work=StoryPoints, UserStories, Hours,...$
 
-| ![Figure velocity](../images/agile-velocity.svg) |
+| ![Figure velocity](../images/agile/agile-velocity.svg) |
 | :--------------------------------------------: |
 |                 Velocity chart                 |
 

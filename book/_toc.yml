@@ -18,14 +18,15 @@ parts:
   - file: APM/sbok
 - caption: Systems Engineering
   chapters:
-  - file: SE/se-sebok
+  - file: SE/sebok
 - caption: Systems Project Management
   chapters:
   - file: SPM/spm-concepts
+  - file: SPM/DSM
 - caption: System Dynamics
   chapters:
   - file: SD/sd-concepts
 - caption: Misc 
   chapters:
-  - file: Misc/PERTmod
+  - file: Misc/pert-mod
   - file: Misc/putnam

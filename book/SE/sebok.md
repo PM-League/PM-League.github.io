@@ -170,11 +170,11 @@ The generic LC model below applies to a single SoI.
 
 SE must generally be synchronized across a number of tailored instances of such LC models to fully satisfy stakeholder needs.
 
-| ![Figure SBS](../images/sebok-SBS.svg) |
+| ![Figure SBS](../images/sebok/sebok-SBS.svg) |
 | :----------------------------------: |
 |      System Breakdown Structure      |
 
-| ![Figure SOI_LC](../images/sebok-SOI_LC.svg) |
+| ![Figure SOI_LC](../images/sebok/sebok-SOI_LC.svg) |
 | :----------------------------------------: |
 |              SoI LC/Processes              |
 
@@ -260,7 +260,7 @@ The views presented below should be seen as examples of the ways in which differ
 
 In the Generic LC Model, the execution of process activities is not compartmentalized to particular LC stages.
 
-| ![Figure RUP](../images/sebok-RUP.svg) |
+| ![Figure RUP](../images/sebok/sebok-RUP.svg) |
 | :----------------------------------: |
 |               RUP Hump               |
 
@@ -275,7 +275,7 @@ Ensuring this hump diagram principle is implemented in a way which is achievable
 
 The concept of iteration applies to LC stages within a LC model, and also applies to processes.
 
-| ![Figure LC_process_iteration](../images/sebok-LC_process_iteration.svg) |
+| ![Figure LC_process_iteration](../images/sebok/sebok-LC_process_iteration.svg) |
 | :--------------------------------------------------------------------: |
 |           Concept and System Definition processes iterations           |
 
@@ -283,7 +283,7 @@ Figure 3 below gives an example of the iteration between the other life cycle pr
 The iterations in this example relate to the overlaps in process outcomes shown in Figure 1.
 They either allow consideration of cross process issues to influence the system definition (e.g. considering likely integration or verification approaches might make us think about failure modes or add data collection or monitoring elements into the system) or they allow risk management and through life planning activities to identify the need for future activities.
 
-| ![Figure LC_process_iteration_2](../images/sebok-LC_process_iteration_2.svg) |
+| ![Figure LC_process_iteration_2](../images/sebok/sebok-LC_process_iteration_2.svg) |
 | :------------------------------------------------------------------------: |
 | Concept and System Definition processes iterations --- System realization |
 
@@ -296,7 +296,7 @@ The comprehensive definition of a SoI is generally achieved using decomposition 
 In each decomposition layer and for each system, the System Definition processes are applied recursively because the notion of "system" is in itself recursive; the notions of SoI, system, and system element are based on the same
 concepts (see Part 2).
 
-| ![Figure LC_process_iteration_recursion](../images/sebok-LC_process_iteration_recursion.svg) |
+| ![Figure LC_process_iteration_recursion](../images/sebok/sebok-LC_process_iteration_recursion.svg) |
 | :----------------------------------------------------------------------------------------: |
 |              Concept and System Definition processes iterations --- Recursion              |
 
@@ -447,7 +447,7 @@ This evolutionary development process, that uses increments, can provide a numbe
 
 ### Primary Models of Incremental and Evolutionary Development
 
-| ![Figure models_incremental_delivery](../images/sebok-models_incremental_delivery.svg) |
+| ![Figure models_incremental_delivery](../images/sebok/sebok-models_incremental_delivery.svg) |
 | :----------------------------------------------------------------------------------: |
 |              Primary models of incremental and evolutionary development              |
 
@@ -471,19 +471,19 @@ This evolutionary development process, that uses increments, can provide a numbe
 
 ## Evolutionary Sequential SLC Model: Vee
 
-| ![Figure vee_left](../images/sebok-vee_left.svg) |
+| ![Figure vee_left](../images/sebok/sebok-vee_left.svg) |
 | :--------------------------------------------: |
 |     Left Side of the Sequential Vee Model     |
 
-| ![Figure stages](../images/sebok-stages.svg) |
+| ![Figure stages](../images/sebok/sebok-stages.svg) |
 | :----------------------------------------: |
 | Stages, Purposes, and Major Decision Gates |
 
-| ![Figure vee_activity](../images/sebok-vee_activity.svg) |
+| ![Figure vee_activity](../images/sebok/sebok-vee_activity.svg) |
 | :----------------------------------------------------: |
 |                  Vee Activity Diagram                  |
 
-| ![Figure vee_right](../images/sebok-vee_right.svg) |
+| ![Figure vee_right](../images/sebok/sebok-vee_right.svg) |
 | :----------------------------------------------: |
 |      Right Side of the Sequential Vee Model      |
 
@@ -491,13 +491,13 @@ This evolutionary development process, that uses increments, can provide a numbe
 
 ### Evolutionary Approach
 
-| ![Figure evolutionary_development](../images/sebok-evolutionary_development.svg) |
+| ![Figure evolutionary_development](../images/sebok/sebok-evolutionary_development.svg) |
 | :----------------------------------------------------------------------------: |
 |                             Evolutionary Approach                             |
 
 ### Incremental Approach
 
-<!-- | ![Figure incremental_development](../images/sebok-incremental_development.svg) |
+<!-- | ![Figure incremental_development](../images/sebok/sebok-incremental_development.svg) |
 | :------------------------------------: |
 | Incremental Approach  | -->
 
@@ -521,7 +521,7 @@ If the risks are acceptable and covered by risk mitigation plans, the project pr
 The development spirals after the first development commitment review follow the three-team incremental
 development approach for achieving both agility and assurance.
 
-| ![Figure incremental_spiral_phased](../images/sebok-incremental_spiral_phased.svg) |
+| ![Figure incremental_spiral_phased](../images/sebok/sebok-incremental_spiral_phased.svg) |
 | :------------------------------------------------------------------------------: |
 |      Phased View of the Generic Incremental Commitment Spiral Model Process      |
 
@@ -542,7 +542,7 @@ ten-person Scrum teams.
 This involves, among other things, having each Scrum team’s daily meeting followed up by a daily meeting of the Scrum team leaders discussing up-front investments in evolving system architecture (Boehm
 et al. 2010).
 
-| ![Figure architected_agile](../images/sebok-architected_agile.svg) |
+| ![Figure architected_agile](../images/sebok/sebok-architected_agile.svg) |
 | :--------------------------------------------------------------: |
 |                    Architected Agile Process                    |
 
@@ -788,7 +788,7 @@ functions can be:
 2. centralized within one organization, or 
 3. a hybrid, with some of the functions being distributed to the projects, some centralized and some distributed to functional organization.
 
-| ![Figure organizational_continuum](../images/sebok-organizational_continuum.svg) |
+| ![Figure organizational_continuum](../images/sebok/sebok-organizational_continuum.svg) |
 | :--------------------------------------------------------------: |
 |                    Organizational Continuum                    |
 

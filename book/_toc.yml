@@ -8,6 +8,9 @@ parts:
   chapters:
   - file: PM/pm-concepts
   - file: PM/pm-processes
+  - file: PM/jcsrua
+  - file: PM/lob
+  - file: PM/ccm
   - file: PM/evm
   - file: PM/rm
   - file: PM/eac

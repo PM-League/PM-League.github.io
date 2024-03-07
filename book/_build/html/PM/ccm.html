@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>SD Concepts &#8212; PM League Wiki</title>
+    <title>Critical Chain Method &#8212; PM League Wiki</title>
   
   
   
@@ -65,11 +65,11 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'SD/sd-concepts';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'PM/ccm';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Modified PERT Bistribution" href="../Misc/pert-mod.html" />
-    <link rel="prev" title="Design Structure Matrix (DSM)" href="../SPM/DSM.html" />
+    <link rel="next" title="Earned Value Management" href="evm.html" />
+    <link rel="prev" title="Line of Balance" href="lob.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -177,16 +177,16 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Project Management</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../PM/pm-concepts.html">PM Concepts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../PM/pm-processes.html">PM Processes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../PM/jcsrua.html">Joint Cost and Schedule Risk and Uncertainty Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../PM/lob.html">Line of Balance</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../PM/ccm.html">Critical Chain Method</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../PM/evm.html">Earned Value Management</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../PM/rm.html">Risk Management</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../PM/eac.html">Estimates at Completion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../PM/ppm.html">Project Portfolio Management</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pm-concepts.html">PM Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pm-processes.html">PM Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jcsrua.html">Joint Cost and Schedule Risk and Uncertainty Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lob.html">Line of Balance</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Critical Chain Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evm.html">Earned Value Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rm.html">Risk Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eac.html">Estimates at Completion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ppm.html">Project Portfolio Management</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Agile Project Management</span></p>
 <ul class="nav bd-sidenav">
@@ -203,8 +203,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../SPM/DSM.html">Design Structure Matrix (DSM)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">System Dynamics</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">SD Concepts</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../SD/sd-concepts.html">SD Concepts</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Misc</span></p>
 <ul class="nav bd-sidenav">
@@ -298,7 +298,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>SD Concepts</h1>
+    <h1>Critical Chain Method</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -312,8 +312,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="sd-concepts">
-<h1>SD Concepts<a class="headerlink" href="#sd-concepts" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="critical-chain-method">
+<h1>Critical Chain Method<a class="headerlink" href="#critical-chain-method" title="Link to this heading">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
@@ -329,7 +329,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./SD"
+            path: "./PM"
         },
         predefinedOutput: true
     }
@@ -347,20 +347,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../SPM/DSM.html"
+       href="lob.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Design Structure Matrix (DSM)</p>
+        <p class="prev-next-title">Line of Balance</p>
       </div>
     </a>
     <a class="right-next"
-       href="../Misc/pert-mod.html"
+       href="evm.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Modified PERT Bistribution</p>
+        <p class="prev-next-title">Earned Value Management</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

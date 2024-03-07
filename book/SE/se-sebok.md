@@ -117,9 +117,9 @@ Creating such digital twins allow
   * a greatly reduced cost/burden.
 * representing the behavior of systems under conditions which would be impractical or impossible to induce under experimental conditions, thereby making it possible to obtain information not obtainable via study of the original physical system.
 
-## Knowledge Area: Systems Lifecycle Approaches
+## Knowledge Area: Systems Life Cycle Approaches
 
-### Systems Lifecycle Approaches
+### Systems Life Cycle Approaches
 
 Key principles:
 
@@ -401,7 +401,7 @@ This led to the introduction of more lean approaches to concurrent hardware-soft
 * concurrent vee models, and
 * Incremental Commitment Spiral Model.
 
-## System Lifecycle Process Drivers and Choices
+## System Life Cycle Process Drivers and Choices
 
 LC processes:
 

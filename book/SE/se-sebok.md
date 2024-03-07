@@ -386,9 +386,14 @@ As well as being the most pragmatic approach, synthesis has the potential to
 
 Categories of potential LC process models:
 
-* Pre-specified and sequential processes
-* Evolutionary and concurrent processes
-* Interpersonal and emergent processes
+* Pre-specified
+  * single-step
+  * multi-step
+* Evolutionary
+  * sequential
+  * opportunistic
+  * concurrent
+* Interpersonal and emergent
 
 The emergence of integrated, interactive hardware-software systems made pre-specified processes potentially harmful, as the most effective human-system interfaces tended to emerge with its use.
 This led to the introduction of more lean approaches to concurrent hardware-software-human factors approaches such as:
@@ -464,12 +469,379 @@ This evolutionary development process, that uses increments, can provide a numbe
 |               | Opportunistic | False                                    | False                                            | False                                            | True                                           |
 |               | Concurrent    | False                                    | False                                            | False                                            | False                                          |
 
-### System Life Cycle Process Models: Vee
+## Evolutionary Sequential SLC Model: Vee
 
-| ![Figure vee](../images/sebok-vee.svg) |
-| :------------------------------------: |
-| Left Side of the Sequential Vee Model  |
+| ![Figure vee_left](../images/sebok-vee_left.svg) |
+| :--------------------------------------------: |
+|     Left Side of the Sequential Vee Model     |
 
 | ![Figure stages](../images/sebok-stages.svg) |
-| :------------------------------------------: |
-|  Stages, Purposes, and Major Decision Gates  |
+| :----------------------------------------: |
+| Stages, Purposes, and Major Decision Gates |
+
+| ![Figure vee_activity](../images/sebok-vee_activity.svg) |
+| :----------------------------------------------------: |
+|                  Vee Activity Diagram                  |
+
+| ![Figure vee_right](../images/sebok-vee_right.svg) |
+| :----------------------------------------------: |
+|      Right Side of the Sequential Vee Model      |
+
+## Evolutionary Incremental SLC Models
+
+### Evolutionary Approach
+
+| ![Figure evolutionary_development](../images/sebok-evolutionary_development.svg) |
+| :----------------------------------------------------------------------------: |
+|                             Evolutionary Approach                             |
+
+### Incremental Approach
+
+<!-- | ![Figure incremental_development](../images/sebok-incremental_development.svg) |
+| :------------------------------------: |
+| Incremental Approach  | -->
+
+### Evolutionary Concurrent LC Model: Incremental Commitment Spiral
+
+Each spiral addresses requirements and solutions concurrently, rather than sequentially, as well as
+
+* products and processes,
+* hardware,
+* software,
+* human factors aspects, and
+* business case analyses of alternative product configurations/product line investments.
+
+Stakeholders
+
+* consider the risks and risk mitigation plans, and
+* decide on a course of action.
+
+If the risks are acceptable and covered by risk mitigation plans, the project proceeds into the next spiral.
+
+The development spirals after the first development commitment review follow the three-team incremental
+development approach for achieving both agility and assurance.
+
+| ![Figure incremental_spiral_phased](../images/sebok-incremental_spiral_phased.svg) |
+| :------------------------------------------------------------------------------: |
+|      Phased View of the Generic Incremental Commitment Spiral Model Process      |
+
+### Agile and Lean Processes
+
+Agile development methods can be used to support iterative LC models, allowing flexibility over a linear process that better aligns with the planned LC for a system.
+
+Lean processes are often associated with agile methods, although they are more scalable and applicable to
+high-assurance systems.
+
+#### Scrum
+
+#### Architected Agile Methods
+
+Over the last decade, several organizations have been able to scale up agile methods by using two layers of
+ten-person Scrum teams.
+
+This involves, among other things, having each Scrum team’s daily meeting followed up by a daily meeting of the Scrum team leaders discussing up-front investments in evolving system architecture (Boehm
+et al. 2010).
+
+| ![Figure architected_agile](../images/sebok-architected_agile.svg) |
+| :--------------------------------------------------------------: |
+|                    Architected Agile Process                    |
+
+## System Life Cycle Process Models: Agile Systems Engineering
+
+A system LC starts at the concept definition phase, moves through stages until completion of this system, as defined in the concept definition stage.
+
+A model representation of the LC may be
+
+* physical,
+* data, or
+* graphic.
+
+The process describes the steps to accomplish each stage of the LC including input to and output from this stage.
+
+Today’s complex and increasingly highly connected systems face rapid obsolescence under the stress of technological change, environmental change, and rapidly evolving mission needs.
+For these systems to remain robust against disruption they must be architected to agilely adapt.
+To meet these needs, the system must be assessed to apply the process that best serves the system, subsystem or component of the SoI.
+
+It is important to determine the best LC to use for the SoI early in the concept definition phase.
+
+On a program that is going to operate agilely, especially if it will be a hybrid model with agile, and other LC models it is
+important to define and harmonize them at key integration points based on
+
+* hardware or
+* other long-lead item maturity.
+
+In the Agile SE process, the systems engineer works in an iterative, incremental manner, continually modeling, analyzing, developing, and trading options to bring the definition of the system solution into focus.
+
+An example of this work will be analyzing and maintaining
+
+* the requirements,
+* the architectural model of the higher-level requirements, and
+* linkage from those high-level requirements to the analyzed lower-level requirements.
+* the interfaces are defined and followed as the development progresses
+
+### Frameworks
+
+The Agile SE process steps that are performed in each of the stages often include:
+
+1. Define the highest priority and/or highest risk item while keeping design options open.
+2. Design the solutions to meet those requirements, develop their products, perform tests, and demonstrate that product.
+3. For large products in development where multiple teams integrate their work items together to show a demonstratable product, several iterations may be needed to get to that point.
+4. Prior to starting an increment, all teams working to produce demonstrable products, should meet to plan their work, identify dependencies between the teams and establish commitments to meet the plan.
+5. Release product to stakeholders and plan the next increment of work.
+
+This Agile SE Framework aligns with the Scaled Agile Framework (SAFe) depiction of
+
+* teams working program and
+* team backlogs using iterative development.
+
+SAFe
+
+* is a framework that implements the principles of iterative development,
+* represents how a large system may have multiple LC processes being followed in parallel over time
+* key decision points need to be aligned between the multiple LC processes.
+
+There are many agile approaches that a program could use as is or combined to adapt to what works best for a given domain.
+
+For a complex system with changing requirements the assessment may result in the decision to use an incremental,
+iterative approach for development.
+
+Regardless of which model or framework is selected a program starts with a vision, a budget and usually a period of performance. Then the program’s stakeholders identify the highest value capability to develop first
+The list of capabilities is prioritized so that the long-term development is visible.
+However, this prioritized order may change as work progresses.
+What is known about the intended product may have well defined requirements and architecture representations and what is conceptual will have those requirements and designs developed incrementally as time progresses.
+
+This incremental method of development is enabled by the use of
+
+* an open system architecture,
+* MBSE tools,
+* Set-based design,
+* design thinking,
+* continuous integration,
+* continuous development,
+* architecture patterns,
+* microservice architecture, and
+* Lean sengineering.
+
+## Knowledge Area: Systems Engineering Management
+
+### Systems Engineering Management
+
+#### Discussion
+
+* Single
+  * SE
+    * Needs and Opportunities Analysis
+    * Operational Concept Development
+    * System Scoping and Requiremens Definition
+    * Architecture Definition
+    * Trade-off Analysis, Modeling, and Simulation
+  * P/SM
+    * Staffing, Organizing, Directing
+    * Cost, Schedule, Performance, Risk Monitoring and Control
+    * Operations Planning and Presentation
+    * Operations Management
+  * SI
+    * Production Line Preparation
+    * Production
+    * Production Control
+    * Testing
+* Double
+  * SE + P/SM
+    * Business Case Analysis
+    * Systems Engineering Management
+  * SE + SI
+    * Production Planning and Analysis
+    * System Integration
+  * P/SM + SI
+    * Supply Chain Management
+    * Systems Implementation Management
+* Triple
+  * SE + SI + P/SM
+    * Life Cycle Planning and Estimating
+    * Change Analysis and Management
+    * Q&A, V&V, Continuous Process Improvement
+
+## Knowledge Area: Systems Engineering and Industrial Engineering
+
+### Systems Engineering
+
+> A transdisciplinary and integrative approach to enable the successful realization, use, and retirement of engineered systems, using systems principles and concepts, and scientific, technological, and management methods.
+
+### Industrial Engineering
+
+### Venn Diagram Comparison
+
+SE
+
+* Business/Mission Analysis
+* Stakeholder Needs & Requirements
+* System Requirements
+* System Architecture (Logical and Physical)
+* Systems Design and Engineering
+* Systems Analysis
+* Implementation
+* Systems Integration
+* Systems Verification
+* Systems Validation
+* System Operation
+
+IE
+
+* Work Design  Measurement
+* Engineering Economics
+* Facilities Engineering & Management
+* Operations Engineering & Management
+* Supply Chain Management
+* Safety
+* Design & Manufacturing Engineering
+
+SE + IE
+
+* OR & Analysis
+* Quality & Reliability Engineering
+* Ergonomics & Human Factors
+* Engineering Management
+* Information Engineering
+* Product Design & Development
+* Systems Deployment
+* Updates, Upgrades, Modernization
+* Service Life Extension
+* System Maintenance
+* Logistics
+* Disposal & Retirement
+
+### Roles in a System Life Cycle
+
+| Stage | Stage                 | Role                  | Process                                                               |
+| ----- | --------------------- | --------------------- | --------------------------------------------------------------------- |
+| 1     | Establish System Need | SE                    |                                                                       |
+| 2     | Design and Develop    | DE<br />SE            | Design<br />Test and Evaluation                                       |
+| 3     | Produce System        | IE                    | Supply Chain Management<br />Develop Processes<br />Improve Processes |
+| 4     | Deploy System         | IE                    | Transportation<br />Training                                          |
+| 5     | Operate System        | SE<br />IE<br />SE/DE | Reliability Growth<br />Maintenance<br />System Upgrades              |
+| 6     | Retire System         | IE/SE                 |                                                                       |
+
+## Knowledge Area: Systems Engineering and Project Management
+
+### Relationships between Systems Engineering and Project Management
+
+#### Overlap
+
+There is a great deal of significant overlap between the scope of SE and other resources and the scope of PM.
+
+These sources describe the importance of 
+* understanding the scope of the work at hand, 
+* how to plan for critical activities, 
+* how to manage efforts while reducing risk, and 
+* how to successfully deliver value to a customer.
+
+The SE working on a project will plan, monitor, confront risk, and deliver the technical aspects of the project, while the PM is concerned with the same kinds of activities for the overall project.
+
+#### Defining Roles and Responsibilities
+
+Regardless of how the roles are divided up on a given project, the best way to reduce confusion is to explicitly describe the roles and responsibilities of the PM and the SE, as well as other key team members.
+
+The Project Management Plan (PMP) and the Systems Engineering Management Plan (SEMP) are key documents used to define the processes and methodologies the project will employ to build and deliver a product or
+service.
+
+The PMP 
+* is the master planning document for the project,
+* describes all activities, including technical activities, to be integrated and controlled during the life of the program.
+
+The SEMP 
+* is the master planning document for the
+systems engineering technical elements
+* defines SE processes and methodologies used on the project and the relationship of SE activities to other project activities
+* must be consistent with and evolve in concert with
+the PMP
+* integrate technical management plans and expectations  with customer plans and activities.
+
+## The Influence of Project Structure and Governance on Systems Engineering and Project Management Relationships
+
+### An Overview of Project Structures
+
+PM and SE governance are dependent on the organization's structure.
+
+For some projects, SE is subordinated to PM and in other cases, PM provides support to SE.
+
+Projects
+* exist within the structural model of an organization.
+* are one-time, transient events that are 
+  * initiated to accomplish a specific purpose and 
+  * terminated when the project objectives are achieved.
+
+Project size:
+* On small projects, the same person accomplishes the work activities of both PM and SE.
+Because the natures of the work activities are significantly different, it is sometimes more effective to have two persons performing PM and SE, each on a part-time basis.
+* On larger projects there are typically too many tasks to be accomplished for one person to accomplish all of the necessary
+work.
+* On very large projects, PM and SE offices with a designated project manager and a designated lead systems engineer
+
+Projects are typically organized in one of three ways: 
+1. by functional structure, 
+2. by project structure, and 
+3. by a matrix structure.
+
+In a function-structured organization, workers are grouped by the functions they perform. The systems engineering
+functions can be: 
+1. distributed among some of the functional organizations, 
+2. centralized within one organization, or 
+3. a hybrid, with some of the functions being distributed to the projects, some centralized and some distributed to functional organization.
+
+| ![Figure organizational_continuum](../images/sebok-organizational_continuum.svg) |
+| :--------------------------------------------------------------: |
+|                    Organizational Continuum                    |
+
+### Schedule-Driven versus Requirements-Driven Influences on Structure and Governance
+
+This article addresses the influences on governance relationships between the project manager and the systems
+engineer.
+
+One factor that establishes this relationship is whether a project is schedule-driven or requirements-driven.
+
+In general, 
+* a project manager is responsible for delivering an acceptable product/service on the specified delivery date and within the constraints of the specified schedule, budget, resources, and technology.
+* the systems engineer is responsible for 
+  * collecting and defining the operational requirements,
+  * specifying the systems requirements, 
+  * developing the system design, 
+  * coordinating component development teams, 
+  * integrating the system components as they become available, 
+  * verifying that the system to be delivered is correct, complete and consistent to its technical specification, and 
+  * validating the operation of the system in its intended environment.
+
+From a governance perspective, 
+* the project manager is often thought of as being a movie producer who is responsible for balancing the schedule, budget, and resource constraints to meet customer satisfaction
+* the systems engineer is responsible for product content; ergo, the systems engineer is analogous to a movie director.
+
+Organizational structures, discussed previously, provide the project manager and systems engineer with different
+levels of governance authority.
+
+In addition, schedule and requirements constraints can influence governance
+relationships.
+* A schedule-driven project 
+  * is one for which meeting the project schedule is more important than satisfying all of the project requirements; in these cases lower priority requirements may not be implemented in order to meet the schedule.
+  * examples:
+    * a project that has an external customer with a contractual delivery date and an escalating late delivery penalty, and
+    * a project for which delivery of the system must meet a major milestone (e.g. a project for an announced product release of a cell phone that is driven by market considerations).
+* For schedule-driven projects, 
+  * the project manager is responsible for planning and coordinating the work activities and resources for the project so that the team can accomplish the work in a coordinated manner to meet the schedule.
+  * the systems engineer works with the project manager to determine the technical approach that will meet the schedule. 
+  * An Integrated Master Schedule (IMS) is often used to coordinate the project.
+  * Examples:
+    * exploratory development of a new system that is needed to mitigate a potential threat (e.g. military research
+project) and
+    * projects that must conform to government regulations in order for the delivered system to be safely operated (e.g.,
+aviation and medical device regulations).
+
+An Integrated Master Plan is often used to coordinate event-driven projects.
+
+To satisfy the product requirements, the systems engineer is responsible for making technical decisions and making
+the appropriate technical trades.
+When the trade space includes cost, schedule, or resources, the systems engineer
+interacts with the project manager who is responsible for providing the resources and facilities needed to implement
+a system that satisfies the technical requirements.
+Management structure:
+* Schedule-driven projects are more likely to have a management structure in which the project manager plays the
+central role
+* Requirement-driven projects are more likely to have a management structure in which the systems engineer plays the central role

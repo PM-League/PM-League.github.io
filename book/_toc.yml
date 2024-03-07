@@ -18,7 +18,7 @@ parts:
   - file: APM/sbok
 - caption: Systems Engineering
   chapters:
-  - file: SE/se-concepts
+  - file: SE/sebok
 - caption: Systems Project Management
   chapters:
   - file: SPM/spm-concepts

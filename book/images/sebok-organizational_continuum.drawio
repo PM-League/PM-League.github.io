@@ -1,0 +1,61 @@
+<mxfile host="65bd71144e">
+    <diagram id="T9uuaTeBy4bPSP1g8a4x" name="Page-1">
+        <mxGraphModel dx="835" dy="1678" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="186" value="Functional" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="280" y="-1120" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="187" value="Matrix" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="320" y="-1040" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="188" value="Project" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="360" y="-960" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="189" value="" style="endArrow=block;html=1;endFill=1;startSize=3;endSize=3;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="188">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="240" y="-1120" as="sourcePoint"/>
+                        <mxPoint x="400" y="-920" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="192" value="" style="endArrow=block;html=1;endFill=1;startSize=3;endSize=3;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="-1120" as="sourcePoint"/>
+                        <mxPoint x="520" y="-920" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="193" value="100%" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="-1120" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="195" value="SE Organizational Functional Control" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=1;startSize=3;endSize=3;" edge="1" parent="1" source="194" target="193">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="194" value="0%" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="-950" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="196" value="0%" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="-1120" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="197" value="100%" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="-950" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="198" value="PM Control of the SE Function" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;startSize=3;endSize=3;" edge="1" parent="1" source="196" target="197">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="-950" as="sourcePoint"/>
+                        <mxPoint x="210" y="-1070" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="201" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=1;startSize=3;endSize=3;" edge="1" parent="1" source="199" target="200">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="199" value="Project Coordinator" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="-910" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="200" value="Project Manager" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="-910" width="120" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

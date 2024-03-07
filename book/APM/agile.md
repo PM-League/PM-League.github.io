@@ -6,24 +6,15 @@ Notes from Mike Griffith, *PMI-ACP Exam Prep,* Second Edition.
 
 ### Domains
 
-| Domain                                            | Weight | Sub-Domain                        |
-| ------------------------------------------------- | ------ | --------------------------------- |
-| Agile Principles and Mindset                      | 16%    |                                   |
-| Value-Driven Delivery                             | 20%    | Define Positive Value             |
-|                                                   |        | Avoid Potential Downsides         |
-|                                                   |        | Prioritization                    |
-|                                                   |        | Incremental Development           |
-| Stakeholder Engagement                            | 17%    | Understand Stakeholder Needs      |
-|                                                   |        | Ensure Stakeholder Involvement    |
-|                                                   |        | Manage Stakeholder Expectations   |
-| Team Performance                                  | 16%    | Team Formation                    |
-|                                                   |        | Team Empowerment                  |
-|                                                   |        | Team Collaboration and Commitment |
-| Adaptive Planning                                 | 12%    | Levels of Planning                |
-|                                                   |        | Adaptation                        |
-|                                                   |        | Agile Sizing and Estimation       |
-| Problem Detection and Resolution                  | 10%    |                                   |
-| Continuous Improvement (Product, Process, People) | 9%     |                                   |
+| Domain                                            | Weight | Sub-Domain                                                                                            |
+| ------------------------------------------------- | ------ | ----------------------------------------------------------------------------------------------------- |
+| Agile Principles and Mindset                      | 16%    |                                                                                                       |
+| Value-Driven Delivery                             | 20%    | Define Positive Value<br />Avoid Potential Downsides<br />Prioritization<br />Incremental Development |
+| Stakeholder Engagement                            | 17%    | Understand Stakeholder Needs<br />Ensure Stakeholder Involvement<br />Manage Stakeholder Expectations |
+| Team Performance                                  | 16%    | Team Formation<br />Team Empowerment<br />Team Collaboration and Commitment                           |
+| Adaptive Planning                                 | 12%    | Levels of Planning<br />Adaptation<br />Agile Sizing and Estimation                                   |
+| Problem Detection and Resolution                  | 10%    |                                                                                                       |
+| Continuous Improvement (Product, Process, People) | 9%     |                                                                                                       |
 
 ### Tools and Techniques
 
@@ -445,29 +436,26 @@ Interpretation:
 | :----------------------------------: |
 |           EVM calculation           |
 
-| Symbol           | Formula                   | Name                        |
-| ---------------- | ------------------------- | --------------------------- |
-| $AT$           |                           | Actual Time                 |
-| $WS$           |                           | Work Scheduled              |
-| $WP$           |                           | Work Performed              |
-| $\mathrm{BAC}$ |                           | Budget at Completion        |
-| $\mathrm{PD}$  |                           | Planned Duration            |
-| $AC$           |                           | Actual Cost                 |
-| $PV$           | $\mathrm{BAC} \cdot WS$ | Planned Value               |
-| $EV$           | $\mathrm{BAC} \cdot WP$ | Earned Value                |
-| $CV$           | $EV-AC$                 | Cost Variance               |
-| $SV$           | $EV-PV$                 | Schedule Variance           |
-| $CPI$          | $EV/AC$                 | Cost Performance Index      |
-| $SPI$          | $EV/PV$                 | Schedule Performance Index  |
-| $cEAC$         | $\mathrm{BAC}$          | Cost Estimate at Completion |
-|                  | $\mathrm{BAC}-CV$       |                             |
-|                  | $\mathrm{BAC}/CPI$      |                             |
-| $tEAC$         | $\mathrm{PD}$           | Time Estimate at Completion |
-|                  | $\mathrm{PD}/SPI$       |                             |
-| $cETC$         | $cEAC-AC$               | Cost Estimate to Complete   |
-| $tETC$         | $tEAC-AT$               | Time Estimate to Complete   |
-| $cVAC$         | $cEAC-\mathrm{BAC}$     | Cost Variance at Completion |
-| $tVAC$         | $tEAC-\mathrm{PD}$      | Time Variance at Completion |
+| Symbol           | Formula                                                             | Name                        |
+| ---------------- | ------------------------------------------------------------------- | --------------------------- |
+| $AT$           |                                                                     | Actual Time                 |
+| $WS$           |                                                                     | Work Scheduled              |
+| $WP$           |                                                                     | Work Performed              |
+| $\mathrm{BAC}$ |                                                                     | Budget at Completion        |
+| $\mathrm{PD}$  |                                                                     | Planned Duration            |
+| $AC$           |                                                                     | Actual Cost                 |
+| $PV$           | $\mathrm{BAC} \cdot WS$                                           | Planned Value               |
+| $EV$           | $\mathrm{BAC} \cdot WP$                                           | Earned Value                |
+| $CV$           | $EV-AC$                                                           | Cost Variance               |
+| $SV$           | $EV-PV$                                                           | Schedule Variance           |
+| $CPI$          | $EV/AC$                                                           | Cost Performance Index      |
+| $SPI$          | $EV/PV$                                                           | Schedule Performance Index  |
+| $cEAC$         | $\mathrm{BAC}$<br />$\mathrm{BAC}-CV$<br />$\mathrm{BAC}/CPI$ | Cost Estimate at Completion |
+| $tEAC$         | $\mathrm{PD}$<br />$\mathrm{PD}/SPI$                            | Time Estimate at Completion |
+| $cETC$         | $cEAC-AC$                                                         | Cost Estimate to Complete   |
+| $tETC$         | $tEAC-AT$                                                         | Time Estimate to Complete   |
+| $cVAC$         | $cEAC-\mathrm{BAC}$                                               | Cost Variance at Completion |
+| $tVAC$         | $tEAC-\mathrm{PD}$                                                | Time Variance at Completion |
 
 #### Agile Project Accounting
 
@@ -502,30 +490,30 @@ Work on items that maximize value delivered to customer first
 
 | Definition                     | Priority |
 | ------------------------------ | -------- |
-| **M**ust have                  | Top      |
-| **S**hould have                | Medium   |
-| **C**ould have                 | Low      |
-| **W**on't have this time       | Null     |
+| **M**ust have            | Top      |
+| **S**hould have          | Medium   |
+| **C**ould have           | Low      |
+| **W**on't have this time | Null     |
 
 ##### Kano Analysis
 
 | ![Figure Kano](../images/agile-Kano.svg) |
-| :--------------------------------------: |
-|             Kano Analysis                |
+| :------------------------------------: |
+|             Kano Analysis             |
 
 #### Relative Prioritization/Ranking
 
 | ![Figure rel_prio_rank](../images/agile-rel_prio_rank.svg) |
-| :--------------------------------------------------------: |
-|   Incorporating changes into a relative priority list      |
+| :------------------------------------------------------: |
+|   Incorporating changes into a relative priority list   |
 
 ### Deliver Incrementally
 
 Delivering the "plain-vanilla" version of a product/service allows realizing benefits to get an early $ROI$
 
 |       ![Figure cost_of_change](../images/agile-cost_of_change.svg)       |
-| :----------------------------------------------------------------------: |
-| Cost of Change (Image copyright Scott W. Ambler, www.agilemodeling.com)  |
+| :---------------------------------------------------------------------: |
+| Cost of Change (Image copyright Scott W. Ambler, www.agilemodeling.com) |
 
 #### Minimum Viable Product (MVP)
 
@@ -550,28 +538,28 @@ Prefer low tech, high touch tools over sophisticated computerized models
 Set limit to WIP (to Task/Kanban Board) $\rightarrow$ Optimize ~~resource utilization~~ throughput
 
 | ![Figure kanban_no_limit](../images/agile-kanban_no_limit.svg) |
-| :------------------------------------------------------------: |
-|                 Kanban board without limits                    |
+| :----------------------------------------------------------: |
+|                 Kanban board without limits                 |
 
 | ![Figure kanban_yes_limit](../images/agile-kanban_yes_limit.svg) |
-| :--------------------------------------------------------------: |
-|               Kanban board with limit too strict                 |
+| :------------------------------------------------------------: |
+|               Kanban board with limit too strict               |
 
 | ![Figure kanban_yes_limit_right](../images/agile-kanban_yes_limit_right.svg) |
-| :--------------------------------------------------------------------------: |
-|                       Kanban board with right limit                          |
+| :------------------------------------------------------------------------: |
+|                       Kanban board with right limit                       |
 
 #### Cumulative Flow Diagram (CFDs)
 
 Used for tracking and forecasting delivery of value
 
 | ![Figure CFD1](../images/agile-CFD1.svg) |
-| :--------------------------------------: |
-|                  CFD                     |
+| :------------------------------------: |
+|                  CFD                  |
 
 | ![Figure CFD2](../images/agile-CFD2.svg) |
-| :--------------------------------------: |
-|              Detailed CFD                |
+| :------------------------------------: |
+|              Detailed CFD              |
 
 ##### Little's Law
 
@@ -600,8 +588,8 @@ Figure
 ###### Process
 
 | ![Figure continuous_integration](../images/agile-continuous_integration.svg) |
-| :--------------------------------------------------------------------------: |
-|                           Continuous integration                             |
+| :------------------------------------------------------------------------: |
+|                           Continuous integration                           |
 
 ###### Components
 
@@ -640,8 +628,8 @@ Refactoring = clean up design to make it easier to understand and maintain witho
 Red, Green, Refactor/Clean = Writing a test that initially fails, adding code until it passes, and refactoring the code
 
 | ![Figure TDD](../images/agile-TDD.svg) |
-| :------------------------------------: |
-|             TDD process                |
+| :----------------------------------: |
+|             TDD process             |
 
 #### Acceptance Test-Driven Development (ATDD)
 
@@ -652,8 +640,8 @@ Acceptance tests captured in functional test framework (FIT/FitNesse = Framework
 ##### Process
 
 | ![Figure ATDD](../images/agile-ATDD.svg) |
-| :--------------------------------------: |
-|              ATDD process                |
+| :------------------------------------: |
+|              ATDD process              |
 
 1. **Discuss** the requirements = gather acceptance criteria
 2. **Distill** tests in a framework-friendly format = structure tests in a table format
@@ -667,6 +655,7 @@ Acceptance tests captured in functional test framework (FIT/FitNesse = Framework
 #### Keeping Stakeholders Engaged
 
 Benefits
+
 * Short iterations keep stakeholders interested in the process
 * Hear about change requests as soon as possible
 * Identify potential risks, defects, and issues
@@ -675,16 +664,18 @@ Benefits
 
 #### Incorporating Stakeholder Values
 
-Agile methods focus on bringing project priorities into alignment with stakeholder priorities by 
-* engaging the PO in the prioritization of the backlog, and 
+Agile methods focus on bringing project priorities into alignment with stakeholder priorities by
+
+* engaging the PO in the prioritization of the backlog, and
 * inviting stakeholders to planning meetings and retrospectives
 
 #### Incorporating Community Values
 
 Values shared by Scrum and XP:
+
 * **Respect** = seek consensus
   * Don't judge suggestions
-  * No idea is stupid 
+  * No idea is stupid
 * **Courage**
   * Perform early evaluations
   * Focus on transparency by showing
@@ -696,6 +687,7 @@ Values shared by Scrum and XP:
 #### Agile Chartering
 
 Project charter content:
+
 * Goal
 * Purpose
 * Composition
@@ -704,17 +696,20 @@ Project charter content:
 
 ##### Agile versus Non-Agile Charters
 
-Shared goal = 
+Shared goal =
+
 * gain agreement about Who, What, Where, When, Why, How
 * obtain authority to proceed
 
 Differences:
+
 * Agile.details < Non-agile.details
 * Agile.focus @ How
 
 ##### Developing an Agile Charter
 
 W5H
+
 * **Who**
   * Participants
   * Stakeholders
@@ -723,7 +718,7 @@ W5H
   * Mission
   * Goals
   * Objectives
-* **Where** 
+* **Where**
   * Work sites
   * Deployment requirements
   * ...
@@ -734,6 +729,7 @@ W5H
 * **How** = Approach
 
 Project elevator statement
+
 | Statement | Description                        |
 | --------- | ---------------------------------- |
 | For       | Target customers                   |
@@ -753,14 +749,16 @@ Project elevator statement
 Rationale: value of agile models is in ~~preservation~~ creation
 
 Aim:
+
 * Reflective purposes
 * Investigate problems and find solutions
 
 | ![Figure modeling_value](../images/agile-modeling_value.svg) |
-| :----------------------------------------------------------: |
-|              Modeling Value against Time                     |
+| :--------------------------------------------------------: |
+|                Modeling Value against Time                |
 
 Types:
+
 * Use case diagrams
 * Data models
 * Screen designs
@@ -774,6 +772,7 @@ Wireframes = quick and cheap mock-up of a product/service
 Personas = quick guides/reminders of key stakeholders and their interests
 
 Augment requirements:
+
 * Help prioritize work
 * Stay focused on users
 * Gain insights into who users will be
@@ -793,25 +792,28 @@ Highest efficiency: highest interactivity & highest bandwith/information density
 Information flow between stakeholders = **bidirectional**
 
 | ![Figure 2-way_comm](../images/agile-2-way_comm.svg) |
-| :--------------------------------------------------: |
-|     Dispatching vs Collaborative Communication Model |
+| :------------------------------------------------: |
+|  Dispatching vs Collaborative Communication Model  |
 
 #### Knowledge Sharing
 
 Agile projects are encouraged to take an abundance-based—rather than scarcity-based—attitude toward sharing knowledge
 
 Benefits:
+
 * $\uparrow$ #people who know about something, $\uparrow$ #people there will be who can help you when you get stuck
 * Helps balance the workload between team members
 
 #### Information Radiators
 
 Information radiators = highly visible displays of information, including:
+
 * large charts
 * graphs
 * summaries
 
 Data:
+
 * Features delivered vs features remaining
 * Who is working on what
 * Features selected for the current iteration
@@ -826,6 +828,7 @@ Data:
 ### Working Collaboratively
 
 Benefits:
+
 * Generates wiser decisions
 * Problem solving
 * Fosters action
@@ -835,6 +838,7 @@ Benefits:
 #### Workshops
 
 Tips:
+
 * Diverse groups reflect a wider range of viewpoints than just a few experts
 * Use techniques to prevent dominant individuals and extroverts from monopolizing the discussion
 * Start with an activity that gets everyone participating within the first five minutes
@@ -843,21 +847,21 @@ Tips:
 
 ##### Methods
 
-| Method        | Description |
-| ------------- | ----------- |
+| Method        | Description                           |
+| ------------- | ------------------------------------- |
 | Quiet Writing | 5-7 minutes to generate list of ideas |
-| Round-Robin   | Take turns to suggest ideas |
-| Free-for-All  | Shout ideas |
+| Round-Robin   | Take turns to suggest ideas           |
+| Free-for-All  | Shout ideas                           |
 
 #### Collaboration Games
 
-| Game                     | Summary |
-| ------------------------ | ----------- |
+| Game                     | Summary                                              |
+| ------------------------ | ---------------------------------------------------- |
 | Remember the Future      | Vision-setting and requirements-elicitation exercise |
-| Prune the Product Tree   | Helps stakeholders gather and shape requirements |
-| Speedboat (aka Sailboat) | Identify threats and opportunities (risks) |
-| Buy a Feature            | Prioritization exercise |
-| Bang-for-the-Buck        | Value versus cost rankings |
+| Prune the Product Tree   | Helps stakeholders gather and shape requirements     |
+| Speedboat (aka Sailboat) | Identify threats and opportunities (risks)           |
+| Buy a Feature            | Prioritization exercise                              |
+| Bang-for-the-Buck        | Value versus cost rankings                           |
 
 ##### Remember the Future
 
@@ -945,16 +949,16 @@ Development Team
 
 ##### Tuckman Model of Team Formation and Development
 
-| ![Figure tuckman](../images/agile-tuckman.svg)       |
-| :--------------------------------------------------: |
-|  Tuckman model team formation and development stages |
+|    ![Figure tuckman](../images/agile-tuckman.svg)    |
+| :-------------------------------------------------: |
+| Tuckman model team formation and development stages |
 
 | Stage      | Description                                   |
 | ---------- | --------------------------------------------- |
 | Forming    | Working group                                 |
-| Storming   | Pseudo team $\rightarrow$ Potential team     |
-| Norming    | Potential team $\rightarrow$ Real team      |
-| Performing | Real team $\rightarrow$ High performing team |
+| Storming   | Pseudo team$\rightarrow$ Potential team     |
+| Norming    | Potential team$\rightarrow$ Real team      |
+| Performing | Real team$\rightarrow$ High performing team |
 
 #### Adaptive Leadership
 
@@ -968,8 +972,8 @@ Development Team
 #### Team Motivation
 
 | ![Figure net_contribution](../images/agile-net_contribution.svg) |
-| :--------------------------------------------------:             |
-| Continuum of Net Contribution                                    |
+| :------------------------------------------------------------: |
+|                 Continuum of Net Contribution                 |
 
 #### Training, Coaching, and Mentoring
 
@@ -982,6 +986,7 @@ Training = teaching skills/knowledge through practice and instructions
 Coaching = facilitated process that helps developing and improving performance
 
 Guidelines for 1-to-1 coaching:
+
 * Meet them a half-step ahead
 * Guarantee safety
 * Partner with managers
@@ -990,6 +995,7 @@ Guidelines for 1-to-1 coaching:
 ##### Mentoring
 
 Mentoring = professional relantionship where:
+
 * Mentor $\rightarrow$ tackles issues on as an-needed basis
 * Mentee $\rightarrow$ free-flowing agenda
 
@@ -1012,22 +1018,22 @@ Mentoring = professional relantionship where:
 ##### Burndown Charts
 
 | ![Figure burndown](../images/agile-burndown.svg) |
-| :-----------------------------------------------:|
-| Burndown chart                                   |
+| :--------------------------------------------: |
+|                 Burndown chart                 |
 
 ##### Burnup Charts
 
-| ![Figure burnup](../images/agile-burnup.svg)  |
-| :-------------------------------------------: |
-| Burnup chart                                  |
+| ![Figure burnup](../images/agile-burnup.svg) |
+| :----------------------------------------: |
+|                Burnup chart                |
 
 #### Velocity
 
 $Velocity=Work/Iteration$, where $Work=StoryPoints, UserStories, Hours,...$
 
 | ![Figure velocity](../images/agile-velocity.svg) |
-| :----------------------------------------------: |
-|  Velocity chart                                  |
+| :--------------------------------------------: |
+|                 Velocity chart                 |
 
 ## Adaptive Planning
 

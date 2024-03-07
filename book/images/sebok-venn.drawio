@@ -1,0 +1,115 @@
+<mxfile host="65bd71144e">
+    <diagram id="T9uuaTeBy4bPSP1g8a4x" name="Page-1">
+        <mxGraphModel dx="1002" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="322" value="Business Case Analysis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="1020" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="323" value="Systems Engineering Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="1060" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="337" value="System Integration" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="720" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="363" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="40" y="40" width="260" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="315" value="&lt;b&gt;SE&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" vertex="1" parent="363">
+                    <mxGeometry width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="317" value="Needs and Opportunities Analysis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="363">
+                    <mxGeometry y="20" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="318" value="Operational Concept Development" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="363">
+                    <mxGeometry y="40" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="319" value="System Scoping and Requirements Definition" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="363">
+                    <mxGeometry y="60" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="320" value="Architecture Definition" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="363">
+                    <mxGeometry y="80" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="321" value="Trade-off Analysis, Modeling, and Simulation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="363">
+                    <mxGeometry y="100" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="364" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="600" y="40" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="331" value="&lt;b&gt;SI&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;" vertex="1" parent="364">
+                    <mxGeometry width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="332" value="Production Line Preparation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="364">
+                    <mxGeometry y="20" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="333" value="Production" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="364">
+                    <mxGeometry y="40" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="334" value="Production Control" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="364">
+                    <mxGeometry y="60" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="335" value="Testing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="364">
+                    <mxGeometry y="80" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="365" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="320" y="40" width="260" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="324" value="&lt;b&gt;P/SM&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=none;opacity=50;" vertex="1" parent="365">
+                    <mxGeometry width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="325" value="Staffing, Organizing, Directing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;opacity=50;" vertex="1" parent="365">
+                    <mxGeometry y="20" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="326" value="Cost, Schedule, Performance, Risk Monitoring" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;opacity=50;" vertex="1" parent="365">
+                    <mxGeometry y="40" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="327" value="Operations Planning and Preparation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;opacity=50;" vertex="1" parent="365">
+                    <mxGeometry y="60" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="328" value="Operations Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;opacity=50;" vertex="1" parent="365">
+                    <mxGeometry y="80" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="366" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="40" y="200" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="329" value="Business Case Analysis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="366">
+                    <mxGeometry width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="330" value="Systems Engineering Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="366">
+                    <mxGeometry y="20" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="367" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="640" y="200" width="240" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="355" value="Supply Chain Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="367">
+                    <mxGeometry width="240" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="356" value="Systems Implementation Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="367">
+                    <mxGeometry y="20" width="240" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="368" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="320" y="320" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="336" value="Production Planning and Analysis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="368">
+                    <mxGeometry width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="354" value="System Integration" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="368">
+                    <mxGeometry y="20" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="369" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="320" y="190" width="280" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="338" value="Life Cycle Planning and Estimating" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="369">
+                    <mxGeometry width="280" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="339" value="Change Analysis and Management" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="369">
+                    <mxGeometry y="20" width="280" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="340" value="QA, V&amp;amp;V, Continuous Process Improvement" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="369">
+                    <mxGeometry y="40" width="280" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

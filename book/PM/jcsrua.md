@@ -37,7 +37,7 @@ Objective:
 | Mode                     | $ Mo  : P[X = Mo] = \max[P(\bf{x})]$                                                                              |
 | Skewness                 | $ Skewness(X) = \frac{\mu_3}{\mu_2^{3/2}}$ where $\mu_3$ and $\mu_2$ = third and second moments about $\mu$ |
 | Standard Deviation       | $ \sigma = \sqrt{\sum_{i=0}^n (y_i - \bar{y})^2/N}$                                                               |
-| Variance                 | $ \sigma = \sum_{i=0}^n (y_i - \bar{y})^2/N$                                                                      |
+| Variance                 | $ \sigma^2 = \sum_{i=0}^n (y_i - \bar{y})^2/N$                                                                      |
 | Probability Distribution | $P(X)$                                                                                                            |
 | PDF                      | $f_X(x) = P(X = x)$                                                                                               |
 | CDF                      | $F_X(x) = P(X \leq x) = \int_{-\infty}^{x} f(x) \text{d}x$                                                        |

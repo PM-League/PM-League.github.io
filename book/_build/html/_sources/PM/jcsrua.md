@@ -37,7 +37,7 @@ Objective:
 | Mode                     | $ Mo  : P[X = Mo] = \max[P(\bf{x})]$                                                                              |
 | Skewness                 | $ Skewness(X) = \frac{\mu_3}{\mu_2^{3/2}}$ where $\mu_3$ and $\mu_2$ = third and second moments about $\mu$ |
 | Standard Deviation       | $ \sigma = \sqrt{\sum_{i=0}^n (x_i - \bar{x})^2/N}$                                                               |
-| Variance                 | $ \sigma^2 = \sum_{i=0}^n (x_i - \bar{x})^2/N$                                                                      |
+| Variance                 | $ \sigma^2 = \sum_{i=0}^n (x_i - \bar{x})^2/N$                                                                    |
 | Probability Distribution | $P(X)$                                                                                                            |
 | PDF                      | $f_X(x) = P(X = x)$                                                                                               |
 | CDF                      | $F_X(x) = P(X \leq x) = \int_{-\infty}^{x} f(x) \text{d}x$                                                        |
@@ -146,12 +146,12 @@ $\min$ < $LB$ < $Mo$ / $Median$ / $\mu$  < $UB$ < $\max$ where
 | Distribution | Application                                                 | Parameters | Recommendation       |
 | ------------ | ----------------------------------------------------------- | ---------- | -------------------- |
 | Lognormal    | Default                                                     | 2          | $Median,UB$        |
-| Log-t        | Lognormal $\in n \leq 30$                                  | 3          |                      |
+| Log-t        | Lognormal$\in n \leq 30$                                  | 3          |                      |
 | Triangular   | Expert opinion<br />Finite $\min,\max$<br />Possible skew | 3          | $LB,Mo,UB$         |
 | PERT         | Between Triangular and Beta                                 | 3          | $LB,Mo,UB$         |
-| Beta         | $\min,\max$ region > $Mo$                               | 4          | $\min,LB,UB,\max$ |
+| Beta         | $\min,\max$ region > $Mo$                               | 4          | $\min,LB,UB,\max$  |
 | Normal       | Equal chance$LB,UB$                                       | 2          | $\mu,Median,Mo,UB$ |
-| t            | Normal $\in n\leq30$                                       | 3          | $LB,UB$            |
+| t            | Normal$\in n\leq30$                                       | 3          | $LB,UB$            |
 | Uniform      |                                                             | 2          |                      |
 
 #### Subjective
@@ -202,25 +202,43 @@ Unless there is no evidence to do otherwise,
 * Task.Duration $\sim$ Beta
 * CLT applies @ path-level $\rightarrow$ Tasks samples are independent and identically distributed (iid)
 
-
 ### Algorithm
+
 1. For each task $i$:
-    1. Define $LB,Mo,UB$
-    2. Evaluate Task mean: $\mu = (LB+4Mo + UB)/6$
-    3. Evaluate Task variance: $\sigma^2 = (UB-LB)/36$
-        * $\pm 1\sigma \rightarrow 68.26\% $
-        * $\pm 2\sigma \rightarrow 95.46\% $
-        * $\pm 3\sigma \rightarrow 99.73\% $
+   1. Define $LB,Mo,UB$
+   2. Evaluate Task mean: $\mu = (LB+4Mo + UB)/6$
+   3. Evaluate Task variance: $\sigma^2 = (UB-LB)/36$
+      * $\pm 1\sigma \rightarrow 68.26\% $
+      * $\pm 2\sigma \rightarrow 95.46\% $
+      * $\pm 3\sigma \rightarrow 99.73\% $
 2. For each path $j$ apply:
-    1. Evaluate Path mean: $\mu_j = \sum \mu_i$
-    2. Evaluate Path variance via Variance Sum Law (VSL): $\sigma^2_j = \sum \sigma^2_i$
-    3. Evaluate Path standard deviation: $\sigma_j = \sqrt{\sigma^2_i}$
+   1. Evaluate Path mean: $\mu_j = \sum \mu_i$
+   2. Evaluate Path variance via Variance Sum Law (VSL): $\sigma^2_j = \sum \sigma^2_i$
+   3. Evaluate Path standard deviation: $\sigma_j = \sqrt{\sigma^2_i}$
 3. Apply Central Limit Theorem (CLT): $P(T <= x) = N^{-1}[(x-\mu)/\sigma]$
 
 ## Monte Carlo
 
+### Principle
+Rrandom sampling = new sample points are generated without taking into account the previously generated sample points.
+
+### Algorithm
+
+1. For each task:
+    1. Define **cost** and **duration** distributions
+        * $Task.cost \sim C(x)$
+        * $Task.duration \sim T(x)$
+    2. Set precedence relationships
+2. For $ s=1 \rightarrow S$: 
+    1. For each task:
+        1. Randomize **cost** and **duration** ($Task.cost, Task.duration$)
+            * $Task.cost \leftarrow C^{-1}[U(0,1)]$
+            * $Task.duration \leftarrow T^{-1}[U(0,1)]$
+        2. Determine **start** and **finish** ($Task.start, Task.finish$)
+            * $Task.start = \max \left[ Predecessor.finish \, \text{for} \, Predecessor \, \text{in} \,  \bm{Task.predecessor} \right]$
+            * $Task.finish = Task.start$ + $Task.duration$
+    2. Calculate project **duration** and **cost**
+        * $Project.duration = \max \left[ Task.finish \, \text{for} \, Task \, \text{in} \, \bm{Task} \right]$
+        * $Project.cost = \sum_{Task} Task.cost$
 
 
-
-
-## Latin Hypercube Sampling

@@ -197,7 +197,21 @@ Unless there is no evidence to do otherwise,
 
 ## PERT
 
+### Assumptions
 
+### Algorithm
+1. For each task $i$:
+    1. Define $LB,Mo,UB$
+    2. Evaluate Task mean: $\mu = (LB+4Mo + UB)/6$
+    3. Evaluate Task variance: $\sigma^2 = (UB-LB)/36$
+        * $\pm 1\sigma \rightarrow 68.26\% $
+        * $\pm 2\sigma \rightarrow 95.46\% $
+        * $\pm 3\sigma \rightarrow 99.73\% $
+2. For each path $j$:
+    1. Evaluate Path mean: $\mu_j = \sum \mu_i$
+    2. Evaluate Path variance: $\sigma^2_j = \sum \sigma^2_i$
+    3. Evaluate Path standard deviation: $\sigma_j = \sqrt{\sigma^2_i}$
+3. Determine $P(T <= x) = N^{-1}[()]$
 
 ## Monte Carlo
 

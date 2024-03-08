@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -204,10 +204,6 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../SPM/spm-concepts.html">SPM Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../SPM/DSM.html">Design Structure Matrix (DSM)</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">System Dynamics</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../SD/sd-concepts.html">SD Concepts</a></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Misc</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Misc/pert-mod.html">Modified PERT Bistribution</a></li>
@@ -357,7 +353,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#special-considerations">Special Considerations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pert">PERT</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pert">PERT</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assumptions">Assumptions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithm">Algorithm</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monte-carlo">Monte Carlo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latin-hypercube-sampling">Latin Hypercube Sampling</a></li>
 </ul>
@@ -746,6 +746,39 @@ document.write(`
 </section>
 <section id="pert">
 <h2>PERT<a class="headerlink" href="#pert" title="Link to this heading">#</a></h2>
+<section id="assumptions">
+<h3>Assumptions<a class="headerlink" href="#assumptions" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Task.Duration <span class="math notranslate nohighlight">\(\sim\)</span> Beta</p></li>
+<li><p>CLT applies &#64; path-level <span class="math notranslate nohighlight">\(\rightarrow\)</span> Tasks samples are independent and identically distributed (iid)</p></li>
+</ul>
+</section>
+<section id="algorithm">
+<h3>Algorithm<a class="headerlink" href="#algorithm" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>For each task <span class="math notranslate nohighlight">\(i\)</span>:</p>
+<ol class="arabic simple">
+<li><p>Define <span class="math notranslate nohighlight">\(LB,Mo,UB\)</span></p></li>
+<li><p>Evaluate Task mean: <span class="math notranslate nohighlight">\(\mu = (LB+4Mo + UB)/6\)</span></p></li>
+<li><p>Evaluate Task variance: <span class="math notranslate nohighlight">\(\sigma^2 = (UB-LB)/36\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\pm 1\sigma \rightarrow 68.26\% \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\pm 2\sigma \rightarrow 95.46\% \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\pm 3\sigma \rightarrow 99.73\% \)</span></p></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>For each path <span class="math notranslate nohighlight">\(j\)</span> apply:</p>
+<ol class="arabic simple">
+<li><p>Evaluate Path mean: <span class="math notranslate nohighlight">\(\mu_j = \sum \mu_i\)</span></p></li>
+<li><p>Evaluate Path variance via Variance Sum Law (VSL): <span class="math notranslate nohighlight">\(\sigma^2_j = \sum \sigma^2_i\)</span></p></li>
+<li><p>Evaluate Path standard deviation: <span class="math notranslate nohighlight">\(\sigma_j = \sqrt{\sigma^2_i}\)</span></p></li>
+</ol>
+</li>
+<li><p>Apply Central Limit Theorem (CLT): <span class="math notranslate nohighlight">\(P(T &lt;= x) = N^{-1}[(x-\mu)/\sigma]\)</span></p></li>
+</ol>
+</section>
 </section>
 <section id="monte-carlo">
 <h2>Monte Carlo<a class="headerlink" href="#monte-carlo" title="Link to this heading">#</a></h2>
@@ -864,7 +897,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#special-considerations">Special Considerations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pert">PERT</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pert">PERT</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assumptions">Assumptions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#algorithm">Algorithm</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monte-carlo">Monte Carlo</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latin-hypercube-sampling">Latin Hypercube Sampling</a></li>
 </ul>

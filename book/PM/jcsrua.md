@@ -199,6 +199,10 @@ Unless there is no evidence to do otherwise,
 
 ### Assumptions
 
+* Task.Duration $\sim$ Beta
+* CLT applies @ path-level $\rightarrow$ Tasks samples are independent and identically distributed (iid)
+
+
 ### Algorithm
 1. For each task $i$:
     1. Define $LB,Mo,UB$
@@ -207,12 +211,16 @@ Unless there is no evidence to do otherwise,
         * $\pm 1\sigma \rightarrow 68.26\% $
         * $\pm 2\sigma \rightarrow 95.46\% $
         * $\pm 3\sigma \rightarrow 99.73\% $
-2. For each path $j$:
+2. For each path $j$ apply:
     1. Evaluate Path mean: $\mu_j = \sum \mu_i$
-    2. Evaluate Path variance: $\sigma^2_j = \sum \sigma^2_i$
+    2. Evaluate Path variance via Variance Sum Law (VSL): $\sigma^2_j = \sum \sigma^2_i$
     3. Evaluate Path standard deviation: $\sigma_j = \sqrt{\sigma^2_i}$
-3. Determine $P(T <= x) = N^{-1}[()]$
+3. Apply Central Limit Theorem (CLT): $P(T <= x) = N^{-1}[(x-\mu)/\sigma]$
 
 ## Monte Carlo
+
+
+
+
 
 ## Latin Hypercube Sampling

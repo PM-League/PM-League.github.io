@@ -1,0 +1,820 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Risk Management &#8212; PM League Wiki</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'PM/rm';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Estimates at Completion" href="eac.html" />
+    <link rel="prev" title="Earned Value Management" href="evm.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="PM League Wiki - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="PM League Wiki - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Project Management</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pm-concepts.html">PM Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pm-processes.html">PM Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jcsrua.html">Probabilistic Scheduling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lob.html">Line of Balance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ccm.html">Critical Chain Method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evm.html">Earned Value Management</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Risk Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eac.html">Estimates at Completion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ppm.html">Project Portfolio Management</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Agile Project Management</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../APM/agile.html">Agile Domains, Tools, and Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../APM/sbok.html">Scrum Body of Knowledge</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Systems Engineering</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../SE/sebok.html">SEBoK</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Systems Project Management</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../SPM/spm-concepts.html">SPM Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SPM/DSM.html">Design Structure Matrix (DSM)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Misc</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Misc/pert-mod.html">Modified PERT Bistribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Misc/putnam.html">Putnam Model</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Risk Management</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principles">Principles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#framework">Framework</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#process">Process</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general">General</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#communication-consultation">Communication &amp; Consultation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scope-context-and-criteria">Scope, Context, and Criteria</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">General</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-the-scope">Defining the Scope</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#external-and-internal-context">External and Internal Context</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-risk-criteria">Defining Risk Criteria</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-assessment">Risk Assessment</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">General</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-identification">Risk Identification</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-analysis">Risk Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-evaluation">Risk Evaluation</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-treatment">Risk Treatment</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">General</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#selection-of-risk-treatment-options">Selection of Risk Treatment Options</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-and-implementing-risk-treatment-plans">Preparing and Implementing Risk Treatment Plans</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-review">Monitoring &amp; Review</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recording-reporting">Recording &amp; Reporting</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="risk-management">
+<h1>Risk Management<a class="headerlink" href="#risk-management" title="Link to this heading">#</a></h1>
+<section id="principles">
+<h2>Principles<a class="headerlink" href="#principles" title="Link to this heading">#</a></h2>
+<p>The purpose of <strong>risk management (RM)</strong> is the creation and protection of value. <br />
+It improves performance, encourages innovation, and supports the achievement of objectives.</p>
+<p>The principles</p>
+<ul class="simple">
+<li><p>guide the characteristics of effective and efficient RM, communicating its value and explaining its intention and purpose. \</p></li>
+<li><p>are the foundation for managing risk and should be considered when establishing the organization’s RM framework and processes.</p></li>
+</ul>
+<p>These principles should enable an organization to manage the effects of uncertainty on its objectives.</p>
+<p>Effective RM requires the following elements and can be further explained as follows.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Principle</p></th>
+<th class="head text-left"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Integrated</p></td>
+<td class="text-left"><p>RM is an integral part of all organizational activities</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Structured and Comprehensive</p></td>
+<td class="text-left"><p>A structured and comprehensive approach to RM contributes to consistent and comparable results</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Customized</p></td>
+<td class="text-left"><p>The RM framework and process are customized and proportionate to the organization’s external and internal context related to its objectives</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Inclusive</p></td>
+<td class="text-left"><p>Appropriate and timely involvement of stakeholders enables their knowledge, views, and perceptions to be considered. This results in improved awareness and informed RM</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Dynamic</p></td>
+<td class="text-left"><p>Risks can emerge, change or disappear as an organization’s external and internal context changes. RM anticipates, detects, acknowledges, and responds to those changes and events in an appropriate and timely manner</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Best available information</p></td>
+<td class="text-left"><p>The inputs to RM are based on historical and current information and future expectations. RM considers any limitations and uncertainties associated with such information and expectations. Information should be timely, transparent, and available to relevant stakeholders</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Human and cultural factors</p></td>
+<td class="text-left"><p>Human behavior and culture significantly influence all aspects of RM at each level and stage</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Continual improvement</p></td>
+<td class="text-left"><p>RM is continually improved through learning and experience</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="framework">
+<h2>Framework<a class="headerlink" href="#framework" title="Link to this heading">#</a></h2>
+</section>
+<section id="process">
+<h2>Process<a class="headerlink" href="#process" title="Link to this heading">#</a></h2>
+<section id="general">
+<h3>General<a class="headerlink" href="#general" title="Link to this heading">#</a></h3>
+<p>The RM process involves</p>
+<ul class="simple">
+<li><p>systematically applying policies, procedures, and practices to communicating and consulting,</p></li>
+<li><p>establishing the context, and</p></li>
+<li><p>assessing, treating, monitoring, reviewing, recording, and reporting risk.</p></li>
+</ul>
+<p>This process is illustrated in Figure 1.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><img alt="Figure 1" src="../_images/FigRisk-1.drawio.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Figure 1 — Process</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="communication-consultation">
+<h3>Communication &amp; Consultation<a class="headerlink" href="#communication-consultation" title="Link to this heading">#</a></h3>
+<p>The purpose of communication and consultation is to assist relevant stakeholders in understanding</p>
+<ul class="simple">
+<li><p>risk,</p></li>
+<li><p>the basis on which decisions are made, and</p></li>
+<li><p>why particular actions are required.</p></li>
+</ul>
+<p>Communication promotes awareness and understanding of risk, whereas consultation involves obtaining feedback and information to support decision-making.</p>
+<p>Close coordination between the two should facilitate the factual, timely, relevant, accurate, and understandable exchange of information, taking into account</p>
+<ul class="simple">
+<li><p>the confidentiality and integrity of information, and</p></li>
+<li><p>the privacy rights of individuals.</p></li>
+</ul>
+<p>Communication and consultation with appropriate external and internal stakeholders should occur within and throughout all steps of the RM process.</p>
+<p>Communication and consultation aim to:</p>
+<ul class="simple">
+<li><p>bring different areas of expertise together for each step of the RM process;</p></li>
+<li><p>ensure that different views are appropriately considered when defining risk criteria and when evaluating risks;</p></li>
+<li><p>provide sufficient information to facilitate risk oversight and decision-making;</p></li>
+<li><p>build a sense of inclusiveness and ownership among those affected by risk.</p></li>
+</ul>
+</section>
+<section id="scope-context-and-criteria">
+<h3>Scope, Context, and Criteria<a class="headerlink" href="#scope-context-and-criteria" title="Link to this heading">#</a></h3>
+<section id="id1">
+<h4>General<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p>The purpose of establishing the scope, context, and criteria is to customize the RM process, enabling effective risk assessment and appropriate risk treatment.</p>
+<p>Scope, context, and criteria involve</p>
+<ul class="simple">
+<li><p>defining the scope of the process, and</p></li>
+<li><p>understanding the external and internal context.</p></li>
+</ul>
+</section>
+<section id="defining-the-scope">
+<h4>Defining the Scope<a class="headerlink" href="#defining-the-scope" title="Link to this heading">#</a></h4>
+<p>The organization should define the scope of its RM activities.</p>
+<p>As the RM process may be applied at different levels (e.g. strategic, operational, programme, project, or other activities), it is important to be clear about</p>
+<ul class="simple">
+<li><p>the scope under consideration,</p></li>
+<li><p>the relevant objectives to be considered, and</p></li>
+<li><p>their alignment with organizational objectives.</p></li>
+</ul>
+<p>When planning the approach, considerations include:</p>
+<ul class="simple">
+<li><p>objectives and decisions that need to be made;</p></li>
+<li><p>outcomes expected from the steps to be taken in the process;</p></li>
+<li><p>time, location, specific inclusions, and exclusions;</p></li>
+<li><p>appropriate risk assessment tools and techniques;</p></li>
+<li><p>resources required, responsibilities and records to be kept;</p></li>
+<li><p>relationships with other projects, processes, and activities.</p></li>
+</ul>
+</section>
+<section id="external-and-internal-context">
+<h4>External and Internal Context<a class="headerlink" href="#external-and-internal-context" title="Link to this heading">#</a></h4>
+<p>The external and internal context is the environment in which the organization seeks to define and achieve its objectives.</p>
+<p>The context of the RM process</p>
+<ul class="simple">
+<li><p>should be established by understanding the external and internal environment in which the organization operates, and</p></li>
+<li><p>should reflect the specific environment of the activity to which the RM process is to be applied.</p></li>
+</ul>
+<p>Understanding the context is important because:</p>
+<ul class="simple">
+<li><p>RM takes place in the context of the objectives and activities of the organization;</p></li>
+<li><p>organizational factors can be a source of risk;</p></li>
+<li><p>the purpose and scope of the RM process may be interrelated with the organization’s objectives as a whole.</p></li>
+</ul>
+<p>The organization should establish the RM processes in external and internal contexts by considering the factors mentioned earlier.</p>
+</section>
+<section id="defining-risk-criteria">
+<h4>Defining Risk Criteria<a class="headerlink" href="#defining-risk-criteria" title="Link to this heading">#</a></h4>
+<p>The organization should</p>
+<ul class="simple">
+<li><p>specify the amount and type of risk it may or may not take relative to objectives,</p></li>
+<li><p>define criteria to evaluate risk’s significance, and support decision-making processes. \</p></li>
+</ul>
+<p>Risk criteria should</p>
+<ul class="simple">
+<li><p>be aligned with the RM framework and customized to the specific purpose and scope of the activity under consideration,</p></li>
+<li><p>reflect the organization’s values, objectives, and resources,</p></li>
+<li><p>be consistent with policies and statements about RM,</p></li>
+<li><p>be defined considering the organization’s obligations and stakeholders’ views, and</p></li>
+<li><p>be dynamic and continually reviewed and amended, if necessary.</p></li>
+</ul>
+<p>To set risk criteria, the following should be considered:</p>
+<ul class="simple">
+<li><p>the nature and type of uncertainties that can affect outcomes and objectives (both tangible and intangible);</p></li>
+<li><p>how consequences (both positive and negative) and likelihood will be defined and measured;</p></li>
+<li><p>time-related factors;</p></li>
+<li><p>consistency in the use of measurements;</p></li>
+<li><p>how the level of risk is to be determined;</p></li>
+<li><p>how combinations and sequences of multiple risks will be taken into account;</p></li>
+<li><p>the organization’s capacity.</p></li>
+</ul>
+</section>
+</section>
+<section id="risk-assessment">
+<h3>Risk Assessment<a class="headerlink" href="#risk-assessment" title="Link to this heading">#</a></h3>
+<p>Risk assessment is the overall process of risk identification, analysis, and evaluation.</p>
+<p>Risk assessment should be conducted systematically, iteratively, and collaboratively, drawing on the knowledge and views of stakeholders. <br />
+It should use the best available information, supplemented by further inquiry.</p>
+<section id="id2">
+<h4>General<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+</section>
+<section id="risk-identification">
+<h4>Risk Identification<a class="headerlink" href="#risk-identification" title="Link to this heading">#</a></h4>
+<p>The purpose of risk identification is to find, recognize and describe risks that might help or prevent an organization from achieving its objectives. <br />
+Relevant, appropriate and up-to-date information is important in identifying risks.</p>
+<p>The organization can use various techniques to identify uncertainties affecting one or more objectives. <br />
+The following factors, and the relationship between these factors, should be considered:</p>
+<ul class="simple">
+<li><p>tangible and intangible sources of risk;</p></li>
+<li><p>causes and events;</p></li>
+<li><p>threats and opportunities;</p></li>
+<li><p>vulnerabilities and capabilities;</p></li>
+<li><p>changes in the external and internal context;</p></li>
+<li><p>indicators of emerging risks;</p></li>
+<li><p>the nature and value of assets and resources;</p></li>
+<li><p>consequences and their impact on objectives;</p></li>
+<li><p>limitations of knowledge and reliability of information;</p></li>
+<li><p>time-related factors;</p></li>
+<li><p>biases, assumptions, and beliefs of those involved.</p></li>
+</ul>
+<p>The organization should identify risks, whether or not their sources are under its control. <br />
+Consideration should be given that there may be more than one type of outcome, resulting in various tangible or intangible consequences.</p>
+</section>
+<section id="risk-analysis">
+<h4>Risk Analysis<a class="headerlink" href="#risk-analysis" title="Link to this heading">#</a></h4>
+<p>Risk analysis aims to comprehend the nature of risk and its characteristics, including, where appropriate, the level of risk. <br />
+Risk analysis involves a detailed consideration of uncertainties, risk sources, consequences, likelihood, events, scenarios, controls, and their effectiveness. <br />
+An event can have multiple causes and consequences and can affect multiple objectives.</p>
+<p>Risk analysis can be undertaken with varying degrees of detail and complexity, depending on the purpose of the analysis, the availability and reliability of the information, and the resources available. <br />
+Analysis techniques can be qualitative, quantitative, or a combination of these, depending on the circumstances and intended use.</p>
+<p>Risk analysis should consider factors such as:</p>
+<ul class="simple">
+<li><p>the likelihood of events and consequences;</p></li>
+<li><p>the nature and magnitude of consequences;</p></li>
+<li><p>complexity and connectivity;</p></li>
+<li><p>time-related factors and volatility;</p></li>
+<li><p>the effectiveness of existing controls;</p></li>
+<li><p>sensitivity and confidence levels.</p></li>
+</ul>
+<p>The risk analysis may be influenced by any divergence of opinions, biases, perceptions of risk, and judgments. <br />
+Additional influences are the quality of the information used, the assumptions and exclusions made, any limitations of the techniques, and how they are executed. <br />
+These influences should be considered, documented, and communicated to decision-makers.</p>
+<p>Highly uncertain events can be difficult to quantify. <br />
+This can be an issue when analyzing events with severe consequences. <br />
+In such cases, using a combination of techniques generally provides greater insight.</p>
+<p>Risk analysis provides input to risk evaluation, decisions on whether risk needs to be treated and how, and the most appropriate risk treatment strategy and methods. <br />
+The results provide insight into decisions, where choices are being made, and the options involve different types and levels of risk.</p>
+</section>
+<section id="risk-evaluation">
+<h4>Risk Evaluation<a class="headerlink" href="#risk-evaluation" title="Link to this heading">#</a></h4>
+<p>The purpose of risk evaluation is to support decisions. <br />
+Risk evaluation involves comparing the risk analysis results with the established risk criteria to determine where additional action is required. <br />
+This can lead to a decision to:</p>
+<ul class="simple">
+<li><p>do nothing further;</p></li>
+<li><p>consider risk treatment options;</p></li>
+<li><p>undertake further analysis to better understand the risk;</p></li>
+<li><p>maintain existing controls;</p></li>
+<li><p>reconsider objectives.</p></li>
+</ul>
+<p>Decisions should take account of the wider context and the actual and perceived consequences to external and internal stakeholders.</p>
+<p>The outcome of risk evaluation should be recorded, communicated, and then validated at appropriate levels of the organization.</p>
+</section>
+</section>
+<section id="risk-treatment">
+<h3>Risk Treatment<a class="headerlink" href="#risk-treatment" title="Link to this heading">#</a></h3>
+<section id="id3">
+<h4>General<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
+<p>The purpose of risk treatment is to select and implement options for addressing risk. <br />
+Risk treatment involves an iterative process of:</p>
+<ul class="simple">
+<li><p>formulating and selecting risk treatment options;</p></li>
+<li><p>planning and implementing risk treatment;</p></li>
+<li><p>assessing the effectiveness of that treatment;</p></li>
+<li><p>deciding whether the remaining risk is acceptable;</p></li>
+<li><p>if not acceptable, take further treatment.</p></li>
+</ul>
+</section>
+<section id="selection-of-risk-treatment-options">
+<h4>Selection of Risk Treatment Options<a class="headerlink" href="#selection-of-risk-treatment-options" title="Link to this heading">#</a></h4>
+<p>Selecting the most appropriate risk treatment option(s) involves balancing the potential benefits derived from the achievement of the objectives against costs, effort, or disadvantages of implementation. <br />
+Risk treatment options are not necessarily mutually exclusive or appropriate in all circumstances. Options for treating risk may involve one or more of the following:
+— avoiding the risk by deciding not to start or continue with the activity that gives rise to the risk;
+— taking or increasing the risk to pursue an opportunity;
+— removing the risk source;
+— changing the likelihood;
+— changing the consequences;
+— sharing the risk (e.g. through contracts, buying insurance);
+— retaining the risk by informed decision.</p>
+<p>Justification for risk treatment is broader than solely economic considerations and should consider all of the organization’s obligations, voluntary commitments, and stakeholder views. <br />
+The selection of risk treatment options should be made per the organization’s objectives, risk criteria, and available resources.</p>
+<p>When selecting risk treatment options, the organization should consider stakeholders’ values, perceptions, and potential involvement and the most appropriate ways to communicate and consult with them. <br />
+Though equally effective, some risk treatments can be more acceptable to stakeholders than others.</p>
+<p>Even if carefully designed and implemented, risk treatments might not produce the expected outcomes and could produce unintended consequences. <br />
+Monitoring and review need to be an integral part of the risk treatment implementation to give assurance that the different forms of treatment become and remain effective.</p>
+<p>Risk treatment can also introduce new risks that need to be managed. <br />
+If there are no treatment options available or if treatment options do not sufficiently modify the risk, the risk should be recorded and kept under ongoing review.</p>
+<p>Decision makers and other stakeholders should be aware of the nature and extent of the remaining risk after risk treatment. <br />
+The remaining risk should be documented and subjected to monitoring, review, and, where appropriate, further treatment.</p>
+</section>
+<section id="preparing-and-implementing-risk-treatment-plans">
+<h4>Preparing and Implementing Risk Treatment Plans<a class="headerlink" href="#preparing-and-implementing-risk-treatment-plans" title="Link to this heading">#</a></h4>
+<p>The purpose of risk treatment plans is to specify how the chosen treatment options will be implemented so that arrangements are understood by those involved and progress against the plan can be monitored. <br />
+The treatment plan should identify the order in which risk treatment should be implemented.</p>
+<p>Treatment plans should be integrated into the management plans and processes of the organization in consultation with appropriate stakeholders.</p>
+<p>The information provided in the treatment plan should include:</p>
+<ul class="simple">
+<li><p>the rationale for selection of the treatment options, including the expected benefits to be gained;</p></li>
+<li><p>those who are accountable and responsible for approving and implementing the plan;</p></li>
+<li><p>proposed actions;</p></li>
+<li><p>resources required, including contingencies;</p></li>
+<li><p>performance measures;</p></li>
+<li><p>constraints;</p></li>
+<li><p>required reporting and monitoring;</p></li>
+<li><p>when actions are expected to be undertaken and completed.</p></li>
+</ul>
+</section>
+</section>
+<section id="monitoring-review">
+<h3>Monitoring &amp; Review<a class="headerlink" href="#monitoring-review" title="Link to this heading">#</a></h3>
+<p>The purpose of monitoring and review is to assure and improve the quality and effectiveness of process design, implementation, and outcomes. <br />
+Ongoing monitoring and periodic review of the RM process and its outcomes should be a planned part of the RM process, with responsibilities clearly defined.</p>
+<p>Monitoring and review should take place in all stages of the process. <br />
+Monitoring and review include planning, gathering and analyzing information, recording results, and providing feedback.</p>
+<p>The results of monitoring and review should be incorporated throughout the organization’s performance management, measurement, and reporting activities.</p>
+</section>
+<section id="recording-reporting">
+<h3>Recording &amp; Reporting<a class="headerlink" href="#recording-reporting" title="Link to this heading">#</a></h3>
+<p>The RM process and its outcomes should be documented and reported through appropriate mechanisms. <br />
+Recording and reporting aim to:</p>
+<ul class="simple">
+<li><p>communicate risk management activities and outcomes across the organization;</p></li>
+<li><p>provide information for decision-making;</p></li>
+<li><p>improve risk management activities;</p></li>
+<li><p>assist interaction with stakeholders, including those with responsibility and accountability for risk management activities.</p></li>
+</ul>
+<p>Decisions concerning the creation, retention, and handling of documented information should consider but not be limited to their use, information sensitivity, and the external and internal context.</p>
+<p>Reporting is an integral part of the organization’s governance and should enhance the quality of dialogue with stakeholders and support top management and oversight bodies in meeting their responsibilities. <br />
+Factors to consider for reporting include, but are not limited to:</p>
+<ul class="simple">
+<li><p>differing stakeholders and their specific information needs and requirements;</p></li>
+<li><p>cost, frequency, and timeliness of reporting;</p></li>
+<li><p>method of reporting;</p></li>
+<li><p>relevance of the information to organizational objectives and decision-making.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./PM"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="evm.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Earned Value Management</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="eac.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Estimates at Completion</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#principles">Principles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#framework">Framework</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#process">Process</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general">General</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#communication-consultation">Communication &amp; Consultation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scope-context-and-criteria">Scope, Context, and Criteria</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">General</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-the-scope">Defining the Scope</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#external-and-internal-context">External and Internal Context</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-risk-criteria">Defining Risk Criteria</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-assessment">Risk Assessment</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">General</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-identification">Risk Identification</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-analysis">Risk Analysis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-evaluation">Risk Evaluation</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#risk-treatment">Risk Treatment</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">General</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#selection-of-risk-treatment-options">Selection of Risk Treatment Options</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-and-implementing-risk-treatment-plans">Preparing and Implementing Risk Treatment Plans</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-review">Monitoring &amp; Review</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recording-reporting">Recording &amp; Reporting</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By FMO
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

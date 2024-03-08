@@ -8,15 +8,16 @@ Objective:
 ## Scheduling Methods
 
 * Deterministic
-  * Critical Path Method
-  * Precedence Diagram Method
-  * Critical Resource Diagram
-  * Line-of-Balance
-  * Critical Chain Method
-  * Design Structure Matrix
+  * Critical Path Method (CPM)
+  * Precedence Diagram Method (PDM)
+  * Critical Resource Diagram (CRD)
+  * Line of Balance (LOB)
+  * Critical Chain Method (CCM)
+  * Design Structure Matrix (DSM)
 * Probabilistic
-  * PERT
+  * Program Evaluation Review Technique (PERT)
   * Monte Carlo
+  * Latin Hypercube Sampling (LHS)
 
 ## Deterministics vs Probabilistic
 
@@ -28,28 +29,45 @@ Objective:
 
 ### Descriptive Statistics
 
-| 1                        | 2                                                                 | 3                                                                                                                                                                                                                     |
-| ------------------------ | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mean                     | $ \mu = \frac{1}{n} \sum_{i=0}^n y_i$                           |                                                                                                                                                                                                                       |
-| Median                   | $ y_i : P[y_j \leq y_i] = .5 \quad \text{where} \quad j \neq i$ |                                                                                                                                                                                                                       |
-| Mode                     | $ ml : P[y = ml] = max(P[y])$                                   |                                                                                                                                                                                                                       |
-| Skewness                 | $ Skewness(Y) = E \left( \frac{y-\mu_Y}{\sigma_Y} \right)^3$    |                                                                                                                                                                                                                       |
-| Standard Deviation       | $ S = \sqrt{\frac{\sum_{i=0}^n (y_i - \bar{y})^2}{n-1}}$        |                                                                                                                                                                                                                       |
-| Probability Distribution | $P[x]$                                                          |                                                                                                                                                                                                                       |
-| PDF                      | $f(x) = P(X = x)$                                                          | PDF is the "smoothed out" version of a normalized histogram.<br /> The area under any PDF is equal to 1.<br /> The area under a PDF for a specific interval identifies the probability associated with that interval. |
-| CDF                      | $F(x) = P(X \leq x) = \int_{-\infty}^{\infty} f(x) \text{d}x$| The CDF is a mathematical curve that identifies the probability that the actual value will be less than or equal                                                                                                      |
-| to the given value.      |                                                                   |                                                                                                                                                                                                                       |
-
+| Statistic                | Formula                                                                                                             |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| Random variable          | $X$                                                                                                               |
+| Mean                     | $ \mu = \frac{1}{N} \sum_{i=1}^{N} x_i$                                                                           |
+| Median                   | $ x : P[X \leq x] = .5$                                                                                           |
+| Mode                     | $ Mo  : P[X = Mo] = \max[P(\bm{x})]$                                                                              |
+| Skewness                 | $ Skewness(X) = \frac{\mu_3}{\mu_2^{3/2}}$ where $\mu_3$ and $\mu_2$ = third and second moments about $\mu$ |
+| Standard Deviation       | $ \sigma = \sqrt{\sum_{i=0}^n (y_i - \bar{y})^2/N}$                                                               |
+| Variance                 | $ \sigma = \sum_{i=0}^n (y_i - \bar{y})^2/N$                                                                      |
+| Probability Distribution | $P(X)$                                                                                                            |
+| PDF                      | $f_X(x) = P(X = x)$                                                                                               |
+| CDF                      | $F_X(x) = P(X \leq x) = \int_{-\infty}^{x} f(x) \text{d}x$                                                        |
 
 ## Point Estimate
 
-### Requirements
+### Base
 
 | Base               | Description                                      |
 | ------------------ | ------------------------------------------------ |
 | Program of Record  | Defined in the requirements documents            |
 | Technical Baseline | Alternative that reflects a technical assessment |
 | What-If Case       | For a specific sensitivity analysis              |
+
+### Cost vs Schedule PE
+
+* Cost PE $\leftarrow$ approved WBS structure
+  * Direct cost
+    * Labor
+    * Material
+    * Equipment
+    * Subcontract
+  * Indirect cost
+    * Taxes
+    * Gen. Cond.
+    * Risk
+      * Profit
+      * Contingency
+    * Overhead
+* Schedule $\leftarrow$ integrated network of activities containing all the detailed discrete work packages and planning packages (or lower-level tasks of activities) necessary to support the events, accomplishments, and criteria of the project plan.
 
 ### Estimating Method
 
@@ -60,33 +78,31 @@ Objective:
 
 ### Implementation Method
 
-| Modeling Approach                     | Description                                                                                                                                              |
-| ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| As a function of technical parameters | Uncertainty is assigned to the equation itself and to its inputs                                                                                         |
-| As a factor of another estimate       | The factor is one form of a parametric equation                                                                                                          |
-| Level of Effort (LOE)                 | Quantity times the cost per unit, burn rate times a duration, etc.                                                                                       |
-| Throughputs                           | Analogies, quotes, subject matter expert opinion, etc.                                                                                                   |
-| Third Party tool results              | When moving results from another model or tool into another, it is not enough to import the point estimate; the uncertainty needs to be imported as well |
-
-### Output
-
-$PE = f(X)$
+| Modeling Approach                | Description                                                                                                                                              |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Function of technical parameters | Uncertainty is assigned to the equation itself and to its inputs                                                                                         |
+| Factor of another estimate       | The factor is one form of a parametric equation                                                                                                          |
+| Level of Effort (LOE)            | Quantity times the cost per unit, burn rate times a duration, etc.                                                                                       |
+| Throughputs                      | Analogies, quotes, subject matter expert opinion, etc.                                                                                                   |
+| Third Party tool results         | When moving results from another model or tool into another, it is not enough to import the point estimate; the uncertainty needs to be imported as well |
 
 ## Sensitivity Analysis
 
 ### Definition
 
-Systematic approach used to identify the impact of potential changes to one or more of an estimate's major input parameters on the total PE.
+Systematic approach used to identify the **impact of potential changes** to one or more of an estimate's major input parameters to the PE.
 
 ### Objective
 
-1. Vary input parameters over a range of probable valuesm
-2. Recalculate the PE
-3. Determine how sensitive the PE is to changes in the input parameters
+1. Vary input parameters over a range of probable values,
+2. Recalculate the PE, and
+3. Determine how sensitive the PE is to changes in the input parameters.
 
 ### Output
 
-$opt$, $ml$, $pess$
+| ![Figure sensitivity_analysis](../images/jcsrua/sensitivity_analysis.svg) |
+| :---------------------------------------------------------------------: |
+|                       Sensitivity Analysis Output                       |
 
 ## Uncertainty Distributions
 
@@ -94,9 +110,9 @@ $opt$, $ml$, $pess$
 
 The PE:
 
-* represents one possible estimate based upon a given set of program characteristics,
-* serves as the reference point on which the cost uncertainty analysis is anchored,
-* may be determined via one of three approaches:
+* $=$ **one possible estimate** based upon a given set of characteristics
+* $\rightarrow$ **reference point** on which the cost uncertainty analysis is **anchored**
+* $\leftarrow$ approach:
   * **objective** (statistical analysis of relevant historical data),
   * **subjective** (expert opinion), or
   * **third-party tools** (separate models).
@@ -110,17 +126,39 @@ The PE:
 #### Methods
 
 * Developing parametric equations through **regression analysis**
-* **Fitting** distributions to historical data or residuals
+* **Fitting** theoretical distributions to historical data
 
 ##### Regression Analysis
 
 ##### Curve Fitting
 
+###### Descriptive Statistics
+
+$\min$ < $LB$ < $Mo$ / $Median$ / $\mu$  < $UB$ < $\max$ where
+
+* $\min = p_0$
+* $\max = p_{100}$
+* $LB = p_\alpha$
+* $UB = p_{1-\alpha}$
+
+##### Guidelines
+
+| Distribution | Application                                                 | Parameters | Recommendation       |
+| ------------ | ----------------------------------------------------------- | ---------- | -------------------- |
+| Lognormal    | Default                                                     | 2          | $Median,UB$        |
+| Log-t        | Lognormal $\in n \leq 30$                                  | 3          |                      |
+| Triangular   | Expert opinion<br />Finite $\min,\max$<br />Possible skew | 3          | $LB,Mo,UB$         |
+| PERT         | Between Triangular and Beta                                 | 3          | $LB,Mo,UB$         |
+| Beta         | $\min,\max$ region > $Mo$                               | 4          | $\min,LB,UB,\max$ |
+| Normal       | Equal chance$LB,UB$                                       | 2          | $\mu,Median,Mo,UB$ |
+| t            | Normal $\in n\leq30$                                       | 3          | $LB,UB$            |
+| Uniform      |                                                             | 2          |                      |
+
 #### Subjective
 
 #### Definition
 
-**Objective uncertainty** is an assessment of the uncertainty based on well-defined statistical processes.
+**Subjective uncertainty** is an assessment of the uncertainty based on expert judgment.
 
 #### Conditions
 
@@ -128,9 +166,7 @@ The PE:
 * Distributions are characterized by parameters describing their
   * dispersion ($LB$, $UB$)
   * skewness
-
-Ideally, distribution parameters are developed from an objective assessment of relevant historical data. Often, it is necessary to rely on **informed opinion**. The analyst generally has to resort to expert judgment, such as that possessed by engineers, managers, and other knowledgeable people
-This process is called elicitation, which can be difficult to do and subject to numerous biases, categorized as **Motivational** and **Cognitive**.
+* Elicitation is subject to **Motivational** and **Cognitive** biases
 
 ##### Biases
 
@@ -142,9 +178,9 @@ This process is called elicitation, which can be difficult to do and subject to 
 
 ##### Best Practices
 
-* Have historical **$min$**, **$max$**, and **averages** on hand for discussion
+* Have historical **$\min$**, **$\max$**, and **averages** on hand for discussion
 * Ask for **$LB$** and **$UB$**
-* Seek the **$ml$** value
+* Seek the **$Mo$** value
 * Select a distribution shape based on **skew** and **firmness** of the bounds
 
 ##### Adjustment
@@ -153,3 +189,16 @@ Unless there is no evidence to do otherwise,
 
 1. Treat subjective bounds (expert opinion) as 70\% range, and
 2. Adjust for skew when using triangular, uniform, or PERT.
+
+## Special Considerations
+
+* Truncate distributions at zero unless there is evidence to do otherwise
+* Sunk costs should not have uncertainty distributions associated with them
+
+## PERT
+
+
+
+## Monte Carlo
+
+## Latin Hypercube Sampling

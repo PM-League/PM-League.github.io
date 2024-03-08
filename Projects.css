@@ -158,7 +158,7 @@
 }
 
 .u-section-5 .u-layout-cell-1 {
-  min-height: 315px;
+  min-height: 335px;
 }
 
 .u-section-5 .u-container-layout-1 {
@@ -178,36 +178,6 @@
 }
 
 .u-section-5 .u-btn-1 {
-  letter-spacing: 1px;
-  border-style: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-image: none;
-  margin: 27px auto 0;
-  padding: 10px 39px;
-}
-
-.u-section-5 .u-layout-cell-2 {
-  min-height: 315px;
-}
-
-.u-section-5 .u-container-layout-2 {
-  padding: 30px 20px;
-}
-
-.u-section-5 .u-text-4 {
-  margin: 20px 0 0;
-}
-
-.u-section-5 .u-text-5 {
-  margin: 20px 0 0;
-}
-
-.u-section-5 .u-text-6 {
-  margin: 20px 0 0;
-}
-
-.u-section-5 .u-btn-2 {
   font-size: 1rem;
   letter-spacing: 1px;
   border-style: none;
@@ -219,22 +189,12 @@
 }
 
 .u-section-5 .u-image-1 {
-  min-height: 315px;
-  background-image: url("images/14dda068d8bf9fd2dc8b344acbfa01ba7ba5ed54ab405cf55899cc6f3554a01cc55f75d15383dcc8d245d168d26df6607659fb93121487e55700f1_1280.jpg");
-  background-position: 50% 50%;
-}
-
-.u-section-5 .u-container-layout-3 {
-  padding: 30px;
-}
-
-.u-section-5 .u-image-2 {
-  min-height: 315px;
+  min-height: 335px;
   background-image: url("images/c865682292b48e1f654764b312a6f00120517008ace1f5a12c428386a668e5c9f5a05a152e1ad02181703e386294e41a813ad07b9a6958fac05365_1280.jpg");
   background-position: 50% 50%;
 }
 
-.u-section-5 .u-container-layout-4 {
+.u-section-5 .u-container-layout-2 {
   padding: 30px;
 }
 
@@ -245,32 +205,22 @@
   }
 
   .u-section-5 .u-layout-cell-1 {
-    min-height: 260px;
+    min-height: 276px;
   }
 
   .u-section-5 .u-btn-1 {
-    font-size: 1rem;
-    height: 38px;
-    width: 99px;
-  }
-
-  .u-section-5 .u-layout-cell-2 {
-    min-height: 260px;
-  }
-
-  .u-section-5 .u-btn-2 {
     height: 38px;
     width: 99px;
     padding: 7px 0;
+  }
+
+  .u-section-5 .u-image-1 {
+    min-height: 315px;
   }
 }
 
 @media (max-width: 991px) {
   .u-section-5 .u-layout-cell-1 {
-    min-height: 100px;
-  }
-
-  .u-section-5 .u-layout-cell-2 {
     min-height: 100px;
   }
 }
@@ -286,16 +236,6 @@
   }
 
   .u-section-5 .u-container-layout-2 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-5 .u-container-layout-3 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-5 .u-container-layout-4 {
     padding-left: 10px;
     padding-right: 10px;
   }

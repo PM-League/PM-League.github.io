@@ -1,1 +1,0 @@
-# Critical Chain Method
